@@ -1,0 +1,762 @@
+version: "2.0"
+
+stories:
+  # --------------------------------------- KURNIAWAN ----------------------------------------
+  - story: info umum unsri
+    steps:
+      - intent: jenis_kampus_unsri
+      - action: utter_jenis_kampus_unsri
+      - intent: jumlah_fakultas_unsri
+      - action: utter_jumlah_fakultas_unsri
+
+  - story: info kampus indralaya
+    steps:
+      - intent: lokasi_kampus_indralaya
+      - action: utter_lokasi_kampus_indralaya
+      - intent: fasilitas_kampus_indralaya
+      - action: utter_fasilitas_kampus_indralaya
+      - intent: fasilitas_pendidikan_kampus_indralaya
+      - action: utter_fasilitas_pendidikan_kampus_indralaya
+
+  - story: info pascasarjana dan fakultas pertanian
+    steps:
+      - intent: lokasi_kampus_pascasarjana
+      - action: utter_lokasi_kampus_pascasarjana
+      - intent: lokasi_luas_kebun_percobaan
+      - action: utter_lokasi_luas_kebun_percobaan
+
+  - story: info fakultas kedokteran
+    steps:
+      - intent: lokasi_kampus_fakultas_kedokteran
+      - action: utter_lokasi_kampus_fakultas_kedokteran
+
+  - story: info fkip
+    steps:
+      - intent: lokasi_kampus_fkip
+      - action: utter_lokasi_kampus_fkip
+
+  # ----------------------------------- NAUFAL -------------------------------------------
+  - story: unsur lambang
+    steps:
+      - intent: i_unsur_lambang_universitas_sriwijaya
+      - action: utter_unsur_lambang_universitas_sriwijaya
+
+  - story: warna mahkota bunga melati
+    steps:
+      - intent: i_warna_mahkota_bunga_melati
+      - action: utter_warna_mahkota_bunga_melati
+
+  - story: warna mahkota bunga seruni
+    steps:
+      - intent: i_warna_mahkota_bunga_seruni
+      - action: utter_warna_mahkota_bunga_seruni
+
+  - story: warna cahaya mahkota bunga seruni
+    steps:
+      - intent: i_warna_cahaya_mahkota_bunga_seruni
+      - action: utter_warna_cahaya_mahkota_bunga_seruni
+
+  - story: warna kata universitas sriwijaya
+    steps:
+      - intent: i_warna_Kata_universitas_sriwijaya
+      - action: utter_warna_Kata_universitas_sriwijaya
+
+  - story: warna motto ilmu alat pengabdian
+    steps:
+      - intent: i_warna_motto_ilmu_alat_pengabdian
+      - action: utter_warna_motto_ilmu_alat_pengabdian
+
+  - story: warna motto ilmu alat pengabdian
+    steps:
+      - intent: i_warna_motto_ilmu_alat_pengabdian
+      - action: utter_warna_motto_ilmu_alat_pengabdian
+
+  - story: keterangan mahkota bunga melati
+    steps:
+      - intent: i_keterangan_mahkota_bunga_melati
+      - action: utter_keterangan_mahkota_bunga_melati
+
+  - story: keterangan mahkota bunga seruni
+    steps:
+      - intent: i_keterangan_mahkota_bunga_seruni
+      - action: utter_keterangan_mahkota_bunga_seruni
+
+  - story: keterangan cahaya mahkota bunga seruni
+    steps:
+      - intent: i_keterangan_cahaya_mahkota_bunga_seruni
+      - action: utter_keterangan_cahaya_mahkota_bunga_seruni
+
+  - story: keterangan kata universitas sriwijaya
+    steps:
+      - intent: i_keterangan_Kata_universitas_sriwijaya
+      - action: utter_keterangan_Kata_universitas_sriwijaya
+
+  - story: keterangan motto ilmu alat pengabdian
+    steps:
+      - intent: i_keterangan_motto_ilmu_alat_pengabdian
+      - action: utter_keterangan_motto_ilmu_alat_pengabdian
+
+  - story: keterangan motto ilmu alat pengabdian
+    steps:
+      - intent: i_keterangan_motto_ilmu_alat_pengabdian
+      - action: utter_keterangan_motto_ilmu_alat_pengabdian
+
+  # ----------------------------------- BENYAMIN ----------------------------------------------
+  - story: informasi jumlah pergantian rektor unsri
+    steps:
+      - intent: i_banyak_pergantian_rektor_unsri
+      - action: utter_banyak_pergantian_rektor_unsri
+
+  - story: informasi rektor pertama unsri
+    steps:
+      - intent: i_rektor_pertama_unsri
+      - action: utter_rektor_pertama_unsri
+
+  - story: informasi rektor kedua unsri
+    steps:
+      - intent: i_rektor_kedua_unsri
+      - action: utter_rektor_kedua_unsri
+
+  - story: informasi rektor ketiga unsri
+    steps:
+      - intent: i_rektor_ketiga_unsri
+      - action: utter_rektor_ketiga_unsri
+
+  - story: informasi rektor keempat unsri
+    steps:
+      - intent: i_rektor_keempat_unsri
+      - action: utter_rektor_keempat_unsri
+
+  - story: informasi rektor kelima unsri
+    steps:
+      - intent: i_rektor_kelima_unsri
+      - action: utter_rektor_kelima_unsri
+
+  - story: informasi rektor keenam unsri
+    steps:
+      - intent: i_rektor_keenam_unsri
+      - action: utter_rektor_keenam_unsri
+
+  - story: informasi rektor ketujuh unsri
+    steps:
+      - intent: i_rektor_ketujuh_unsri
+      - action: utter_rektor_ketujuh_unsri
+
+  - story: informasi rektor kedelapan unsri
+    steps:
+      - intent: i_rektor_kedelapan_unsri
+      - action: utter_rektor_kedelapan_unsri
+
+  - story: informasi rektor kesembilan unsri
+    steps:
+      - intent: i_rektor_kesembilan_unsri
+      - action: utter_rektor_kesembilan_unsri
+
+  - story: informasi rektor unsri saat ini
+    steps:
+      - intent: i_rektor_unsri_saat_ini
+      - action: utter_rektor_unsri_saat_ini
+
+  - story: informasi kedudukan awal unsri
+    steps:
+      - intent: i_awal_kedudukan_unsri
+      - action: utter_awal_kedudukan_unsri
+
+  - story: informasi tahun pertama kegiatan perkuliahan kampus indralaya
+    steps:
+      - intent: i_tahun_pertama_kegiatan_perkuliahan_indralaya
+      - action: utter_tahun_pertama_kegiatan_perkuliahan_indralaya
+
+  - story: informasi tanggal diresmikan kampus indralaya
+    steps:
+      - intent: i_tanggal_diresmikan_kampus_indralaya
+      - action: utter_tanggal_diresmikan_kampus_indralaya
+
+  - story: informasi letak kampus indralaya
+    steps:
+      - intent: i_letak_kampus_indralaya_unsri
+      - action: utter_letak_kampus_indralaya_unsri
+
+  - story: informasi presiden indonesia yang meresmikan kampus indralaya
+    steps:
+      - intent: i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
+      - action: utter_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
+
+  - story: informasi yang menghadiri peresmian kampus indralaya
+    steps:
+      - intent: i_yang_menghadiri_peresmian_kampus_indralaya_unsri
+      - action: utter_yang_menghadiri_peresmian_kampus_indralaya_unsri
+
+  - story: informasi tanda peresmian kampus utama indralaya
+    steps:
+      - intent: i_tanda_resmi_kampus_utama_indralaya
+      - action: utter_tanda_resmi_kampus_utama_indralaya
+
+  - story: informasi jumlah fakultas di unsri
+    steps:
+      - intent: i_jumlah_fakultas_unsri
+      - action: utter_jumlah_fakultas_unsri
+
+  - story: informasi program pendidikan di unsri
+    steps:
+      - intent: i_program_pendidikan_unsri
+      - action: utter_program_pendidikan_unsri
+
+  - story: informasi fakultas yang ada di unsri
+    steps:
+      - intent: i_fakultas_unsri
+      - action: utter_fakultas_unsri
+
+  # ----------------------------------- YAVIN -------------------------------------------------
+  - story: tanya makna lambang
+    steps:
+      - intent: makna_lambang
+      - action: utter_makna_lambang
+
+  - story: gambar bendera Unsri
+    steps:
+      - intent: bendera
+      - action: utter_bendera
+
+  - story: mars Unsri
+    steps:
+      - intent: mars
+      - action: utter_mars
+
+  - story: hymne Unsri
+    steps:
+      - intent: hymne
+      - action: utter_hymne
+
+  - story: pencipta mars Unsri
+    steps:
+      - intent: pencipta_mars
+      - action: utter_pencipta_mars
+
+  - story: pencipta hymne Unsri
+    steps:
+      - intent: pencipta_hymne
+      - action: utter_pencipta_hymne
+
+  # --------------------------------------- ICAL ---------------------------------------------
+
+  - story: kapan ide pertama pembuatan unsri?
+    steps:
+      - intent: ide_dibentuk
+      - action: utter_ide_dibentuk
+
+  - story: siapa yang berkeinginan membuat universitas
+    steps:
+      - intent: keinginan_masyarakat
+      - action: utter_keinginan_masyarakat
+
+  - story: kapan ide itu di kemukakan?
+    steps:
+      - intent: kapan_resepsi
+      - action: utter_kapan_resepsi
+
+  - story: siapa saja panitia yang membentuk?
+    steps:
+      - intent: pembentukan_panitia
+      - action: utter_pembentukan_panitia
+
+  - story: unsri di bawah yayasan
+    steps:
+      - intent: yayasan_perguruan_tinggi
+      - action: utter_yayasan_perguruan_tinggi
+
+  - story: kapan fakultas ekonomi berdiri
+    steps:
+      - intent: fakultas_ekonomi
+      - action: utter_fakultas_ekonomi
+
+  - story: siapa saja yang hadir
+    steps:
+      - intent: tokoh_yang_hadir
+      - action: utter_tokoh_yang_hadir
+
+  - story: siapa yang memberi bantuan
+    steps:
+      - intent: bantuan_keuangan
+      - action: utter_bantuan_keuangan
+
+  - story: lembaga bahasa berada di
+    steps:
+      - intent: lembaga_bahasa
+      - action: utter_lembaga_bahasa
+
+  - story: kapan peletakan batu pertama
+    steps:
+      - intent: batu_pertama
+      - action: utter_batu_pertama
+
+  - story: kapan didirikanya fakultas hukum
+    steps:
+      - intent: didirikan_fakultas
+      - action: utter_didirikan_fakultas
+
+  - story: siapa yang mendatangi saat peresmian fakultas hukum
+    steps:
+      - intent: yang_mendatangi_peresmian
+      - action: utter_yang_mendatangi_peresmian
+
+  - story: kapan perubahan nama menjadi universitas sriwijaya
+    steps:
+      - intent: penetapan_unsri
+      - action: utter_penetapan_unsri
+
+  - story: siapa yang meresmikan dan mendatangani piagam
+    steps:
+      - intent: upacara_peresmian
+      - action: utter_upacara_peresmian
+
+  - story: siapa yang hadir saat peresmian universitas sriwijaya
+    steps:
+      - intent: saksi_yang_hadir
+      - action: utter_saksi_yang_hadir
+
+  - story: siapa rector pertama universitas sriwijaya
+    steps:
+      - intent: rektor_pertama
+      - action: utter_rektor_pertama
+
+  # ----------------------------- HAFIZ & WAFI ------------------------------------------------
+  - story: Jurusan yang ada di fakultas ekonomi
+    steps:
+      - intent: jurusan_fe
+      - action: utter_jurusan_fe
+
+  - story: Jurusan yang ada di fakultas hukum
+    steps:
+      - intent: jurusan_fh
+      - action: utter_jurusan_fh
+
+  - story: Jurusan yang ada di fakultas teknik
+    steps:
+      - intent: jurusan_ft
+      - action: utter_jurusan_ft
+
+  - story: Jumlah jurusan yang ada di fakultas ekonomi
+    steps:
+      - intent: jumlah_jurusan_fe
+      - action: utter_jumlah_jurusan_fe
+
+  - story: Jumlah jurusan yang ada di fakultas hukum
+    steps:
+      - intent: jumlah_jurusan_fh
+      - action: utter_jumlah_jurusan_fh
+
+  - story: Jumlah jurusan yang ada di fakultas teknik
+    steps:
+      - intent: jumlah_jurusan_ft
+      - action: utter_jumlah_jurusan_ft
+
+  - story: Program yang ada di fakultas ekonomi
+    steps:
+      - intent: program_fe
+      - action: utter_program_fe
+
+  - story: Program yang ada di fakultas hukum
+    steps:
+      - intent: program_fh
+      - action: utter_program_fh
+
+  - story: Program yang ada di fakultas teknik
+    steps:
+      - intent: program_ft
+      - action: utter_program_ft
+
+  - story: Jurusan di fakultas Ekonomi dengan program S1
+    steps:
+      - intent: jurusan_fe_program_sarjana
+      - action: utter_jurusan_fe_program_sarjana
+
+  - story: Jurusan di fakultas Ekonomi dengan program D3
+    steps:
+      - intent: jurusan_fe_program_diploma_tiga
+      - action: utter_jurusan_fe_program_diploma_tiga
+
+  - story: Jurusan di fakultas Ekonomi dengan program S2
+    steps:
+      - intent: jurusan_fe_program_magister
+      - action: utter_jurusan_fe_program_magister
+
+  - story: Jurusan di fakultas Ekonomi dengan program S3
+    steps:
+      - intent: jurusan_fe_program_doktor
+      - action: utter_jurusan_fe_program_doktor
+
+  - story: Jurusan di fakultas Hukum dengan program S1
+    steps:
+      - intent: jurusan_fh_program_sarjana
+      - action: utter_jurusan_fh_program_sarjana
+
+  - story: Jurusan di fakultas Hukum dengan program S2
+    steps:
+      - intent: jurusan_fh_program_magister
+      - action: utter_jurusan_fh_program_magister
+
+  - story: Jurusan di fakultas Hukum dengan program S3
+    steps:
+      - intent: jurusan_fh_program_doktoral
+      - action: utter_jurusan_fh_program_doktor
+
+  - story: Jurusan di fakultas Teknik dengan program S1
+    steps:
+      - intent: jurusan_ft_program_sarjana
+      - action: utter_jurusan_ft_program_sarjana
+
+  - story: Jurusan di fakultas Teknik dengan program S2
+    steps:
+      - intent: jurusan_ft_program_magister
+      - action: utter_jurusan_ft_program_magister
+
+  - story: Jurusan di fakultas Teknik dengan program S3
+    steps:
+      - intent: jurusan_ft_program_doktoral
+      - action: utter_jurusan_ft_program_doktor
+
+  - story: Gelar untuk jurusan Manajemen
+    steps:
+      - intent: gelar_manajemen
+      - action: utter_gelar_manajemen
+
+  - story: Gelar untuk jurusan Ekonomi Pembangunan
+    steps:
+      - intent: gelar_ekonomi_pembangunan
+      - action: utter_gelar_ekonomi_pembangunan
+
+  - story: Gelar untuk jurusan Akuntansi
+    steps:
+      - intent: gelar_akuntansi
+      - action: utter_gelar_akuntansi
+
+  - story: Gelar untuk jurusan Vokasi Akuntansi
+    steps:
+      - intent: gelar_vokasi_akuntansi
+      - action: utter_gelar_vokasi_akuntansi
+
+  - story: Gelar untuk jurusan Vokasi Kesekretariatan
+    steps:
+      - intent: gelar_vokasiKesekretariatan
+      - action: utter_gelar_vokasiKesekretariatan
+
+  - story: Gelar untuk jurusan Magister Manajemen
+    steps:
+      - intent: gelar_magister_manajemen
+      - action: utter_gelar_magister_manajemen
+
+  - story: Gelar untuk jurusan Ilmu Ekonomi Magister
+    steps:
+      - intent: gelar_ilmu_ekonomi_magister
+      - action: utter_gelar_ilmu_ekonomi_magister
+
+  - story: Gelar untuk jurusan Ilmu Manajemen Magister
+    steps:
+      - intent: gelar_ilmu_manajemen_magister
+      - action: utter_gelar_ilmu_ekonomi_magister
+
+  - story: Gelar untuk jurusan Ilmu Ekonomi Doktor
+    steps:
+      - intent: gelar_ilmu_ekonomi_doktor
+      - action: utter_gelar_ilmu_ekonomi_doktor
+
+  - story: Gelar untuk jurusan Manajemen Doktor
+    steps:
+      - intent: gelar_manajemen_doktor
+      - action: utter_gelar_manajemen_doktor
+
+  - story: Gelar untuk jurusan Ilmu Hukum Sarjana
+    steps:
+      - intent: gelar_ilmu_hukum_sarjana
+      - action: utter_gelar_ilmu_hukum_sarjana
+
+  - story: Gelar untuk jurusan Ilmu Hukum Magister
+    steps:
+      - intent: gelar_ilmu_hukum_magister
+      - action: utter_gelar_ilmu_hukum_magister
+
+  - story: Gelar untuk jurusan Kenotariatan
+    steps:
+      - intent: gelar_kenotariatan
+      - action: utter_gelar_kenotariatan
+
+  - story: Gelar untuk jurusan Ilmu Hukum Doktor
+    steps:
+      - intent: gelar_ilmu_hukum_doktor
+      - action: utter_gelar_ilmu_hukum_doktor
+
+  - story: Gelar untuk jurusan Teknik Sipil
+    steps:
+      - intent: gelar_teknik_sipil
+      - action: utter_gelar_teknik_sipil
+
+  - story: Gelar untuk jurusan Teknik Pertambangan
+    steps:
+      - intent: gelar_teknik_pertambangan
+      - action: utter_gelar_teknik_pertambangan
+
+  - story: Gelar untuk jurusan Teknik Kimia
+    steps:
+      - intent: gelar_teknik_kimia
+      - action: utter_gelar_teknik_kimia
+
+  - story: Gelar untuk jurusan Teknik Elektro
+    steps:
+      - intent: gelar_teknik_elektro
+      - action: utter_gelar_teknik_elektro
+
+  - story: Gelar untuk jurusan Teknik Mesin
+    steps:
+      - intent: gelar_teknik_mesin
+      - action: utter_gelar_teknik_mesin
+
+  - story: Gelar untuk jurusan Arsitektur
+    steps:
+      - intent: gelar_arsitektur
+      - action: utter_gelar_arsitektur
+
+  - story: Gelar untuk jurusan Teknik Geologi
+    steps:
+      - intent: gelar_teknik_geologi
+      - action: utter_gelar_teknik_geologi
+
+  - story: Gelar untuk jurusan Teknik Kimia Magister
+    steps:
+      - intent: gelar_teknik_kimia_magister
+      - action: utter_gelar_teknik_kimia_magister
+
+  - story: Gelar untuk jurusan Teknik Sipil Magister
+    steps:
+      - intent: gelar_teknik_sipil_magister
+      - action: utter_gelar_teknik_sipil_magister
+
+  - story: Gelar untuk jurusan Teknik Mesin Magister
+    steps:
+      - intent: gelar_teknik_mesin_magister
+      - action: utter_gelar_teknik_mesin_magister
+
+  - story: Gelar untuk jurusan Teknik Pertambangan Magister
+    steps:
+      - intent: gelar_teknik_pertambangan_magister
+      - action: utter_gelar_teknik_pertambangan_magister
+
+  - story: Gelar untuk jurusan Ilmu Teknik
+    steps:
+      - intent: gelar_ilmu_teknik
+      - action: utter_gelar_ilmu_teknik
+
+  - story: Jurusan yang ada di Fakultas Kedokteran
+    steps:
+      - intent: jurusan_fk
+      - action: utter_jurusan_fk
+
+  - story: Jurusan yang ada di Fakultas Pertanian
+    steps:
+      - intent: jurusan_fp
+      - action: utter_jurusan_fp
+
+  - story: Jumlah jurusan yang ada di Fakultas Kedokteran
+    steps:
+      - intent: jumlah_jurusan_fk
+      - action: utter_jumlah_jurusan_fk
+
+  - story: Jumlah jurusan yang ada di Fakultas Pertanian
+    steps:
+      - intent: jumlah_jurusan_fp
+      - action: utter_jumlah_jurusan_fp
+
+  - story: Program yang ada di Fakultas Kedokteran
+    steps:
+      - intent: program_fk
+      - action: utter_program_fk
+
+  - story: Program yang ada di Fakultas Pertanian
+    steps:
+      - intent: program_fp
+      - action: utter_program_fp
+
+  - story: Jurusan di Fakultas Kedokteran dengan program S1
+    steps:
+      - intent: jurusan_fk_program_sarjana
+      - action: utter_jurusan_fk_program_sarjana
+
+  - story: Jurusan di Fakultas Kedokteran dengan program Spesialis
+    steps:
+      - intent: jurusan_fk_program_spesialis
+      - action: utter_jurusan_fk_program_spesialis
+
+  - story: Jurusan di Fakultas Kedokteran dengan program S2
+    steps:
+      - intent: jurusan_fk_program_magister
+      - action: utter_jurusan_fk_program_magister
+
+  - story: Jurusan di Fakultas Kedokteran dengan program S3
+    steps:
+      - intent: jurusan_fk_program_doktoral
+      - action: utter_jurusan_fk_program_doktoral
+
+  - story: Jurusan di Fakultas Pertanian dengan program S1
+    steps:
+      - intent: jurusan_fp_program_sarjana
+      - action: utter_jurusan_fp_program_sarjana
+
+  - story: Jurusan di Fakultas Pertanian dengan program S2
+    steps:
+      - intent: jurusan_fp_program_magister
+      - action: utter_jurusan_fp_program_magister
+
+  - story: Jurusan di Fakultas Pertanian dengan program S3
+    steps:
+      - intent: jurusan_fp_program_doktoral
+      - action: utter_jurusan_fp_program_doktoral
+
+  - story: Gelar Jurusan Pendidikan Dokter
+    steps:
+      - intent: gelar_pendidikan_dokter
+      - action: utter_gelar_pendidikan_dokter
+
+  - story: Gelar Jurusan Keperawatan
+    steps:
+      - intent: gelar_keperawatan
+      - action: utter_gelar_keperawatan
+
+  - story: Gelar Jurusan Kedokteran Gigi
+    steps:
+      - intent: gelar_kedokteran_gigi
+      - action: utter_gelar_kedokteran_gigi
+
+  - story: Gelar Jurusan Psikologi
+    steps:
+      - intent: gelar_psikologi
+      - action: utter_gelar_psikologi
+
+  - story: Gelar Jurusan Kesehatan Anak
+    steps:
+      - intent: gelar_kesehatan_anak
+      - action: utter_gelar_kesehatan_anak
+
+  - story: Gelar Jurusan Bedah
+    steps:
+      - intent: gelar_bedah
+      - action: utter_gelar_bedah
+
+  - story: Gelar Jurusan Kesehatan Mata
+    steps:
+      - intent: gelar_kesehatan_mata
+      - action: utter_gelar_kesehatan_mata
+
+  - story: Gelar Jurusan Penyakit Dalam
+    steps:
+      - intent: gelar_penyakit_dalam
+      - action: utter_gelar_penyakit_dalam
+
+  - story: Gelar Jurusan Obstetri dan Ginekologi
+    steps:
+      - intent: gelar_obstetri_ginekologi
+      - action: utter_gelar_obstetri_ginekologi
+
+  - story: Gelar Jurusan Patalogi Anatomi
+    steps:
+      - intent: gelar_patalogi_anatomi
+      - action: utter_gelar_patalogi_anatomi
+
+  - story: Gelar Jurusan Dermatologi dan Venerologi
+    steps:
+      - intent: gelar_dermatologi_venerologi
+      - action: utter_gelar_dermatologi_venerologi
+
+  - story: Gelar Jurusan Neurologi
+    steps:
+      - intent: gelar_neurologi
+      - action: utter_gelar_neurologi
+
+  - story: Gelar Jurusan Telinga Hidung Tenggorokan-Kepala dan Leher
+    steps:
+      - intent: gelar_telinga_hidung_tenggorokan_kepala_leher
+      - action: utter_gelar_telinga_hidung_tenggorokan_kepala_leher
+
+  - story: Gelar Jurusan Anestesiologi
+    steps:
+      - intent: gelar_anestesiologi
+      - action: utter_gelar_anestesiologi
+
+  - story: Gelar Jurusan Kedokteran Klinis
+    steps:
+      - intent: gelar_kedokteran_klinis
+      - action: utter_gelar_kedokteran_klinis
+
+  - story: Gelar Jurusan Ilmu Penyakit Dalam
+    steps:
+      - intent: gelar_ilmu_penyakit_dalam
+      - action: utter_gelar_ilmu_penyakit_dalam
+
+  - story: Gelar Jurusan Ilmu Biomedik
+    steps:
+      - intent: gelar_ilmu_biomedik
+      - action: utter_gelar_ilmu_biomedik
+
+  - story: Gelar Jurusan Agribisnis
+    steps:
+      - intent: gelar_agribisnis
+      - action: utter_gelar_agribisnis
+
+  - story: Gelar Jurusan Teknologi Hasil Pertanian
+    steps:
+      - intent: gelar_teknologi_hasil_pertanian
+      - action: utter_gelar_teknologi_hasil_pertanian
+
+  - story: Gelar Jurusan Peternakan
+    steps:
+      - intent: gelar_peternakan
+      - action: utter_gelar_peternakan
+
+  - story: Gelar Jurusan Budidaya Perairan
+    steps:
+      - intent: gelar_budidaya_perairan
+      - action: utter_gelar_budidaya_perairan
+
+  - story: Gelar Jurusan Ilmu Tanah
+    steps:
+      - intent: gelar_ilmu_tanah
+      - action: utter_gelar_ilmu_tanah
+
+  - story: Gelar Jurusan Proteksi Tanaman
+    steps:
+      - intent: gelar_proteksi_tanaman
+      - action: utter_gelar_proteksi_tanaman
+
+  - story: Gelar Jurusan Agronomi
+    steps:
+      - intent: gelar_agronomi
+      - action: utter_gelar_agronomi
+
+  - story: Gelar Jurusan Teknologi Hasil Perikanan
+    steps:
+      - intent: gelar_teknologi_hasil_perikanan
+      - action: utter_gelar_teknologi_hasil_perikanan
+
+  - story: Gelar Jurusan Agroekoteknologi
+    steps:
+      - intent: gelar_agroekoteknologi
+      - action: utter_gelar_agroekoteknologi
+
+  - story: Gelar Jurusan Ilmu Tanaman
+    steps:
+      - intent: gelar_ilmu_tanaman
+      - action: utter_gelar_ilmu_tanaman
+
+  - story: Gelar Jurusan Ilmu Pertanian
+    steps:
+      - intent: gelar_ilmu_pertanian
+      - action: utter_gelar_ilmu_pertanian
+
+  - story: Gelar Jurusan Agribisnis S1
+    steps:
+      - intent: gelar_agribisnis_sarjana
+      - action: utter_gelar_agribisnis_sarjana
+
+  - story: Gelar Jurusan Agribisnis S2
+    steps:
+      - intent: gelar_agribisnis_magister
+      - action: utter_gelar_agribisnis_magister

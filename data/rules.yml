@@ -1,0 +1,27 @@
+version: "2.0"
+
+rules:
+  - rule: Mengucapkan salam setiap kali user menyapa bot
+    steps:
+      - intent: i_salam
+      - action: utter_salam
+
+  - rule: Mengucapkan selamat tinggal setiap kali user ingin pergi/keluar
+    steps:
+      - intent: i_selamat_tinggal
+      - action: utter_selamat_tinggal
+
+  - rule: Balas terima kasih dari user setiap kali user mengucapkan terima kasih
+    steps:
+      - intent: i_terima_kasih
+      - action: utter_terima_kasih
+
+  - rule: Menyampaikan informasi bot setiap kali user menanyakan tentang informasi bot
+    steps:
+      - intent: i_bot
+      - action: utter_bot
+
+  - rule: Bot merespon ketika pertanyaan diluar topik
+    steps:
+      - intent: i_diluar_topik
+      - action: utter_diluar_topik

@@ -1,0 +1,734 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- jenis_kampus_unsri:
+    use_entities: true
+- lokasi_kampus_indralaya:
+    use_entities: true
+- lokasi_kampus_fakultas_kedokteran:
+    use_entities: true
+- lokasi_kampus_fkip:
+    use_entities: true
+- lokasi_kampus_pascasarjana:
+    use_entities: true
+- fasilitas_kampus_indralaya:
+    use_entities: true
+- fasilitas_pendidikan_kampus_indralaya:
+    use_entities: true
+- lokasi_luas_kebun_percobaan:
+    use_entities: true
+- jumlah_fakultas_unsri:
+    use_entities: true
+- i_unsur_lambang_universitas_sriwijaya:
+    use_entities: true
+- i_warna_mahkota_bunga_melati:
+    use_entities: true
+- i_warna_mahkota_bunga_seruni:
+    use_entities: true
+- i_warna_cahaya_mahkota_bunga_seruni:
+    use_entities: true
+- i_warna_Kata_universitas_sriwijaya:
+    use_entities: true
+- i_warna_motto_ilmu_alat_pengabdian:
+    use_entities: true
+- i_keterangan_mahkota_bunga_melati:
+    use_entities: true
+- i_keterangan_mahkota_bunga_seruni:
+    use_entities: true
+- i_keterangan_cahaya_mahkota_bunga_seruni:
+    use_entities: true
+- i_keterangan_Kata_universitas_sriwijaya:
+    use_entities: true
+- i_keterangan_motto_ilmu_alat_pengabdian:
+    use_entities: true
+- i_salam:
+    use_entities: true
+- i_selamat_tinggal:
+    use_entities: true
+- i_terima_kasih:
+    use_entities: true
+- i_diluar_topik:
+    use_entities: true
+- i_banyak_pergantian_rektor_unsri:
+    use_entities: true
+- i_rektor_pertama_unsri:
+    use_entities: true
+- i_rektor_kedua_unsri:
+    use_entities: true
+- i_rektor_ketiga_unsri:
+    use_entities: true
+- i_rektor_keempat_unsri:
+    use_entities: true
+- i_rektor_kelima_unsri:
+    use_entities: true
+- i_rektor_keenam_unsri:
+    use_entities: true
+- i_rektor_ketujuh_unsri:
+    use_entities: true
+- i_rektor_kedelapan_unsri:
+    use_entities: true
+- i_rektor_kesembilan_unsri:
+    use_entities: true
+- i_rektor_unsri_saat_ini:
+    use_entities: true
+- i_awal_kedudukan_unsri:
+    use_entities: true
+- i_tahun_pertama_kegiatan_perkuliahan_indralaya:
+    use_entities: true
+- i_tanggal_diresmikan_kampus_indralaya:
+    use_entities: true
+- i_letak_kampus_indralaya_unsri:
+    use_entities: true
+- i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri:
+    use_entities: true
+- i_yang_menghadiri_peresmian_kampus_indralaya_unsri:
+    use_entities: true
+- i_tanda_resmi_kampus_utama_indralaya:
+    use_entities: true
+- i_jumlah_fakultas_unsri:
+    use_entities: true
+- i_program_pendidikan_unsri:
+    use_entities: true
+- i_fakultas_unsri:
+    use_entities: true
+- i_bot:
+    use_entities: true
+- makna_lambang:
+    use_entities: true
+- bendera:
+    use_entities: true
+- mars:
+    use_entities: true
+- hymne:
+    use_entities: true
+- pencipta_mars:
+    use_entities: true
+- pencipta_hymne:
+    use_entities: true
+- ide_dibentuk:
+    use_entities: true
+- keinginan_masyarakat:
+    use_entities: true
+- kapan_resepsi:
+    use_entities: true
+- pembentukan_panitia:
+    use_entities: true
+- yayasan_perguruan_tinggi:
+    use_entities: true
+- fakultas_ekonomi:
+    use_entities: true
+- tokoh_yang_hadir:
+    use_entities: true
+- bantuan_keuangan:
+    use_entities: true
+- lembaga_bahasa:
+    use_entities: true
+- batu_pertama:
+    use_entities: true
+- didirikan_fakultas:
+    use_entities: true
+- yang_mendatangi_peresmian:
+    use_entities: true
+- penetapan_unsri:
+    use_entities: true
+- upacara_peresmian:
+    use_entities: true
+- saksi_yang_hadir:
+    use_entities: true
+- rektor_pertama:
+    use_entities: true
+- jurusan_fe:
+    use_entities: true
+- jurusan_fh:
+    use_entities: true
+- jurusan_ft:
+    use_entities: true
+- jumlah_jurusan_fe:
+    use_entities: true
+- jumlah_jurusan_fh:
+    use_entities: true
+- jumlah_jurusan_ft:
+    use_entities: true
+- program_fe:
+    use_entities: true
+- program_fh:
+    use_entities: true
+- program_ft:
+    use_entities: true
+- jurusan_fe_program_sarjana:
+    use_entities: true
+- jurusan_fe_program_diploma_tiga:
+    use_entities: true
+- jurusan_fe_program_magister:
+    use_entities: true
+- jurusan_fe_program_doktor:
+    use_entities: true
+- jurusan_fh_program_sarjana:
+    use_entities: true
+- jurusan_fh_program_magister:
+    use_entities: true
+- jurusan_fh_program_doktoral:
+    use_entities: true
+- jurusan_ft_program_sarjana:
+    use_entities: true
+- jurusan_ft_program_magister:
+    use_entities: true
+- jurusan_ft_program_doktoral:
+    use_entities: true
+- gelar_manajemen:
+    use_entities: true
+- gelar_ekonomi_pembangunan:
+    use_entities: true
+- gelar_akuntansi:
+    use_entities: true
+- gelar_vokasi_akuntansi:
+    use_entities: true
+- gelar_vokasiKesekretariatan:
+    use_entities: true
+- gelar_magister_manajemen:
+    use_entities: true
+- gelar_ilmu_ekonomi:
+    use_entities: true
+- gelar_ilmu_manajemen:
+    use_entities: true
+- gelar_ilmu_ekonomi_magister:
+    use_entities: true
+- gelar_ilmu_ekonomi_doktor:
+    use_entities: true
+- gelar_manajemen_sarjana:
+    use_entities: true
+- gelar_manajemen_magister:
+    use_entities: true
+- gelar_ilmu_hukum:
+    use_entities: true
+- gelar_ilmu_hukum_sarjana:
+    use_entities: true
+- gelar_ilmu_hukum_magister:
+    use_entities: true
+- gelar_kenotariatan:
+    use_entities: true
+- gelar_ilmu_hukum_doktor:
+    use_entities: true
+- gelar_teknik_sipil:
+    use_entities: true
+- gelar_teknik_pertambangan:
+    use_entities: true
+- gelar_teknik_kimia:
+    use_entities: true
+- gelar_teknik_elektro:
+    use_entities: true
+- gelar_teknik_mesin:
+    use_entities: true
+- gelar_arsitektur:
+    use_entities: true
+- gelar_teknik_geologi:
+    use_entities: true
+- gelar_teknik_kimia_sarjana:
+    use_entities: true
+- gelar_teknik_kimia_magister:
+    use_entities: true
+- gelar_teknik_sipil_sarjana:
+    use_entities: true
+- gelar_teknik_sipil_magister:
+    use_entities: true
+- gelar_teknik_mesin_sarjana:
+    use_entities: true
+- gelar_teknik_mesin_magister:
+    use_entities: true
+- gelar_teknik_pertambangan_sarjana:
+    use_entities: true
+- gelar_teknik_pertambangan_magister:
+    use_entities: true
+- gelar_ilmu_teknik:
+    use_entities: true
+- jurusan_fk:
+    use_entities: true
+- jurusan_fp:
+    use_entities: true
+- jumlah_jurusan_fk:
+    use_entities: true
+- jumlah_jurusan_fp:
+    use_entities: true
+- program_fk:
+    use_entities: true
+- program_fp:
+    use_entities: true
+- jurusan_fk_program_sarjana:
+    use_entities: true
+- jurusan_fk_program_spesialis:
+    use_entities: true
+- jurusan_fk_program_magister:
+    use_entities: true
+- jurusan_fk_program_doktoral:
+    use_entities: true
+- jurusan_fp_program_sarjana:
+    use_entities: true
+- jurusan_fp_program_magister:
+    use_entities: true
+- jurusan_fp_program_doktoral:
+    use_entities: true
+- gelar_pendidikan_dokter:
+    use_entities: true
+- gelar_keperawatan:
+    use_entities: true
+- gelar_kedokteran_gigi:
+    use_entities: true
+- gelar_psikologi:
+    use_entities: true
+- gelar_kesehatan_anak:
+    use_entities: true
+- gelar_bedah:
+    use_entities: true
+- gelar_kesehatan_mata:
+    use_entities: true
+- gelar_penyakit_dalam:
+    use_entities: true
+- gelar_obstetri_ginekologi:
+    use_entities: true
+- gelar_patalogi_anatomi:
+    use_entities: true
+- gelar_dermatologi_venerologi:
+    use_entities: true
+- gelar_neurologi:
+    use_entities: true
+- gelar_telinga_hidung_tenggorokan_kepala_leher:
+    use_entities: true
+- gelar_anestesiologi:
+    use_entities: true
+- gelar_kedokteran_klinis:
+    use_entities: true
+- gelar_ilmu_penyakit_dalam:
+    use_entities: true
+- gelar_ilmu_biomedik:
+    use_entities: true
+- gelar_agribisnis:
+    use_entities: true
+- gelar_teknik_pertanian:
+    use_entities: true
+- gelar_teknologi_hasil_pertanian:
+    use_entities: true
+- gelar_peternakan:
+    use_entities: true
+- gelar_budidaya_perairan:
+    use_entities: true
+- gelar_ilmu_tanah:
+    use_entities: true
+- gelar_proteksi_tanaman:
+    use_entities: true
+- gelar_agronomi:
+    use_entities: true
+- gelar_teknologi_hasil_perikanan:
+    use_entities: true
+- gelar_agroekoteknologi:
+    use_entities: true
+- gelar_ilmu_tanaman:
+    use_entities: true
+- gelar_ilmu_pertanian:
+    use_entities: true
+- gelar_agribisnis_sarjana:
+    use_entities: true
+- gelar_agribisnis_magister:
+    use_entities: true
+- gelar_ilmu_manajemen_magister:
+    use_entities: true
+- gelar_manajemen_doktor:
+    use_entities: true
+- upacara_persemian:
+    use_entities: true
+- yang_mendatangani_peresmian:
+    use_entities: true
+- jurusan_ft_program_doktor:
+    use_entities: true
+- jurusan_fh_program_doktor:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_jenis_kampus_unsri:
+  - text: Kampus Universitas Sriwijaya berlokasi di beberapa tempat yaitu Kampus Indralaya, Kampus Bukit Besar, Kampus Fakultas Kedokteran, Kampus FKIP, Kampus Program Pascasarjana dan Fakultas Pertanian
+  utter_lokasi_kampus_indralaya:
+  - text: Kampus Universitas Sriwijaya Indralaya terletak di jalan Palembang – Prabumulih, sekitar 38 km dari Kampus Bukit Besar
+  utter_lokasi_kampus_fakultas_kedokteran:
+  - text: Kampus Fakultas Kedokteran Universitas Sriwijaya berada di Komplek Rumah Sakit Mohammad Hoesin, Palembang
+  utter_lokasi_kampus_fkip:
+  - text: Kampus Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Sriwijaya berada di Jalan Srijaya km 5,5 dan di Jalan Ogan, Palembang
+  utter_lokasi_kampus_pascasarjana:
+  - text: Kampus Program Pascasarjana, serta Fakultas Pertanian Universitas Sriwijaya berada di Jalan Padang Selasa, Bukit Besar, Palembang
+  utter_fasilitas_kampus_indralaya:
+  - text: Di Kampus Indralaya Universitas Sriwijaya terdapat Perpustakaan Utama, Kantor Pusat Administrasi (KPA),  Auditorium, Lembaga Bahasa, Lembaga Penelitian dan Pengabdian kepada Masyarakat,  Lembaga Pengembangan Pembelajaran dan Penjaminan Mutu Pendidikan (LP3MP),  Laboratorium, Pusat Informasi dan Komputer (PIK), Pusat Pengembangan Karakter dan Karir  (CDC), Pusat Arsip, Pusat Kegiatan Kemahasiswaan, Klinik Kesehatan, Masjid, Stadion dan  Fasilitas Olahraga, Asrama dan Apartemen Mahasiswa, Student Training Centre (STC), Camping  Ground, Kebun Percobaan, serta stasiun pemadam kebakaran
+  utter_fasilitas_pendidikan_kampus_indralaya:
+  - text: |-
+      Fasilitas pendidikan di kampus Indralaya berlokasi di delapan zona, yaitu:
+       1. Zona : Fakultas Ekonomi
+       2. Zona : FKIP dan Fakultas Ilmu Komputer
+       3. Zona : Fakultas Pertanian
+       4. Zona : Fakultas MIPA
+       5. Zona : Fakultas Teknik
+       6. Zona : Fakultas Kedokteran dan FKM
+       7. Zona : Fakultas Hukum
+       8. Zona : Fakultas Ilmu Sosial dan Ilmu Politik
+  utter_lokasi_luas_kebun_percobaan:
+  - text: Universitas Sriwijaya mempunyai fasilitas Kebun Percobaan dengan luas sekitar 45,3 hektar di Kecamatan Gelumbang, Muara Enim, 62 kilometer dari Kota Palembang
+  utter_jumlah_fakultas_unsri:
+  - text: Saat ini Universitas Sriwijaya memiliki 10 fakultas, dan Program Pascasarjana yang menyelenggarakan Pendidikan Program Diploma Tiga (D3), Program Sarjana (S1), Program  Magister (S2), dan Program Doktor (S3), Program Pendidikan Profesi, dan Program Profesi  Dokter Spesialis (PPDS).
+  utter_unsur_lambang_universitas_sriwijaya:
+  - text: |-
+      Unsur dari lambang Universitas Sriwijaya adalah
+      1. Mahkota bunga melati
+      2. Mahkota bunga seruni yang ujung kelopaknyamengarah ke kiri di atas mahkota bunga melati
+      3. Cahaya dipusatkan pada mahkota bungaseruni di atas mahkota bunga melati
+      4. Kata “UNIVERSITAS SRIWIJAYA”
+      5. Pita bertuliskan Motto “ILMU ALAT PENGABDIAN”
+  utter_warna_mahkota_bunga_melati:
+  - text: Pada mahkota bunga melati terdapat 2 warna yaitu biru pada garis tepi di kelopak melati dan kuning muda pada kelopak melati
+  utter_warna_mahkota_bunga_seruni:
+  - text: Kelopak bunga seruni berwarna kuning emas
+  utter_warna_cahaya_mahkota_bunga_seruni:
+  - text: Cahaya yang memancar dari mahkota bunga seruni berwarna putih dengan latar belakang berwarna biru tua
+  utter_warna_Kata_universitas_sriwijaya:
+  - text: Tulisan UNIVERSITAS SRIWIJAYA berwarna putih melingkar dengan latar berwarna hitam
+  utter_warna_motto_ilmu_alat_pengabdian:
+  - text: Motto ILMU ALAT PENGABDIAN berwarna kuning emas berbentuk pita
+  utter_keterangan_mahkota_bunga_melati:
+  - text: Bunga Melati (Jasminum sambac) merupakan bunga suci yang melambangkan kemurnian, keanggunan, keluhuran, wibawa, dan kesetiaan pada cita-cita. Pada lambang ini digambarkan lima mahkota bunga (corolla) dengan warna kuning muda. Lima mahkota bunga melambangkan Pancasila sebagai falsafah hidup bangsa Indonesia, sedangkan warna kuning muda melambangkan warna Universitas
+  utter_keterangan_mahkota_bunga_seruni:
+  - text: Bunga Seruni (Chrysanthemum species) sebagai lambang yang paling tua ditemukan dalam sejarah Sriwijaya. Pada lambang digambarkan mahkota bunga (corolla) dari bunga tepi (marginal flowers), berjumlah 29, berwarna kuning emas yang terpilin. Jumlah mahkotanya melambangkan tanggal lahir Universitas Sriwijaya pada tanggal 29 Oktober 1960 dan warna kuning emas menandakan keagungan Sriwijaya. Mahkota bunga yang terpilin ke kanan yang mengakibatkan ujung kelopaknya mengarah ke kiri dimaksudkan bahwa Universitas ini berjalan seirama dengan perputaran zaman
+  utter_keterangan_cahaya_mahkota_bunga_seruni:
+  - text: Cahaya melambangkan ilmu pengetahuan, yang menerangi jagad, menunjukkan bahwa hanya dengan ILMU ketidaktahuan dapat ditiadakan. Ilmu digambarkan dengan cahaya (nur) sebanyak 60 pancaran sinar dengan 10 sinar besar, berarti bulan Oktober tahun 1960
+  utter_keterangan_Kata_universitas_sriwijaya:
+  - text: Kata UNIVERSITAS SRIWIJAYA ditulis dengan huruf putih di atas dasar hitam yang melingkar di dalam bunga Seruni. Hitam melambangkan ketidaktahuan. Dengan adanya cahaya ketidaktahuan dapat ditiadakan, yang dilambangkan dengan huruf putih pada kata-kata UNIVERSITAS SRIWIJAYA menandakan Universitas Sriwijaya sebagai gudang ilmu
+  utter_keterangan_motto_ilmu_alat_pengabdian:
+  - text: Motto ILMU ALAT PENGABDIAN ditulis dengan huruf berwarna emas di atas dasar hitam yang terletak dalam selendang di bagian bawah lambang. Motto ini melambangkan bahwa manusia wajib mengabdi kepada Tuhan, Negara, bangsa, masyarakat dan keluarga. Pengabdian yang tidak disertai dengan ilmu pengetahuan tidaklah sempurna
+  utter_salam:
+  - text: Halo juga, Apa yang ingin anda tanyakan?
+  utter_selamat_tinggal:
+  - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi!
+  utter_terima_kasih:
+  - text: Sama-sama, apakah ada pertanyaan lain?
+  utter_diluar_topik:
+  - text: Maaf, pertanyaan anda diluar topik, mohon beri saya pertanyaan mengenai Universitas Sriwijaya!
+  utter_banyak_pergantian_rektor_unsri:
+  - text: Hingga saat ini, Universitas Sriwijaya telah mengalami pergantian 10 orang rektor
+  utter_rektor_pertama_unsri:
+  - text: Rektor pertama Universitas Sriwijaya dipegang oleh Drg. M. Isa
+  utter_rektor_kedua_unsri:
+  - text: Rektor kedua Universitas Sriwijaya dipegang oleh Kol. Pol. Amir Datuk Palindih, S.H.
+  utter_rektor_ketiga_unsri:
+  - text: Rektor ketiga Universitas Sriwijaya dipegang oleh Kol. CDM. dr. Noesmir
+  utter_rektor_keempat_unsri:
+  - text: Rektor keempat Universitas Sriwijaya dipegang oleh Prof. H. Djuaini Mukti, M.A.
+  utter_rektor_kelima_unsri:
+  - text: Rektor kelima Universitas Sriwijaya dipegang oleh Drs. Sjafran Sjamsuddin
+  utter_rektor_keenam_unsri:
+  - text: Rektor keenam Universitas Sriwijaya dipegang oleh Prof. Dr. Amran Halim, M.A.
+  utter_rektor_ketujuh_unsri:
+  - text: Rektor ketujuh Universitas Sriwijaya dipegang oleh Prof. Ir. H. Machmud Hasjim, MME
+  utter_rektor_kedelapan_unsri:
+  - text: Rektor kedelapan Universitas Sriwijaya dipegang oleh Prof. Dr. Ir. H. Zainal Ridho Djafar
+  utter_rektor_kesembilan_unsri:
+  - text: Rektor kesembilan Universitas Sriwijaya dipegang oleh Prof. Dr. Badia Perizade, M.B.A
+  utter_rektor_unsri_saat_ini:
+  - text: Rektor Universitas Sriwijaya saat ini dipegang oleh Prof. Dr. Ir. H. Anis Saggaff, MSCE
+  utter_awal_kedudukan_unsri:
+  - text: Awal berdirinya Universitas Sriwijaya berkedudukan di Jalan Srijaya Negara, Bukit Besar, Palembang
+  utter_tahun_pertama_kegiatan_perkuliahan_indralaya:
+  - text: Kegiatan perkuliahan kampus utama Indralaya Univrsitas Sriwijaya dimulai pada tahun 1995
+  utter_tanggal_diresmikan_kampus_indralaya:
+  - text: Kampus utama Universitas Sriwijaya Indralaya diresmikan pada tanggal 6 Maret 1997 oleh Presideb Soeharto
+  utter_letak_kampus_indralaya_unsri:
+  - text: Kampus utama Universitas Sriwijaya Indralaya terletak di Indralaya, Organ Ilir, Sumatera Selatan
+  utter_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri:
+  - text: Kampus utama Universitas Sriwijaya diresmikan oleh Presiden Soeharto pada tanggal 6 Maret 1997
+  utter_yang_menghadiri_peresmian_kampus_indralaya_unsri:
+  - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dihadiri oleh Civitas Akademika, unsur pemerintahan, dunia usaha, dan tokoh masyarakat di Sumatera Selatan
+  utter_tanda_resmi_kampus_utama_indralaya:
+  - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dilakukan penandatanganan prasasti peresmian Kampus Universitas Sriwijaya oleh Presiden Soeharto sebagai tanda
+  utter_program_pendidikan_unsri:
+  - text: Universitas Sriwijaya memiliki Program Pascasarjana yang menyelenggarakan Pendidikan Diploma Tiga (D3), Program Pendidikan Sarjana (S1), Magister (S2), Doktor (S3), dan Pendidikan Profesi.
+  utter_fakultas_unsri:
+  - text: Di Universitas Sriwijaya terdapat sepuluh fakultas yang diantaranya, Fakultas Ekonomi, Fakultas Hukum, Fakultas Teknik, Fakultas Kedokteran, Fakultas Pertanian, Fakultas Keguruan dan Ilmu Pendidikan, Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Matematika dan Ilmu Pengetahuan Alam, Fakultas Ilmu Komputer, dan Fakultas Kesehatan Masyarakat.
+  utter_bot:
+  - text: Saya adalah BOT yang dibuat menggunakan Framework RASA yang menjelaskan isi buku pedoman akademik UNSRI dari halaman 1-7
+  utter_jurusan_fe:
+  - text: Jurusan / Program Studi yang ada di Fakultas Ekonomi adalah Manajemen (S1), Ekonomi Pembangunan (S1), Akuntansi (S1), Vokasi Akuntansi (D3), VokasiKesekretariatan (D3), Magister Manajemen (S2), Ilmu Ekonomi (S2), Ilmu Manajemen (S2), Ilmu Ekonomi (S3), Manajemen (S3).
+  utter_jurusan_fh:
+  - text: Jurusan / Program Studi yang ada di Fakultas Hukum adalah Ilmu Hukum (S1), Ilmu Hukum (S2), Kenotariatan (S2), Ilmu Hukum (S3).
+  utter_jurusan_ft:
+  - text: Jurusan / Program Studi yang ada di Fakultas Teknik adalah Teknik Sipil (S1), Teknik Pertambangan (S1), Teknik Kimia (S1), Teknik Elektro (S1), Teknik Mesin (S1), Arsitektur (S1), Teknik Geologi (S1), Teknik Kimia (S2), Teknik Sipil (S2), Teknik Mesin (S2), Teknik Pertambangan (S2), Ilmu Teknik (S3).
+  utter_jumlah_jurusan_fe:
+  - text: Jumlah jurusan / program studi di Fakultas Ekonomi adalah 10, yang terdiri dari 3 jurusan dengan program sarjana, 2 jurusan dengan program diploma tiga, 3 jurusan dengan program magister, dan 2 jurusan dengan program doktor
+  utter_jumlah_jurusan_fh:
+  - text: Jumlah jurusan / program studi di Fakultas Hukum adalah 4, yang terdiri dari 1 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktor
+  utter_jumlah_jurusan_ft:
+  - text: Jumlah jurusan / program studi di Fakultas Teknik adalah 12, yang terdiri dari 7 jurusan dengan program sarjana (S1), 4 jurusan dengan program magister, dan 1 jurusan dengan program doktor
+  utter_program_fe:
+  - text: Program / jenjang yang ada di Fakultas Ekonomi adalah Sarjana, Diploma Tiga, Magister, dan Doktor
+  utter_program_fh:
+  - text: Program / jenjang yang ada di Fakultas Hukum adalah Sarjana, Magister, dan Doktor
+  utter_program_ft:
+  - text: Program / jenjang yang ada di Fakultas Teknik adalah Sarjana, Magister, dan Doktor
+  utter_jurusan_fe_program_sarjana:
+  - text: Jurusan di Fakultas Ekonomi dengan program sarjana / jenjang S1 adalah Manajemen, Ekonomi Pembangunan, Akuntansi
+  utter_jurusan_fe_program_diploma_tiga:
+  - text: Jurusan di Fakultas Kedokteran dengan program / jenjang spesialis adalah Vokasi Akuntansi, VokasiKesekretariatan
+  utter_jurusan_fe_program_magister:
+  - text: Jurusan di Fakultas Kedokteran dengan program magister / jenjang S2 adalah Magister Manajemen, Ilmu Ekonomi, Ilmu Manajemen
+  utter_jurusan_fe_program_doktor:
+  - text: Jurusan di Fakultas Kedokteran dengan program doktor / jenjang S3 adalah Ilmu Ekonomi, Manajemen
+  utter_jurusan_fh_program_sarjana:
+  - text: Jurusan di Fakultas Hukum dengan program sarjana / jenjang S1 adalah Ilmu Hukum
+  utter_jurusan_fh_program_magister:
+  - text: Jurusan di Fakultas Pertanian dengan program magister / jenjang S2 adalah Ilmu Hukum, Kenotariatan
+  utter_jurusan_fh_program_doktor:
+  - text: Jurusan di Fakultas Pertanian dengan program doktor / jenjang S3 adalah Ilmu Hukum
+  utter_jurusan_ft_program_sarjana:
+  - text: Jurusan di Fakultas Hukum dengan program sarjana / jenjang S1 adalah Teknik Sipil, Teknik Pertambangan, Teknik Kimia, Teknik Elektro, Teknik Mesin, Arsitektur, Teknik Geologi
+  utter_jurusan_ft_program_magister:
+  - text: Jurusan di Fakultas Pertanian dengan program magister / jenjang S2 adalah Teknik Kimia, Teknik Sipil, Teknik Mesin, Teknik Pertambangan
+  utter_jurusan_ft_program_doktor:
+  - text: Jurusan di Fakultas Pertanian dengan program doktor / jenjang S3 adalah Ilmu Teknik
+  utter_gelar_manajemen:
+  - text: Gelar untuk jurusan / program studi Manajemen adalah Sarjana Ekonomi (S.E.)
+  utter_gelar_ekonomi_pembangunan:
+  - text: Gelar untuk jurusan / program studi Ekonomi Pembangunan adalah Sarjana Ekonomi (S.E.)
+  utter_gelar_akuntansi:
+  - text: Gelar untuk jurusan / program studi Akuntansi adalah Sarjana Ekonomi (S.E.)
+  utter_gelar_vokasi_akuntansi:
+  - text: Gelar untuk jurusan / program studi Vokasi Akuntansi adalah Ahli Madya (A.Md.)
+  utter_gelar_vokasiKesekretariatan:
+  - text: Gelar untuk jurusan / program studi VokasiKesekretariatan adalah Ahli Madya (A.Md.)
+  utter_gelar_magister_manajemen:
+  - text: Gelar untuk jurusan / program studi Ilmu Manajemen adalah Magister Sains (M.M.)
+  utter_gelar_ilmu_ekonomi_magister:
+  - text: Gelar untuk jurusan / program studi Ilmu Ekonomi adalah Magister Sains (M.Si.)
+  utter_gelar_ilmu_manajemen_magister:
+  - text: Gelar untuk jurusan / program studi Ilmu Manajemen adalah Magister Sains (M.Si.)
+  utter_gelar_ilmu_ekonomi_doktor:
+  - text: Gelar untuk jurusan / program studi Ilmu Ekonomi adalah Doktor (Dr.)
+  utter_gelar_manajemen_doktor:
+  - text: Gelar untuk jurusan / program studi Manajemen adalah Doktor (Dr.)
+  utter_gelar_ilmu_hukum_sarjana:
+  - text: Gelar untuk jurusan / program studi Ilmu Hukum adalah Sarjana Hukum (S.H.)
+  utter_gelar_ilmu_hukum_magister:
+  - text: Gelar untuk jurusan / program studi Ilmu Hukum Magister adalah Magister Hukum (M.H.)
+  utter_gelar_kenotariatan:
+  - text: Gelar untuk jurusan / program studi Kenotariatan adalah Magister Kenotariatan (M.Kn.)
+  utter_gelar_ilmu_hukum_doktor:
+  - text: Gelar untuk jurusan / program studi Ilmu Hukum adalah Doktor (Dr.)
+  utter_gelar_teknik_sipil:
+  - text: Gelar untuk jurusan / program studi Teknik Sipil adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_pertambangan:
+  - text: Gelar untuk jurusan / program studi Teknik Pertambangan adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_kimia:
+  - text: Gelar untuk jurusan / program studi Teknik Kimia adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_elektro:
+  - text: Gelar untuk jurusan / program studi Teknik Elektro adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_mesin:
+  - text: Gelar untuk jurusan / program studi Teknik Mesin adalah Sarjana Teknik (S.T.)
+  utter_gelar_arsitektur:
+  - text: Gelar untuk jurusan / program studi Arsitektur adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_geologi:
+  - text: Gelar untuk jurusan / program studi Teknik Geologi adalah Sarjana Teknik (S.T.)
+  utter_gelar_teknik_kimia_magister:
+  - text: Gelar untuk jurusan / program studi Teknik Kimia adalah Magister Teknik (M.T.)
+  utter_gelar_teknik_sipil_magister:
+  - text: Gelar untuk jurusan / program studi Teknik Sipil adalah Magister Teknik (M.T.)
+  utter_gelar_teknik_mesin_magister:
+  - text: Gelar untuk jurusan / program studi Teknik Mesin adalah Magister Teknik (M.T.)
+  utter_gelar_teknik_pertambangan_magister:
+  - text: Gelar untuk jurusan / program studi Teknik Pertambangan adalah Magister Teknik (M.T.)
+  utter_gelar_ilmu_teknik:
+  - text: Gelar untuk jurusan / program studi Ilmu Teknik adalah Doktor (Dr.)
+  utter_jurusan_fk:
+  - text: Jurusan / Program Studi yang ada di Fakultas Kedokteran adalah Pendidikan Dokter (S1), Keperawatan (S1), Kedokteran Gigi (S1), Psikologi (S1), Kesehatan Anak (S1), Bedah (Spesialis), Kesehatan Mata (Spesialis), Penyakit Dalam (Spesialis), Obstetri dan Ginekologi (Spesialis), Patologi Anatomi (Spesialis), Dermatologi dan Venerologi (Spesialis), Neurologi (Spesialis), Telinga Hidung Tenggorok-Kelapa dan Leher (Spesialis), Anestesiologi (Spesialis), Kedokteran Klinis (S2), Ilmu Penyakit Dalam (Subspesialis), dan Ilmu Biodemik (Doktoral)
+  utter_jurusan_fp:
+  - text: Jurusan / Program Studi yang ada di Fakultas Pertanian adalah Agribisnis (S1), Teknik Pertanian (S1), Teknologi Hasil Pertanian (S1), Peternakan (S1), Budidaya Perairan (S1), Ilmu Tanah (S1), Proteksi Tanaman (S1), Agronomi (S1), Teknologi Hasil Perikanan (S1), Agroekoteknologi (S1), Agribisnis (S1), Ilmu Tanaman (S2), dan Ilmu Pertanian (S3)
+  utter_jumlah_jurusan_fk:
+  - text: Jumlah jurusan / program studi di Fakultas Kedokteran adalah 16, yang terdiri dari 10 jurusan dengan program spesialis, 1 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
+  utter_jumlah_jurusan_fp:
+  - text: Jumlah jurusan / program studi di Fakultas Pertanian adalah 13, yang terdiri dari 10 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
+  utter_program_fk:
+  - text: Program / jenjang yang ada di Fakultas Kedokteran adalah Sarjana, Spesialis 1, Magister, Spesialis 2 (Subspesialis), dan Doktor
+  utter_program_fp:
+  - text: Program / jenjang yang ada di Fakultas Pertanian adalah Sarjana, Magister, dan Doktor
+  utter_jurusan_fk_program_sarjana:
+  - text: Jurusan di Fakultas Kedokteran dengan program sarjana / jenjang S1 adalah Pendidikan Dokter, Keperawatan, Kedokteran Gigi, Psikologi, Kesehatan Anak
+  utter_jurusan_fk_program_spesialis:
+  - text: Jurusan di Fakultas Kedokteran dengan program / jenjang spesialis adalah Bedah, Kesehatan Mata, Penyakit Dalam, Obstetri dan Ginekologi, Patologi Anatomi, Dermatologi dan Venerologi, Neurologi, Telinga Hidung Tenggorok-Kelapa dan Leher, Anestesiologi, dan Ilmu Penyakit Dalam
+  utter_jurusan_fk_program_magister:
+  - text: Jurusan di Fakultas Kedokteran dengan program magister / jenjang S2 adalah Kedokteran Klinis
+  utter_jurusan_fk_program_doktoral:
+  - text: Jurusan di Fakultas Kedokteran dengan program doktoral / jenjang S3 adalah Ilmu Biomedik
+  utter_jurusan_fp_program_sarjana:
+  - text: Jurusan di Fakultas Pertanian dengan program sarjana / jenjang S1 adalah Agribisnis, Teknik Pertanian, Teknologi Hasil Pertanian, Peternakan, Budidaya Perairan, Ilmu Tanah, Proteksi Tanaman, Agronomi, Teknologi Hasil Perikanan, dan Agroekoteknologi
+  utter_jurusan_fp_program_magister:
+  - text: Jurusan di Fakultas Pertanian dengan program magister / jenjang S2 adalah Ilmu Tanaman, Agribisnis
+  utter_jurusan_fp_program_doktoral:
+  - text: Jurusan di Fakultas Pertanian dengan program doktoral / jenjang S3 adalah Ilmu Pertanian
+  utter_gelar_pendidikan_dokter:
+  - text: Gelar untuk jurusan / program studi Pendidikan Dokter adalah Sarjana Kedokteran (S.Ked.)
+  utter_gelar_keperawatan:
+  - text: Gelar untuk jurusan / program studi Keperawatan adalah Sarjana Keperawatan (S.Kep.)
+  utter_gelar_kedokteran_gigi:
+  - text: Gelar untuk jurusan / program studi Kedokteran Gigi adalah Sarjana Kedokteran Gigi (SKG)
+  utter_gelar_psikologi:
+  - text: Gelar untuk jurusan / program studi Psikologi adalah Sarjana Psikologi (S.Psi.)
+  utter_gelar_kesehatan_anak:
+  - text: Gelar untuk jurusan / program studi Kesehatan Anak adalah Spesialis Kesehatan Anak (Sp.A.)
+  utter_gelar_bedah:
+  - text: Gelar untuk jurusan / program studi Bedah adalah Spesialis Bedah (Sp.B.)
+  utter_gelar_kesehatan_mata:
+  - text: Gelar untuk jurusan / program studi Kesehatan Mata adalah Spesialis Penyakit Mata (Sp.M.)
+  utter_gelar_penyakit_dalam:
+  - text: Gelar untuk jurusan / program studi Penyakit Dalam adalah Spesialis Penyakit Dalam (Sp.PD.)
+  utter_gelar_obstetri_ginekologi:
+  - text: Gelar untuk jurusan / program studi Obstetri dan Ginekologi adalah Spesialis Obstetri dan Ginekologi (Sp.OG.)
+  utter_gelar_patalogi_anatomi:
+  - text: Gelar untuk jurusan / program studi Patologi Anatomi adalah Spesialis Patologi Anatomi (Sp.PA.)
+  utter_gelar_dermatologi_venerologi:
+  - text: Gelar untuk jurusan / program studi Dermatologi dan Venerologi adalah Spesialis Dermatologi dan Venerologi (Sp.D.V)
+  utter_gelar_neurologi:
+  - text: Gelar untuk jurusan / program studi Neurologi adalah Spesialis Neurologi (Sp.PS)
+  utter_gelar_telinga_hidung_tenggorokan_kepala_leher:
+  - text: Gelar untuk jurusan / program studi Telinga Hidung Tenggorokan-Kepala dan Leher adalah Spesialis THT-KL (Sp.THT-KL)
+  utter_gelar_anestesiologi:
+  - text: Gelar untuk jurusan / program studi Anestesiologi adalah Spesialis Anestesiologi (Sp.An.)
+  utter_gelar_kedokteran_klinis:
+  - text: Gelar untuk jurusan / program studi Kedokteran Klinis adalah Magister Biomedik (M.Biomed.)
+  utter_gelar_ilmu_penyakit_dalam:
+  - text: Gelar untuk jurusan / program studi Ilmu Penyakit Dalam adalah Konsultan Hematologi (SpPD-KHOM), Konsultan Alergi (SpPD-KAI), Konsultan Kardiovaskuler (SpPD-KKV)
+  utter_gelar_ilmu_biomedik:
+  - text: Gelar untuk jurusan / program studi Ilmu Biomedik adalah Doktor
+  utter_gelar_agribisnis:
+  - text: Gelar untuk jurusan / program studi Agribisnis program sarjana / jenjang S1 adalah Sarjana Pertanian (S.P.) sedangkan untuk program magister / jenjang S2 adalah Magister Sains (M.Si.)
+  utter_gelar_teknik_pertanian:
+  - text: 'Gelar untuk jurusan / program studi Teknik Pertanian adalah : Sarjana Teknologi Pertanian (S.TP.)'
+  utter_gelar_teknologi_hasil_pertanian:
+  - text: Gelar untuk jurusan / program studi Teknologi Hasil Pertanian adalah Sarjana Teknologi Pertanian (S.TP.)
+  utter_gelar_peternakan:
+  - text: Gelar untuk jurusan / program studi Peternakan adalah Sarjana Peternakan (S.Pt.)
+  utter_gelar_budidaya_perairan:
+  - text: Gelar untuk jurusan / program studi Budidaya Perairan adalah Sarjana Perikanan (S.Pi)
+  utter_gelar_ilmu_tanah:
+  - text: Gelar untuk jurusan / program studi Ilmu Tanah adalah Sarjana Pertanian (S.P.)
+  utter_gelar_proteksi_tanaman:
+  - text: Gelar untuk jurusan / program studi Proteksi Tanaman adalah Sarjana Pertanian (S.P.)
+  utter_gelar_agronomi:
+  - text: Gelar untuk jurusan / program studi Agronomi adalah Sarjana Pertanian (S.P.)
+  utter_gelar_teknologi_hasil_perikanan:
+  - text: Gelar untuk jurusan / program studi Teknologi Hasil Perikanan adalah Sarjana Perikanan (S.Pi)
+  utter_gelar_agroekoteknologi:
+  - text: Gelar untuk jurusan / program studi Agroekoteknologi adalah Sarjana Pertanian (S.P.)
+  utter_gelar_ilmu_tanaman:
+  - text: Gelar untuk jurusan / program studi Ilmu Tanaman adalah Magister Sains (M.Si.)
+  utter_gelar_ilmu_pertanian:
+  - text: Gelar untuk jurusan / program studi Ilmu Pertanian adalah Doktor (Dr.)
+  utter_gelar_agribisnis_sarjana:
+  - text: Gelar untuk jurusan / program studi agribsinis program sarjana / jenjang S1 adalah Sarjana Pertanian (S.P.)
+  utter_gelar_agribisnis_magister:
+  - text: Gelar untuk jurusan / program studi agribsinis program magister / jenjang S2 adalah Magister Sains (M.Si.)
+  utter_makna_lambang:
+  - text: Lambang Universitas Sriwijaya memiliki arti bahwa Universitas Sriwijaya sebagai milik Bangsa Indonesia yang berfalsafah hidup Pancasila selalu dengan penuh daya dan dinamika meningkatkan ilmu pengetahuan guna memerangi ketidaktahuan yang merupakan penghalang bagi masyarakat Bangsa Indonesia untuk mencapai cita-cita masyarakat adil dan makmur serta dalam ridho Tuhan Yang Maha Esa.
+  utter_bendera:
+  - text: 'Bendera universitas dengan Lambang Universitas Sriwijaya berwarna kuning, berbentuk persegi panjang dengan ukuran panjang berbanding lebar 3 : 2, berwarna dasar kuning dengan kode warna (R = 255 G = 255 B = 0), di tengah-tengahnya terdapat lambang Universitas Sriwijaya'
+  utter_mars:
+  - text: |-
+      Mars Univeritas Sriwijaya
+
+      Hei warga Unsri pahlawan muda
+      Maju bergerak maju (ya maju)
+      Dengan pancasila nyata di dada
+      Bina hidup baru 
+
+      Hei warga Unsri angkatan muda
+      Maju membangun maju (ya maju)
+      Menuju masyarakat adil dan makmur
+      Mengemban ampera
+
+      Di dalam Unsri bersatu padu
+      Pengabdian dan ilmu (dan ilmu)
+      Mengabdi kepada Tuhan Yang Esa
+      Negara dan bangsa
+
+      Hei warga Unsri mari berseru
+      Seruan kudus syahdu (dan syahdu)
+      Dirgahayu Unsri dirgahayulah
+      Selama-lamanya
+  utter_hymne:
+  - text: |-
+      Hymne Univeritas Sriwijaya
+
+      Universitas Sriwijaya
+      Lambang kemajuan bangsaku
+      Dengan falsafah Pancasila
+      Mengabdi kepada ibu pertiwi
+
+      Ilmu alat pengabdian
+      Tuk menerangi alam semesta
+      Dengan semboyan pengabdian
+      Ke arah kejayaan abadi
+
+      Universitas Sriwijaya
+      Sumber ilmu sepanjang masa
+      Membentuk generasi baru
+      Yang penuh semangat untuk mengabdi
+
+      Melati bangsa yang suci
+      Lambang agung keluhuran cipta
+      Dengan rahmat Tuhan Yang Esa
+      Menuju masyarakat adil’ makmur
+  utter_pencipta_mars:
+  - text: Mars Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
+  utter_pencipta_hymne:
+  - text: Hymne Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
+  utter_ide_dibentuk:
+  - text: “ide pertama di bentuknya sebuah perguruan tinggi pada tahun 1950-an”
+  utter_keinginan_masyarakat:
+  - text: “keinginan tersebut secara resmi di kemukakan oleh tokoh masyarakat”
+  utter_kapan_resepsi:
+  - text: “hari kemerdekaan ri 17 agustus 1952”
+  utter_pembentukan_panitia:
+  - text: “di bentuk panitia fakultas sumatera selatan”
+  utter_yayasan_perguruan_tinggi:
+  - text: “di bawah yayasan perguruan tinggi syakyakirti”
+  utter_fakultas_ekonomi:
+  - text: “fakultas ekonomi di bentuk pada tanggal 31 oktober 1953”
+  utter_tokoh_yang_hadir:
+  - text: “dihadiri mr. hadi, sekretaris jenderal kementerian pendidikan pengajaran dan kebudayaan (ppk), drg. m. isa (gubernur sumatera selatan), bambang utoyo (panglima tt ii sriwijaya), dan ali gathmyr (ketua dprd sumatera selatan).”
+  utter_bantuan_keuangan:
+  - text: “penguasa darurat militer teritorial ii sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk yayasan perguruan tinggi syakyakirti di bukit besar”
+  utter_lembaga_bahasa:
+  - text: “sekarang gedung lembaga bahasa di kampus universitas sriwijaya bukit besar, palembang”
+  utter_batu_pertama:
+  - text: “upacara peletakan batu pertama dilakukan pada tanggal 31 oktober 1957”
+  utter_didirikan_fakultas:
+  - text: “di dirkan fakultas hukum dan pengetahuan masyarakat di dirikan pada tanggal 1 november 1957, bertepatan dengan perayaan dies natalis iv fakultas ekonomi”
+  utter_yang_mendatangi_peresmian:
+  - text: “kolonel harun sohar (panglima selaku ketua peperda tt ii / sriwijaya) dan ahmad bastari (gubernur/kepala daerah) sebagai delegasi yang menemui menteri ppk (mr. mohamad yamin)”
+  utter_penetapan_unsri:
+  - text: “berdasarkan peraturan pemerintah no. 42 tahun 1960 tanggal 29 oktober 1960 di tetapkan menjadi universitas sriwijaya”
+  utter_upacara_peresmian:
+  - text: “upacara peresmian dilakukan oleh presiden soekarno tanggal 3 november 1960 dengan acara penandatanganan piagam pendirian”
+  utter_saksi_yang_hadir:
+  - text: “dengan disaksikan oleh menteri ppk (mr. priyono), dan beberapa duta besar negara sahabat”
+  utter_rektor_pertama:
+  - text: “sebagai presiden universitas sriwijaya (sekarang rektor) yang pertama ditunjuk drg. m. isa”
+  utter_jurusan_fe_program_doktoral:
+  - text: Jurusan di Fakultas Kedokteran dengan program doktoral / jenjang S3 adalah Ilmu Ekonomi, Manajemen
+  utter_jurusan_fh_program_doktoral:
+  - text: Jurusan di Fakultas Pertanian dengan program doktoral / jenjang S3 adalah Ilmu Hukum
+  utter_jurusan_ft_program_doktoral:
+  - text: Jurusan di Fakultas Pertanian dengan program doktoral / jenjang S3 adalah Ilmu Teknik
+  utter_gelar_ilmu_ekonomi:
+  - text: Gelar untuk jurusan / program studi Ilmu Ekonomi adalah Magister Sains (M.Si.)
+  utter_gelar_ilmu_manajemen:
+  - text: Gelar untuk jurusan / program studi Ilmu Manajemen adalah Magister Sains (M.Si.)
+  utter_gelar_ilmu_hukum:
+  - text: Gelar untuk jurusan / program studi Ilmu Hukum adalah Sarjana Hukum (S.H.)
+actions: []
+forms: {}
+e2e_actions: []
