@@ -1,2045 +1,1140 @@
 version: "2.0"
 nlu:
-- intent: ide_dibentuk
-  examples: |
-    - kapan ide pertama?
-    - ide pertama?
-    - tahun pencentus?
-    - pencentus
-    - pemikiran
-    - pikiran
-- intent: keinginan_masyarakat
-  examples: |
-    - keinginan siapa?
-    - oleh siapa?
-    - siapa?
-    - berapa orang?
-    - berapa banyak?
-- intent: kapan_resepsi
-  examples: |
-    - kapan di kemukakan?
-    - kapan di ketahui?
-    - tanggal berapakah di kemukakan?
-    - pada tahun berapakah?
-    - kemukakan
-- intent: pembentukan_panitia
-  examples: |
-    - apa yang di bentuk?
-    - apa yang di bentuk pertama kali?
-    - membentuk?
-    - kesepakatan membentuk?
-    - sebuah kesepakatan untuk membentuk
-    - kesepakatan membentuk
-    - di wujudkan guna membentuk
-    - wujudkan
-- intent: yayasan_perguruan_tinggi
-  examples: |
-    - di bawah yayasan
-    - yayasan
-    - perguruan tinggi
-    - tinggi
-    - naungan siapa
-- intent: fakultas_ekonomi
-  examples: |
-    - kapan di bentuk
-    - fakultas ekonomi
-    - ekonomi
-    - fakultas
-    - sekolah tinggi
-    - jurusan
-- intent: tokoh_yang_hadir
-  examples: |
-    - yang hadir
-    - siapa saja yang hadir
-    - datang
-    - menyambut
-    - meriahkan
-    - ikut serta
-- intent: bantuan_keuangan
-  examples: |
-    - bantuan
-    - memberi bantuan
-    - dana
-    - uang
-    - keuangan
-    - gedung
-    - permanen
-- intent: lembaga_bahasa
-  examples: |
-    - bahasa inggris
-    - kelas inggris
-    - tempat belajar
-    - les bahasa inggris
-    - lokasi lembaga bahasa
-    - alamat lengkap
-    - kampus
-    - kampus palembang
-    - bukit besar
-- intent: batu_pertama
-  examples: |
-    - kapan upacara peletakan batu
-    - batu pertama
-    - kapan batu pertama di letakan
-    - batu
-    - upacara batu
-    - bangunan pertama
-- intent: didirikan_fakultas
-  examples: |
-    - kapan di dirikanya fakultas hukum
-    - fakultas hukum berdiri
-    - perayaan dies natalis
-    - fakultas hukum dan fakultas pengetahuan masyarakat kapan di dirikan
-- intent: yang_mendatangani_peresmian
-  examples: |
-    - siapa yang hadir saat peresmian fakultas hukum
-    - fakultas hukum dan pengetahuan masyarakat
-    - tokoh masyarakat sumatera selatan yang datang
-- intent: penetapan_unsri
-  examples: |
-    - kapan berubah menjadi unsri
-    - universitas sriwijaya
-    - di tetapkanya menjadi universitas pada tanggal?
-    - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
-- intent: upacara_persemian
-  examples: |
-    - siapa yang meresmikan unsri
-    - yang menandatangani piagam adalah
-    - pada tanggal berapa soekarno meresmikan unsri
-    - piagam pendirian di tandatangani oleh siapa
-- intent: saksi_yang_hadir
-  examples: |
-    - siapa yang menyaksikan peresmian
-    - saksi yang datang
-    - yang melihat adalah
-    - mentri yang datang
-- intent: rektor_pertama
-  examples: |
-    - siapa rektor pertama
-    - presiden mahasiswa pertama
-    - yang menjadi rektor pertama adalah?
-- intent: i_banyak_pergantian_rektor_unsri
-  examples: |
-    - berapa jumlah pergantian rektor unsri
-    - jumlah pergantian rektor unsri
-    - banyak pergantian rektor unsri
-    - berapa banyak pergantian rektor unsri
-    - jumlah pergantian rektor
-    - banyak pergantian rektor
-    - jumlah pergantian rektor di unsri
-    - banyak pergantian rektor di unsri
-    - berapa jumlah pergantian rektor universitas sriwijaya
-    - jumlah pergantian rektor universitas sriwijaya
-    - banyak pergantian rektor universitas sriwijaya
-    - berapa banyak pergantian rektor universitas sriwijaya
-    - jumlah pergantian rektor di universitas sriwijaya
-    - banyak pergantian rektor di universitas sriwijaya
-- intent: i_rektor_pertama_unsri
-  examples: |
-    - siapa rektor pertama unsri
-    - siapa rektor pertama universitas sriwijaya
-    - siapa rektor pertama
-    - rektor pertama unsri
-    - rektor pertama universitas sriwijaya
-    - siapakah rektor pertama unsri
-    - siapakah rektor pertama universitas sriwijaya
-    - siapakah rektor pertama
-    - siapa rektor pertama unsri ?
-- intent: i_rektor_kedua_unsri
-  examples: |
-    - siapa rektor kedua unsri
-    - siapa rektor kedua universitas sriwijaya
-    - siapa rektor kedua
-    - rektor kedua unsri
-    - rektor kedua universitas sriwijaya
-    - siapakah rektor kedua unsri
-    - siapakah rektor kedua universitas sriwijaya
-    - siapakah rektor kedua
-- intent: i_rektor_ketiga_unsri
-  examples: |
-    - siapa rektor ketiga unsri
-    - siapa rektor ketiga universitas sriwijaya
-    - siapa rektor ketiga
-    - rektor ketiga unsri
-    - rektor ketiga universitas sriwijaya
-    - siapakah rektor ketiga unsri
-    - siapakah rektor ketiga universitas sriwijaya
-    - siapakah rektor ketiga
-- intent: i_rektor_keempat_unsri
-  examples: |
-    - siapa rektor keempat unsri
-    - siapa rektor keempat universitas sriwijaya
-    - siapa rektor keempat
-    - rektor keempat unsri
-    - rektor keempat universitas sriwijaya
-    - siapakah rektor keempat unsri
-    - siapakah rektor keempat universitas sriwijaya
-    - siapakah rektor keempat
-- intent: i_rektor_kelima_unsri
-  examples: |
-    - siapa rektor kelima unsri
-    - siapa rektor kelima universitas sriwijaya
-    - siapa rektor kelima
-    - rektor kelima unsri
-    - rektor kelima universitas sriwijaya
-    - siapakah rektor kelima unsri
-    - siapakah rektor kelima universitas sriwijaya
-    - siapakah rektor kelima
-- intent: i_rektor_keenam_unsri
-  examples: |
-    - siapa rektor keenam unsri
-    - siapa rektor keenam universitas sriwijaya
-    - siapa rektor keenam
-    - rektor keenam unsri
-    - rektor keenam universitas sriwijaya
-    - siapakah rektor keenam unsri
-    - siapakah rektor keenam universitas sriwijaya
-    - siapakah rektor keenam
-- intent: i_rektor_ketujuh_unsri
-  examples: |
-    - siapa rektor ketujuh unsri
-    - siapa rektor ketujuh universitas sriwijaya
-    - siapa rektor ketujuh
-    - rektor ketujuh unsri
-    - rektor ketujuh universitas sriwijaya
-    - siapakah rektor ketujuh unsri
-    - siapakah rektor ketujuh universitas sriwijaya
-    - siapakah rektor ketujuh
-- intent: i_rektor_kedelapan_unsri
-  examples: |
-    - siapa rektor kedelepan unsri
-    - siapa rektor kedelepan universitas sriwijaya
-    - siapa rektor kedelepan
-    - rektor kedelepan unsri
-    - rektor kedelepan universitas sriwijaya
-    - siapakah rektor kedelepan unsri
-    - siapakah rektor kedelepan universitas sriwijaya
-    - siapakah rektor kedelepan
-- intent: i_rektor_kesembilan_unsri
-  examples: |
-    - siapa rektor kesembilan unsri
-    - siapa rektor kesembilan universitas sriwijaya
-    - siapa rektor kesembilan
-    - rektor kesembilan unsri
-    - rektor kesembilan universitas sriwijaya
-    - siapakah rektor kesembilan unsri
-    - siapakah rektor kesembilan universitas sriwijaya
-    - siapakah rektor kesembilan
-- intent: i_rektor_unsri_saat_ini
-  examples: |
-    - siapa rektor unsri saat ini
-    - siapa rektor universitas sriwijaya saat ini
-    - siapa rektor saat ini
-    - rektor unsri saat ini
-    - rektor universitas sriwijaya saat ini
-    - siapakah rektor unsri saat ini
-    - siapakah rektor universitas sriwijaya saat ini
-    - siapakah rektor saat ini
-    - siapa rektor kesepuluh unsri
-    - siapa rektor kesepuluh universitas sriwijaya
-    - siapa rektor kesepuluh
-    - rektor kesepuluh unsri
-    - rektor kesepuluh universitas sriwijaya
-    - siapakah rektor kesepuluh unsri
-    - siapakah rektor kesepuluh universitas sriwijaya
-    - siapakah rektor kesepuluh
-- intent: i_awal_kedudukan_unsri
-  examples: |
-    - dimanakah awal kedudukan unsri
-    - dimana awal kedudukan unsri
-    - awal kedudukan unsri
-    - kedudukan unsri pertama kali
-    - dimanakah kedudukan unsri pertama kali
-    - dimana kedudukan unsri pertama kali
-- intent: i_tahun_pertama_kegiatan_perkuliahan_indralaya
-  examples: |
-    - tahun berapakah pertama kali kegiatan perkuliahan di kampus indralaya dilaksanakan
-    - tahun berapa pertama kali kegiatan perkuliahan kampus indralaya dilaksanakan
-    - tahun pertama kegiatan perkuliahan indralaya
-- intent: i_tanggal_diresmikan_kampus_indralaya
-  examples: |
-    - tanggal berapakah kampus indralaya diresmikan
-    - tanggal berapa kampus indralaya diresmikan
-    - tanggal diresmikan kampus indralaya
-- intent: i_letak_kampus_indralaya_unsri
-  examples: |
-    - dimanakah letak kampus indralaya
-    - dimana letak kampus indralaya
-    - letak kampus indralaya
-- intent: i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
-  examples: |
-    - siapakah yang meresmikan kampus indralaya ?
-    - siapa yang meresmikan kampus indralaya
-    - yang meresmikan kampus indralaya
-- intent: i_yang_menghadiri_peresmian_kampus_indralaya_unsri
-  examples: |
-    - siapa sajakah yang menghadiri peresmian kampus indralaya ?
-    - siapa saja yang menghadiri peresmian kampus indralaya ?
-    - yang menghadiri peresmian kampus indralaya
-- intent: i_tanda_resmi_kampus_utama_indralaya
-  examples: |
-    - apakah tanda resmi kampus indralaya
-    - apa tanda resmi kampus indralaya
-    - tanda resmi kampus indralaya
-- intent: i_jumlah_fakultas_unsri
-  examples: |
-    - berapakah jumlah fakultas unsri
-    - berapa jumlah fakultas unsri
-    - jumlah fakultas unsri
-    - banyak fakultas unsri
-    - berapa banyak fakultas unsri
-    - berapakah banyak fakultas unsri
-    - berapakah jumlah fakultas
-    - berapa jumlah fakultas
-    - jumlah fakultas
-    - banyak fakultas
-    - berapa banyak fakultas
-    - berapakah banyak fakultas
-- intent: i_program_pendidikan_unsri
-  examples: |
-    - apa saja program pendidikan di unsri
-    - program prndidikan unsri
-    - apa sajakah program pendidikan di unsri
-- intent: i_fakultas_unsri
-  examples: |
-    - Apa saja fakultas yang ada di unsri
-    - fakultas yang ada di unsri
-    - apa sajakah fakultas yang ada di unsri
-- intent: i_unsur_lambang_universitas_sriwijaya
-  examples: |
-    - terdiri dari apa sajakah unsur lambang universitas sriwijaya?
-    - terdiri dari apa sajakah unsur lambang unsri?
-    - ada apa saja pada lambang universitas sriwijaya?
-    - ada apa saja pada lambang unsri?
-    - apa saja unsur lambang universitas sriwijaya?
-    - apa saja unsur lambang unsri?
-    - apa unsur lambang universitas sriwijaya?
-    - apa unsur lambang unsri?
-    - unsur lambang universitas sriwijaya
-    - apa unsur lambang unsri
-    - unsur lambang unsri
-- intent: i_warna_mahkota_bunga_melati
-  examples: |
-    - apa warna dari mahkota bunga melati pada lambang universitas sriwijaya?
-    - apa warna dari mahkota bunga melati pada lambang unsri?
-    - warna dari mahkota bunga melati universitas sriwijaya
-    - warna dari mahkota bunga melati unsri
-    - warna mahkota bunga melati universitas sriwijaya
-    - warna mahkota bunga melati unsri
-    - apa warna bunga melati
-    - warna bunga melati
-- intent: i_warna_mahkota_bunga_seruni
-  examples: |
-    - apa warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa warna dari mahkota bunga seruni pada lambang unsri?
-    - warna dari mahkota bunga seruni universitas sriwijaya
-    - warna dari mahkota bunga seruni unsri
-    - warna mahkota bunga seruni universitas sriwijaya
-    - warna mahkota bunga seruni unsri
-    - apa warna bunga seruni
-    - warna bunga seruni
-- intent: i_warna_cahaya_mahkota_bunga_seruni
-  examples: |
-    - apa warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa warna dari cahaya mahkota bunga seruni pada lambang unsri?
-    - warna dari cahaya mahkota bunga seruni universitas sriwijaya
-    - warna dari cahaya mahkota bunga seruni unsri
-    - warna cahaya mahkota bunga seruni universitas sriwijaya
-    - warna cahaya mahkota bunga seruni unsri
-    - apa warna cahaya bunga seruni
-    - warna cahaya bunga seruni
-- intent: i_warna_Kata_universitas_sriwijaya
-  examples: |
-    - apa warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
-    - apa warna dari kata universitas sriwijaya pada lambang unsri?
-    - warna dari kata universitas sriwijaya
-    - apa warna kata universitas sriwijaya
-    - warna kata universitas sriwijaya
-    - apa warna kata unsri
-    - warna kata unsri
-- intent: i_warna_motto_ilmu_alat_pengabdian
-  examples: |
-    - apa warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
-    - apa warna dari motto ilmu alat pengabdian pada lambang unsri?
-    - warna dari motto ilmu alat pengabdian universitas sriwijaya
-    - warna dari motto ilmu alat pengabdian unsri
-    - warna motto ilmu alat pengabdian universitas sriwijaya
-    - warna motto ilmu alat pengabdian unsri
-    - apa warna motto ilmu alat pengabdian
-    - warna motto ilmu alat pengabdian
-- intent: i_keterangan_mahkota_bunga_melati
-  examples: |
-    - apa keterangan warna dari mahkota bunga melati pada lambang universitas sriwijaya?
-    - apa keterangan warna dari mahkota bunga melati pada lambang unsri?
-    - keterangan warna dari mahkota bunga melati universitas sriwijaya
-    - keterangan warna dari mahkota bunga melati unsri
-    - keterangan warna mahkota bunga melati universitas sriwijaya
-    - keterangan warna mahkota bunga melati unsri
-    - apa arti warna dari mahkota bunga melati pada lambang universitas sriwijaya?
-    - apa arti warna dari mahkota bunga melati pada lambang unsri?
-    - arti warna dari mahkota bunga melati universitas sriwijaya
-    - arti warna dari mahkota bunga melati unsri
-    - arti warna mahkota bunga melati universitas sriwijaya
-    - arti warna mahkota bunga melati unsri
-    - apa penjelasan warna dari mahkota bunga melati pada lambang universitas sriwijaya?
-    - apa penjelasan warna dari mahkota bunga melati pada lambang unsri?
-    - penjelasan warna dari mahkota bunga melati universitas sriwijaya
-    - penjelasan warna dari mahkota bunga melati unsri
-    - penjelasan warna mahkota bunga melati universitas sriwijaya
-    - penjelasan warna mahkota bunga melati unsri
-    - mahkota bunga melati
-    - bunga melati
-- intent: i_keterangan_mahkota_bunga_seruni
-  examples: |
-    - apa keterangan warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa keterangan warna dari mahkota bunga seruni pada lambang unsri?
-    - keterangan warna dari mahkota bunga seruni universitas sriwijaya
-    - keterangan warna dari mahkota bunga seruni unsri
-    - keterangan warna mahkota bunga seruni universitas sriwijaya
-    - keterangan warna mahkota bunga seruni unsri
-    - apa arti warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa arti warna dari mahkota bunga seruni pada lambang unsri?
-    - arti warna dari mahkota bunga seruni universitas sriwijaya
-    - arti warna dari mahkota bunga seruni unsri
-    - arti warna mahkota bunga seruni universitas sriwijaya
-    - arti warna mahkota bunga seruni unsri
-    - apa penjelasan warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa penjelasan warna dari mahkota bunga seruni pada lambang unsri?
-    - penjelasan warna dari mahkota bunga seruni universitas sriwijaya
-    - penjelasan warna dari mahkota bunga seruni unsri
-    - penjelasan warna mahkota bunga seruni universitas sriwijaya
-    - penjelasan warna mahkota bunga seruni unsri
-    - mahkota bunga seruni
-    - bunga seruni
-- intent: i_keterangan_cahaya_mahkota_bunga_seruni
-  examples: |
-    - apa keterangan warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa keterangan warna dari cahaya mahkota bunga seruni pada lambang unsri?
-    - keterangan warna dari cahaya mahkota bunga seruni universitas sriwijaya
-    - keterangan warna dari cahaya mahkota bunga seruni unsri
-    - keterangan warna cahaya mahkota bunga seruni universitas sriwijaya
-    - keterangan warna cahaya mahkota bunga seruni unsri
-    - apa arti warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa arti warna dari cahaya mahkota bunga seruni pada lambang unsri?
-    - arti warna dari cahaya mahkota bunga seruni universitas sriwijaya
-    - arti warna dari cahaya mahkota bunga seruni unsri
-    - arti warna cahaya mahkota bunga seruni universitas sriwijaya
-    - arti warna cahaya mahkota bunga seruni unsri
-    - apa penjelasan warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
-    - apa penjelasan warna dari cahaya mahkota bunga seruni pada lambang unsri?
-    - penjelasan warna dari cahaya mahkota bunga seruni universitas sriwijaya
-    - penjelasan warna dari cahaya mahkota bunga seruni unsri
-    - penjelasan warna cahaya mahkota bunga seruni universitas sriwijaya
-    - penjelasan warna cahaya mahkota bunga seruni unsri
-    - cahaya mahkota bunga seruni
-    - cahaya bunga seruni
-- intent: i_keterangan_Kata_universitas_sriwijaya
-  examples: |
-    - apa keterangan warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
-    - apa keterangan warna dari kata universitas sriwijaya pada lambang unsri?
-    - keterangan warna dari kata universitas sriwijaya
-    - keterangan warna kata universitas sriwijaya
-    - apa arti warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
-    - apa arti warna dari kata universitas sriwijaya pada lambang unsri?
-    - arti warna dari kata universitas sriwijaya
-    - arti warna kata universitas sriwijaya
-    - apa penjelasan warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
-    - apa penjelasan warna dari kata universitas sriwijaya pada lambang unsri?
-    - penjelasan warna dari kata universitas sriwijaya
-    - penjelasan warna kata universitas sriwijaya
-- intent: i_keterangan_motto_ilmu_alat_pengabdian
-  examples: |
-    - apa keterangan warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
-    - apa keterangan warna dari motto ilmu alat pengabdian pada lambang unsri?
-    - keterangan warna dari motto ilmu alat pengabdian universitas sriwijaya
-    - keterangan warna dari motto ilmu alat pengabdian unsri
-    - keterangan warna motto ilmu alat pengabdian universitas sriwijaya
-    - keterangan warna motto ilmu alat pengabdian unsri
-    - apa arti warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
-    - apa arti warna dari motto ilmu alat pengabdian pada lambang unsri?
-    - arti warna dari motto ilmu alat pengabdian universitas sriwijaya
-    - arti warna dari motto ilmu alat pengabdian unsri
-    - arti warna motto ilmu alat pengabdian universitas sriwijaya
-    - arti warna motto ilmu alat pengabdian unsri
-    - apa penjelasan warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
-    - apa penjelasan warna dari motto ilmu alat pengabdian pada lambang unsri?
-    - penjelasan warna dari motto ilmu alat pengabdian universitas sriwijaya
-    - penjelasan warna dari motto ilmu alat pengabdian unsri
-    - penjelasan warna motto ilmu alat pengabdian universitas sriwijaya
-    - penjelasan warna motto ilmu alat pengabdian unsri
-    - motto ilmu alat pengabdian
-    - ilmu alat pengabdian
-    - motto universitas sriwijaya
-    - motto
-- intent: makna_lambang
-  examples: |
-    - makna lambang
-    - makna logo
-    - arti logo
-    - arti lambang
-    - makna lambang Unsri
-    - makna lambang Universitas Sriwijaya
-    - makna logo Unsri
-    - makna logo Universitas Sriwijaya
-    - arti lambang Unsri
-    - arti lambang Universitas Sriwijaya
-    - arti logo Unsri
-    - arti logo Universitas Sriwijaya
-    - apa makna lambang ?
-    - apa makna lambang Unsri ?
-    - apa makna logo ?
-    - apa makna logo Unsri ?
-    - apa makna logo Universitas Sriwijaya?
-    - apa arti lambang ?
-    - apa arti lambang Unsri ?
-    - apa arti lambang Universitas Sriwijaya ?
-    - apa arti logo ?
-    - apa arti logo Unsri ?
-    - apa arti logo Universitas Sriwijaya ?
-    - apa arti lambang unsri ?
-    - apa arti logo unsri ?
-- intent: bendera
-  examples: |
-    - bendera Unsri
-    - bendera Universitas Sriwijaya
-    - gambar bendera Unsri
-    - gambar bendera Universitas Sriwijaya
-    - foto bendera Unsri
-    - foto bendera Universitas Sriwijaya
-- intent: mars
-  examples: |
-    - mars Unsri
-    - mars Universitas Sriwijaya
-    - apa mars Unsri ?
-    - apa mars Universitas Sriwijaya ?
-    - isi mars Unsri
-    - isi mars Universitas Sriwijaya
-- intent: hymne
-  examples: |
-    - hymne Unsri
-    - hymne Universitas Sriwijaya
-    - apa hymne Unsri ?
-    - apa hymne Universitas Sriwijaya ?
-    - isi hymne Unsri
-    - isi hymne Universitas Sriwijaya
-- intent: pencipta_mars
-  examples: |
-    - siapa pencipta mars Unsri ?
-    - siapa pencipta mars Universitas Sriwijaya ?
-    - pencipta mars Unsri
-    - pencipta mars Universitas Sriwijaya
-    - pembuat mars Unsri
-    - pembuat mars Universitas Sriwijaya
-    - pengaransemen mars Unsri
-    - pengaransemen mars Universitas Sriwijaya
-    - siapa yang menciptakan mars Unsri ?
-    - siapa yang menciptakan mars Universitas Sriwijaya ?
-    - siapa yang membuat mars Unsri ?
-    - siapa yang membuat mars Universitas Sriwijaya ?
-    - siapa yang mengaransemenkan mars Unsri ?
-    - siapa yang mengaransemenkan mars Universitas Sriwijaya ?
-- intent: pencipta_hymne
-  examples: |
-    - siapa pencipta hymne Unsri ?
-    - siapa pencipta hymne Universitas Sriwijaya ?
-    - pencipta hymne Unsri
-    - pencipta hymne Universitas Sriwijaya
-    - pembuat hymne Unsri
-    - pembuat hymne Universitas Sriwijaya
-    - pengaransemen hymne Unsri
-    - pengaransemen hymne Universitas Sriwijaya
-    - siapa yang menciptakan hymne Unsri ?
-    - siapa yang menciptakan hymne Universitas Sriwijaya ?
-    - siapa yang membuat hymne Unsri ?
-    - siapa yang membuat hymne Universitas Sriwijaya ?
-    - siapa yang mengaransemenkan hymne Unsri ?
-    - siapa yang mengaransemenkan hymne Universitas Sriwijaya ?
-- intent: jenis_kampus_unsri
-  examples: |
-    - kampus universitas sriwijaya ada dimana saja
-    - dimana lokasi kampus universitas sriwijaya
-    - apa saja kampus universitas sriwijaya
-    - kampus unsri ada dimana saja
-    - dimana lokasi kampus unsri
-    - apa saja kampus unsri
-- intent: lokasi_kampus_indralaya
-  examples: |
-    - kampus universitas sriwijaya indralaya ada dimana
-    - dimana lokasi kampus universitas sriwijaya indralaya
-    - kampus universitas sriwijaya indralaya berada dimana
-    - seberapa jauh kampus universitas sriwijaya indralaya
-    - kampus unsri indralaya ada dimana
-    - dimana lokasi kampus unsri indralaya
-    - kampus unsri indralaya berada dimana
-    - seberapa jauh kampus unsri indralaya
-    - dimana lokasi unsri indralaya ?
-- intent: lokasi_kampus_fakultas_kedokteran
-  examples: |
-    - kampus fakultas kedokteran universitas sriwijaya ada dimana
-    - dimana lokasi kampus fakultas kedokteran universitas sriwijaya
-    - kampus fakultas kedokteran universitas sriwijaya berada dimana
-    - kampus fakultas kedokteran unsri ada dimana
-    - dimana lokasi kampus fakultas kedokteran unsri
-    - kampus fakultas kedokteran unsri berada dimana
-- intent: lokasi_kampus_fkip
-  examples: |
-    - kampus fkip universitas sriwijaya ada dimana
-    - dimana lokasi kampus fkip universitas sriwijaya
-    - kampus fkip universitas sriwijaya berada dimana
-    - kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya ada dimana
-    - dimana lokasi kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya
-    - kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya berada dimana
-    - kampus fkip unsri ada dimana
-    - dimana lokasi kampus fkip unsri
-    - kampus fkip unsri berada dimana
-    - kampus fakultas keguruan dan ilmu pendidikan unsri ada dimana
-    - dimana lokasi kampus fakultas keguruan dan ilmu pendidikan unsri
-    - kampus fakultas keguruan dan ilmu pendidikan unsri berada dimana
-- intent: lokasi_kampus_pascasarjana
-  examples: |
-    - dimana lokasi kampus program pascasarjana universitas sriwijaya
-    - kampus program pascasarjana universitas sriwijaya berada dimana
-    - dimana lokasi kampus fakultas pertanian universitas sriwijaya
-    - kampus fakultas pertanian universitas sriwijaya berada dimana
-    - dimana lokasi kampus program pascasarjana unsri
-    - kampus program pascasarjana unsri berada dimana
-    - dimana lokasi kampus fakultas pertanian unsri
-    - kampus fakultas pertanian unsri berada dimana
-- intent: fasilitas_kampus_indralaya
-  examples: |
-    - apa saja fasilitas pada kampus universitas sriwijaya indralaya
-    - fasilitas apa yang terdapat pada kampus universitas sriwijaya indralaya
-    - apa saja fasilitas yang tersedia di kampus universitas sriwijaya indralaya
-    - apa saja fasilitas pada kampus unsri indralaya
-    - fasilitas apa yang terdapat pada kampus unsri indralaya
-    - apa saja fasilitas yang tersedia di kampus unsri indralaya
-- intent: fasilitas_pendidikan_kampus_indralaya
-  examples: |
-    - apa saja fasilitas pendidikan pada kampus universitas sriwijaya indralaya
-    - fasilitas pendidikan apa yang terdapat pada kampus universitas sriwijaya indralaya
-    - apa saja fasilitas pendidikan yang tersedia di kampus universitas sriwijaya indralaya
-    - apa saja fakultas pada kampus universitas sriwijaya indralaya
-    - apa saja fakultas yang tersedia di kampus universitas sriwijaya indralaya
-    - apa saja fasilitas pendidikan pada kampus unsri indralaya
-    - fasilitas pendidikan apa yang terdapat pada kampus unsri indralaya
-    - apa saja fasilitas pendidikan yang tersedia di kampus unsri indralaya
-    - apa saja fakultas pada kampus unsri indralaya
-    - apa saja fakultas yang tersedia di kampus unsri indralaya
-- intent: lokasi_luas_kebun_percobaan
-  examples: |
-    - berapa luas kebun percobaan universitas sriwijaya
-    - kebun percobaan universitas sriwijaya ada dimana
-    - dimana lokasi kebun percobaan universitas sriwijaya
-    - kebun percobaan universitas sriwijaya berada dimana
-    - berapa luas kebun percobaan unsri
-    - kebun percobaan unsri ada dimana
-    - dimana lokasi kebun percobaan unsri
-    - kebun percobaan unsri berada dimana
-- intent: jumlah_fakultas_unsri
-  examples: |
-    - berapa jumlah fakultas universitas sriwijaya
-    - apa saja program pendidikan universitas sriwijaya
-    - program pendidikan apa saja yang terdapat pada universitas sriwijaya
-    - program pendidikan apa saja yang tersedia di universitas sriwijaya
-    - berapa jumlah fakultas unsri
-    - apa saja program pendidikan unsri
-    - program pendidikan apa saja yang terdapat pada unsri
-    - program pendidikan apa saja yang tersedia di unsri
-- intent: jurusan_fe
-  examples: |
-    - apa saja jurusan yang ada di fakultas ekonomi
-    - apa saja jurusan yang ada di fe
-    - apa saja program studi yang ada di fakultas ekonomi
-    - apa saja program studi yang ada di fe
-    - jurusan yang ada di fakultas ekonomi
-    - jurusan yang ada di fe
-    - program studi yang ada di fakultas ekonomi
-    - program studi yang ada di fe
-    - jurusan di fakultas ekonomi
-    - program studi di fakultas ekonomi
-    - program studi di fe
-    - jurusan fakultas ekonomi
-    - jurusan fe
-    - program studi fakultas ekonomi
-    - program studi fe
-- intent: jurusan_fh
-  examples: |
-    - apa saja jurusan yang ada di fakultas hukum
-    - apa saja jurusan yang ada di fh
-    - apa saja program studi yang ada di fakultas hukum
-    - apa saja program studi yang ada di fh
-    - jurusan yang ada di fakultas hukum
-    - jurusan yang ada di fh
-    - program studi yang ada di fakultas hukum
-    - program studi yang ada di fh
-    - jurusan di fakultas hukum
-    - program studi di fakultas hukum
-    - program studi di fh
-    - jurusan fakultas hukum
-    - jurusan fh
-    - program studi fakultas hukum
-    - program studi fh
-- intent: jurusan_ft
-  examples: |
-    - apa saja jurusan yang ada di fakultas teknik
-    - apa saja jurusan yang ada di ft
-    - apa saja program studi yang ada di fakultas teknik
-    - apa saja program studi yang ada di ft
-    - jurusan yang ada di fakultas teknik
-    - jurusan yang ada di ft
-    - program studi yang ada di fakultas teknik
-    - program studi yang ada di ft
-    - jurusan di fakultas teknik
-    - program studi di fakultas teknik
-    - program studi di ft
-    - jurusan fakultas teknik
-    - jurusan ft
-    - program studi fakultas teknik
-    - program studi ft
-- intent: jumlah_jurusan_fe
-  examples: |
-    - ada berapa jumlah jurusan yang ada di fakultas ekonomi
-    - ada berapa jumlah jurusan yang ada di fe
-    - ada berapa jumlah jurusan di fakultas ekonomi
-    - ada berapa jumlah jurusan di fe
-    - berapa jumlah jurusan yang ada di fakultas ekonomi
-    - berapa jumlah jurusan yang ada di fe
-    - berapa jumlah jurusan di fakultas ekonomi
-    - berapa jumlah jurusan di fe
-    - jumlah jurusan yang ada di fakultas ekonomi
-    - jumlah jurusan yang ada di fe
-    - jumlah jurusan di fakultas ekonomi
-    - jumlah jurusan di fe
-    - jumlah jurusan fakultas ekonomi
-    - jumlah jurusan fe
-    - ada berapa jumlah program studi yang ada di fakultas ekonomi
-    - ada berapa jumlah program studi yang ada di fe
-    - ada berapa jumlah program studi di fakultas ekonomi
-    - ada berapa jumlah program studi di fe
-    - berapa jumlah program studi yang ada di fakultas ekonomi
-    - berapa jumlah program studi yang ada di fe
-    - berapa jumlah program studi di fakultas ekonomi
-    - berapa jumlah program studi di fe
-    - jumlah program studi yang ada di fakultas ekonomi
-    - jumlah program studi yang ada di fe
-    - jumlah program studi di fakultas ekonomi
-    - jumlah program studi di fe
-    - jumlah program studi fakultas ekonomi
-    - jumlah program studi fe
-- intent: jumlah_jurusan_fh
-  examples: |
-    - ada berapa jumlah jurusan yang ada di fakultas hukum
-    - ada berapa jumlah jurusan yang ada di fh
-    - ada berapa jumlah jurusan di fakultas hukum
-    - ada berapa jumlah jurusan di fh
-    - berapa jumlah jurusan yang ada di fakultas hukum
-    - berapa jumlah jurusan yang ada di fh
-    - berapa jumlah jurusan di fakultas hukum
-    - berapa jumlah jurusan di fh
-    - jumlah jurusan yang ada di fakultas hukum
-    - jumlah jurusan yang ada di fh
-    - jumlah jurusan di fakultas hukum
-    - jumlah jurusan di fh
-    - jumlah jurusan fakultas hukum
-    - jumlah jurusan fh
-    - ada berapa jumlah program studi yang ada di fakultas hukum
-    - ada berapa jumlah program studi yang ada di fh
-    - ada berapa jumlah program studi di fakultas hukum
-    - ada berapa jumlah program studi di fh
-    - berapa jumlah program studi yang ada di fakultas hukum
-    - berapa jumlah program studi yang ada di fh
-    - berapa jumlah program studi di fakultas hukum
-    - berapa jumlah program studi di fh
-    - jumlah program studi yang ada di fakultas hukum
-    - jumlah program studi yang ada di fh
-    - jumlah program studi di fakultas hukum
-    - jumlah program studi di fh
-    - jumlah program studi fakultas hukum
-    - jumlah program studi fh
-- intent: jumlah_jurusan_ft
-  examples: |
-    - ada berapa jumlah jurusan yang ada di fakultas teknik
-    - ada berapa jumlah jurusan yang ada di ft
-    - ada berapa jumlah jurusan di fakultas teknik
-    - ada berapa jumlah jurusan di ft
-    - berapa jumlah jurusan yang ada di fakultas teknik
-    - berapa jumlah jurusan yang ada di ft
-    - berapa jumlah jurusan di fakultas teknik
-    - berapa jumlah jurusan di ft
-    - jumlah jurusan yang ada di fakultas teknik
-    - jumlah jurusan yang ada di ft
-    - jumlah jurusan di fakultas teknik
-    - jumlah jurusan di ft
-    - jumlah jurusan fakultas teknik
-    - jumlah jurusan ft
-    - ada berapa jumlah program studi yang ada di fakultas teknik
-    - ada berapa jumlah program studi yang ada di ft
-    - ada berapa jumlah program studi di fakultas teknik
-    - ada berapa jumlah program studi di ft
-    - berapa jumlah program studi yang ada di fakultas teknik
-    - berapa jumlah program studi yang ada di ft
-    - berapa jumlah program studi di fakultas teknik
-    - berapa jumlah program studi di ft
-    - jumlah program studi yang ada di fakultas teknik
-    - jumlah program studi yang ada di ft
-    - jumlah program studi di fakultas teknik
-    - jumlah program studi di ft
-    - jumlah program studi fakultas teknik
-    - jumlah program studi ft
-- intent: program_fe
-  examples: |
-    - program apa saja yang ada di fakultas ekonomi
-    - program apa saja yang ada di fe
-    - program yang ada di fakultas ekonomi
-    - program yang ada di fe
-    - program di fakultas ekonomi
-    - program di fe
-    - program fakultas ekonomi
-    - program fe
-    - jenjang apa saja yang ada di fakultas ekonomi
-    - jenjang apa saja yang ada di fe
-    - jenjang yang ada di fakultas ekonomi
-    - jenjang yang ada di fe
-    - jenjang di fakultas ekonomi
-    - jenjang di fe
-    - jenjang fakultas ekonomi
-    - jenjang fe
-- intent: program_fh
-  examples: |
-    - program apa saja yang ada di fakultas hukum
-    - program apa saja yang ada di fh
-    - program yang ada di fakultas hukum
-    - program yang ada di fh
-    - program di fakultas hukum
-    - program di fh
-    - program fakultas hukum
-    - program fh
-    - jenjang apa saja yang ada di fakultas hukum
-    - jenjang apa saja yang ada di fh
-    - jenjang yang ada di fakultas hukum
-    - jenjang yang ada di fh
-    - jenjang di fakultas hukum
-    - jenjang di fh
-    - jenjang fakultas hukum
-    - jenjang fh
-- intent: program_ft
-  examples: |
-    - program apa saja yang ada di fakultas teknik
-    - program apa saja yang ada di ft
-    - program yang ada di fakultas teknik
-    - program yang ada di ft
-    - program di fakultas teknik
-    - program di ft
-    - program fakultas teknik
-    - program ft
-    - jenjang apa saja yang ada di fakultas teknik
-    - jenjang apa saja yang ada di ft
-    - jenjang yang ada di fakultas teknik
-    - jenjang yang ada di ft
-    - jenjang di fakultas teknik
-    - jenjang di ft
-    - jenjang fakultas teknik
-    - jenjang ft
-- intent: jurusan_fe_program_diploma_tiga
-  examples: |
-    - apa saja jurusan yang ada di fakultas ekonomi dengan program diploma tiga
-    - apa saja jurusan yang ada di fakultas ekonomi program diploma tiga
-    - apa saja jurusan yang ada di fe dengan program diploma tiga
-    - apa saja jurusan yang ada di fe program diploma tiga
-    - jurusan yang ada di fakultas ekonomi dengan program diploma tiga
-    - jurusan yang ada di fakultas ekonomi program diploma tiga
-    - jurusan yang ada di fe dengan program diploma tiga
-    - jurusan yang ada di fe program diploma tiga
-    - jurusan di fakultas ekonomi dengan program diploma tiga
-    - jurusan di fakultas ekonomi program diploma tiga
-    - jurusan di fe dengan program diploma tiga
-    - jurusan di fe program diploma tiga
-    - jurusan fakultas ekonomi dengan program diploma tiga
-    - jurusan fakultas ekonomi program diploma tiga
-    - jurusan fe dengan program diploma tiga
-    - jurusan fe program diploma tiga
-    - apa saja jurusan yang ada di fakultas ekonomi dengan jenjang D3
-    - apa saja jurusan yang ada di fakultas ekonomi jenjang D3
-    - apa saja jurusan yang ada di fe dengan jenjang D3
-    - apa saja jurusan yang ada di fe jenjang D3
-    - jurusan yang ada di fakultas ekonomi dengan jenjang D3
-    - jurusan yang ada di fakultas ekonomi jenjang D3
-    - jurusan yang ada di fe dengan jenjang D3
-    - jurusan yang ada di fe jenjang D3
-    - jurusan di fakultas ekonomi dengan jenjang D3
-    - jurusan di fakultas ekonomi jenjang D3
-    - jurusan di fe dengan jenjang D3
-    - jurusan di fe jenjang D3
-    - jurusan fakultas ekonomi dengan jenjang D3
-    - jurusan fakultas ekonomi jenjang D3
-    - jurusan fe dengan jenjang D3
-    - jurusan fe jenjang D3
-- intent: jurusan_fe_program_sarjana
-  examples: |
-    - apa saja jurusan yang ada di fakultas ekonomi dengan program sarjana
-    - apa saja jurusan yang ada di fakultas ekonomi program sarjana
-    - apa saja jurusan yang ada di fe dengan program sarjana
-    - apa saja jurusan yang ada di fe program sarjana
-    - jurusan yang ada di fakultas ekonomi dengan program sarjana
-    - jurusan yang ada di fakultas ekonomi program sarjana
-    - jurusan yang ada di fe dengan program sarjana
-    - jurusan yang ada di fe program sarjana
-    - jurusan di fakultas ekonomi dengan program sarjana
-    - jurusan di fakultas ekonomi program sarjana
-    - jurusan di fe dengan program sarjana
-    - jurusan di fe program sarjana
-    - jurusan fakultas ekonomi dengan program sarjana
-    - jurusan fakultas ekonomi program sarjana
-    - jurusan fe dengan program sarjana
-    - jurusan fe program sarjana
-    - apa saja jurusan yang ada di fakultas ekonomi dengan jenjang S1
-    - apa saja jurusan yang ada di fakultas ekonomi jenjang S1
-    - apa saja jurusan yang ada di fe dengan jenjang S1
-    - apa saja jurusan yang ada di fe jenjang S1
-    - jurusan yang ada di fakultas ekonomi dengan jenjang S1
-    - jurusan yang ada di fakultas ekonomi jenjang S1
-    - jurusan yang ada di fe dengan jenjang S1
-    - jurusan yang ada di fe jenjang S1
-    - jurusan di fakultas ekonomi dengan jenjang S1
-    - jurusan di fakultas ekonomi jenjang S1
-    - jurusan di fe dengan jenjang S1
-    - jurusan di fe jenjang S1
-    - jurusan fakultas ekonomi dengan jenjang S1
-    - jurusan fakultas ekonomi jenjang S1
-    - jurusan fe dengan jenjang S1
-    - jurusan fe jenjang S1
-- intent: jurusan_fh_program_sarjana
-  examples: |
-    - apa saja jurusan yang ada di fakultas hukum dengan program sarjana
-    - apa saja jurusan yang ada di fakultas hukum program sarjana
-    - apa saja jurusan yang ada di fh dengan program sarjana
-    - apa saja jurusan yang ada di fh program sarjana
-    - jurusan yang ada di fakultas hukum dengan program sarjana
-    - jurusan yang ada di fakultas hukum program sarjana
-    - jurusan yang ada di fh dengan program sarjana
-    - jurusan yang ada di fh program sarjana
-    - jurusan di fakultas hukum dengan program sarjana
-    - jurusan di fakultas hukum program sarjana
-    - jurusan di fh dengan program sarjana
-    - jurusan di fh program sarjana
-    - jurusan fakultas hukum dengan program sarjana
-    - jurusan fakultas hukum program sarjana
-    - jurusan fh dengan program sarjana
-    - jurusan fh program sarjana
-    - apa saja jurusan yang ada di fakultas hukum dengan jenjang S1
-    - apa saja jurusan yang ada di fakultas hukum jenjang S1
-    - apa saja jurusan yang ada di fh dengan jenjang S1
-    - apa saja jurusan yang ada di fh jenjang S1
-    - jurusan yang ada di fakultas hukum dengan jenjang S1
-    - jurusan yang ada di fakultas hukum jenjang S1
-    - jurusan yang ada di fh dengan jenjang S1
-    - jurusan yang ada di fh jenjang S1
-    - jurusan di fakultas hukum dengan jenjang S1
-    - jurusan di fakultas hukum jenjang S1
-    - jurusan di fh dengan jenjang S1
-    - jurusan di fh jenjang S1
-    - jurusan fakultas hukum dengan jenjang S1
-    - jurusan fakultas hukum jenjang S1
-    - jurusan fh dengan jenjang S1
-    - jurusan fh jenjang S1
-- intent: jurusan_ft_program_sarjana
-  examples: |
-    - apa saja jurusan yang ada di fakultas teknik dengan program sarjana
-    - apa saja jurusan yang ada di fakultas teknik program sarjana
-    - apa saja jurusan yang ada di ft dengan program sarjana
-    - apa saja jurusan yang ada di ft program sarjana
-    - jurusan yang ada di fakultas teknik dengan program sarjana
-    - jurusan yang ada di fakultas teknik program sarjana
-    - jurusan yang ada di ft dengan program sarjana
-    - jurusan yang ada di ft program sarjana
-    - jurusan di fakultas teknik dengan program sarjana
-    - jurusan di fakultas teknik program sarjana
-    - jurusan di ft dengan program sarjana
-    - jurusan di ft program sarjana
-    - jurusan fakultas teknik dengan program sarjana
-    - jurusan fakultas teknik program sarjana
-    - jurusan ft dengan program sarjana
-    - jurusan ft program sarjana
-    - apa saja jurusan yang ada di fakultas teknik dengan jenjang S1
-    - apa saja jurusan yang ada di fakultas teknik jenjang S1
-    - apa saja jurusan yang ada di ft dengan jenjang S1
-    - apa saja jurusan yang ada di ft jenjang S1
-    - jurusan yang ada di fakultas teknik dengan jenjang S1
-    - jurusan yang ada di fakultas teknik jenjang S1
-    - jurusan yang ada di ft dengan jenjang S1
-    - jurusan yang ada di ft jenjang S1
-    - jurusan di fakultas teknik dengan jenjang S1
-    - jurusan di fakultas teknik jenjang S1
-    - jurusan di ft dengan jenjang S1
-    - jurusan di ft jenjang S1
-    - jurusan fakultas teknik dengan jenjang S1
-    - jurusan fakultas teknik jenjang S1
-    - jurusan ft dengan jenjang S1
-    - jurusan ft jenjang S1
-- intent: jurusan_fe_program_magister
-  examples: |
-    - apa saja jurusan yang ada di fakultas ekonomi dengan program magister
-    - apa saja jurusan yang ada di fakultas ekonomi program magister
-    - apa saja jurusan yang ada di fe dengan program magister
-    - apa saja jurusan yang ada di fe program magister
-    - jurusan yang ada di fakultas ekonomi dengan program magister
-    - jurusan yang ada di fakultas ekonomi program magister
-    - jurusan yang ada di fe dengan program magister
-    - jurusan yang ada di fe program magister
-    - jurusan di fakultas ekonomi dengan program magister
-    - jurusan di fakultas ekonomi program magister
-    - jurusan di fe dengan program magister
-    - jurusan di fe program magister
-    - jurusan fakultas ekonomi dengan program magister
-    - jurusan fakultas ekonomi program magister
-    - jurusan fe dengan program magister
-    - jurusan fe program magister
-    - apa saja jurusan yang ada di fakultas ekonomi dengan jenjang S2
-    - apa saja jurusan yang ada di fakultas ekonomi jenjang S2
-    - apa saja jurusan yang ada di fe dengan jenjang S2
-    - apa saja jurusan yang ada di fe jenjang S2
-    - jurusan yang ada di fakultas ekonomi dengan jenjang S2
-    - jurusan yang ada di fakultas ekonomi jenjang S2
-    - jurusan yang ada di fe dengan jenjang S2
-    - jurusan yang ada di fe jenjang S2
-    - jurusan di fakultas ekonomi dengan jenjang S2
-    - jurusan di fakultas ekonomi jenjang S2
-    - jurusan di fe dengan jenjang S2
-    - jurusan di fe jenjang S2
-    - jurusan fakultas ekonomi dengan jenjang S2
-    - jurusan fakultas ekonomi jenjang S2
-    - jurusan fe dengan jenjang S2
-    - jurusan fe jenjang S2
-- intent: jurusan_fh_program_magister
-  examples: |
-    - apa saja jurusan yang ada di fakultas hukum dengan program magister
-    - apa saja jurusan yang ada di fakultas hukum program magister
-    - apa saja jurusan yang ada di fh dengan program magister
-    - apa saja jurusan yang ada di fh program magister
-    - jurusan yang ada di fakultas hukum dengan program magister
-    - jurusan yang ada di fakultas hukum program magister
-    - jurusan yang ada di fh dengan program magister
-    - jurusan yang ada di fh program magister
-    - jurusan di fakultas hukum dengan program magister
-    - jurusan di fakultas hukum program magister
-    - jurusan di fh dengan program magister
-    - jurusan di fh program magister
-    - jurusan fakultas hukum dengan program magister
-    - jurusan fakultas hukum program magister
-    - jurusan fh dengan program magister
-    - jurusan fh program magister
-    - apa saja jurusan yang ada di fakultas hukum dengan jenjang S2
-    - apa saja jurusan yang ada di fakultas hukum jenjang S2
-    - apa saja jurusan yang ada di fh dengan jenjang S2
-    - apa saja jurusan yang ada di fh jenjang S2
-    - jurusan yang ada di fakultas hukum dengan jenjang S2
-    - jurusan yang ada di fakultas hukum jenjang S2
-    - jurusan yang ada di fh dengan jenjang S2
-    - jurusan yang ada di fh jenjang S2
-    - jurusan di fakultas hukum dengan jenjang S2
-    - jurusan di fakultas hukum jenjang S2
-    - jurusan di fh dengan jenjang S2
-    - jurusan di fh jenjang S2
-    - jurusan fakultas hukum dengan jenjang S2
-    - jurusan fakultas hukum jenjang S2
-    - jurusan fh dengan jenjang S2
-    - jurusan fh jenjang S2
-- intent: jurusan_ft_program_magister
-  examples: |
-    - apa saja jurusan yang ada di fakultas teknik dengan program magister
-    - apa saja jurusan yang ada di fakultas teknik program magister
-    - apa saja jurusan yang ada di ft dengan program magister
-    - apa saja jurusan yang ada di ft program magister
-    - jurusan yang ada di fakultas teknik dengan program magister
-    - jurusan yang ada di fakultas teknik program magister
-    - jurusan yang ada di ft dengan program magister
-    - jurusan yang ada di ft program magister
-    - jurusan di fakultas teknik dengan program magister
-    - jurusan di fakultas teknik program magister
-    - jurusan di ft dengan program magister
-    - jurusan di ft program magister
-    - jurusan fakultas teknik dengan program magister
-    - jurusan fakultas teknik program magister
-    - jurusan ft dengan program magister
-    - jurusan ft program magister
-    - apa saja jurusan yang ada di fakultas teknik dengan jenjang S2
-    - apa saja jurusan yang ada di fakultas teknik jenjang S2
-    - apa saja jurusan yang ada di ft dengan jenjang S2
-    - apa saja jurusan yang ada di ft jenjang S2
-    - jurusan yang ada di fakultas teknik dengan jenjang S2
-    - jurusan yang ada di fakultas teknik jenjang S2
-    - jurusan yang ada di ft dengan jenjang S2
-    - jurusan yang ada di ft jenjang S2
-    - jurusan di fakultas teknik dengan jenjang S2
-    - jurusan di fakultas teknik jenjang S2
-    - jurusan di ft dengan jenjang S2
-    - jurusan di ft jenjang S2
-    - jurusan fakultas teknik dengan jenjang S2
-    - jurusan fakultas teknik jenjang S2
-    - jurusan ft dengan jenjang S2
-    - jurusan ft jenjang S2
-- intent: jurusan_fe_program_doktor
-  examples: |
-    - apa saja jurusan yang ada di fakultas ekonomi dengan program doktor
-    - apa saja jurusan yang ada di fakultas ekonomi program doktor
-    - apa saja jurusan yang ada di fe dengan program doktor
-    - apa saja jurusan yang ada di fe program doktor
-    - jurusan yang ada di fakultas ekonomi dengan program doktor
-    - jurusan yang ada di fakultas ekonomi program doktor
-    - jurusan yang ada di fe dengan program doktor
-    - jurusan yang ada di fe program doktor
-    - jurusan di fakultas ekonomi dengan program doktor
-    - jurusan di fakultas ekonomi program doktor
-    - jurusan di fe dengan program doktor
-    - jurusan di fe program doktor
-    - jurusan fakultas ekonomi dengan program doktor
-    - jurusan fakultas ekonomi program doktor
-    - jurusan fe dengan program doktor
-    - jurusan fe program doktor
-    - apa saja jurusan yang ada di fakultas ekonomi dengan jenjang S3
-    - apa saja jurusan yang ada di fakultas ekonomi jenjang S3
-    - apa saja jurusan yang ada di fe dengan jenjang S3
-    - apa saja jurusan yang ada di fe jenjang S3
-    - jurusan yang ada di fakultas ekonomi dengan jenjang S3
-    - jurusan yang ada di fakultas ekonomi jenjang S3
-    - jurusan yang ada di fe dengan jenjang S3
-    - jurusan yang ada di fe jenjang S3
-    - jurusan di fakultas ekonomi dengan jenjang S3
-    - jurusan di fakultas ekonomi jenjang S3
-    - jurusan di fe dengan jenjang S3
-    - jurusan di fe jenjang S3
-    - jurusan fakultas ekonomi dengan jenjang S3
-    - jurusan fakultas ekonomi jenjang S3
-    - jurusan fe dengan jenjang S3
-    - jurusan fe jenjang S3
-- intent: jurusan_fh_program_doktor
-  examples: |
-    - apa saja jurusan yang ada di fakultas hakim dengan program doktor
-    - apa saja jurusan yang ada di fakultas hakim program doktor
-    - apa saja jurusan yang ada di fh dengan program doktor
-    - apa saja jurusan yang ada di fh program doktor
-    - jurusan yang ada di fakultas hakim dengan program doktor
-    - jurusan yang ada di fakultas hakim program doktor
-    - jurusan yang ada di fh dengan program doktor
-    - jurusan yang ada di fh program doktor
-    - jurusan di fakultas hakim dengan program doktor
-    - jurusan di fakultas hakim program doktor
-    - jurusan di fh dengan program doktor
-    - jurusan di fh program doktor
-    - jurusan fakultas hakim dengan program doktor
-    - jurusan fakultas hakim program doktor
-    - jurusan fh dengan program doktor
-    - jurusan fh program doktor
-    - apa saja jurusan yang ada di fakultas hakim dengan jenjang S3
-    - apa saja jurusan yang ada di fakultas hakim jenjang S3
-    - apa saja jurusan yang ada di fh dengan jenjang S3
-    - apa saja jurusan yang ada di fh jenjang S3
-    - jurusan yang ada di fakultas hakim dengan jenjang S3
-    - jurusan yang ada di fakultas hakim jenjang S3
-    - jurusan yang ada di fh dengan jenjang S3
-    - jurusan yang ada di fh jenjang S3
-    - jurusan di fakultas hakim dengan jenjang S3
-    - jurusan di fakultas hakim jenjang S3
-    - jurusan di fh dengan jenjang S3
-    - jurusan di fh jenjang S3
-    - jurusan fakultas hakim dengan jenjang S3
-    - jurusan fakultas hakim jenjang S3
-    - jurusan fh dengan jenjang S3
-    - jurusan fh jenjang S3
-- intent: jurusan_ft_program_doktor
-  examples: |
-    - apa saja jurusan yang ada di fakultas teknik dengan program doktor
-    - apa saja jurusan yang ada di fakultas teknik program doktor
-    - apa saja jurusan yang ada di ft dengan program doktor
-    - apa saja jurusan yang ada di ft program doktor
-    - jurusan yang ada di fakultas teknik dengan program doktor
-    - jurusan yang ada di fakultas teknik program doktor
-    - jurusan yang ada di ft dengan program doktor
-    - jurusan yang ada di ft program doktor
-    - jurusan di fakultas teknik dengan program doktor
-    - jurusan di fakultas teknik program doktor
-    - jurusan di ft dengan program doktor
-    - jurusan di ft program doktor
-    - jurusan fakultas teknik dengan program doktor
-    - jurusan fakultas teknik program doktor
-    - jurusan ft dengan program doktor
-    - jurusan ft program doktor
-    - apa saja jurusan yang ada di fakultas teknik dengan jenjang S3
-    - apa saja jurusan yang ada di fakultas teknik jenjang S3
-    - apa saja jurusan yang ada di ft dengan jenjang S3
-    - apa saja jurusan yang ada di ft jenjang S3
-    - jurusan yang ada di fakultas teknik dengan jenjang S3
-    - jurusan yang ada di fakultas teknik jenjang S3
-    - jurusan yang ada di ft dengan jenjang S3
-    - jurusan yang ada di ft jenjang S3
-    - jurusan di fakultas teknik dengan jenjang S3
-    - jurusan di fakultas teknik jenjang S3
-    - jurusan di ft dengan jenjang S3
-    - jurusan di ft jenjang S3
-    - jurusan fakultas teknik dengan jenjang S3
-    - jurusan fakultas teknik jenjang S3
-    - jurusan ft dengan jenjang S3
-    - jurusan ft jenjang S3
-- intent: gelar_manajemen
-  examples: |
-    - apa gelar untuk jurusan manajemen
-    - apa gelar untuk program studi manajemen
-    - gelar jurusan manajemen
-    - gelar program studi manajemen
-    - gelar manajemen
-- intent: gelar_ekonomi_pembangunan
-  examples: |
-    - apa gelar untuk jurusan ekonomi pembangunan
-    - apa gelar untuk program studi ekonomi pembangunan
-    - gelar jurusan ekonomi pembangunan
-    - gelar program studi ekonomi pembangunan
-    - gelar ekonomi pembangunan
-- intent: gelar_akuntansi
-  examples: |
-    - apa gelar untuk jurusan akuntansi
-    - apa gelar untuk program studi akuntansi
-    - gelar jurusan akuntansi
-    - gelar program studi akuntansi
-    - gelar akuntansi
-- intent: gelar_vokasi_akuntansi
-  examples: |
-    - apa gelar untuk jurusan vokasi akuntansi
-    - apa gelar untuk program studi vokasi akuntansi
-    - gelar jurusan vokasi akuntansi
-    - gelar program studi vokasi akuntansi
-    - gelar vokasi akuntansi
-- intent: gelar_vokasiKesekretariatan
-  examples: |
-    - apa gelar untuk jurusan vokasiKesekretariatan
-    - apa gelar untuk program studi vokasiKesekretariatan
-    - gelar jurusan vokasiKesekretariatan
-    - gelar program studi vokasiKesekretariatan
-    - gelar vokasiKesekretariatan
-- intent: gelar_magister_manajemen
-  examples: |
-    - apa gelar untuk jurusan magister manajemen
-    - apa gelar untuk program studi magister manajemen
-    - gelar jurusan magister manajemen
-    - gelar program studi magister manajemen
-    - gelar magister manajemen
-- intent: gelar_ilmu_ekonomi_magister
-  examples: |
-    - apa gelar untuk jurusan ilmu ekonomi magister
-    - apa gelar untuk program studi ilmu ekonomi magister
-    - gelar jurusan ilmu ekonomi magister
-    - gelar program studi ilmu ekonomi magister
-    - gelar ilmu ekonomi magister
-- intent: gelar_ilmu_manajemen_magister
-  examples: |
-    - apa gelar untuk jurusan ilmu manajemen magister
-    - apa gelar untuk program studi ilmu manajemen magister
-    - gelar jurusan ilmu manajemen magister
-    - gelar program studi ilmu manajemen magister
-    - gelar ilmu manajemen magister
-- intent: gelar_ilmu_ekonomi_doktor
-  examples: |
-    - apa gelar untuk jurusan ilmu ekonomi doktor
-    - apa gelar untuk program studi ilmu ekonomi doktor
-    - gelar jurusan ilmu ekonomi doktor
-    - gelar program studi ilmu ekonomi doktor
-    - gelar ilmu ekonomi doktor
-- intent: gelar_manajemen_doktor
-  examples: |
-    - apa gelar untuk jurusan manajemen doktor
-    - apa gelar untuk program studi manajemen doktor
-    - gelar jurusan manajemen doktor
-    - gelar program studi manajemen doktor
-    - gelar manajemen doktor
-- intent: gelar_ilmu_hukum_sarjana
-  examples: |
-    - apa gelar untuk jurusan ilmu hukum sarjana
-    - apa gelar untuk program studi ilmu hukum sarjana
-    - gelar jurusan ilmu hukum sarjana
-    - gelar program studi ilmu hukum sarjana
-    - gelar ilmu hukum sarjana
-- intent: gelar_ilmu_hukum_magister
-  examples: |
-    - apa gelar untuk jurusan ilmu hukum magister
-    - apa gelar untuk program studi ilmu magister
-    - gelar jurusan ilmu hukum magister
-    - gelar program studi ilmu hukum magister
-    - gelar ilmu hukum magister
-- intent: gelar_kenotariatan
-  examples: |
-    - apa gelar untuk jurusan kenotariatan
-    - apa gelar untuk program studi kenotariatan
-    - gelar jurusan kenotariatan
-    - gelar program studi kenotariatan
-    - gelar kenotariatan
-- intent: gelar_ilmu_hukum_doktor
-  examples: |
-    - apa gelar untuk jurusan ilmu hukum doktor
-    - apa gelar untuk program studi ilmu doktor
-    - gelar jurusan ilmu hukum doktor
-    - gelar program studi ilmu hukum doktor
-    - gelar ilmu hukum doktor
-- intent: gelar_teknik_sipil
-  examples: |
-    - apa gelar untuk jurusan teknik sipil
-    - apa gelar untuk program studi teknik sipil
-    - gelar jurusan teknik sipil
-    - gelar program studi teknik sipil
-    - gelar teknik sipil
-- intent: gelar_teknik_pertambangan
-  examples: |
-    - apa gelar untuk jurusan teknik pertambangan
-    - apa gelar untuk program studi teknik pertambangan
-    - gelar jurusan teknik pertambangan
-    - gelar program studi teknik pertambangan
-    - gelar teknik pertambangan
-- intent: gelar_teknik_kimia
-  examples: |
-    - apa gelar untuk jurusan teknik kimia
-    - apa gelar untuk program studi teknik kimia
-    - gelar jurusan teknik kimia
-    - gelar program studi teknik kimia
-    - gelar teknik kimia
-- intent: gelar_teknik_elektro
-  examples: |
-    - apa gelar untuk jurusan teknik elektro
-    - apa gelar untuk program studi teknik elektro
-    - gelar jurusan teknik elektro
-    - gelar program studi teknik elektro
-    - gelar teknik elektro
-- intent: gelar_teknik_mesin
-  examples: |
-    - apa gelar untuk jurusan teknik mesin
-    - apa gelar untuk program studi teknik mesin
-    - gelar jurusan teknik mesin
-    - gelar program studi teknik mesin
-    - gelar teknik mesin
-- intent: gelar_arsitektur
-  examples: |
-    - apa gelar untuk jurusan arsitektur
-    - apa gelar untuk program studi arsitektur
-    - gelar jurusan arsitektur
-    - gelar program studi arsitektur
-    - gelar arsitektur
-- intent: gelar_teknik_geologi
-  examples: |
-    - apa gelar untuk jurusan teknik geologi
-    - apa gelar untuk program studi teknik geologi
-    - gelar jurusan teknik geologi
-    - gelar program studi teknik geologi
-    - gelar teknik geologi
-- intent: gelar_teknik_kimia_magister
-  examples: |
-    - apa gelar untuk jurusan teknik kimia magister
-    - apa gelar untuk program studi teknik kimia magister
-    - gelar jurusan teknik kimia magister
-    - gelar program studi teknik kimia magister
-    - gelar teknik kimia magister
-- intent: gelar_teknik_sipil_magister
-  examples: |
-    - apa gelar untuk jurusan teknik sipil magister
-    - apa gelar untuk program studi teknik sipil magister
-    - gelar jurusan teknik sipil magister
-    - gelar program studi teknik sipil magister
-    - gelar teknik sipil magister
-- intent: gelar_teknik_mesin_magister
-  examples: |
-    - apa gelar untuk jurusan teknik mesin magister
-    - apa gelar untuk program studi teknik mesin magister
-    - gelar jurusan teknik mesin magister
-    - gelar program studi teknik mesin magister
-    - gelar teknik mesin magister
-- intent: gelar_teknik_pertambangan_magister
-  examples: |
-    - apa gelar untuk jurusan teknik pertambangan magister
-    - apa gelar untuk program studi teknik pertambangan magister
-    - gelar jurusan teknik pertambangan magister
-    - gelar program studi teknik pertambangan magister
-    - gelar teknik pertambangan magister
-- intent: gelar_ilmu_teknik
-  examples: |
-    - apa gelar untuk jurusan ilmu teknik
-    - apa gelar untuk program studi ilmu teknik
-    - gelar jurusan ilmu teknik
-    - gelar program studi ilmu teknik
-    - gelar ilmu teknik
-- intent: jurusan_fk
-  examples: |
-    - apa saja jurusan yang ada di fakultas kedokteran
-    - apa saja jurusan yang ada di fk
-    - apa saja program studi yang ada di fakultas kedokteran
-    - apa saja program studi yang ada di fk
-    - jurusan yang ada di fakultas kedokteran
-    - jurusan yang ada di fk
-    - program studi yang ada di fakultas kedokteran
-    - program studi yang ada di fk
-    - jurusan di fakultas kedokteran
-    - program studi di fakultas kedokteran
-    - program studi di fk
-    - jurusan fakultas kedokteran
-    - jurusan fk
-    - program studi fakultas kedokteran
-    - program studi fk
-- intent: jurusan_fp
-  examples: |
-    - apa saja jurusan yang ada di fakultas pertanian
-    - apa saja jurusan yang ada di fp
-    - apa saja program studi yang ada di fakultas pertanian
-    - apa saja program studi yang ada di fp
-    - jurusan yang ada di fakultas pertanian
-    - jurusan yang ada di fp
-    - program studi yang ada di fakultas pertanian
-    - program studi yang ada di fp
-    - jurusan di fakultas pertanian
-    - program studi di fakultas pertanian
-    - program studi di fp
-    - jurusan fakultas pertanian
-    - jurusan fp
-    - program studi fakultas pertanian
-    - program studi fp
-- intent: jumlah_jurusan_fk
-  examples: |
-    - ada berapa jumlah jurusan yang ada di fakultas kedokteran
-    - ada berapa jumlah jurusan yang ada di fk
-    - ada berapa jumlah jurusan di fakultas kedokteran
-    - ada berapa jumlah jurusan di fk
-    - berapa jumlah jurusan yang ada di fakultas kedokteran
-    - berapa jumlah jurusan yang ada di fk
-    - berapa jumlah jurusan di fakultas kedokteran
-    - berapa jumlah jurusan di fk
-    - jumlah jurusan yang ada di fakultas kedokteran
-    - jumlah jurusan yang ada di fk
-    - jumlah jurusan di fakultas kedokteran
-    - jumlah jurusan di fk
-    - jumlah jurusan fakultas kedokteran
-    - jumlah jurusan fk
-    - ada berapa jumlah program studi yang ada di fakultas kedokteran
-    - ada berapa jumlah program studi yang ada di fk
-    - ada berapa jumlah program studi di fakultas kedokteran
-    - ada berapa jumlah program studi di fk
-    - berapa jumlah program studi yang ada di fakultas kedokteran
-    - berapa jumlah program studi yang ada di fk
-    - berapa jumlah program studi di fakultas kedokteran
-    - berapa jumlah program studi di fk
-    - jumlah program studi yang ada di fakultas kedokteran
-    - jumlah program studi yang ada di fk
-    - jumlah program studi di fakultas kedokteran
-    - jumlah program studi di fk
-    - jumlah program studi fakultas kedokteran
-    - jumlah program studi fk
-- intent: jumlah_jurusan_fp
-  examples: |
-    - ada berapa jumlah jurusan yang ada di fakultas pertanian
-    - ada berapa jumlah jurusan yang ada di fp
-    - ada berapa jumlah jurusan di fakultas pertanian
-    - ada berapa jumlah jurusan di fp
-    - berapa jumlah jurusan yang ada di fakultas pertanian
-    - berapa jumlah jurusan yang ada di fp
-    - berapa jumlah jurusan di fakultas pertanian
-    - berapa jumlah jurusan di fp
-    - jumlah jurusan yang ada di fakultas pertanian
-    - jumlah jurusan yang ada di fp
-    - jumlah jurusan di fakultas pertanian
-    - jumlah jurusan di fp
-    - jumlah jurusan fakultas pertanian
-    - jumlah jurusan fp
-    - ada berapa jumlah program studi yang ada di fakultas pertanian
-    - ada berapa jumlah program studi yang ada di fp
-    - ada berapa jumlah program studi di fakultas pertanian
-    - ada berapa jumlah program studi di fp
-    - berapa jumlah program studi yang ada di fakultas pertanian
-    - berapa jumlah program studi yang ada di fp
-    - berapa jumlah program studi di fakultas pertanian
-    - berapa jumlah program studi di fp
-    - jumlah program studi yang ada di fakultas pertanian
-    - jumlah program studi yang ada di fp
-    - jumlah program studi di fakultas pertanian
-    - jumlah program studi di fp
-    - jumlah program studi fakultas pertanian
-    - jumlah program studi fp
-- intent: program_fk
-  examples: |
-    - program apa saja yang ada di fakultas kedokteran
-    - program apa saja yang ada di fk
-    - program yang ada di fakultas kedokteran
-    - program yang ada di fk
-    - program di fakultas kedokteran
-    - program di fk
-    - program fakultas kedokteran
-    - program fk
-    - jenjang apa saja yang ada di fakultas kedokteran
-    - jenjang apa saja yang ada di fk
-    - jenjang yang ada di fakultas kedokteran
-    - jenjang yang ada di fk
-    - jenjang di fakultas kedokteran
-    - jenjang di fk
-    - jenjang fakultas kedokteran
-    - jenjang fk
-- intent: program_fp
-  examples: |
-    - program apa saja yang ada di fakultas pertanian
-    - program apa saja yang ada di fp
-    - program yang ada di fakultas pertanian
-    - program yang ada di fp
-    - program di fakultas pertanian
-    - program di fp
-    - program fakultas pertanian
-    - program fp
-    - jenjang apa saja yang ada di fakultas pertanian
-    - jenjang apa saja yang ada di fp
-    - jenjang yang ada di fakultas pertanian
-    - jenjang yang ada di fp
-    - jenjang di fakultas pertanian
-    - jenjang di fp
-    - jenjang fakultas pertanian
-    - jenjang fp
-- intent: jurusan_fk_program_sarjana
-  examples: |
-    - apa saja jurusan yang ada di fakultas kedokteran dengan program sarjana
-    - apa saja jurusan yang ada di fakultas kedokteran program sarjana
-    - apa saja jurusan yang ada di fk dengan program sarjana
-    - apa saja jurusan yang ada di fk program sarjana
-    - jurusan yang ada di fakultas kedokteran dengan program sarjana
-    - jurusan yang ada di fakultas kedokteran program sarjana
-    - jurusan yang ada di fk dengan program sarjana
-    - jurusan yang ada di fk program sarjana
-    - jurusan di fakultas kedokteran dengan program sarjana
-    - jurusan di fakultas kedokteran program sarjana
-    - jurusan di fk dengan program sarjana
-    - jurusan di fk program sarjana
-    - jurusan fakultas kedokteran dengan program sarjana
-    - jurusan fakultas kedokteran program sarjana
-    - jurusan fk dengan program sarjana
-    - jurusan fk program sarjana
-    - apa saja jurusan yang ada di fakultas kedokteran dengan jenjang S1
-    - apa saja jurusan yang ada di fakultas kedokteran jenjang S1
-    - apa saja jurusan yang ada di fk dengan jenjang S1
-    - apa saja jurusan yang ada di fk jenjang S1
-    - jurusan yang ada di fakultas kedokteran dengan jenjang S1
-    - jurusan yang ada di fakultas kedokteran jenjang S1
-    - jurusan yang ada di fk dengan jenjang S1
-    - jurusan yang ada di fk jenjang S1
-    - jurusan di fakultas kedokteran dengan jenjang S1
-    - jurusan di fakultas kedokteran jenjang S1
-    - jurusan di fk dengan jenjang S1
-    - jurusan di fk jenjang S1
-    - jurusan fakultas kedokteran dengan jenjang S1
-    - jurusan fakultas kedokteran jenjang S1
-    - jurusan fk dengan jenjang S1
-    - jurusan fk jenjang S1
-- intent: jurusan_fp_program_sarjana
-  examples: |
-    - apa saja jurusan yang ada di fakultas pertanian dengan program sarjana
-    - apa saja jurusan yang ada di fakultas pertanian program sarjana
-    - apa saja jurusan yang ada di fp dengan program sarjana
-    - apa saja jurusan yang ada di fp program sarjana
-    - jurusan yang ada di fakultas pertanian dengan program sarjana
-    - jurusan yang ada di fakultas pertanian program sarjana
-    - jurusan yang ada di fp dengan program sarjana
-    - jurusan yang ada di fp program sarjana
-    - jurusan di fakultas pertanian dengan program sarjana
-    - jurusan di fakultas pertanian program sarjana
-    - jurusan di fp dengan program sarjana
-    - jurusan di fp program sarjana
-    - jurusan fakultas pertanian dengan program sarjana
-    - jurusan fakultas pertanian program sarjana
-    - jurusan fp dengan program sarjana
-    - jurusan fp program sarjana
-    - apa saja jurusan yang ada di fakultas pertanian dengan jenjang S1
-    - apa saja jurusan yang ada di fakultas pertanian jenjang S1
-    - apa saja jurusan yang ada di fp dengan jenjang S1
-    - apa saja jurusan yang ada di fp jenjang S1
-    - jurusan yang ada di fakultas pertanian dengan jenjang S1
-    - jurusan yang ada di fakultas pertanian jenjang S1
-    - jurusan yang ada di fp dengan jenjang S1
-    - jurusan yang ada di fp jenjang S1
-    - jurusan di fakultas pertanian dengan jenjang S1
-    - jurusan di fakultas pertanian jenjang S1
-    - jurusan di fp dengan jenjang S1
-    - jurusan di fp jenjang S1
-    - jurusan fakultas pertanian dengan jenjang S1
-    - jurusan fakultas pertanian jenjang S1
-    - jurusan fp dengan jenjang S1
-    - jurusan fp jenjang S1
-- intent: jurusan_fk_program_spesialis
-  examples: |
-    - apa saja jurusan yang ada di fakultas kedokteran dengan program spesialis
-    - apa saja jurusan yang ada di fakultas kedokteran program spesialis
-    - apa saja jurusan yang ada di fk dengan program spesialis
-    - apa saja jurusan yang ada di fk program spesialis
-    - jurusan yang ada di fakultas kedokteran dengan program spesialis
-    - jurusan yang ada di fakultas kedokteran program spesialis
-    - jurusan yang ada di fk dengan program spesialis
-    - jurusan yang ada di fk program spesialis
-    - jurusan di fakultas kedokteran dengan program spesialis
-    - jurusan di fakultas kedokteran program spesialis
-    - jurusan di fk dengan program spesialis
-    - jurusan di fk program spesialis
-    - jurusan fakultas kedokteran dengan program spesialis
-    - jurusan fakultas kedokteran program spesialis
-    - jurusan fk dengan program spesialis
-    - jurusan fk program spesialis
-    - apa saja jurusan yang ada di fakultas kedokteran dengan jenjang spesialis
-    - apa saja jurusan yang ada di fakultas kedokteran jenjang spesialis
-    - apa saja jurusan yang ada di fk dengan jenjang spesialis
-    - apa saja jurusan yang ada di fk jenjang spesialis
-    - jurusan yang ada di fakultas kedokteran dengan jenjang spesialis
-    - jurusan yang ada di fakultas kedokteran jenjang spesialis
-    - jurusan yang ada di fk dengan jenjang spesialis
-    - jurusan yang ada di fk jenjang spesialis
-    - jurusan di fakultas kedokteran dengan jenjang spesialis
-    - jurusan di fakultas kedokteran jenjang spesialis
-    - jurusan di fk dengan jenjang spesialis
-    - jurusan di fk jenjang spesialis
-    - jurusan fakultas kedokteran dengan jenjang spesialis
-    - jurusan fakultas kedokteran jenjang spesialis
-    - jurusan fk dengan jenjang spesialis
-    - jurusan fk jenjang spesialis
-- intent: jurusan_fk_program_magister
-  examples: |
-    - apa saja jurusan yang ada di fakultas kedokteran dengan program magister
-    - apa saja jurusan yang ada di fakultas kedokteran program magister
-    - apa saja jurusan yang ada di fk dengan program magister
-    - apa saja jurusan yang ada di fk program magister
-    - jurusan yang ada di fakultas kedokteran dengan program magister
-    - jurusan yang ada di fakultas kedokteran program magister
-    - jurusan yang ada di fk dengan program magister
-    - jurusan yang ada di fk program magister
-    - jurusan di fakultas kedokteran dengan program magister
-    - jurusan di fakultas kedokteran program magister
-    - jurusan di fk dengan program magister
-    - jurusan di fk program magister
-    - jurusan fakultas kedokteran dengan program magister
-    - jurusan fakultas kedokteran program magister
-    - jurusan fk dengan program magister
-    - jurusan fk program magister
-    - apa saja jurusan yang ada di fakultas kedokteran dengan jenjang S2
-    - apa saja jurusan yang ada di fakultas kedokteran jenjang S2
-    - apa saja jurusan yang ada di fk dengan jenjang S2
-    - apa saja jurusan yang ada di fk jenjang S2
-    - jurusan yang ada di fakultas kedokteran dengan jenjang S2
-    - jurusan yang ada di fakultas kedokteran jenjang S2
-    - jurusan yang ada di fk dengan jenjang S2
-    - jurusan yang ada di fk jenjang S2
-    - jurusan di fakultas kedokteran dengan jenjang S2
-    - jurusan di fakultas kedokteran jenjang S2
-    - jurusan di fk dengan jenjang S2
-    - jurusan di fk jenjang S2
-    - jurusan fakultas kedokteran dengan jenjang S2
-    - jurusan fakultas kedokteran jenjang S2
-    - jurusan fk dengan jenjang S2
-    - jurusan fk jenjang S2
-- intent: jurusan_fp_program_magister
-  examples: |
-    - apa saja jurusan yang ada di fakultas pertanian dengan program magister
-    - apa saja jurusan yang ada di fakultas pertanian program magister
-    - apa saja jurusan yang ada di fp dengan program magister
-    - apa saja jurusan yang ada di fp program magister
-    - jurusan yang ada di fakultas pertanian dengan program magister
-    - jurusan yang ada di fakultas pertanian program magister
-    - jurusan yang ada di fp dengan program magister
-    - jurusan yang ada di fp program magister
-    - jurusan di fakultas pertanian dengan program magister
-    - jurusan di fakultas pertanian program magister
-    - jurusan di fp dengan program magister
-    - jurusan di fp program magister
-    - jurusan fakultas pertanian dengan program magister
-    - jurusan fakultas pertanian program magister
-    - jurusan fp dengan program magister
-    - jurusan fp program magister
-    - apa saja jurusan yang ada di fakultas pertanian dengan jenjang S2
-    - apa saja jurusan yang ada di fakultas pertanian jenjang S2
-    - apa saja jurusan yang ada di fp dengan jenjang S2
-    - apa saja jurusan yang ada di fp jenjang S2
-    - jurusan yang ada di fakultas pertanian dengan jenjang S2
-    - jurusan yang ada di fakultas pertanian jenjang S2
-    - jurusan yang ada di fp dengan jenjang S2
-    - jurusan yang ada di fp jenjang S2
-    - jurusan di fakultas pertanian dengan jenjang S2
-    - jurusan di fakultas pertanian jenjang S2
-    - jurusan di fp dengan jenjang S2
-    - jurusan di fp jenjang S2
-    - jurusan fakultas pertanian dengan jenjang S2
-    - jurusan fakultas pertanian jenjang S2
-    - jurusan fp dengan jenjang S2
-    - jurusan fp jenjang S2
-- intent: jurusan_fk_program_doktoral
-  examples: |
-    - apa saja jurusan yang ada di fakultas kedokteran dengan program doktoral
-    - apa saja jurusan yang ada di fakultas kedokteran program doktoral
-    - apa saja jurusan yang ada di fk dengan program doktoral
-    - apa saja jurusan yang ada di fk program doktoral
-    - jurusan yang ada di fakultas kedokteran dengan program doktoral
-    - jurusan yang ada di fakultas kedokteran program doktoral
-    - jurusan yang ada di fk dengan program doktoral
-    - jurusan yang ada di fk program doktoral
-    - jurusan di fakultas kedokteran dengan program doktoral
-    - jurusan di fakultas kedokteran program doktoral
-    - jurusan di fk dengan program doktoral
-    - jurusan di fk program doktoral
-    - jurusan fakultas kedokteran dengan program doktoral
-    - jurusan fakultas kedokteran program doktoral
-    - jurusan fk dengan program doktoral
-    - jurusan fk program doktoral
-    - apa saja jurusan yang ada di fakultas kedokteran dengan jenjang S3
-    - apa saja jurusan yang ada di fakultas kedokteran jenjang S3
-    - apa saja jurusan yang ada di fk dengan jenjang S3
-    - apa saja jurusan yang ada di fk jenjang S3
-    - jurusan yang ada di fakultas kedokteran dengan jenjang S3
-    - jurusan yang ada di fakultas kedokteran jenjang S3
-    - jurusan yang ada di fk dengan jenjang S3
-    - jurusan yang ada di fk jenjang S3
-    - jurusan di fakultas kedokteran dengan jenjang S3
-    - jurusan di fakultas kedokteran jenjang S3
-    - jurusan di fk dengan jenjang S3
-    - jurusan di fk jenjang S3
-    - jurusan fakultas kedokteran dengan jenjang S3
-    - jurusan fakultas kedokteran jenjang S3
-    - jurusan fk dengan jenjang S3
-    - jurusan fk jenjang S3
-- intent: jurusan_fp_program_doktoral
-  examples: |
-    - apa saja jurusan yang ada di fakultas pertanian dengan program doktoral
-    - apa saja jurusan yang ada di fakultas pertanian program doktoral
-    - apa saja jurusan yang ada di fp dengan program doktoral
-    - apa saja jurusan yang ada di fp program doktoral
-    - jurusan yang ada di fakultas pertanian dengan program doktoral
-    - jurusan yang ada di fakultas pertanian program doktoral
-    - jurusan yang ada di fp dengan program doktoral
-    - jurusan yang ada di fp program doktoral
-    - jurusan di fakultas pertanian dengan program doktoral
-    - jurusan di fakultas pertanian program doktoral
-    - jurusan di fp dengan program doktoral
-    - jurusan di fp program doktoral
-    - jurusan fakultas pertanian dengan program doktoral
-    - jurusan fakultas pertanian program doktoral
-    - jurusan fp dengan program doktoral
-    - jurusan fp program doktoral
-    - apa saja jurusan yang ada di fakultas pertanian dengan jenjang S3
-    - apa saja jurusan yang ada di fakultas pertanian jenjang S3
-    - apa saja jurusan yang ada di fp dengan jenjang S3
-    - apa saja jurusan yang ada di fp jenjang S3
-    - jurusan yang ada di fakultas pertanian dengan jenjang S3
-    - jurusan yang ada di fakultas pertanian jenjang S3
-    - jurusan yang ada di fp dengan jenjang S3
-    - jurusan yang ada di fp jenjang S3
-    - jurusan di fakultas pertanian dengan jenjang S3
-    - jurusan di fakultas pertanian jenjang S3
-    - jurusan di fp dengan jenjang S3
-    - jurusan di fp jenjang S3
-    - jurusan fakultas pertanian dengan jenjang S3
-    - jurusan fakultas pertanian jenjang S3
-    - jurusan fp dengan jenjang S3
-    - jurusan fp jenjang S3
-- intent: gelar_pendidikan_dokter
-  examples: |
-    - apa gelar untuk jurusan pendidikan dokter
-    - apa gelar untuk program studi pendidikan dokter
-    - gelar jurusan pendidikan dokter
-    - gelar program studi pendidikan dokter
-    - gelar pendidikan dokter
-- intent: gelar_keperawatan
-  examples: |
-    - apa gelar untuk jurusan keperawatan
-    - apa gelar untuk program studi keperawatan
-    - gelar jurusan keperawatan
-    - gelar program studi keperawatan
-    - gelar keperawatan
-- intent: gelar_kedokteran_gigi
-  examples: |
-    - apa gelar untuk jurusan kedokteran gigi
-    - apa gelar untuk program studi kedokteran gigi
-    - gelar jurusan kedokteran gigi
-    - gelar program studi kedokteran gigi
-    - gelar kedokteran gigi
-- intent: gelar_psikologi
-  examples: |
-    - apa gelar untuk jurusan psikologi
-    - apa gelar untuk program studi psikologi
-    - gelar jurusan psikologi
-    - gelar program studi psikologi
-    - gelar psikologi
-- intent: gelar_kesehatan_anak
-  examples: |
-    - apa gelar untuk jurusan kesehatan anak
-    - apa gelar untuk program studi kesehatan anak
-    - gelar jurusan kesehatan anak
-    - gelar program studi kesehatan anak
-    - gelar kesehatan anak
-- intent: gelar_bedah
-  examples: |
-    - apa gelar untuk jurusan bedah
-    - apa gelar untuk program studi bedah
-    - gelar jurusan bedah
-    - gelar program studi bedah
-    - gelar bedah
-- intent: gelar_kesehatan_mata
-  examples: |
-    - apa gelar untuk jurusan kesehatan mata
-    - apa gelar untuk program studi kesehatan mata
-    - gelar jurusan kesehatan mata
-    - gelar program studi kesehatan mata
-    - gelar kesehatan mata
-- intent: gelar_penyakit_dalam
-  examples: |
-    - apa gelar untuk jurusan penyakit dalam
-    - apa gelar untuk program studi penyakit dalam
-    - gelar jurusan penyakit dalam
-    - gelar program studi penyakit dalam
-    - gelar penyakit dalam
-- intent: gelar_obstetri_ginekologi
-  examples: |
-    - apa gelar untuk jurusan obstetri dan ginekologi
-    - apa gelar untuk program studi obstetri dan ginekologi
-    - gelar jurusan obstetri dan ginekologi
-    - gelar program studi obstetri dan ginekologi
-    - gelar obstetri dan ginekologi
-- intent: gelar_patalogi_anatomi
-  examples: |
-    - apa gelar untuk jurusan patologi anatomi
-    - apa gelar untuk program studi patologi anatomi
-    - gelar jurusan patologi anatomi
-    - gelar program studi patologi anatomi
-    - gelar patologi anatomi
-- intent: gelar_dermatologi_venerologi
-  examples: |
-    - apa gelar untuk jurusan dermatologi dan venerologi
-    - apa gelar untuk program studi dermatologi dan venerologi
-    - gelar jurusan dermatologi dan venerologi
-    - gelar program studi dermatologi dan venerologi
-    - gelar dermatologi dan venerologi
-- intent: gelar_neurologi
-  examples: |
-    - apa gelar untuk jurusan neurologi
-    - apa gelar untuk program studi neurologi
-    - gelar jurusan neurologi
-    - gelar program studi neurologi
-    - gelar neurologi
-- intent: gelar_telinga_hidung_tenggorokan_kepala_leher
-  examples: |
-    - apa gelar untuk jurusan telinga hidung tenggorokan-kepala dan leher
-    - apa gelar untuk program studi telinga hidung tenggorokan-kepala dan leher
-    - gelar jurusan telinga hidung tenggorokan-kepala dan leher
-    - gelar program studi telinga hidung tenggorokan-kepala dan leher
-    - gelar telinga hidung tenggorokan-kepala dan leher
-- intent: gelar_anestesiologi
-  examples: |
-    - apa gelar untuk jurusan anestesiologi
-    - apa gelar untuk program studi anestesiologi
-    - gelar jurusan anestesiologi
-    - gelar program studi anestesiologi
-    - gelar anestesiologi
-- intent: gelar_kedokteran_klinis
-  examples: |
-    - apa gelar untuk jurusan kedokteran klinis
-    - apa gelar untuk program studi kedokteran klinis
-    - gelar jurusan kedokteran klinis
-    - gelar program studi kedokteran klinis
-    - gelar kedokteran klinis
-- intent: gelar_ilmu_penyakit_dalam
-  examples: |
-    - apa gelar untuk jurusan ilmu penyakit dalam
-    - apa gelar untuk program studi ilmu penyakit dalam
-    - gelar jurusan ilmu penyakit dalam
-    - gelar program studi ilmu penyakit dalam
-    - gelar ilmu penyakit dalam
-- intent: gelar_ilmu_biomedik
-  examples: |
-    - apa gelar untuk jurusan ilmu biomedik
-    - apa gelar untuk program studi ilmu biomedik
-    - gelar jurusan ilmu biomedik
-    - gelar program studi ilmu biomedik
-    - gelar ilmu biomedik
-- intent: gelar_agribisnis
-  examples: |
-    - apa gelar untuk jurusan agribsinis
-    - apa gelar untuk program studi agribsinis
-    - gelar jurusan agribsinis
-    - gelar program studi agribsinis
-    - gelar agribsinis
-- intent: gelar_teknik_pertanian
-  examples: |
-    - apa gelar untuk jurusan teknik pertanian
-    - apa gelar untuk program studi teknik pertanian
-    - gelar jurusan teknik pertanian
-    - gelar program studi teknik pertanian
-    - gelar teknik pertanian
-- intent: gelar_teknologi_hasil_pertanian
-  examples: |
-    - apa gelar untuk jurusan teknologi hasil pertanian
-    - apa gelar untuk program studi teknologi hasil pertanian
-    - gelar jurusan teknologi hasil pertanian
-    - gelar program studi teknologi hasil pertanian
-    - gelar teknologi hasil pertanian
-- intent: gelar_peternakan
-  examples: |
-    - apa gelar untuk jurusan peternakan
-    - apa gelar untuk program studi peternakan
-    - gelar jurusan peternakan
-    - gelar program studi peternakan
-    - gelar peternakan
-- intent: gelar_budidaya_perairan
-  examples: |
-    - apa gelar untuk jurusan budidaya perairan
-    - apa gelar untuk program studi budidaya perairan
-    - gelar jurusan budidaya perairan
-    - gelar program studi budidaya perairan
-    - gelar budidaya perairan
-- intent: gelar_ilmu_tanah
-  examples: |
-    - apa gelar untuk jurusan ilmu tanah
-    - apa gelar untuk program studi ilmu tanah
-    - gelar jurusan ilmu tanah
-    - gelar program studi ilmu tanah
-    - gelar ilmu tanah
-- intent: gelar_proteksi_tanaman
-  examples: |
-    - apa gelar untuk jurusan proteksi tanaman
-    - apa gelar untuk program studi proteksi tanaman
-    - gelar jurusan proteksi tanaman
-    - gelar program studi proteksi tanaman
-    - gelar proteksi tanaman
-- intent: gelar_agronomi
-  examples: |
-    - apa gelar untuk jurusan agronomi
-    - apa gelar untuk program studi agronomi
-    - gelar jurusan agronomi
-    - gelar program studi agronomi
-    - gelar agronomi
-- intent: gelar_teknologi_hasil_perikanan
-  examples: |
-    - apa gelar untuk jurusan teknologi hasil perikanan
-    - apa gelar untuk program studi teknologi hasil perikanan
-    - gelar jurusan teknologi hasil perikanan
-    - gelar program studi teknologi hasil perikanan
-    - gelar teknologi hasil perikanan
-- intent: gelar_agroekoteknologi
-  examples: |
-    - apa gelar untuk jurusan agroekoteknologi
-    - apa gelar untuk program studi agroekoteknologi
-    - gelar jurusan agroekoteknologi
-    - gelar program studi agroekoteknologi
-    - gelar agroekoteknologi
-- intent: gelar_ilmu_tanaman
-  examples: |
-    - apa gelar untuk jurusan ilmu tanaman
-    - apa gelar untuk program studi ilmu tanaman
-    - gelar jurusan ilmu tanaman
-    - gelar program studi ilmu tanaman
-    - gelar ilmu tanaman
-- intent: gelar_ilmu_pertanian
-  examples: |
-    - apa gelar untuk jurusan ilmu pertanian
-    - apa gelar untuk program studi ilmu pertanian
-    - gelar jurusan ilmu pertanian
-    - gelar program studi ilmu pertanian
-    - gelar ilmu pertanian
-- intent: gelar_agribisnis_sarjana
-  examples: |
-    - apa gelar untuk jurusan agribsinis program sarjana
-    - apa gelar untuk program studi agribsinis program sarjana
-    - gelar jurusan agribsinis program sarjana
-    - gelar program studi agribsinis program sarjana
-    - gelar agribsinis program sarjana
-    - apa gelar untuk jurusan agribsinis jenjang S1
-    - apa gelar untuk program studi agribsinis jenjang S1
-    - gelar jurusan agribsinis jenjang S1
-    - gelar program studi agribsinis jenjang S1
-    - gelar agribsinis jenjang S1
-    - gelar S1 agribsinis
-- intent: gelar_agribisnis_magister
-  examples: |
-    - apa gelar untuk jurusan agribsinis program magister
-    - apa gelar untuk program studi agribsinis program magister
-    - gelar jurusan agribsinis program magister
-    - gelar program studi agribsinis program magister
-    - gelar agribsinis program magister
-    - apa gelar untuk jurusan agribsinis jenjang S2
-    - apa gelar untuk program studi agribsinis jenjang S2
-    - gelar jurusan agribsinis jenjang S2
-    - gelar program studi agribsinis jenjang S2
-    - gelar agribsinis jenjang S2
-    - gelar S2 agribsinis
-- intent: i_salam
-  examples: |
-    - halo
-    - hei
-    - hai
-    - helo
-    - hello
-    - hallo
-    - hi
-    - selamat pagi
-    - selamat siang
-    - selamat sore
-    - selamat malam
-- intent: i_selamat_tinggal
-  examples: |
-    - selamat tinggal
-    - dadah
-    - sampai jumpa lagi
-    - sampai bertemu kembali
-    - good bye
-    - bye
-    - cya
-    - see you
-- intent: i_terima_kasih
-  examples: |
-    - terima kasih
-    - terima kasih banyak
-    - makasih
-    - thank you
-    - thanks
-    - thx
-    - ty
-    - tengs
-- intent: i_bot
-  examples: |
-    - kamu siapa
-    - siapa kamu
-    - kamu adalah
-    - kamu
-    - nama kamu siapa
-    - siapa nama kamu
-    - bot
-- intent: i_diluar_topik
-  examples: |
-    - 1 + 1
-    - 2 * 0 =
-    - 3 - 5 = ?
-    - 4 / 2 = ?
-    - bagaimana cara memesan makanan?
-    - apa cuaca hari ini?
-    - bisakah anda menelpon saya?
-    - dimana restoran terdekat?
-    - apakah kita pernah bertemu?
-    - saya adalah User
-    - saya lapar
-    - dimana saya tinggal?
-    - siapa saya??
-    - anda berasal darimana?
-    - saya mencari pekerjaan
-    - berapa harga roti?
-    - tempat melamar pekerjaan?
-    - bagaimana cara meretas instagram?
-    - apakah anda bisa memperbaiki televisi?
-    - apa rekomendasi untuk makan siang?
-    - tolong putarkan sebuah lagu
-    - apa film terlaris musim ini?
-    - apa arti dari hemophobia?
-    - bagaimana cara kerja kamera?
-    - bagaimana cara menggunakan microsoft excel?
-    - dimana Inggris?
-    - apa ibukota negara Selandia Baru?
-    - seperapa besar Palembang?
-    - apa kendaraan tercepat di dunia?
-    - benarkah sudah ada mobil terbang?
-    - siapa saja yang pernah ke bulan?
-    - hewan terkecil
-    - hewan terlambat
-    - tumbuhan terbesar
-    - dfseagregr
-    - t4t3refreg
-    - @$%#(%$#_)
-    - fdslk23254##$%#@
-    - 2453342
-    - 5436457142342
-    - 123
+  - intent: ide_dibentuk
+    examples: |
+      - kapan ide pertama?
+      - ide pertama?
+      - tahun pencentus?
+      - pencentus
+      - pemikiran
+      - pikiran
+  - intent: keinginan_masyarakat
+    examples: |
+      - keinginan siapa?
+      - oleh siapa?
+      - siapa?
+      - berapa orang?
+      - berapa banyak?
+  - intent: kapan_resepsi
+    examples: |
+      - kapan di kemukakan?
+      - kapan di ketahui?
+      - tanggal berapakah di kemukakan?
+      - pada tahun berapakah?
+      - kemukakan
+  - intent: pembentukan_panitia
+    examples: |
+      - apa yang di bentuk?
+      - apa yang di bentuk pertama kali?
+      - membentuk?
+      - kesepakatan membentuk?
+      - sebuah kesepakatan untuk membentuk
+      - kesepakatan membentuk
+      - di wujudkan guna membentuk
+      - wujudkan
+  - intent: yayasan_perguruan_tinggi
+    examples: |
+      - di bawah yayasan
+      - yayasan
+      - perguruan tinggi
+      - tinggi
+      - naungan siapa
+  - intent: fakultas_ekonomi
+    examples: |
+      - kapan di bentuk
+      - fakultas ekonomi
+      - ekonomi
+      - fakultas
+      - sekolah tinggi
+      - jurusan
+  - intent: tokoh_yang_hadir
+    examples: |
+      - yang hadir
+      - siapa saja yang hadir
+      - datang
+      - menyambut
+      - meriahkan
+      - ikut serta
+  - intent: bantuan_keuangan
+    examples: |
+      - bantuan
+      - memberi bantuan
+      - dana
+      - uang
+      - keuangan
+      - gedung
+      - permanen
+  - intent: lembaga_bahasa
+    examples: |
+      - bahasa inggris
+      - kelas inggris
+      - tempat belajar
+      - les bahasa inggris
+      - lokasi lembaga bahasa
+      - alamat lengkap
+      - kampus
+      - kampus palembang
+      - bukit besar
+  - intent: batu_pertama
+    examples: |
+      - kapan upacara peletakan batu
+      - batu pertama
+      - kapan batu pertama di letakan
+      - batu
+      - upacara batu
+      - bangunan pertama
+  - intent: didirikan_fakultas
+    examples: |
+      - kapan di dirikanya fakultas hukum
+      - fakultas hukum berdiri
+      - perayaan dies natalis
+      - fakultas hukum dan fakultas pengetahuan masyarakat kapan di dirikan
+  - intent: yang_mendatangani_peresmian
+    examples: |
+      - siapa yang hadir saat peresmian fakultas hukum
+      - fakultas hukum dan pengetahuan masyarakat
+      - tokoh masyarakat sumatera selatan yang datang
+  - intent: penetapan_unsri
+    examples: |
+      - kapan berubah menjadi unsri
+      - universitas sriwijaya
+      - di tetapkanya menjadi universitas pada tanggal?
+      - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
+  - intent: upacara_persemian
+    examples: |
+      - siapa yang meresmikan unsri
+      - yang menandatangani piagam adalah
+      - pada tanggal berapa soekarno meresmikan unsri
+      - piagam pendirian di tandatangani oleh siapa
+  - intent: saksi_yang_hadir
+    examples: |
+      - siapa yang menyaksikan peresmian
+      - saksi yang datang
+      - yang melihat adalah
+      - mentri yang datang
+  - intent: i_banyak_pergantian_rektor_unsri
+    examples: |
+      - berapa jumlah pergantian rektor unsri
+      - jumlah pergantian rektor unsri
+      - banyak pergantian rektor unsri
+      - berapa banyak pergantian rektor unsri
+      - jumlah pergantian rektor
+      - banyak pergantian rektor
+      - jumlah pergantian rektor di unsri
+      - banyak pergantian rektor di unsri
+      - berapa jumlah pergantian rektor universitas sriwijaya
+      - jumlah pergantian rektor universitas sriwijaya
+      - banyak pergantian rektor universitas sriwijaya
+      - berapa banyak pergantian rektor universitas sriwijaya
+      - jumlah pergantian rektor di universitas sriwijaya
+      - banyak pergantian rektor di universitas sriwijaya
+  - intent: i_rektor_unsri_saat_ini
+    examples: |
+      - siapa rektor unsri saat ini
+      - siapa rektor universitas sriwijaya saat ini
+      - siapa rektor saat ini
+      - rektor unsri saat ini
+      - rektor universitas sriwijaya saat ini
+      - siapakah rektor unsri saat ini
+      - siapakah rektor universitas sriwijaya saat ini
+      - siapakah rektor saat ini
+      - siapa rektor kesepuluh unsri
+      - siapa rektor kesepuluh universitas sriwijaya
+      - siapa rektor kesepuluh
+      - rektor kesepuluh unsri
+      - rektor kesepuluh universitas sriwijaya
+      - siapakah rektor kesepuluh unsri
+      - siapakah rektor kesepuluh universitas sriwijaya
+      - siapakah rektor kesepuluh
+  - intent: i_awal_kedudukan_unsri
+    examples: |
+      - dimanakah awal kedudukan unsri
+      - dimana awal kedudukan unsri
+      - awal kedudukan unsri
+      - kedudukan unsri pertama kali
+      - dimanakah kedudukan unsri pertama kali
+      - dimana kedudukan unsri pertama kali
+  - intent: i_tahun_pertama_kegiatan_perkuliahan_indralaya
+    examples: |
+      - tahun berapakah pertama kali kegiatan perkuliahan di kampus indralaya dilaksanakan
+      - tahun berapa pertama kali kegiatan perkuliahan kampus indralaya dilaksanakan
+      - tahun pertama kegiatan perkuliahan indralaya
+  - intent: i_tanggal_diresmikan_kampus_indralaya
+    examples: |
+      - tanggal berapakah kampus indralaya diresmikan
+      - tanggal berapa kampus indralaya diresmikan
+      - tanggal diresmikan kampus indralaya
+  - intent: i_letak_kampus_indralaya_unsri
+    examples: |
+      - dimanakah letak kampus indralaya
+      - dimana letak kampus indralaya
+      - letak kampus indralaya
+  - intent: i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
+    examples: |
+      - siapakah yang meresmikan kampus indralaya ?
+      - siapa yang meresmikan kampus indralaya
+      - yang meresmikan kampus indralaya
+  - intent: i_yang_menghadiri_peresmian_kampus_indralaya_unsri
+    examples: |
+      - siapa sajakah yang menghadiri peresmian kampus indralaya ?
+      - siapa saja yang menghadiri peresmian kampus indralaya ?
+      - yang menghadiri peresmian kampus indralaya
+  - intent: i_tanda_resmi_kampus_utama_indralaya
+    examples: |
+      - apakah tanda resmi kampus indralaya
+      - apa tanda resmi kampus indralaya
+      - tanda resmi kampus indralaya
+  - intent: i_jumlah_fakultas_unsri
+    examples: |
+      - berapakah jumlah fakultas unsri
+      - berapa jumlah fakultas unsri
+      - jumlah fakultas unsri
+      - banyak fakultas unsri
+      - berapa banyak fakultas unsri
+      - berapakah banyak fakultas unsri
+      - berapakah jumlah fakultas
+      - berapa jumlah fakultas
+      - jumlah fakultas
+      - banyak fakultas
+      - berapa banyak fakultas
+      - berapakah banyak fakultas
+  - intent: i_program_pendidikan_unsri
+    examples: |
+      - apa saja program pendidikan di unsri
+      - program prndidikan unsri
+      - apa sajakah program pendidikan di unsri
+  - intent: i_fakultas_unsri
+    examples: |
+      - Apa saja fakultas yang ada di unsri
+      - fakultas yang ada di unsri
+      - apa sajakah fakultas yang ada di unsri
+  - intent: i_unsur_lambang_universitas_sriwijaya
+    examples: |
+      - terdiri dari apa sajakah unsur lambang universitas sriwijaya?
+      - terdiri dari apa sajakah unsur lambang unsri?
+      - ada apa saja pada lambang universitas sriwijaya?
+      - ada apa saja pada lambang unsri?
+      - apa saja unsur lambang universitas sriwijaya?
+      - apa saja unsur lambang unsri?
+      - apa unsur lambang universitas sriwijaya?
+      - apa unsur lambang unsri?
+      - unsur lambang universitas sriwijaya
+      - apa unsur lambang unsri
+      - unsur lambang unsri
+  - intent: i_warna_mahkota_bunga_melati
+    examples: |
+      - apa warna dari mahkota bunga melati pada lambang universitas sriwijaya?
+      - apa warna dari mahkota bunga melati pada lambang unsri?
+      - warna dari mahkota bunga melati universitas sriwijaya
+      - warna dari mahkota bunga melati unsri
+      - warna mahkota bunga melati universitas sriwijaya
+      - warna mahkota bunga melati unsri
+      - apa warna bunga melati
+      - warna bunga melati
+  - intent: i_warna_mahkota_bunga_seruni
+    examples: |
+      - apa warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa warna dari mahkota bunga seruni pada lambang unsri?
+      - warna dari mahkota bunga seruni universitas sriwijaya
+      - warna dari mahkota bunga seruni unsri
+      - warna mahkota bunga seruni universitas sriwijaya
+      - warna mahkota bunga seruni unsri
+      - apa warna bunga seruni
+      - warna bunga seruni
+  - intent: i_warna_cahaya_mahkota_bunga_seruni
+    examples: |
+      - apa warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa warna dari cahaya mahkota bunga seruni pada lambang unsri?
+      - warna dari cahaya mahkota bunga seruni universitas sriwijaya
+      - warna dari cahaya mahkota bunga seruni unsri
+      - warna cahaya mahkota bunga seruni universitas sriwijaya
+      - warna cahaya mahkota bunga seruni unsri
+      - apa warna cahaya bunga seruni
+      - warna cahaya bunga seruni
+  - intent: i_warna_Kata_universitas_sriwijaya
+    examples: |
+      - apa warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
+      - apa warna dari kata universitas sriwijaya pada lambang unsri?
+      - warna dari kata universitas sriwijaya
+      - apa warna kata universitas sriwijaya
+      - warna kata universitas sriwijaya
+      - apa warna kata unsri
+      - warna kata unsri
+  - intent: i_warna_motto_ilmu_alat_pengabdian
+    examples: |
+      - apa warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
+      - apa warna dari motto ilmu alat pengabdian pada lambang unsri?
+      - warna dari motto ilmu alat pengabdian universitas sriwijaya
+      - warna dari motto ilmu alat pengabdian unsri
+      - warna motto ilmu alat pengabdian universitas sriwijaya
+      - warna motto ilmu alat pengabdian unsri
+      - apa warna motto ilmu alat pengabdian
+      - warna motto ilmu alat pengabdian
+  - intent: i_keterangan_mahkota_bunga_melati
+    examples: |
+      - apa keterangan warna dari mahkota bunga melati pada lambang universitas sriwijaya?
+      - apa keterangan warna dari mahkota bunga melati pada lambang unsri?
+      - keterangan warna dari mahkota bunga melati universitas sriwijaya
+      - keterangan warna dari mahkota bunga melati unsri
+      - keterangan warna mahkota bunga melati universitas sriwijaya
+      - keterangan warna mahkota bunga melati unsri
+      - apa arti warna dari mahkota bunga melati pada lambang universitas sriwijaya?
+      - apa arti warna dari mahkota bunga melati pada lambang unsri?
+      - arti warna dari mahkota bunga melati universitas sriwijaya
+      - arti warna dari mahkota bunga melati unsri
+      - arti warna mahkota bunga melati universitas sriwijaya
+      - arti warna mahkota bunga melati unsri
+      - apa penjelasan warna dari mahkota bunga melati pada lambang universitas sriwijaya?
+      - apa penjelasan warna dari mahkota bunga melati pada lambang unsri?
+      - penjelasan warna dari mahkota bunga melati universitas sriwijaya
+      - penjelasan warna dari mahkota bunga melati unsri
+      - penjelasan warna mahkota bunga melati universitas sriwijaya
+      - penjelasan warna mahkota bunga melati unsri
+      - mahkota bunga melati
+      - bunga melati
+  - intent: i_keterangan_mahkota_bunga_seruni
+    examples: |
+      - apa keterangan warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa keterangan warna dari mahkota bunga seruni pada lambang unsri?
+      - keterangan warna dari mahkota bunga seruni universitas sriwijaya
+      - keterangan warna dari mahkota bunga seruni unsri
+      - keterangan warna mahkota bunga seruni universitas sriwijaya
+      - keterangan warna mahkota bunga seruni unsri
+      - apa arti warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa arti warna dari mahkota bunga seruni pada lambang unsri?
+      - arti warna dari mahkota bunga seruni universitas sriwijaya
+      - arti warna dari mahkota bunga seruni unsri
+      - arti warna mahkota bunga seruni universitas sriwijaya
+      - arti warna mahkota bunga seruni unsri
+      - apa penjelasan warna dari mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa penjelasan warna dari mahkota bunga seruni pada lambang unsri?
+      - penjelasan warna dari mahkota bunga seruni universitas sriwijaya
+      - penjelasan warna dari mahkota bunga seruni unsri
+      - penjelasan warna mahkota bunga seruni universitas sriwijaya
+      - penjelasan warna mahkota bunga seruni unsri
+      - mahkota bunga seruni
+      - bunga seruni
+  - intent: i_keterangan_cahaya_mahkota_bunga_seruni
+    examples: |
+      - apa keterangan warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa keterangan warna dari cahaya mahkota bunga seruni pada lambang unsri?
+      - keterangan warna dari cahaya mahkota bunga seruni universitas sriwijaya
+      - keterangan warna dari cahaya mahkota bunga seruni unsri
+      - keterangan warna cahaya mahkota bunga seruni universitas sriwijaya
+      - keterangan warna cahaya mahkota bunga seruni unsri
+      - apa arti warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa arti warna dari cahaya mahkota bunga seruni pada lambang unsri?
+      - arti warna dari cahaya mahkota bunga seruni universitas sriwijaya
+      - arti warna dari cahaya mahkota bunga seruni unsri
+      - arti warna cahaya mahkota bunga seruni universitas sriwijaya
+      - arti warna cahaya mahkota bunga seruni unsri
+      - apa penjelasan warna dari cahaya mahkota bunga seruni pada lambang universitas sriwijaya?
+      - apa penjelasan warna dari cahaya mahkota bunga seruni pada lambang unsri?
+      - penjelasan warna dari cahaya mahkota bunga seruni universitas sriwijaya
+      - penjelasan warna dari cahaya mahkota bunga seruni unsri
+      - penjelasan warna cahaya mahkota bunga seruni universitas sriwijaya
+      - penjelasan warna cahaya mahkota bunga seruni unsri
+      - cahaya mahkota bunga seruni
+      - cahaya bunga seruni
+  - intent: i_keterangan_Kata_universitas_sriwijaya
+    examples: |
+      - apa keterangan warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
+      - apa keterangan warna dari kata universitas sriwijaya pada lambang unsri?
+      - keterangan warna dari kata universitas sriwijaya
+      - keterangan warna kata universitas sriwijaya
+      - apa arti warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
+      - apa arti warna dari kata universitas sriwijaya pada lambang unsri?
+      - arti warna dari kata universitas sriwijaya
+      - arti warna kata universitas sriwijaya
+      - apa penjelasan warna dari kata universitas sriwijaya pada lambang universitas sriwijaya?
+      - apa penjelasan warna dari kata universitas sriwijaya pada lambang unsri?
+      - penjelasan warna dari kata universitas sriwijaya
+      - penjelasan warna kata universitas sriwijaya
+  - intent: i_keterangan_motto_ilmu_alat_pengabdian
+    examples: |
+      - apa keterangan warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
+      - apa keterangan warna dari motto ilmu alat pengabdian pada lambang unsri?
+      - keterangan warna dari motto ilmu alat pengabdian universitas sriwijaya
+      - keterangan warna dari motto ilmu alat pengabdian unsri
+      - keterangan warna motto ilmu alat pengabdian universitas sriwijaya
+      - keterangan warna motto ilmu alat pengabdian unsri
+      - apa arti warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
+      - apa arti warna dari motto ilmu alat pengabdian pada lambang unsri?
+      - arti warna dari motto ilmu alat pengabdian universitas sriwijaya
+      - arti warna dari motto ilmu alat pengabdian unsri
+      - arti warna motto ilmu alat pengabdian universitas sriwijaya
+      - arti warna motto ilmu alat pengabdian unsri
+      - apa penjelasan warna dari motto ilmu alat pengabdian pada lambang universitas sriwijaya?
+      - apa penjelasan warna dari motto ilmu alat pengabdian pada lambang unsri?
+      - penjelasan warna dari motto ilmu alat pengabdian universitas sriwijaya
+      - penjelasan warna dari motto ilmu alat pengabdian unsri
+      - penjelasan warna motto ilmu alat pengabdian universitas sriwijaya
+      - penjelasan warna motto ilmu alat pengabdian unsri
+      - motto ilmu alat pengabdian
+      - ilmu alat pengabdian
+      - motto universitas sriwijaya
+      - motto
+  - intent: makna_lambang
+    examples: |
+      - [makna lambang](daftar)
+      - [makna logo](daftar)
+      - [arti logo](daftar)
+      - [arti lambang](daftar)
+      - [makna lambang](daftar) Unsri
+      - [makna lambang](daftar) Universitas Sriwijaya
+      - [makna logo](daftar) Unsri
+      - [makna logo](daftar) Universitas Sriwijaya
+      - [arti lambang](daftar) Unsri
+      - [arti lambang](daftar) Universitas Sriwijaya
+      - [arti logo](daftar) Unsri
+      - [arti logo](daftar) Universitas Sriwijaya
+      - apa [makna lambang](daftar) ?
+      - apa [makna lambang](daftar) Unsri ?
+      - apa [makna logo](daftar) ?
+      - apa [makna logo](daftar) Unsri ?
+      - apa [makna logo](daftar) Universitas Sriwijaya?
+      - apa [arti lambang](daftar) ?
+      - apa [arti lambang](daftar) Unsri ?
+      - apa [arti lambang](daftar) Universitas Sriwijaya ?
+      - apa [arti logo](daftar) ?
+      - apa [arti logo](daftar) Unsri ?
+      - apa [arti logo](daftar) Universitas Sriwijaya ?
+      - apa [arti lambang](daftar) unsri ?
+      - apa [arti logo](daftar) unsri ?
+  - intent: bendera
+    examples: |
+      - bendera Unsri
+      - bendera Universitas Sriwijaya
+      - gambar bendera Unsri
+      - gambar bendera Universitas Sriwijaya
+      - foto bendera Unsri
+      - foto bendera Universitas Sriwijaya
+  - intent: mars
+    examples: |
+      - mars Unsri
+      - mars Universitas Sriwijaya
+      - apa mars Unsri ?
+      - apa mars Universitas Sriwijaya ?
+      - isi mars Unsri
+      - isi mars Universitas Sriwijaya
+  - intent: hymne
+    examples: |
+      - hymne Unsri
+      - hymne Universitas Sriwijaya
+      - apa hymne Unsri ?
+      - apa hymne Universitas Sriwijaya ?
+      - isi hymne Unsri
+      - isi hymne Universitas Sriwijaya
+  - intent: pencipta_mars
+    examples: |
+      - siapa pencipta mars Unsri ?
+      - siapa pencipta mars Universitas Sriwijaya ?
+      - pencipta mars Unsri
+      - pencipta mars Universitas Sriwijaya
+      - pembuat mars Unsri
+      - pembuat mars Universitas Sriwijaya
+      - pengaransemen mars Unsri
+      - pengaransemen mars Universitas Sriwijaya
+      - siapa yang menciptakan mars Unsri ?
+      - siapa yang menciptakan mars Universitas Sriwijaya ?
+      - siapa yang membuat mars Unsri ?
+      - siapa yang membuat mars Universitas Sriwijaya ?
+      - siapa yang mengaransemenkan mars Unsri ?
+      - siapa yang mengaransemenkan mars Universitas Sriwijaya ?
+  - intent: pencipta_hymne
+    examples: |
+      - siapa pencipta hymne Unsri ?
+      - siapa pencipta hymne Universitas Sriwijaya ?
+      - pencipta hymne Unsri
+      - pencipta hymne Universitas Sriwijaya
+      - pembuat hymne Unsri
+      - pembuat hymne Universitas Sriwijaya
+      - pengaransemen hymne Unsri
+      - pengaransemen hymne Universitas Sriwijaya
+      - siapa yang menciptakan hymne Unsri ?
+      - siapa yang menciptakan hymne Universitas Sriwijaya ?
+      - siapa yang membuat hymne Unsri ?
+      - siapa yang membuat hymne Universitas Sriwijaya ?
+      - siapa yang mengaransemenkan hymne Unsri ?
+      - siapa yang mengaransemenkan hymne Universitas Sriwijaya ?
+  - intent: jenis_kampus_unsri
+    examples: |
+      - kampus universitas sriwijaya ada dimana saja
+      - dimana lokasi kampus universitas sriwijaya
+      - apa saja kampus universitas sriwijaya
+      - kampus unsri ada dimana saja
+      - dimana lokasi kampus unsri
+      - apa saja kampus unsri
+  - intent: lokasi_kampus_indralaya
+    examples: |
+      - kampus universitas sriwijaya indralaya ada dimana
+      - dimana lokasi kampus universitas sriwijaya indralaya
+      - kampus universitas sriwijaya indralaya berada dimana
+      - seberapa jauh kampus universitas sriwijaya indralaya
+      - kampus unsri indralaya ada dimana
+      - dimana lokasi kampus unsri indralaya
+      - kampus unsri indralaya berada dimana
+      - seberapa jauh kampus unsri indralaya
+      - dimana lokasi unsri indralaya ?
+  - intent: lokasi_kampus_fakultas_kedokteran
+    examples: |
+      - kampus fakultas kedokteran universitas sriwijaya ada dimana
+      - dimana lokasi kampus fakultas kedokteran universitas sriwijaya
+      - kampus fakultas kedokteran universitas sriwijaya berada dimana
+      - kampus fakultas kedokteran unsri ada dimana
+      - dimana lokasi kampus fakultas kedokteran unsri
+      - kampus fakultas kedokteran unsri berada dimana
+  - intent: lokasi_kampus_fkip
+    examples: |
+      - kampus fkip universitas sriwijaya ada dimana
+      - dimana lokasi kampus fkip universitas sriwijaya
+      - kampus fkip universitas sriwijaya berada dimana
+      - kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya ada dimana
+      - dimana lokasi kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya
+      - kampus fakultas keguruan dan ilmu pendidikan universitas sriwijaya berada dimana
+      - kampus fkip unsri ada dimana
+      - dimana lokasi kampus fkip unsri
+      - kampus fkip unsri berada dimana
+      - kampus fakultas keguruan dan ilmu pendidikan unsri ada dimana
+      - dimana lokasi kampus fakultas keguruan dan ilmu pendidikan unsri
+      - kampus fakultas keguruan dan ilmu pendidikan unsri berada dimana
+  - intent: lokasi_kampus_pascasarjana
+    examples: |
+      - dimana lokasi kampus program pascasarjana universitas sriwijaya
+      - kampus program pascasarjana universitas sriwijaya berada dimana
+      - dimana lokasi kampus fakultas pertanian universitas sriwijaya
+      - kampus fakultas pertanian universitas sriwijaya berada dimana
+      - dimana lokasi kampus program pascasarjana unsri
+      - kampus program pascasarjana unsri berada dimana
+      - dimana lokasi kampus fakultas pertanian unsri
+      - kampus fakultas pertanian unsri berada dimana
+  - intent: fasilitas_kampus_indralaya
+    examples: |
+      - apa saja fasilitas pada kampus universitas sriwijaya indralaya
+      - fasilitas apa yang terdapat pada kampus universitas sriwijaya indralaya
+      - apa saja fasilitas yang tersedia di kampus universitas sriwijaya indralaya
+      - apa saja fasilitas pada kampus unsri indralaya
+      - fasilitas apa yang terdapat pada kampus unsri indralaya
+      - apa saja fasilitas yang tersedia di kampus unsri indralaya
+  - intent: fasilitas_pendidikan_kampus_indralaya
+    examples: |
+      - apa saja [fasilitas pendidikan](daftar) pada kampus universitas sriwijaya indralaya
+      - [fasilitas pendidikan](daftar) apa yang terdapat pada kampus universitas sriwijaya indralaya
+      - apa saja [fasilitas pendidikan](daftar) yang tersedia di kampus universitas sriwijaya indralaya
+      - apa saja [fakultas](daftar) pada kampus universitas sriwijaya indralaya
+      - apa saja [fakultas](daftar) yang tersedia di kampus universitas sriwijaya indralaya
+      - apa saja [fasilitas pendidikan](daftar) pada kampus unsri indralaya
+      - [fasilitas pendidikan](daftar) apa yang terdapat pada kampus unsri indralaya
+      - apa saja [fasilitas pendidikan](daftar) yang tersedia di kampus unsri indralaya
+      - apa saja [fakultas](daftar) pada kampus unsri indralaya
+      - apa saja [fakultas](daftar) yang tersedia di kampus unsri indralaya
+  - intent: lokasi_luas_kebun_percobaan
+    examples: |
+      - berapa luas kebun percobaan universitas sriwijaya
+      - kebun percobaan universitas sriwijaya ada dimana
+      - dimana lokasi kebun percobaan universitas sriwijaya
+      - kebun percobaan universitas sriwijaya berada dimana
+      - berapa luas kebun percobaan unsri
+      - kebun percobaan unsri ada dimana
+      - dimana lokasi kebun percobaan unsri
+      - kebun percobaan unsri berada dimana
+  - intent: jumlah_fakultas_unsri
+    examples: |
+      - berapa jumlah fakultas universitas sriwijaya
+      - apa saja program pendidikan universitas sriwijaya
+      - program pendidikan apa saja yang terdapat pada universitas sriwijaya
+      - program pendidikan apa saja yang tersedia di universitas sriwijaya
+      - berapa jumlah fakultas unsri
+      - apa saja program pendidikan unsri
+      - program pendidikan apa saja yang terdapat pada unsri
+      - program pendidikan apa saja yang tersedia di unsri
+  - intent: jumlah_jurusan_fe
+    examples: |
+      - ada berapa jumlah jurusan yang ada di fakultas ekonomi
+      - ada berapa jumlah jurusan yang ada di fe
+      - ada berapa jumlah jurusan di fakultas ekonomi
+      - ada berapa jumlah jurusan di fe
+      - berapa jumlah jurusan yang ada di fakultas ekonomi
+      - berapa jumlah jurusan yang ada di fe
+      - berapa jumlah jurusan di fakultas ekonomi
+      - berapa jumlah jurusan di fe
+      - jumlah jurusan yang ada di fakultas ekonomi
+      - jumlah jurusan yang ada di fe
+      - jumlah jurusan di fakultas ekonomi
+      - jumlah jurusan di fe
+      - jumlah jurusan fakultas ekonomi
+      - jumlah jurusan fe
+      - ada berapa jumlah program studi yang ada di fakultas ekonomi
+      - ada berapa jumlah program studi yang ada di fe
+      - ada berapa jumlah program studi di fakultas ekonomi
+      - ada berapa jumlah program studi di fe
+      - berapa jumlah program studi yang ada di fakultas ekonomi
+      - berapa jumlah program studi yang ada di fe
+      - berapa jumlah program studi di fakultas ekonomi
+      - berapa jumlah program studi di fe
+      - jumlah program studi yang ada di fakultas ekonomi
+      - jumlah program studi yang ada di fe
+      - jumlah program studi di fakultas ekonomi
+      - jumlah program studi di fe
+      - jumlah program studi fakultas ekonomi
+      - jumlah program studi fe
+  - intent: jumlah_jurusan_fh
+    examples: |
+      - ada berapa jumlah jurusan yang ada di fakultas hukum
+      - ada berapa jumlah jurusan yang ada di fh
+      - ada berapa jumlah jurusan di fakultas hukum
+      - ada berapa jumlah jurusan di fh
+      - berapa jumlah jurusan yang ada di fakultas hukum
+      - berapa jumlah jurusan yang ada di fh
+      - berapa jumlah jurusan di fakultas hukum
+      - berapa jumlah jurusan di fh
+      - jumlah jurusan yang ada di fakultas hukum
+      - jumlah jurusan yang ada di fh
+      - jumlah jurusan di fakultas hukum
+      - jumlah jurusan di fh
+      - jumlah jurusan fakultas hukum
+      - jumlah jurusan fh
+      - ada berapa jumlah program studi yang ada di fakultas hukum
+      - ada berapa jumlah program studi yang ada di fh
+      - ada berapa jumlah program studi di fakultas hukum
+      - ada berapa jumlah program studi di fh
+      - berapa jumlah program studi yang ada di fakultas hukum
+      - berapa jumlah program studi yang ada di fh
+      - berapa jumlah program studi di fakultas hukum
+      - berapa jumlah program studi di fh
+      - jumlah program studi yang ada di fakultas hukum
+      - jumlah program studi yang ada di fh
+      - jumlah program studi di fakultas hukum
+      - jumlah program studi di fh
+      - jumlah program studi fakultas hukum
+      - jumlah program studi fh
+  - intent: jumlah_jurusan_ft
+    examples: |
+      - ada berapa jumlah jurusan yang ada di fakultas teknik
+      - ada berapa jumlah jurusan yang ada di ft
+      - ada berapa jumlah jurusan di fakultas teknik
+      - ada berapa jumlah jurusan di ft
+      - berapa jumlah jurusan yang ada di fakultas teknik
+      - berapa jumlah jurusan yang ada di ft
+      - berapa jumlah jurusan di fakultas teknik
+      - berapa jumlah jurusan di ft
+      - jumlah jurusan yang ada di fakultas teknik
+      - jumlah jurusan yang ada di ft
+      - jumlah jurusan di fakultas teknik
+      - jumlah jurusan di ft
+      - jumlah jurusan fakultas teknik
+      - jumlah jurusan ft
+      - ada berapa jumlah program studi yang ada di fakultas teknik
+      - ada berapa jumlah program studi yang ada di ft
+      - ada berapa jumlah program studi di fakultas teknik
+      - ada berapa jumlah program studi di ft
+      - berapa jumlah program studi yang ada di fakultas teknik
+      - berapa jumlah program studi yang ada di ft
+      - berapa jumlah program studi di fakultas teknik
+      - berapa jumlah program studi di ft
+      - jumlah program studi yang ada di fakultas teknik
+      - jumlah program studi yang ada di ft
+      - jumlah program studi di fakultas teknik
+      - jumlah program studi di ft
+      - jumlah program studi fakultas teknik
+      - jumlah program studi ft
+  - intent: jumlah_jurusan_fk
+    examples: |
+      - ada berapa jumlah jurusan yang ada di fakultas kedokteran
+      - ada berapa jumlah jurusan yang ada di fk
+      - ada berapa jumlah jurusan di fakultas kedokteran
+      - ada berapa jumlah jurusan di fk
+      - berapa jumlah jurusan yang ada di fakultas kedokteran
+      - berapa jumlah jurusan yang ada di fk
+      - berapa jumlah jurusan di fakultas kedokteran
+      - berapa jumlah jurusan di fk
+      - jumlah jurusan yang ada di fakultas kedokteran
+      - jumlah jurusan yang ada di fk
+      - jumlah jurusan di fakultas kedokteran
+      - jumlah jurusan di fk
+      - jumlah jurusan fakultas kedokteran
+      - jumlah jurusan fk
+      - ada berapa jumlah program studi yang ada di fakultas kedokteran
+      - ada berapa jumlah program studi yang ada di fk
+      - ada berapa jumlah program studi di fakultas kedokteran
+      - ada berapa jumlah program studi di fk
+      - berapa jumlah program studi yang ada di fakultas kedokteran
+      - berapa jumlah program studi yang ada di fk
+      - berapa jumlah program studi di fakultas kedokteran
+      - berapa jumlah program studi di fk
+      - jumlah program studi yang ada di fakultas kedokteran
+      - jumlah program studi yang ada di fk
+      - jumlah program studi di fakultas kedokteran
+      - jumlah program studi di fk
+      - jumlah program studi fakultas kedokteran
+      - jumlah program studi fk
+  - intent: jumlah_jurusan_fp
+    examples: |
+      - ada berapa jumlah jurusan yang ada di fakultas pertanian
+      - ada berapa jumlah jurusan yang ada di fp
+      - ada berapa jumlah jurusan di fakultas pertanian
+      - ada berapa jumlah jurusan di fp
+      - berapa jumlah jurusan yang ada di fakultas pertanian
+      - berapa jumlah jurusan yang ada di fp
+      - berapa jumlah jurusan di fakultas pertanian
+      - berapa jumlah jurusan di fp
+      - jumlah jurusan yang ada di fakultas pertanian
+      - jumlah jurusan yang ada di fp
+      - jumlah jurusan di fakultas pertanian
+      - jumlah jurusan di fp
+      - jumlah jurusan fakultas pertanian
+      - jumlah jurusan fp
+      - ada berapa jumlah program studi yang ada di fakultas pertanian
+      - ada berapa jumlah program studi yang ada di fp
+      - ada berapa jumlah program studi di fakultas pertanian
+      - ada berapa jumlah program studi di fp
+      - berapa jumlah program studi yang ada di fakultas pertanian
+      - berapa jumlah program studi yang ada di fp
+      - berapa jumlah program studi di fakultas pertanian
+      - berapa jumlah program studi di fp
+      - jumlah program studi yang ada di fakultas pertanian
+      - jumlah program studi yang ada di fp
+      - jumlah program studi di fakultas pertanian
+      - jumlah program studi di fp
+      - jumlah program studi fakultas pertanian
+      - jumlah program studi fp
+  - intent: i_salam
+    examples: |
+      - halo
+      - hei
+      - hai
+      - helo
+      - hello
+      - hallo
+      - hi
+      - selamat pagi
+      - selamat siang
+      - selamat sore
+      - selamat malam
+  - intent: i_selamat_tinggal
+    examples: |
+      - selamat tinggal
+      - dadah
+      - sampai jumpa lagi
+      - sampai bertemu kembali
+      - good bye
+      - bye
+      - cya
+      - see you
+  - intent: i_terima_kasih
+    examples: |
+      - terima kasih
+      - terima kasih banyak
+      - makasih
+      - thank you
+      - thanks
+      - thx
+      - ty
+      - tengs
+  - intent: i_bot
+    examples: |
+      - kamu siapa
+      - siapa kamu
+      - kamu adalah
+      - kamu
+      - nama kamu siapa
+      - siapa nama kamu
+      - bot
+  - intent: i_diluar_topik
+    examples: |
+      - 1 + 1
+      - 2 * 0 =
+      - 3 - 5 = ?
+      - 4 / 2 = ?
+      - bagaimana cara memesan makanan?
+      - apa cuaca hari ini?
+      - bisakah anda menelpon saya?
+      - dimana restoran terdekat?
+      - apakah kita pernah bertemu?
+      - saya adalah User
+      - saya lapar
+      - dimana saya tinggal?
+      - siapa saya??
+      - anda berasal darimana?
+      - saya mencari pekerjaan
+      - berapa harga roti?
+      - tempat melamar pekerjaan?
+      - bagaimana cara meretas instagram?
+      - apakah anda bisa memperbaiki televisi?
+      - apa rekomendasi untuk makan siang?
+      - tolong putarkan sebuah lagu
+      - apa film terlaris musim ini?
+      - apa arti dari hemophobia?
+      - bagaimana cara kerja kamera?
+      - bagaimana cara menggunakan microsoft excel?
+      - dimana Inggris?
+      - apa ibukota negara Selandia Baru?
+      - seperapa besar Palembang?
+      - apa kendaraan tercepat di dunia?
+      - benarkah sudah ada mobil terbang?
+      - siapa saja yang pernah ke bulan?
+      - hewan terkecil
+      - hewan terlambat
+      - tumbuhan terbesar
+      - dfseagregr
+      - t4t3refreg
+      - @$%#(%$#_)
+      - fdslk23254##$%#@
+      - 2453342
+      - 5436457142342
+      - 123
+  - intent: jenis_program
+    examples: |
+      - [sarjana](program)
+      - [magister](program)
+      - [diploma tiga](program)
+      - [doktor](program)
+      - [S1](program)
+      - [S2](program)
+      - [S3](program)
+      - [D3](program)
+  - intent: jenis_jurusan
+    examples: |
+      - [manajemen](jurusan)
+      - [ekonomi pembangunan](jurusan)
+      - [akuntansi](jurusan)
+      - [vokasi akuntansi](jurusan)
+      - [vokasiKesekretariatan](jurusan)
+      - [magister manajemen](jurusan)
+      - [ilmu ekonomi](jurusan)
+      - [ilmu manajemen](jurusan)
+      - [ilmu hukum](jurusan)
+      - [kenotariatan](jurusan)
+      - [teknik sipil](jurusan)
+      - [teknik pertambangan](jurusan)
+      - [teknik kimia](jurusan)
+      - [teknik elektro](jurusan)
+      - [teknik mesin](jurusan)
+      - [arsitektur](jurusan)
+      - [teknik geologi](jurusan)
+      - [ilmu teknik](jurusan)
+      - [pendidikan dokter](jurusan)
+      - [keperawatan](jurusan)
+      - [kedokteran gigi](jurusan)
+      - [psikologi](jurusan)
+      - [kesehatan anak](jurusan)
+      - [bedah](jurusan)
+      - [kesehatan mata](jurusan)
+      - [penyakit dalam](jurusan)
+      - [obstetri dan ginekologi](jurusan)
+      - [patologi anatomi](jurusan)
+      - [dermatologi dan venerologi](jurusan)
+      - [neurologi](jurusan)
+      - [telinga hidung tenggorokan-kepala dan leher](jurusan)
+      - [anestesiologi](jurusan)
+      - [kedokteran klinis](jurusan)
+      - [ilmu penyakit dalam](jurusan)
+      - [ilmu biomedik](jurusan)
+      - [agribsinis](jurusan)
+      - [teknik pertanian](jurusan)
+      - [eknologi hasil pertanian](jurusan)
+      - [peternakan](jurusan)
+      - [budidaya perairan](jurusan)
+      - [ilmu tanah](jurusan)
+      - [proteksi tanaman](jurusan)
+      - [agronomi](jurusan)
+      - [teknologi hasil perikanan](jurusan)
+      - [agroekoteknologi](jurusan)
+      - [ilmu tanaman](jurusan)
+      - [ilmu pertanian](jurusan)
+  - intent: jenis_fakultas
+    examples: |
+      - [fakultas ekonomi](fakultas)
+      - [fakultas teknik](fakultas)
+      - [fakultas kedokteran](fakultas)
+      - [fakultas hukum](fakultas)
+      - [fakultas pertanian](fakultas)
+      - [fe](fakultas)
+      - [ft](fakultas)
+      - [fk](fakultas)
+      - [fh](fakultas)
+      - [fp](fakultas)
+  - intent: program_fakultas
+    examples: |
+      - program apa saja yang ada di [fakultas ekonomi](fakultas)
+      - program apa saja yang ada di [fh](fakultas)
+      - program yang ada di [fakultas teknik](fakultas)
+      - program yang ada di [fk](fakultas)
+      - program di [fakultas pertanian](fakultas)
+      - program di [fp](fakultas)
+      - program [fakultas hukum](fakultas)
+      - program [fe](fakultas)
+      - jenjang apa saja yang ada di [fakultas kedokteran](fakultas)
+      - jenjang apa saja yang ada di [ft](fakultas)
+      - jenjang yang ada di [fakultas pertanian](fakultas)
+      - jenjang yang ada di [fh](fakultas)
+      - jenjang di [fakultas ekonomi](fakultas)
+      - jenjang di [fk](fakultas)
+      - jenjang [fakultas pertanian](fakultas)
+      - jenjang [fh](fakultas)
+      - program [fakultas ekonomi](fakultas)
+  - intent: jurusan_fakultas
+    examples: |
+      - apa saja jurusan yang ada di [fakultas ekonomi](fakultas) dengan program [diploma tiga](program)
+      - apa saja jurusan yang ada di [fakultas kedokteran](fakultas) program [sarjana](program)
+      - apa saja jurusan yang ada di [fp](fakultas) dengan program [magister](program)
+      - apa saja jurusan yang ada di [ft](fakultas) program [doktor](program)
+      - jurusan yang ada di [fakultas pertanian](fakultas) dengan program [diploma tiga](program)
+      - jurusan yang ada di [fakultas teknik](fakultas) program [dmagister](program)
+      - jurusan yang ada di [fk](fakultas) dengan program [spesialis](program)
+      - jurusan yang ada di [fe](fakultas) program [sarjana](program)
+      - jurusan di [fakultas hukum](fakultas) dengan program [diploma tiga](program)
+      - jurusan di [fakultas ekonomi](fakultas) program [magister](program)
+      - jurusan di [fh](fakultas) dengan program [doktor](program)
+      - jurusan di [fe](fakultas) program [sarjana](program)
+      - jurusan [fakultas kedokteran](fakultas) dengan program [spesialis](program)
+      - jurusan [fakultas pertanian](fakultas) program [doktor](program)
+      - jurusan [fk](fakultas) dengan program [magister](program)
+      - jurusan [fp](fakultas) program [spesialis](program)
+      - apa saja jurusan yang ada di [fakultas teknik](fakultas) dengan jenjang [D3](program)
+      - apa saja jurusan yang ada di [fakultas ekonomi](fakultas) jenjang [S3](program)
+      - apa saja jurusan yang ada di [ft](fakultas) dengan jenjang [S1](program)
+      - apa saja jurusan yang ada di [fe](fakultas) jenjang [S2](program)
+      - jurusan yang ada di [fakultas kedokteran](fakultas) dengan jenjang [S1](program)
+      - jurusan yang ada di [fakultas hukum](fakultas) jenjang [S3](program)
+      - jurusan yang ada di [fk](fakultas) dengan jenjang [S1](program)
+      - jurusan yang ada di [fh](fakultas) jenjang [S2](program)
+      - jurusan di [fakultas hukum](fakultas) dengan jenjang [S2](program)
+      - jurusan di [fakultas pertanian](fakultas) jenjang [D3](program)
+      - jurusan di [fk](fakultas) dengan jenjang [S1](program)
+      - jurusan di [ft](fakultas) jenjang [S1](program)
+      - jurusan [fakultas teknik](fakultas) dengan jenjang [S2](program)
+      - jurusan [fakultas hukum](fakultas) jenjang [D3](program)
+      - jurusan [fp](fakultas) dengan jenjang [D3](program)
+      - jurusan [ft](fakultas) jenjang [S1](program)
+      - jurusan [fakultas pertanian](fakultas)
+  - intent: gelar_jurusan
+    examples: |
+      - apa gelar untuk jurusan [ekonomi pembangunan](jurusan)
+      - apa gelar untuk program studi [neurologi](jurusan)
+      - gelar jurusan [teknik sipil](jurusan)
+      - gelar program studi [peternakan](jurusan)
+      - gelar [kenotariatan](jurusan)
+  - intent: gelar_jurusan_program
+    examples: |
+      - apa gelar untuk jurusan [agribisnis](jurusan) [magister](program)
+      - apa gelar untuk program studi [ilmu ekonomi](jurusan) [doktor](program)
+      - gelar jurusan [bedah](jurusan) [spesialis](program)
+      - gelar program studi [obstetri dan ginekologi](jurusan) [spesialis](program)
+      - gelar [teknik elektro](jurusan) program [sarjana](program)
+      - gelar [keperawatan](jurusan) [sarjana](program)
+      - apa gelar untuk jurusan [ilmu hukum](jurusan) jenjang [S3](program)
+      - apa gelar untuk program studi [vokasiKesekretariatan](jurusan) jenjang [D3](program)
+      - gelar jurusan [teknik kimia](jurusan) jenjang [S1](program)
+      - gelar program studi [akuntansi](jurusan) jenjang [S1](program)
+      - gelar [ilmu hukum](jurusan) jenjang [S3](program)
+      - gelar [S3](program) [manajemen](jurusan)
+  - intent: daftar_isi
+    examples: |
+      - daftar isi
+      - tampilkan daftar isi
+      - lihat daftar isi
+      - ada daftar isi ?
+      - apakah ada daftar isi ?
+  - intent: ifakultas
+    examples: |
+      - [fakultas ekonomi](fakultas)
+      - apa jurusan dan program yang ada di [fakultas ekonomi](fakultas)
+      - jurusan dan program yang ada di [fakultas ekonomi](fakultas)
+      - jurusan dan program di [fakultas ekonomi](fakultas)
+      - jurusan dan program [fakultas ekonomi](fakultas)
+      - apa program studi dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - program studi dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - program studi dan jenjang di [fakultas ekonomi](fakultas)
+      - program studi dan jenjang [fakultas ekonomi](fakultas)
+      - apa jurusan dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - jurusan dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - jurusan dan jenjang di [fakultas ekonomi](fakultas)
+      - jurusan dan jenjang [fakultas ekonomi](fakultas)
+      - daftar jurusan dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - daftar jurusan dan jenjang di [fakultas ekonomi](fakultas)
+      - daftar jurusan dan jenjang [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta jenjang yang ada di [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta jenjang di [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta jenjang [fakultas ekonomi](fakultas)
+      - jurusan beserta jenjang yang ada di [fakultas ekonomi](fakultas)
+      - jurusan beserta jenjang di [fakultas ekonomi](fakultas)
+      - jurusan beserta jenjang [fakultas ekonomi](fakultas)
+      - daftar program studi dan jenjang yang ada di [fakultas ekonomi](fakultas)
+      - daftar program studi dan jenjang di [fakultas ekonomi](fakultas)
+      - daftar program studi dan jenjang [fakultas ekonomi](fakultas)
+      - daftar program studi beserta jenjang yang ada di [fakultas ekonomi](fakultas)
+      - daftar program studi beserta jenjang di [fakultas ekonomi](fakultas)
+      - daftar program studi beserta jenjang [fakultas ekonomi](fakultas)
+      - program studi beserta jenjang yang ada di [fakultas ekonomi](fakultas)
+      - program studi beserta jenjang di [fakultas ekonomi](fakultas)
+      - program studi beserta jenjang [fakultas ekonomi](fakultas)
+      - daftar jurusan dan program yang ada di [fakultas ekonomi](fakultas)
+      - daftar jurusan dan program di [fakultas ekonomi](fakultas)
+      - daftar jurusan dan program [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta program yang ada di [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta program di [fakultas ekonomi](fakultas)
+      - daftar jurusan beserta program [fakultas ekonomi](fakultas)
+      - jurusan beserta program yang ada di [fakultas ekonomi](fakultas)
+      - jurusan beserta program di [fakultas ekonomi](fakultas)
+      - jurusan beserta program [fakultas ekonomi](fakultas)
+      - [fe](fakultas)
+      - apa jurusan dan program yang ada di [fe](fakultas)
+      - jurusan dan program yang ada di [fe](fakultas)
+      - jurusan dan program di [fe](fakultas)
+      - jurusan dan program [fe](fakultas)
+      - apa program studi dan jenjang yang ada di [fe](fakultas)
+      - program studi dan jenjang yang ada di [fe](fakultas)
+      - program studi dan jenjang di [fe](fakultas)
+      - program studi dan jenjang [fe](fakultas)
+      - apa jurusan dan jenjang yang ada di [fe](fakultas)
+      - jurusan dan jenjang yang ada di [fe](fakultas)
+      - jurusan dan jenjang di [fe](fakultas)
+      - jurusan dan jenjang [fe](fakultas)
+      - daftar jurusan dan jenjang yang ada di [fe](fakultas)
+      - daftar jurusan dan jenjang di [fe](fakultas)
+      - daftar jurusan dan jenjang [fe](fakultas)
+      - daftar jurusan beserta jenjang yang ada di [fe](fakultas)
+      - daftar jurusan beserta jenjang di [fe](fakultas)
+      - daftar jurusan beserta jenjang [fe](fakultas)
+      - jurusan beserta jenjang yang ada di [fe](fakultas)
+      - jurusan beserta jenjang di [fe](fakultas)
+      - jurusan beserta jenjang [fe](fakultas)
+      - daftar program studi dan jenjang yang ada di [fe](fakultas)
+      - daftar program studi dan jenjang di [fe](fakultas)
+      - daftar program studi dan jenjang [fe](fakultas)
+      - daftar program studi beserta jenjang yang ada di [fe](fakultas)
+      - daftar program studi beserta jenjang di [fe](fakultas)
+      - daftar program studi beserta jenjang [fe](fakultas)
+      - program studi beserta jenjang yang ada di [fe](fakultas)
+      - program studi beserta jenjang di [fe](fakultas)
+      - program studi beserta jenjang [fe](fakultas)
+      - daftar jurusan dan program yang ada di [fe](fakultas)
+      - daftar jurusan dan program di [fe](fakultas)
+      - daftar jurusan dan program [fe](fakultas)
+      - daftar jurusan beserta program yang ada di [fe](fakultas)
+      - daftar jurusan beserta program di [fe](fakultas)
+      - daftar jurusan beserta program [fe](fakultas)
+      - jurusan beserta program yang ada di [fe](fakultas)
+      - jurusan beserta program [fe](fakultas)
+  - intent: rektor_unsri
+    examples: |
+      - siapa rektor [pertama](rektor) unsri
+      - siapa rektor [pertama](rektor) universitas sriwijaya
+      - siapa rektor [pertama](rektor)
+      - rektor [pertama](rektor) unsri
+      - rektor [pertama](rektor) universitas sriwijaya
+      - siapakah rektor [pertama](rektor) unsri
+      - siapakah rektor [pertama](rektor) universitas sriwijaya
+      - siapakah rektor [pertama](rektor)
+      - siapa rektor [pertama](rektor) unsri ?
+      - siapa rektor [ke1](rektor) unsri
+      - siapa rektor [ke1](rektor) universitas sriwijaya
+      - siapa rektor [ke1](rektor)
+      - rektor [ke1](rektor) unsri
+      - rektor [ke1](rektor) universitas sriwijaya
+      - siapakah rektor [ke1](rektor) unsri
+      - siapakah rektor [ke1](rektor) universitas sriwijaya
+      - siapakah rektor [ke1](rektor)
+      - siapa rektor [ke1](rektor) unsri ?
+      - siapa nama rektor [ke1](rektor) unsri ?
+      - siapa nama rektor [ke1](rektor) universitas sriwijaya ?
+      - nama rektor [ke1](rektor) unsri ?
+      - nama rektor [ke1](rektor) universitas sriwijaya ?
+      - rektor [keempat](rektor)
+      - siapa rektor [pertama](rektor) ?
+      - rektor [pertama](rektor)
+      - rektor [kedua](rektor)
+      - rektor [ketiga](rektor)
+      - siapa rektor [kedua](rektor)
+  - intent: nomor_rektor
+    examples: |
+      - [ke1](rektor)
+      - [ke2](rektor)
+      - [ke3](rektor)
+      - [ke4](rektor)
+      - [ke5](rektor)
+      - [ke6](rektor)
+      - [ke7](rektor)
+      - [ke8](rektor)
+      - [ke9](rektor)
+      - [ke10](rektor)
+      - [ke-1](rektor)
+      - [ke-2](rektor)
+      - [ke-3](rektor)
+      - [ke-4](rektor)
+      - [ke-5](rektor)
+      - [ke-6](rektor)
+      - [ke-7](rektor)
+      - [ke-8](rektor)
+      - [ke-9](rektor)
+      - [ke-10](rektor)
+      - [pertama](rektor)
+      - [kedua](rektor)
+      - [ketiga](rektor)
+      - [keempat](rektor)
+      - [kelima](rektor)
+      - [keenam](rektor)
+      - [ketujuh](rektor)
+      - [kedelapan](rektor)
+      - [kesembilan](rektor)
+      - [kesepuluh](rektor)
+  - intent: daftar_rektor
+    examples: |
+      - daftar rektor
+      - tampilkan daftar rektor
+      - lihat daftar rektor
+      - ada daftar rektor?
+      - apakah ada daftar rektor?
+
+  # ------------------------------ ICAL 2 ------------------------------------------
+
+  - intent: jenis_gambar
+    examples: |
+      - [Lambang Universitas Sriwijaya](gambar)
+      - [Bendera Universitas Sriwijaya](gambar)
+      - [Bendera Fakultas Ekonomi](gambar)
+      - [Bendera Fakultas Hukum](gambar)
+      - [Bendera Fakultas Kedokteran](gambar)
+      - [Bendera Fakultas Teknik](gambar)
+      - [Bendera Fakultas Keguruan dan Ilmu Pendidikan](gambar)
+      - [Bendera Fakultas MIPA](gambar)
+      - [Bendera Fakultas Ilmu Sosial dan Ilmu Politik](gambar)
+      - [Bendera Fakultas Ilmu Komputer](gambar)
+      - [Bendera Fakultas Kesehatan Masyarakat](gambar)
+      - [lambang unsri](gambar)
+      - [bendera unsri](gambar)
+      - [bendera fe](gambar)
+      - [bendera fh](gambar)
+      - [bendera fk](gambar)
+      - [bendera ft](gambar)
+      - [bendera fkip](gambar)
+      - [bendera fmipa](gambar)
+      - [bendera fisip](gambar)
+      - [bendera filkom](gambar)
+      - [bendera fkm](gambar)
+
+  - intent: i_gambar
+    examples: |
+      - tampilkan [Lambang Universitas Sriwijaya](gambar)
+      - tampilkan [Bendera Universitas Sriwijaya](gambar)
+      - lihat gambar [Bendera Fakultas Ekonomi](gambar)
+      - lihat gambar [Bendera Fakultas Hukum](gambar)
+      - ada gambar [Bendera Fakultas Kedokteran](gambar) ?
+      - ada gambar [Bendera Fakultas Teknik](gambar) ?
+      - apakah ada gambar [Bendera Fakultas Keguruan dan Ilmu Pendidikan](gambar) ?
+      - apakah ada gambar [Bendera Fakultas MIPA](gambar) ?
+      - tolong tampilkan [Bendera Fakultas Ilmu Sosial dan Ilmu Politik](gambar)
+      - tolong tampilkan [Bendera Fakultas Ilmu Komputer](gambar)
+      - tolong tampilkan gambar [Bendera Fakultas Kesehatan Masyarakat](gambar)
+      - tolong tampilkan gambar [lambang unsri](gambar)
+      - boleh lihat [bendera unsri](gambar) ?
+      - boleh lihat [bendera fe](gambar) ?
+      - boleh lihat gambar [bendera fh](gambar) ?
+      - boleh lihat gambar [bendera fk](gambar) ?
+      - coba tampilkan [bendera ft](gambar)
+      - coba tampilkan [bendera fkip](gambar)
+      - coba tampilkan gambar [bendera fmipa](gambar)
+      - coba tampilkan gambar [bendera fisip](gambar)
+      - perlihatkan gambar [bendera filkom](gambar)
+      - perlihatkan [bendera fkm](gambar)
