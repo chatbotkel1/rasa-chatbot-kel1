@@ -142,14 +142,12 @@ class ActionDaftarIsi(Action):
     ) -> List[Dict[Text, Any]]:
 
         buttons=[
-            {
-                "payload":'/makna_lambang{"daftar":"makna_lambang"}', 
-                "title":"Makna Lambang"
-            },
-            {
-                "payload":'/fasilitas_pendidikan_kampus_indralaya{"daftar":"zona"}', 
-                "title":"Zona"
-            }
+            {"payload":'/ide_dibentuk{"daftar":"sejarah"}', "title":"Sejarah"},
+            {"payload":'/i_unsur_lambang_universitas_sriwijaya{"daftar":"unsur_lambang"}', "title":"Unsur Lambang"},
+            {"payload":'/makna_lambang{"daftar":"makna_lambang"}', "title":"Makna Lambang"},
+            {"payload":'/fasilitas_pendidikan_kampus_indralaya{"daftar":"zona"}', "title":"Zona"},
+	        # {"payload":'/daftar_rektor', "title":"Rektor"},
+            {"payload":'/idaftar_fakultas', "title":"Fakultas"},
         ]
 
         dispatcher.utter_message(text="Daftar isi dari chatbot", buttons=buttons)

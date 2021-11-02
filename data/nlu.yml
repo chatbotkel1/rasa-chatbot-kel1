@@ -2,12 +2,12 @@ version: "2.0"
 nlu:
   - intent: ide_dibentuk
     examples: |
-      - kapan ide pertama?
-      - ide pertama?
-      - tahun pencentus?
-      - pencentus
-      - pemikiran
-      - pikiran
+      - kapan [ide pertama]{"entity": "daftar"}?
+      - [ide pertama]{"entity": "daftar"}?
+      - [tahun pencentus]{"entity": "daftar"}?
+      - [pencentus]{"entity": "daftar"}
+      - [pemikiran]{"entity": "daftar"}
+      - [pikiran]{"entity": "daftar"}
   - intent: keinginan_masyarakat
     examples: |
       - keinginan siapa?
@@ -210,17 +210,17 @@ nlu:
       - apa sajakah fakultas yang ada di unsri
   - intent: i_unsur_lambang_universitas_sriwijaya
     examples: |
-      - terdiri dari apa sajakah unsur lambang universitas sriwijaya?
-      - terdiri dari apa sajakah unsur lambang unsri?
-      - ada apa saja pada lambang universitas sriwijaya?
-      - ada apa saja pada lambang unsri?
-      - apa saja unsur lambang universitas sriwijaya?
-      - apa saja unsur lambang unsri?
-      - apa unsur lambang universitas sriwijaya?
-      - apa unsur lambang unsri?
-      - unsur lambang universitas sriwijaya
-      - apa unsur lambang unsri
-      - unsur lambang unsri
+      - terdiri dari apa sajakah [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
+      - terdiri dari apa sajakah [unsur lambang]{"entity": "daftar"} unsri?
+      - ada apa saja [pada lambang]{"entity": "daftar"} universitas sriwijaya?
+      - ada apa saja [pada lambang]{"entity": "daftar"} unsri?
+      - apa saja [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
+      - apa saja [unsur lambang]{"entity": "daftar"} unsri?
+      - apa [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
+      - apa [unsur lambang]{"entity": "daftar"} unsri?
+      - [unsur lambang]{"entity": "daftar"} universitas sriwijaya
+      - apa [unsur lambang]{"entity": "daftar"} unsri
+      - [unsur lambang]{"entity": "daftar"} unsri
   - intent: i_warna_mahkota_bunga_melati
     examples: |
       - apa warna dari mahkota bunga melati pada lambang universitas sriwijaya?
@@ -1138,3 +1138,5 @@ nlu:
       - coba tampilkan gambar [bendera fisip](gambar)
       - perlihatkan gambar [bendera filkom](gambar)
       - perlihatkan [bendera fkm](gambar)
+
+  

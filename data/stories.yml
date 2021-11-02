@@ -48,6 +48,10 @@ stories:
   - story: unsur lambang
     steps:
       - intent: i_unsur_lambang_universitas_sriwijaya
+        entities:
+          - daftar: "unsur_lambang"
+      - slot_was_set:
+          - daftar: "unsur_lambang"
       - action: utter_unsur_lambang_universitas_sriwijaya
 
   - story: warna mahkota bunga melati
@@ -211,6 +215,10 @@ stories:
   - story: kapan ide pertama pembuatan unsri?
     steps:
       - intent: ide_dibentuk
+        entities:
+          - daftar: "sejarah"
+      - slot_was_set:
+          - daftar: "sejarah"
       - action: utter_ide_dibentuk
 
   - story: siapa yang berkeinginan membuat universitas
