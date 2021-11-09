@@ -13,6 +13,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import psycopg2
 import re
+import sqlite3
 #
 #
 # class ActionHelloWorld(Action):
@@ -29,25 +30,18 @@ import re
 #         return []
 
 def querySQL(query: Text):
-    conn = psycopg2.connect(
-            host="localhost",
-            database="Chatbot_RASA",
-            user="postgres",
-            password="1234"
-        )
 
-    cur = conn.cursor()
+    conn = sqlite3.connect('db/chatbot.db')
 
-    cur.execute(query)
-
+    cur = conn.execute(query)
     result = cur.fetchall()
-
-    conn.commit()
 
     cur.close()
     conn.close()
-
+    
     return result
+
+
 
 def getFakultas(fakultas: Text):
     fakultas = fakultas.lower()
@@ -142,12 +136,12 @@ class ActionDaftarIsi(Action):
     ) -> List[Dict[Text, Any]]:
 
         buttons=[
-            {"payload":'/ide_dibentuk{"daftar":"sejarah"}', "title":"Sejarah"},
-            {"payload":'/i_unsur_lambang_universitas_sriwijaya{"daftar":"unsur_lambang"}', "title":"Unsur Lambang"},
-            {"payload":'/makna_lambang{"daftar":"makna_lambang"}', "title":"Makna Lambang"},
-            {"payload":'/fasilitas_pendidikan_kampus_indralaya{"daftar":"zona"}', "title":"Zona"},
-	        # {"payload":'/daftar_rektor', "title":"Rektor"},
-            {"payload":'/idaftar_fakultas', "title":"Fakultas"},
+            {"payload":'/ide_dibentuk', "title":"Sejarah"},
+            {"payload":'/i_unsur_lambang_universitas_sriwijaya', "title":"Unsur Lambang"},
+            {"payload":'/makna_lambang', "title":"Makna Lambang"},
+            {"payload":'/fasilitas_pendidikan_kampus_indralaya', "title":"Zona"},
+	        {"payload":'/daftar_rektor', "title":"Rektor"},
+            {"payload":'/daftar_fakultas', "title":"Fakultas"},
         ]
 
         dispatcher.utter_message(text="Daftar isi dari chatbot", buttons=buttons)
@@ -237,8 +231,6 @@ class ActionGelar(Action):
 
         query = f"SELECT gelar, singkatan FROM program_pendidikan WHERE program_studi LIKE '{jurusan}' AND program LIKE '{program}'"
 
-        print(query)
-
         gelar, singkatan = querySQL(query)[0]
         result = f'{gelar} ({singkatan})'
 
@@ -324,6 +316,27 @@ class ActionRektor(Action):
             ]
 
             dispatcher.utter_message(text="Rektor Universitas Sriwijaya", buttons=buttons)
+
+            return []
+    
+    class ActionDaftarFakultas(Action):
+        def name(self) -> Text:
+            return "action_daftar_fakultas"
+
+        async def run(
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]
+        ) -> List[Dict[Text, Any]]:
+            buttons = [
+                {"payload" : "jurusan dan program di fakultas ekonomi", "title" : "Fakultas Ekonomi"},
+                {"payload" : "jurusan dan program di fakultas hukum", "title" : "Fakultas Hukum"},
+                {"payload" : "jurusan dan program di fakultas teknik", "title" : "Fakultas Teknik"},
+                {"payload" : "jurusan dan program di fakultas kedokteran" , "title" : "Fakultas Kedokteran"},
+                {"payload" : "jurusan dan program di fakultas pertanian" , "title" : "Fakultas Pertanian"}
+            ]
+            dispatcher.utter_message(text="Fakultas yang ada di UNSRI", buttons=buttons)
 
             return []
 

@@ -155,11 +155,11 @@ intents:
     use_entities: true
 - ifakultas:
     use_entities: true
-- nomor_rektor:
-    use_entities: true
 - rektor_unsri:
     use_entities: true
 - daftar_rektor:
+    use_entities: true
+- daftar_fakultas:
     use_entities: true
 - jenis_gambar:
     use_entities: true
@@ -192,16 +192,7 @@ responses:
   utter_fasilitas_kampus_indralaya:
   - text: Di Kampus Indralaya Universitas Sriwijaya terdapat Perpustakaan Utama, Kantor Pusat Administrasi (KPA),  Auditorium, Lembaga Bahasa, Lembaga Penelitian dan Pengabdian kepada Masyarakat,  Lembaga Pengembangan Pembelajaran dan Penjaminan Mutu Pendidikan (LP3MP),  Laboratorium, Pusat Informasi dan Komputer (PIK), Pusat Pengembangan Karakter dan Karir  (CDC), Pusat Arsip, Pusat Kegiatan Kemahasiswaan, Klinik Kesehatan, Masjid, Stadion dan  Fasilitas Olahraga, Asrama dan Apartemen Mahasiswa, Student Training Centre (STC), Camping  Ground, Kebun Percobaan, serta stasiun pemadam kebakaran
   utter_fasilitas_pendidikan_kampus_indralaya:
-  - text: |-
-      Fasilitas pendidikan di kampus Indralaya berlokasi di delapan zona, yaitu
-       1. Zona Fakultas Ekonomi
-       2. Zona FKIP dan Fakultas Ilmu Komputer
-       3. Zona Fakultas Pertanian
-       4. Zona Fakultas MIPA
-       5. Zona Fakultas Teknik
-       6. Zona Fakultas Kedokteran dan FKM
-       7. Zona Fakultas Hukum
-       8. Zona Fakultas Ilmu Sosial dan Ilmu Politik
+  - text: Fasilitas pendidikan di kampus Indralaya berlokasi di delapan zona, yaitu \n\n 1. Zona Fakultas Ekonomi \n\n 2. Zona FKIP dan Fakultas Ilmu Komputer \n\n 3. Zona Fakultas Pertanian \n\n 4. Zona Fakultas MIPA \n\n 5. Zona Fakultas Teknik \n\n 6. Zona Fakultas Kedokteran dan FKM \n\n 7. Zona Fakultas Hukum \n\n 8. Zona Fakultas Ilmu Sosial dan Ilmu Politik
   utter_lokasi_luas_kebun_percobaan:
   - text: Universitas Sriwijaya mempunyai fasilitas Kebun Percobaan dengan luas sekitar 45,3 hektar di Kecamatan Gelumbang, Muara Enim, 62 kilometer dari Kota Palembang
   utter_jumlah_fakultas_unsri:
@@ -369,5 +360,6 @@ actions:
 - action_rektor
 - action_daftar_rektor
 - action_gambar
+- action_daftar_fakultas
 forms: {}
 e2e_actions: []

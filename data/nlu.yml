@@ -1047,38 +1047,7 @@ nlu:
       - rektor [kedua](rektor)
       - rektor [ketiga](rektor)
       - siapa rektor [kedua](rektor)
-  - intent: nomor_rektor
-    examples: |
-      - [ke1](rektor)
-      - [ke2](rektor)
-      - [ke3](rektor)
-      - [ke4](rektor)
-      - [ke5](rektor)
-      - [ke6](rektor)
-      - [ke7](rektor)
-      - [ke8](rektor)
-      - [ke9](rektor)
-      - [ke10](rektor)
-      - [ke-1](rektor)
-      - [ke-2](rektor)
-      - [ke-3](rektor)
-      - [ke-4](rektor)
-      - [ke-5](rektor)
-      - [ke-6](rektor)
-      - [ke-7](rektor)
-      - [ke-8](rektor)
-      - [ke-9](rektor)
-      - [ke-10](rektor)
-      - [pertama](rektor)
-      - [kedua](rektor)
-      - [ketiga](rektor)
-      - [keempat](rektor)
-      - [kelima](rektor)
-      - [keenam](rektor)
-      - [ketujuh](rektor)
-      - [kedelapan](rektor)
-      - [kesembilan](rektor)
-      - [kesepuluh](rektor)
+
   - intent: daftar_rektor
     examples: |
       - daftar rektor
@@ -1086,6 +1055,14 @@ nlu:
       - lihat daftar rektor
       - ada daftar rektor?
       - apakah ada daftar rektor?
+
+  - intent: daftar_fakultas
+    examples: |
+      - daftar fakultas
+      - tampilkan daftar fakultas
+      - lihat daftar fakultas
+      - ada daftar fakultas?
+      - apakah ada daftar fakultas?
 
   # ------------------------------ ICAL 2 ------------------------------------------
 
@@ -1138,5 +1115,3 @@ nlu:
       - coba tampilkan gambar [bendera fisip](gambar)
       - perlihatkan gambar [bendera filkom](gambar)
       - perlihatkan [bendera fkm](gambar)
-
-  

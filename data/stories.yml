@@ -352,7 +352,12 @@ stories:
   - story: Daftar Rektor
     steps:
       - intent: daftar_rektor
-      - action: action_rektor
+      - action: action_daftar_rektor
+
+  - story: Daftar Fakultas
+    steps:
+      - intent: daftar_fakultas
+      - action: action_daftar_fakultas
   # --------------------------------------- ICAL 2 ------------------------------------
   - story: Tampilkan Gambar tertentu
     steps:
