@@ -2,12 +2,14 @@ version: "2.0"
 nlu:
   - intent: ide_dibentuk
     examples: |
-      - kapan [ide pertama]{"entity": "daftar"}?
-      - [ide pertama]{"entity": "daftar"}?
-      - [tahun pencentus]{"entity": "daftar"}?
-      - [pencentus]{"entity": "daftar"}
-      - [pemikiran]{"entity": "daftar"}
-      - [pikiran]{"entity": "daftar"}
+      - kapan [ide pertama](daftar)?
+      - [ide pertama](daftar)?
+      - [tahun pencentus](daftar)?
+      - [pencentus](daftar)
+      - [pemikiran](daftar)
+      - [pikiran](daftar)
+      - /ide_dibentuk
+      - [ide pertama](daftar)
   - intent: keinginan_masyarakat
     examples: |
       - keinginan siapa?
@@ -210,17 +212,17 @@ nlu:
       - apa sajakah fakultas yang ada di unsri
   - intent: i_unsur_lambang_universitas_sriwijaya
     examples: |
-      - terdiri dari apa sajakah [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
-      - terdiri dari apa sajakah [unsur lambang]{"entity": "daftar"} unsri?
-      - ada apa saja [pada lambang]{"entity": "daftar"} universitas sriwijaya?
-      - ada apa saja [pada lambang]{"entity": "daftar"} unsri?
-      - apa saja [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
-      - apa saja [unsur lambang]{"entity": "daftar"} unsri?
-      - apa [unsur lambang]{"entity": "daftar"} universitas sriwijaya?
-      - apa [unsur lambang]{"entity": "daftar"} unsri?
-      - [unsur lambang]{"entity": "daftar"} universitas sriwijaya
-      - apa [unsur lambang]{"entity": "daftar"} unsri
-      - [unsur lambang]{"entity": "daftar"} unsri
+      - terdiri dari apa sajakah [unsur lambang](daftar) universitas sriwijaya?
+      - terdiri dari apa sajakah [unsur lambang](daftar) unsri?
+      - ada apa saja [pada lambang](daftar) universitas sriwijaya?
+      - ada apa saja [pada lambang](daftar) unsri?
+      - apa saja [unsur lambang](daftar) universitas sriwijaya?
+      - apa saja [unsur lambang](daftar) unsri?
+      - apa [unsur lambang](daftar) universitas sriwijaya?
+      - apa [unsur lambang](daftar) unsri?
+      - [unsur lambang](daftar) universitas sriwijaya
+      - apa [unsur lambang](daftar) unsri
+      - [unsur lambang](daftar) unsri
   - intent: i_warna_mahkota_bunga_melati
     examples: |
       - apa warna dari mahkota bunga melati pada lambang universitas sriwijaya?
@@ -528,6 +530,7 @@ nlu:
       - apa saja [fasilitas pendidikan](daftar) yang tersedia di kampus unsri indralaya
       - apa saja [fakultas](daftar) pada kampus unsri indralaya
       - apa saja [fakultas](daftar) yang tersedia di kampus unsri indralaya
+      - [fasilitas pendidikan](daftar) kampus indralaya
   - intent: lokasi_luas_kebun_percobaan
     examples: |
       - berapa luas kebun percobaan universitas sriwijaya
@@ -915,6 +918,8 @@ nlu:
       - gelar jurusan [teknik sipil](jurusan)
       - gelar program studi [peternakan](jurusan)
       - gelar [kenotariatan](jurusan)
+      - gelar [teknik mesin](jurusan)
+      - gelar [manajemen](jurusan)
   - intent: gelar_jurusan_program
     examples: |
       - apa gelar untuk jurusan [agribisnis](jurusan) [magister](program)
@@ -1017,6 +1022,8 @@ nlu:
       - daftar jurusan beserta program [fe](fakultas)
       - jurusan beserta program yang ada di [fe](fakultas)
       - jurusan beserta program [fe](fakultas)
+      - jurusan dan program di [fakultas teknik](fakultas)
+      - jurusan [fakultas ekonomi](fakultas)
   - intent: rektor_unsri
     examples: |
       - siapa rektor [pertama](rektor) unsri
@@ -1048,6 +1055,49 @@ nlu:
       - rektor [ketiga](rektor)
       - siapa rektor [kedua](rektor)
 
+  - intent: nomor_rektor
+    examples: |
+      - [ke1](rektor)
+      - [ke2](rektor)
+      - [ke3](rektor)
+      - [ke4](rektor)
+      - [ke5](rektor)
+      - [ke6](rektor)
+      - [ke7](rektor)
+      - [ke8](rektor)
+      - [ke9](rektor)
+      - [ke10](rektor)
+      - [ke-1](rektor)
+      - [ke-2](rektor)
+      - [ke-3](rektor)
+      - [ke-4](rektor)
+      - [ke-5](rektor)
+      - [ke-6](rektor)
+      - [ke-7](rektor)
+      - [ke-8](rektor)
+      - [ke-9](rektor)
+      - [ke-10](rektor)
+      - [ke 1](rektor)
+      - [ke 2](rektor)
+      - [ke 3](rektor)
+      - [ke 4](rektor)
+      - [ke 5](rektor)
+      - [ke 6](rektor)
+      - [ke 7](rektor)
+      - [ke 8](rektor)
+      - [ke 9](rektor)
+      - [ke 10](rektor)
+      - [pertama](rektor)
+      - [kedua](rektor)
+      - [ketiga](rektor)
+      - [keempat](rektor)
+      - [kelima](rektor)
+      - [keenam](rektor)
+      - [ketujuh](rektor)
+      - [kedelapan](rektor)
+      - [kesembilan](rektor)
+      - [kesepuluh](rektor)
+
   - intent: daftar_rektor
     examples: |
       - daftar rektor
@@ -1055,7 +1105,6 @@ nlu:
       - lihat daftar rektor
       - ada daftar rektor?
       - apakah ada daftar rektor?
-
   - intent: daftar_fakultas
     examples: |
       - daftar fakultas
@@ -1063,9 +1112,6 @@ nlu:
       - lihat daftar fakultas
       - ada daftar fakultas?
       - apakah ada daftar fakultas?
-
-  # ------------------------------ ICAL 2 ------------------------------------------
-
   - intent: jenis_gambar
     examples: |
       - [Lambang Universitas Sriwijaya](gambar)
@@ -1090,7 +1136,6 @@ nlu:
       - [bendera fisip](gambar)
       - [bendera filkom](gambar)
       - [bendera fkm](gambar)
-
   - intent: i_gambar
     examples: |
       - tampilkan [Lambang Universitas Sriwijaya](gambar)

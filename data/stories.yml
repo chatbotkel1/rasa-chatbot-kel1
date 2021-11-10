@@ -343,6 +343,11 @@ stories:
     steps:
       - intent: ifakultas
       - action: action_fakultas
+
+  - story: menanyakan jenis fakultas
+    steps:
+      - intent: jenis_fakultas
+      - action: action_fakultas
   # ---------------------------------------- HAFIZ 2 -----------------------------------------------------------
   - story: Rektor Unsri
     steps:

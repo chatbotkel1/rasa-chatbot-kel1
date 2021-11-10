@@ -11,7 +11,6 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-import psycopg2
 import re
 import sqlite3
 #
@@ -45,8 +44,10 @@ def querySQL(query: Text):
 
 def getFakultas(fakultas: Text):
     fakultas = fakultas.lower()
-    if 'fakultas' in fakultas:
-        return fakultas.replace("fakultas ","").capitalize()
+    fakultas = fakultas.lstrip('fakultas').lstrip()
+
+    if fakultas in ['hukum', 'kedokteran', 'teknik', 'pertanian', 'ekonomi']:
+        return fakultas.capitalize()
     elif fakultas[0] == 'f':
         FAKULTAS = {
         'fh': 'Hukum',
@@ -57,11 +58,11 @@ def getFakultas(fakultas: Text):
         }
         return FAKULTAS.get(fakultas, None)
     else:
-        return fakultas.capitalize()
+        pass
 
-def getProgram(program: Text):
-    program = program.upper()
-    if program in ['S1', 'S2', 'S3', 'D3', 'SP', 'SP1', 'SP2']:
+
+def getProgram(program: str):
+    if program.upper() in ['S1', 'S2', 'S3', 'D3', 'SP', 'SP1', 'SP2']:
         PROGRAM = {
             'S1': 'Sarjana',
             'S2': 'Magister',
@@ -72,10 +73,13 @@ def getProgram(program: Text):
             'SP2': 'Spesialis 2 (Subspesialis)'
         }
         return PROGRAM.get(program, None)
-    else:
+    elif program.lower() in ['sarjana', 'magister', 'doktor', 'diploma tiga', 'spesialis 1', 'spesialis 2 (subspesialis)']:
         return program.capitalize()
+    else:
+        pass
 
-def getRektor(rektor: Text):
+def getRektor(rektor: str):
+    rektor = rektor.lower()
     cek = "".join(re.split('\D', rektor))
     if cek:
         return int(re.sub('\D*', '', rektor))
@@ -94,20 +98,21 @@ def getRektor(rektor: Text):
         }
     return REKTOR.get(rektor, None)
 
-def getGambar(gambar:Text):
+def getGambar(gambar: str):
+    gambar = gambar.lower()
     GAMBAR = {
-        'Lambang Universitas Sriwijaya' : 'Lambang Universitas Sriwijaya',
-        'Bendera Universitas Sriwijaya' : 'Bendera Universitas Sriwijaya',
-        'Bendera Fakultas Ekonomi': 'Bendera Fakultas Ekonomi',
-        'Bendera Fakultas Hukum': 'Bendera Fakultas Hukum',
-        'Bendera Fakultas Kedokteran': 'Bendera Fakultas Kedokteran',
-        'Bendera Fakultas Teknik': 'Bendera Fakultas Teknik',
-        'Bendera Fakultas Pertanian': 'Bendera Fakultas Pertanian',
-        'Bendera Fakultas Keguruan dan Ilmu Pendidikan': 'Bendera Fakultas Keguruan dan Ilmu Pendidikan',
-        'Bendera Fakultas MIPA': 'Bendera Fakultas MIPA',
-        'Bendera Fakultas Ilmu Sosial dan Ilmu Politik': 'Bendera Fakultas Ilmu Sosial dan Ilmu Politik',
-        'Bendera Fakultas Ilmu Komputer': 'Bendera Fakultas Ilmu Komputer',
-        'Bendera Fakultas Kesehatan Masyarakat': 'Bendera Fakultas Kesehatan Masyarakat',
+        'lambang universitas sriwijaya' : 'Lambang Universitas Sriwijaya',
+        'bendera universitas sriwijaya' : 'Bendera Universitas Sriwijaya',
+        'bendera fakultas ekonomi': 'Bendera Fakultas Ekonomi',
+        'bendera fakultas hukum': 'Bendera Fakultas Hukum',
+        'bendera fakultas kedokteran': 'Bendera Fakultas Kedokteran',
+        'bendera fakultas teknik': 'Bendera Fakultas Teknik',
+        'bendera fakultas pertanian': 'Bendera Fakultas Pertanian',
+        'bendera fakultas keguruan dan ilmu pendidikan': 'Bendera Fakultas Keguruan dan Ilmu Pendidikan',
+        'bendera fakultas mipa': 'Bendera Fakultas MIPA',
+        'bendera fakultas ilmu sosial dan ilmu politik': 'Bendera Fakultas Ilmu Sosial dan Ilmu Politik',
+        'bendera fakultas ilmu komputer': 'Bendera Fakultas Ilmu Komputer',
+        'bendera fakultas kesehatan masyarakat': 'Bendera Fakultas Kesehatan Masyarakat',
         'lambang unsri' : 'Lambang Universitas Sriwijaya',
         'bendera unsri' : 'Bendera Universitas Sriwijaya',
         'bendera fe': 'Bendera Fakultas Ekonomi',
@@ -136,12 +141,12 @@ class ActionDaftarIsi(Action):
     ) -> List[Dict[Text, Any]]:
 
         buttons=[
-            {"payload":'/ide_dibentuk', "title":"Sejarah"},
-            {"payload":'/i_unsur_lambang_universitas_sriwijaya', "title":"Unsur Lambang"},
-            {"payload":'/makna_lambang', "title":"Makna Lambang"},
-            {"payload":'/fasilitas_pendidikan_kampus_indralaya', "title":"Zona"},
-	        {"payload":'/daftar_rektor', "title":"Rektor"},
-            {"payload":'/daftar_fakultas', "title":"Fakultas"},
+            {"payload":'ide pertama', "title":"Sejarah"},
+            {"payload":'unsur lambang universitas sriwijaya', "title":"Unsur Lambang"},
+            {"payload":'makna lambang', "title":"Makna Lambang"},
+            {"payload":'fasilitas pendidikan kampus indralaya', "title":"Zona"},
+	        {"payload":'daftar rektor', "title":"Rektor"},
+            {"payload":'daftar fakultas', "title":"Fakultas"},
         ]
 
         dispatcher.utter_message(text="Daftar isi dari chatbot", buttons=buttons)
@@ -161,6 +166,10 @@ class ActionProgram(Action):
         fakultas = next(tracker.get_latest_entity_values("fakultas"), None)
 
         fakultas = getFakultas(fakultas)
+
+        if(fakultas is None):
+            dispatcher.utter_message("Nama fakultas tidak valid")
+            return []
 
         query = f"SELECT program FROM program_pendidikan WHERE fakultas LIKE '{fakultas}' GROUP BY program"
 
@@ -196,6 +205,10 @@ class ActionJurusan(Action):
         fakultas = getFakultas(fakultas)
         program = getProgram(program)
 
+        if(fakultas is None or program is None):
+            dispatcher.utter_message("Nama fakultas / program tidak valid")
+            return []
+
         query = f"SELECT program_studi FROM program_pendidikan WHERE fakultas LIKE '{fakultas}' AND program LIKE '{program}'"
 
         print(query)
@@ -229,6 +242,10 @@ class ActionGelar(Action):
         jurusan = ' '.join(part.capitalize() for part in jurusan.split())
         program = getProgram(program)
 
+        if(program is None):
+            dispatcher.utter_message("Nama program tidak valid")
+            return []
+
         query = f"SELECT gelar, singkatan FROM program_pendidikan WHERE program_studi LIKE '{jurusan}' AND program LIKE '{program}'"
 
         gelar, singkatan = querySQL(query)[0]
@@ -251,6 +268,10 @@ class ActionFakultas(Action):
         fakultas = next(tracker.get_latest_entity_values("fakultas"), None)
 
         fakultas = getFakultas(fakultas)
+
+        if(fakultas is None):
+            dispatcher.utter_message("Nama fakultas tidak valid")
+            return []
 
         query = f"SELECT program_studi, program FROM program_pendidikan WHERE fakultas = '{fakultas}'";
 
@@ -278,6 +299,10 @@ class ActionRektor(Action):
         rektor = next(tracker.get_latest_entity_values("rektor"), None)
 
         rektor = getRektor(rektor)
+
+        if rektor is None:
+            dispatcher.utter_message("Nomor rektor tidak valid")
+            return []
 
         query = f"SELECT nama_rektor FROM rektor WHERE id = '{rektor}'"
 
@@ -352,6 +377,10 @@ class ActionRektor(Action):
         ) -> List[Dict[Text, Any]]:
             gambar = next(tracker.get_latest_entity_values("gambar"), None)
             gambar = getGambar(gambar)
+
+            if gambar is None:
+                dispatcher.utter_message("Gambar tidak ditemukan")
+                return []
             
             query = f"SELECT link FROM gambar WHERE nama_gambar = '{gambar}'"
 
