@@ -1,121 +1,141 @@
 version: "2.0"
 nlu:
-  - intent: ide_dibentuk
+  - intent: sejarah_unsri
     examples: |
-      - kapan [ide pertama](daftar)?
-      - [ide pertama](daftar)?
-      - [tahun pencentus](daftar)?
-      - [pencentus](daftar)
-      - [pemikiran](daftar)
-      - [pikiran](daftar)
-      - /ide_dibentuk
-      - [ide pertama](daftar)
-  - intent: keinginan_masyarakat
-    examples: |
-      - keinginan siapa?
-      - oleh siapa?
-      - siapa?
-      - berapa orang?
-      - berapa banyak?
-  - intent: kapan_resepsi
-    examples: |
-      - kapan di kemukakan?
-      - kapan di ketahui?
-      - tanggal berapakah di kemukakan?
-      - pada tahun berapakah?
-      - kemukakan
-  - intent: pembentukan_panitia
-    examples: |
-      - apa yang di bentuk?
-      - apa yang di bentuk pertama kali?
-      - membentuk?
-      - kesepakatan membentuk?
-      - sebuah kesepakatan untuk membentuk
-      - kesepakatan membentuk
-      - di wujudkan guna membentuk
-      - wujudkan
-  - intent: yayasan_perguruan_tinggi
-    examples: |
-      - di bawah yayasan
-      - yayasan
-      - perguruan tinggi
-      - tinggi
-      - naungan siapa
-  - intent: fakultas_ekonomi
-    examples: |
-      - kapan di bentuk
-      - fakultas ekonomi
-      - ekonomi
-      - fakultas
-      - sekolah tinggi
-      - jurusan
-  - intent: tokoh_yang_hadir
-    examples: |
-      - yang hadir
-      - siapa saja yang hadir
-      - datang
-      - menyambut
-      - meriahkan
-      - ikut serta
-  - intent: bantuan_keuangan
-    examples: |
-      - bantuan
-      - memberi bantuan
-      - dana
-      - uang
-      - keuangan
-      - gedung
-      - permanen
-  - intent: lembaga_bahasa
-    examples: |
-      - bahasa inggris
-      - kelas inggris
-      - tempat belajar
-      - les bahasa inggris
-      - lokasi lembaga bahasa
-      - alamat lengkap
-      - kampus
-      - kampus palembang
-      - bukit besar
-  - intent: batu_pertama
-    examples: |
-      - kapan upacara peletakan batu
-      - batu pertama
-      - kapan batu pertama di letakan
-      - batu
-      - upacara batu
-      - bangunan pertama
-  - intent: didirikan_fakultas
-    examples: |
-      - kapan di dirikanya fakultas hukum
-      - fakultas hukum berdiri
-      - perayaan dies natalis
-      - fakultas hukum dan fakultas pengetahuan masyarakat kapan di dirikan
-  - intent: yang_mendatangani_peresmian
-    examples: |
-      - siapa yang hadir saat peresmian fakultas hukum
-      - fakultas hukum dan pengetahuan masyarakat
-      - tokoh masyarakat sumatera selatan yang datang
-  - intent: penetapan_unsri
-    examples: |
-      - kapan berubah menjadi unsri
-      - universitas sriwijaya
-      - di tetapkanya menjadi universitas pada tanggal?
-      - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
-  - intent: upacara_persemian
-    examples: |
-      - siapa yang meresmikan unsri
-      - yang menandatangani piagam adalah
-      - pada tanggal berapa soekarno meresmikan unsri
-      - piagam pendirian di tandatangani oleh siapa
-  - intent: saksi_yang_hadir
-    examples: |
-      - siapa yang menyaksikan peresmian
-      - saksi yang datang
-      - yang melihat adalah
-      - mentri yang datang
+      - [sejarah](daftar)
+      - [sejarah](daftar) kampus
+      - [sejarah](daftar) awal kampus
+      - [sejarah](daftar) univ
+      - [sejarah](daftar) awal univ
+      - [sejarah](daftar) unsri
+      - [sejarah](daftar) awal unsri
+      - [sejarah](daftar) universitas sriwijaya
+      - [sejarah](daftar) awal universitas sriwijaya
+      - [sejarah](daftar) dibentuknya unsri
+      - [sejarah](daftar) awal dibentuknya unsri
+      - [sejarah](daftar) dibentuknya universitas sriwijaya
+      - [sejarah](daftar) awal dibentuknya universitas sriwijaya
+      - [sejarah](daftar) pembentukan unsri
+      - [sejarah](daftar) awal pembentukan unsri
+      - [sejarah](daftar) pembentukan universitas sriwijaya
+      - [sejarah](daftar) awal pembentukan universitas sriwijaya
+      - awal [pembentukan](daftar) unsri
+      - awal [pembentukan](daftar) universitas sriwijaya
+      - awal mula [pembentukan](daftar) unsri
+      - awal mula [pembentukan](daftar) universitas sriwijaya
+      - awal [dibentuknya](daftar) unsri
+      - awal [dibentuknya](daftar) universitas sriwijaya
+      - awal mula [dibentuknya](daftar) unsri
+      - awal mula [dibentuknya](daftar) universitas sriwijaya
+      - /sejarah_unsri
+  # - intent: keinginan_masyarakat
+  #   examples: |
+  #     - keinginan siapa?
+  #     - oleh siapa?
+  #     - siapa?
+  #     - berapa orang?
+  #     - berapa banyak?
+  # - intent: kapan_resepsi
+  #   examples: |
+  #     - kapan di kemukakan?
+  #     - kapan di ketahui?
+  #     - tanggal berapakah di kemukakan?
+  #     - pada tahun berapakah?
+  #     - kemukakan
+  # - intent: pembentukan_panitia
+  #   examples: |
+  #     - apa yang di bentuk?
+  #     - apa yang di bentuk pertama kali?
+  #     - membentuk?
+  #     - kesepakatan membentuk?
+  #     - sebuah kesepakatan untuk membentuk
+  #     - kesepakatan membentuk
+  #     - di wujudkan guna membentuk
+  #     - wujudkan
+  # - intent: yayasan_perguruan_tinggi
+  #   examples: |
+  #     - di bawah yayasan
+  #     - yayasan
+  #     - perguruan tinggi
+  #     - tinggi
+  #     - naungan siapa
+  # - intent: fakultas_ekonomi
+  #   examples: |
+  #     - kapan di bentuk
+  #     - fakultas ekonomi
+  #     - ekonomi
+  #     - fakultas
+  #     - sekolah tinggi
+  #     - jurusan
+  # - intent: tokoh_yang_hadir
+  #   examples: |
+  #     - yang hadir
+  #     - siapa saja yang hadir
+  #     - datang
+  #     - menyambut
+  #     - meriahkan
+  #     - ikut serta
+  # - intent: bantuan_keuangan
+  #   examples: |
+  #     - bantuan
+  #     - memberi bantuan
+  #     - dana
+  #     - uang
+  #     - keuangan
+  #     - gedung
+  #     - permanen
+  # - intent: lembaga_bahasa
+  #   examples: |
+  #     - bahasa inggris
+  #     - kelas inggris
+  #     - tempat belajar
+  #     - les bahasa inggris
+  #     - lokasi lembaga bahasa
+  #     - alamat lengkap
+  #     - kampus
+  #     - kampus palembang
+  #     - bukit besar
+  # - intent: batu_pertama
+  #   examples: |
+  #     - kapan upacara peletakan batu
+  #     - batu pertama
+  #     - kapan batu pertama di letakan
+  #     - batu
+  #     - upacara batu
+  #     - bangunan pertama
+  # - intent: didirikan_fakultas
+  #   examples: |
+  #     - kapan di dirikanya fakultas hukum
+  #     - fakultas hukum berdiri
+  #     - perayaan dies natalis
+  #     - fakultas hukum dan fakultas pengetahuan masyarakat kapan di dirikan
+  # - intent: yang_mendatangani_peresmian
+  #   examples: |
+  #     - siapa yang hadir saat peresmian fakultas hukum
+  #     - fakultas hukum dan pengetahuan masyarakat
+  #     - tokoh masyarakat sumatera selatan yang datang
+  # - intent: penetapan_unsri
+  #   examples: |
+  #     - kapan berubah menjadi unsri
+  #     - universitas sriwijaya
+  #     - di tetapkanya menjadi universitas pada tanggal?
+  #     - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
+  # - intent: upacara_persemian
+  #   examples: |
+  #     - siapa yang meresmikan unsri
+  #     - yang menandatangani piagam adalah
+  #     - pada tanggal berapa soekarno meresmikan unsri
+  #     - piagam pendirian di tandatangani oleh siapa
+  # - intent: saksi_yang_hadir
+  #   examples: |
+  #     - siapa yang menyaksikan peresmian
+  #     - saksi yang datang
+  #     - yang melihat adalah
+  #     - mentri yang datang
   - intent: i_banyak_pergantian_rektor_unsri
     examples: |
+      - jumlah rektor
+      - banyak rektor
       - berapa jumlah pergantian rektor unsri
       - jumlah pergantian rektor unsri
       - banyak pergantian rektor unsri
@@ -132,6 +152,7 @@ nlu:
       - banyak pergantian rektor di universitas sriwijaya
   - intent: i_rektor_unsri_saat_ini
     examples: |
+      - rektor sekarang
       - siapa rektor unsri saat ini
       - siapa rektor universitas sriwijaya saat ini
       - siapa rektor saat ini
@@ -786,16 +807,16 @@ nlu:
       - 2453342
       - 5436457142342
       - 123
-  - intent: jenis_program
+  - lookup: program
     examples: |
-      - [sarjana](program)
-      - [magister](program)
-      - [diploma tiga](program)
-      - [doktor](program)
-      - [S1](program)
-      - [S2](program)
-      - [S3](program)
-      - [D3](program)
+      - sarjana
+      - magister
+      - diploma tiga
+      - doktor
+      - S1
+      - S2
+      - S3
+      - D3
   - intent: jenis_jurusan
     examples: |
       - [manajemen](jurusan)
@@ -857,6 +878,12 @@ nlu:
       - [fk](fakultas)
       - [fh](fakultas)
       - [fp](fakultas)
+      - [ekonomi](fakultas)
+      - [teknik](fakultas)
+      - [hukum](fakultas)
+      - [kedokteran](fakultas)
+      - [pertanian](fakultas)
+
   - intent: program_fakultas
     examples: |
       - program apa saja yang ada di [fakultas ekonomi](fakultas)
@@ -883,7 +910,7 @@ nlu:
       - apa saja jurusan yang ada di [fp](fakultas) dengan program [magister](program)
       - apa saja jurusan yang ada di [ft](fakultas) program [doktor](program)
       - jurusan yang ada di [fakultas pertanian](fakultas) dengan program [diploma tiga](program)
-      - jurusan yang ada di [fakultas teknik](fakultas) program [dmagister](program)
+      - jurusan yang ada di [fakultas teknik](fakultas) program [magister](program)
       - jurusan yang ada di [fk](fakultas) dengan program [spesialis](program)
       - jurusan yang ada di [fe](fakultas) program [sarjana](program)
       - jurusan di [fakultas hukum](fakultas) dengan program [diploma tiga](program)
@@ -910,7 +937,6 @@ nlu:
       - jurusan [fakultas hukum](fakultas) jenjang [D3](program)
       - jurusan [fp](fakultas) dengan jenjang [D3](program)
       - jurusan [ft](fakultas) jenjang [S1](program)
-      - jurusan [fakultas pertanian](fakultas)
   - intent: gelar_jurusan
     examples: |
       - apa gelar untuk jurusan [ekonomi pembangunan](jurusan)
@@ -934,6 +960,17 @@ nlu:
       - gelar program studi [akuntansi](jurusan) jenjang [S1](program)
       - gelar [ilmu hukum](jurusan) jenjang [S3](program)
       - gelar [S3](program) [manajemen](jurusan)
+      - apa gelar untuk jurusan [agribisnis](jurusan)
+      - apa gelar untuk program studi [ilmu ekonomi](jurusan)
+      - gelar jurusan [bedah](jurusan)
+      - gelar program studi [obstetri dan ginekologi](jurusan)
+      - gelar [teknik elektro](jurusan)
+      - gelar [keperawatan](jurusan)
+      - apa gelar untuk jurusan [ilmu hukum](jurusan)
+      - apa gelar untuk program studi [vokasiKesekretariatan](jurusan)
+      - gelar jurusan [teknik kimia](jurusan)
+      - gelar program studi [akuntansi](jurusan)
+      - gelar [ilmu hukum](jurusan)
   - intent: daftar_isi
     examples: |
       - daftar isi
@@ -1024,6 +1061,23 @@ nlu:
       - jurusan beserta program [fe](fakultas)
       - jurusan dan program di [fakultas teknik](fakultas)
       - jurusan [fakultas ekonomi](fakultas)
+      - jurusan di [fakultas ekonomi](fakultas)
+      - jurusan dari [fakultas ekonomi](fakultas)
+      - jurusan [fe](fakultas)
+      - jurusan di [fe](fakultas)
+      - jurusan dari [fe](fakultas)
+      - program studi [fakultas ekonomi](fakultas)
+      - program studi di [fakultas ekonomi](fakultas)
+      - program studi dari [fakultas ekonomi](fakultas)
+      - program studi [fe](fakultas)
+      - program studi di [fe](fakultas)
+      - program studi dari [fe](fakultas)
+      - daftar jurusan [fakultas ekonomi](fakultas)
+      - daftar jurusan di [fakultas ekonomi](fakultas)
+      - daftar jurusan dari [fakultas ekonomi](fakultas)
+      - daftar jurusan [fe](fakultas)
+      - daftar jurusan di [fe](fakultas)
+      - daftar jurusan dari [fe](fakultas)
   - intent: rektor_unsri
     examples: |
       - siapa rektor [pertama](rektor) unsri
@@ -1100,7 +1154,9 @@ nlu:
 
   - intent: daftar_rektor
     examples: |
+      - lihat rektor unsri
       - daftar rektor
+      - daftar rektor unsri
       - tampilkan daftar rektor
       - lihat daftar rektor
       - ada daftar rektor?
@@ -1112,32 +1168,36 @@ nlu:
       - lihat daftar fakultas
       - ada daftar fakultas?
       - apakah ada daftar fakultas?
-  - intent: jenis_gambar
+  - lookup: gambar
     examples: |
-      - [Lambang Universitas Sriwijaya](gambar)
-      - [Bendera Universitas Sriwijaya](gambar)
-      - [Bendera Fakultas Ekonomi](gambar)
-      - [Bendera Fakultas Hukum](gambar)
-      - [Bendera Fakultas Kedokteran](gambar)
-      - [Bendera Fakultas Teknik](gambar)
-      - [Bendera Fakultas Keguruan dan Ilmu Pendidikan](gambar)
-      - [Bendera Fakultas MIPA](gambar)
-      - [Bendera Fakultas Ilmu Sosial dan Ilmu Politik](gambar)
-      - [Bendera Fakultas Ilmu Komputer](gambar)
-      - [Bendera Fakultas Kesehatan Masyarakat](gambar)
-      - [lambang unsri](gambar)
-      - [bendera unsri](gambar)
-      - [bendera fe](gambar)
-      - [bendera fh](gambar)
-      - [bendera fk](gambar)
-      - [bendera ft](gambar)
-      - [bendera fkip](gambar)
-      - [bendera fmipa](gambar)
-      - [bendera fisip](gambar)
-      - [bendera filkom](gambar)
-      - [bendera fkm](gambar)
+      - Lambang Universitas Sriwijaya
+      - Bendera Universitas Sriwijaya
+      - Bendera Fakultas Ekonomi
+      - Bendera Fakultas Hukum
+      - Bendera Fakultas Kedokteran
+      - Bendera Fakultas Teknik
+      - Bendera Fakultas Keguruan dan Ilmu Pendidikan
+      - Bendera Fakultas MIPA
+      - Bendera Fakultas Ilmu Sosial dan Ilmu Politik
+      - Bendera Fakultas Ilmu Komputer
+      - Bendera Fakultas Kesehatan Masyarakat
+      - lambang unsri
+      - bendera unsri
+      - bendera fe
+      - bendera fh
+      - bendera fk
+      - bendera fp
+      - bendera ft
+      - bendera fkip
+      - bendera fmipa
+      - bendera fisip
+      - bendera filkom
+      - bendera fasilkom
+      - bendera fkm
   - intent: i_gambar
     examples: |
+      - gambar [Lambang Universitas Sriwijaya](gambar)
+      - gambar [Bendera Universitas Sriwijaya](gambar)
       - tampilkan [Lambang Universitas Sriwijaya](gambar)
       - tampilkan [Bendera Universitas Sriwijaya](gambar)
       - lihat gambar [Bendera Fakultas Ekonomi](gambar)
@@ -1158,5 +1218,13 @@ nlu:
       - coba tampilkan [bendera fkip](gambar)
       - coba tampilkan gambar [bendera fmipa](gambar)
       - coba tampilkan gambar [bendera fisip](gambar)
-      - perlihatkan gambar [bendera filkom](gambar)
+      - perlihatkan gambar [bendera fasilkom](gambar)
       - perlihatkan [bendera fkm](gambar)
+  
+  - intent: daftar_gambar
+    examples: |
+      - daftar gambar
+      - lihat daftar gambar
+      - ada daftar gambar ?
+      - tampilkan daftar gambar
+      - apakah ada daftar gambar

@@ -1,177 +1,179 @@
-version: "2.0"
+version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
-  - daftar_isi:
-      use_entities: true
-  - jenis_kampus_unsri:
-      use_entities: true
-  - lokasi_kampus_indralaya:
-      use_entities: true
-  - lokasi_kampus_fakultas_kedokteran:
-      use_entities: true
-  - lokasi_kampus_fkip:
-      use_entities: true
-  - lokasi_kampus_pascasarjana:
-      use_entities: true
-  - fasilitas_kampus_indralaya:
-      use_entities: true
-  - fasilitas_pendidikan_kampus_indralaya:
-      use_entities: true
-  - lokasi_luas_kebun_percobaan:
-      use_entities: true
-  - jumlah_fakultas_unsri:
-      use_entities: true
-  - i_unsur_lambang_universitas_sriwijaya:
-      use_entities: true
-  - i_warna_mahkota_bunga_melati:
-      use_entities: true
-  - i_warna_mahkota_bunga_seruni:
-      use_entities: true
-  - i_warna_cahaya_mahkota_bunga_seruni:
-      use_entities: true
-  - i_warna_Kata_universitas_sriwijaya:
-      use_entities: true
-  - i_warna_motto_ilmu_alat_pengabdian:
-      use_entities: true
-  - i_keterangan_mahkota_bunga_melati:
-      use_entities: true
-  - i_keterangan_mahkota_bunga_seruni:
-      use_entities: true
-  - i_keterangan_cahaya_mahkota_bunga_seruni:
-      use_entities: true
-  - i_keterangan_Kata_universitas_sriwijaya:
-      use_entities: true
-  - i_keterangan_motto_ilmu_alat_pengabdian:
-      use_entities: true
-  - i_salam:
-      use_entities: true
-  - i_selamat_tinggal:
-      use_entities: true
-  - i_terima_kasih:
-      use_entities: true
-  - i_diluar_topik:
-      use_entities: true
-  - i_banyak_pergantian_rektor_unsri:
-      use_entities: true
-  - i_rektor_unsri_saat_ini:
-      use_entities: true
-  - i_awal_kedudukan_unsri:
-      use_entities: true
-  - i_tahun_pertama_kegiatan_perkuliahan_indralaya:
-      use_entities: true
-  - i_tanggal_diresmikan_kampus_indralaya:
-      use_entities: true
-  - i_letak_kampus_indralaya_unsri:
-      use_entities: true
-  - i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri:
-      use_entities: true
-  - i_yang_menghadiri_peresmian_kampus_indralaya_unsri:
-      use_entities: true
-  - i_tanda_resmi_kampus_utama_indralaya:
-      use_entities: true
-  - i_jumlah_fakultas_unsri:
-      use_entities: true
-  - i_program_pendidikan_unsri:
-      use_entities: true
-  - i_fakultas_unsri:
-      use_entities: true
-  - i_bot:
-      use_entities: true
-  - makna_lambang:
-      use_entities: true
-  - bendera:
-      use_entities: true
-  - mars:
-      use_entities: true
-  - hymne:
-      use_entities: true
-  - pencipta_mars:
-      use_entities: true
-  - pencipta_hymne:
-      use_entities: true
-  - ide_dibentuk:
-      use_entities: true
-  - keinginan_masyarakat:
-      use_entities: true
-  - kapan_resepsi:
-      use_entities: true
-  - pembentukan_panitia:
-      use_entities: true
-  - yayasan_perguruan_tinggi:
-      use_entities: true
-  - fakultas_ekonomi:
-      use_entities: true
-  - tokoh_yang_hadir:
-      use_entities: true
-  - bantuan_keuangan:
-      use_entities: true
-  - lembaga_bahasa:
-      use_entities: true
-  - batu_pertama:
-      use_entities: true
-  - didirikan_fakultas:
-      use_entities: true
-  - yang_mendatangi_peresmian:
-      use_entities: true
-  - penetapan_unsri:
-      use_entities: true
-  - upacara_peresmian:
-      use_entities: true
-  - saksi_yang_hadir:
-      use_entities: true
-  - jumlah_jurusan_fe:
-      use_entities: true
-  - jumlah_jurusan_fh:
-      use_entities: true
-  - jumlah_jurusan_ft:
-      use_entities: true
-  - jumlah_jurusan_fk:
-      use_entities: true
-  - jumlah_jurusan_fp:
-      use_entities: true
-  - upacara_persemian:
-      use_entities: true
-  - yang_mendatangani_peresmian:
-      use_entities: true
-  - jenis_program:
-      use_entities: true
-  - jenis_jurusan:
-      use_entities: true
-  - jenis_fakultas:
-      use_entities: true
-  - program_fakultas:
-      use_entities: true
-  - jurusan_fakultas:
-      use_entities: true
-  - gelar_jurusan:
-      use_entities: true
-  - gelar_jurusan_program:
-      use_entities: true
-  - ifakultas:
-      use_entities: true
-  - rektor_unsri:
-      use_entities: true
-  - daftar_rektor:
-      use_entities: true
-  - daftar_fakultas:
-      use_entities: true
-  - jenis_gambar:
-      use_entities: true
-  - i_gambar:
-      use_entities: true
-  - nomor_rektor:
-      use_entities: true
+- daftar_isi:
+    use_entities: true
+- jenis_kampus_unsri:
+    use_entities: true
+- lokasi_kampus_indralaya:
+    use_entities: true
+- lokasi_kampus_fakultas_kedokteran:
+    use_entities: true
+- lokasi_kampus_fkip:
+    use_entities: true
+- lokasi_kampus_pascasarjana:
+    use_entities: true
+- fasilitas_kampus_indralaya:
+    use_entities: true
+- fasilitas_pendidikan_kampus_indralaya:
+    use_entities: true
+- lokasi_luas_kebun_percobaan:
+    use_entities: true
+- jumlah_fakultas_unsri:
+    use_entities: true
+- i_unsur_lambang_universitas_sriwijaya:
+    use_entities: true
+- i_warna_mahkota_bunga_melati:
+    use_entities: true
+- i_warna_mahkota_bunga_seruni:
+    use_entities: true
+- i_warna_cahaya_mahkota_bunga_seruni:
+    use_entities: true
+- i_warna_Kata_universitas_sriwijaya:
+    use_entities: true
+- i_warna_motto_ilmu_alat_pengabdian:
+    use_entities: true
+- i_keterangan_mahkota_bunga_melati:
+    use_entities: true
+- i_keterangan_mahkota_bunga_seruni:
+    use_entities: true
+- i_keterangan_cahaya_mahkota_bunga_seruni:
+    use_entities: true
+- i_keterangan_Kata_universitas_sriwijaya:
+    use_entities: true
+- i_keterangan_motto_ilmu_alat_pengabdian:
+    use_entities: true
+- i_salam:
+    use_entities: true
+- i_selamat_tinggal:
+    use_entities: true
+- i_terima_kasih:
+    use_entities: true
+- i_diluar_topik:
+    use_entities: true
+- i_banyak_pergantian_rektor_unsri:
+    use_entities: true
+- i_rektor_unsri_saat_ini:
+    use_entities: true
+- i_awal_kedudukan_unsri:
+    use_entities: true
+- i_tahun_pertama_kegiatan_perkuliahan_indralaya:
+    use_entities: true
+- i_tanggal_diresmikan_kampus_indralaya:
+    use_entities: true
+- i_letak_kampus_indralaya_unsri:
+    use_entities: true
+- i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri:
+    use_entities: true
+- i_yang_menghadiri_peresmian_kampus_indralaya_unsri:
+    use_entities: true
+- i_tanda_resmi_kampus_utama_indralaya:
+    use_entities: true
+- i_jumlah_fakultas_unsri:
+    use_entities: true
+- i_program_pendidikan_unsri:
+    use_entities: true
+- i_fakultas_unsri:
+    use_entities: true
+- i_bot:
+    use_entities: true
+- makna_lambang:
+    use_entities: true
+- bendera:
+    use_entities: true
+- mars:
+    use_entities: true
+- hymne:
+    use_entities: true
+- pencipta_mars:
+    use_entities: true
+- pencipta_hymne:
+    use_entities: true
+- keinginan_masyarakat:
+    use_entities: true
+- kapan_resepsi:
+    use_entities: true
+- pembentukan_panitia:
+    use_entities: true
+- yayasan_perguruan_tinggi:
+    use_entities: true
+- fakultas_ekonomi:
+    use_entities: true
+- tokoh_yang_hadir:
+    use_entities: true
+- bantuan_keuangan:
+    use_entities: true
+- lembaga_bahasa:
+    use_entities: true
+- batu_pertama:
+    use_entities: true
+- didirikan_fakultas:
+    use_entities: true
+- yang_mendatangi_peresmian:
+    use_entities: true
+- penetapan_unsri:
+    use_entities: true
+- upacara_peresmian:
+    use_entities: true
+- saksi_yang_hadir:
+    use_entities: true
+- jumlah_jurusan_fe:
+    use_entities: true
+- jumlah_jurusan_fh:
+    use_entities: true
+- jumlah_jurusan_ft:
+    use_entities: true
+- jumlah_jurusan_fk:
+    use_entities: true
+- jumlah_jurusan_fp:
+    use_entities: true
+- upacara_persemian:
+    use_entities: true
+- yang_mendatangani_peresmian:
+    use_entities: true
+- jenis_program:
+    use_entities: true
+- jenis_jurusan:
+    use_entities: true
+- jenis_fakultas:
+    use_entities: true
+- program_fakultas:
+    use_entities: true
+- jurusan_fakultas:
+    use_entities: true
+- gelar_jurusan:
+    use_entities: true
+- gelar_jurusan_program:
+    use_entities: true
+- ifakultas:
+    use_entities: true
+- rektor_unsri:
+    use_entities: true
+- daftar_rektor:
+    use_entities: true
+- daftar_fakultas:
+    use_entities: true
+- jenis_gambar:
+    use_entities: true
+- i_gambar:
+    use_entities: true
+- nomor_rektor:
+    use_entities: true
+- sejarah_unsri:
+    use_entities: true
+- daftar_gambar:
+    use_entities: true
 entities:
-  - program
-  - jurusan
-  - fakultas
-  - daftar
-  - rektor
-  - gambar
+- program
+- jurusan
+- fakultas
+- daftar
+- rektor
+- gambar
 slots:
   daftar:
     type: rasa.shared.core.slots.TextSlot
@@ -180,195 +182,196 @@ slots:
     influence_conversation: true
 responses:
   utter_jenis_kampus_unsri:
-    - text: Kampus Universitas Sriwijaya berlokasi di beberapa tempat yaitu Kampus Indralaya, Kampus Bukit Besar, Kampus Fakultas Kedokteran, Kampus FKIP, Kampus Program Pascasarjana dan Fakultas Pertanian
+  - text: Kampus Universitas Sriwijaya berlokasi di beberapa tempat yaitu Kampus Indralaya, Kampus Bukit Besar, Kampus Fakultas Kedokteran, Kampus FKIP, Kampus Program Pascasarjana dan Fakultas Pertanian
   utter_lokasi_kampus_indralaya:
-    - text: Kampus Universitas Sriwijaya Indralaya terletak di jalan Palembang – Prabumulih, sekitar 38 km dari Kampus Bukit Besar
+  - text: Kampus Universitas Sriwijaya Indralaya terletak di jalan Palembang – Prabumulih, sekitar 38 km dari Kampus Bukit Besar
   utter_lokasi_kampus_fakultas_kedokteran:
-    - text: Kampus Fakultas Kedokteran Universitas Sriwijaya berada di Komplek Rumah Sakit Mohammad Hoesin, Palembang
+  - text: Kampus Fakultas Kedokteran Universitas Sriwijaya berada di Komplek Rumah Sakit Mohammad Hoesin, Palembang
   utter_lokasi_kampus_fkip:
-    - text: Kampus Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Sriwijaya berada di Jalan Srijaya km 5,5 dan di Jalan Ogan, Palembang
+  - text: Kampus Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Sriwijaya berada di Jalan Srijaya km 5,5 dan di Jalan Ogan, Palembang
   utter_lokasi_kampus_pascasarjana:
-    - text: Kampus Program Pascasarjana, serta Fakultas Pertanian Universitas Sriwijaya berada di Jalan Padang Selasa, Bukit Besar, Palembang
+  - text: Kampus Program Pascasarjana, serta Fakultas Pertanian Universitas Sriwijaya berada di Jalan Padang Selasa, Bukit Besar, Palembang
   utter_fasilitas_kampus_indralaya:
-    - text: Di Kampus Indralaya Universitas Sriwijaya terdapat Perpustakaan Utama, Kantor Pusat Administrasi (KPA),  Auditorium, Lembaga Bahasa, Lembaga Penelitian dan Pengabdian kepada Masyarakat,  Lembaga Pengembangan Pembelajaran dan Penjaminan Mutu Pendidikan (LP3MP),  Laboratorium, Pusat Informasi dan Komputer (PIK), Pusat Pengembangan Karakter dan Karir  (CDC), Pusat Arsip, Pusat Kegiatan Kemahasiswaan, Klinik Kesehatan, Masjid, Stadion dan  Fasilitas Olahraga, Asrama dan Apartemen Mahasiswa, Student Training Centre (STC), Camping  Ground, Kebun Percobaan, serta stasiun pemadam kebakaran
+  - text: Di Kampus Indralaya Universitas Sriwijaya terdapat Perpustakaan Utama, Kantor Pusat Administrasi (KPA),  Auditorium, Lembaga Bahasa, Lembaga Penelitian dan Pengabdian kepada Masyarakat,  Lembaga Pengembangan Pembelajaran dan Penjaminan Mutu Pendidikan (LP3MP),  Laboratorium, Pusat Informasi dan Komputer (PIK), Pusat Pengembangan Karakter dan Karir  (CDC), Pusat Arsip, Pusat Kegiatan Kemahasiswaan, Klinik Kesehatan, Masjid, Stadion dan  Fasilitas Olahraga, Asrama dan Apartemen Mahasiswa, Student Training Centre (STC), Camping  Ground, Kebun Percobaan, serta stasiun pemadam kebakaran
   utter_fasilitas_pendidikan_kampus_indralaya:
-    - text: |-
-        Fasilitas pendidikan di kampus Indralaya berlokasi di delapan zona, yaitu
-        1. Zona Fakultas Ekonomi
-        2. Zona FKIP dan Fakultas Ilmu Komputer
-        3. Zona Fakultas Pertanian
-        4. Zona Fakultas MIPA
-        5. Zona Fakultas Teknik
-        6. Zona Fakultas Kedokteran dan FKM
-        7. Zona Fakultas Hukum
-        8. Zona Fakultas Ilmu Sosial dan Ilmu Politik
+  - text: |-
+      Fasilitas pendidikan di kampus Indralaya berlokasi di delapan zona, yaitu
+      a. Zona Fakultas Ekonomi
+      b. Zona FKIP dan Fakultas Ilmu Komputer
+      c. Zona Fakultas Pertanian
+      d. Zona Fakultas MIPA
+      e. Zona Fakultas Teknik
+      f. Zona Fakultas Kedokteran dan FKM
+      g. Zona Fakultas Hukum
+      h. Zona Fakultas Ilmu Sosial dan Ilmu Politik
   utter_lokasi_luas_kebun_percobaan:
-    - text: Universitas Sriwijaya mempunyai fasilitas Kebun Percobaan dengan luas sekitar 45,3 hektar di Kecamatan Gelumbang, Muara Enim, 62 kilometer dari Kota Palembang
+  - text: Universitas Sriwijaya mempunyai fasilitas Kebun Percobaan dengan luas sekitar 45,3 hektar di Kecamatan Gelumbang, Muara Enim, 62 kilometer dari Kota Palembang
   utter_jumlah_fakultas_unsri:
-    - text: Saat ini Universitas Sriwijaya memiliki 10 fakultas, dan Program Pascasarjana yang menyelenggarakan Pendidikan Program Diploma Tiga (D3), Program Sarjana (S1), Program  Magister (S2), dan Program Doktor (S3), Program Pendidikan Profesi, dan Program Profesi  Dokter Spesialis (PPDS).
+  - text: Saat ini Universitas Sriwijaya memiliki 10 fakultas, dan Program Pascasarjana yang menyelenggarakan Pendidikan Program Diploma Tiga (D3), Program Sarjana (S1), Program  Magister (S2), dan Program Doktor (S3), Program Pendidikan Profesi, dan Program Profesi  Dokter Spesialis (PPDS).
   utter_unsur_lambang_universitas_sriwijaya:
-    - text: |-
-        Unsur dari lambang Universitas Sriwijaya adalah
-        1. Mahkota bunga melati
-        2. Mahkota bunga seruni yang ujung kelopaknyamengarah ke kiri di atas mahkota bunga melati
-        3. Cahaya dipusatkan pada mahkota bungaseruni di atas mahkota bunga melati
-        4. Kata “UNIVERSITAS SRIWIJAYA”
-        5. Pita bertuliskan Motto “ILMU ALAT PENGABDIAN”
+  - text: |-
+      Unsur dari lambang Universitas Sriwijaya adalah
+      a. Mahkota bunga melati
+      b. Mahkota bunga seruni yang ujung kelopaknyamengarah ke kiri di atas mahkota bunga melati
+      c. Cahaya dipusatkan pada mahkota bungaseruni di atas mahkota bunga melati
+      d. Kata “UNIVERSITAS SRIWIJAYA”
+      e. Pita bertuliskan Motto “ILMU ALAT PENGABDIAN”
   utter_warna_mahkota_bunga_melati:
-    - text: Pada mahkota bunga melati terdapat 2 warna yaitu biru pada garis tepi di kelopak melati dan kuning muda pada kelopak melati
+  - text: Pada mahkota bunga melati terdapat 2 warna yaitu biru pada garis tepi di kelopak melati dan kuning muda pada kelopak melati
   utter_warna_mahkota_bunga_seruni:
-    - text: Kelopak bunga seruni berwarna kuning emas
+  - text: Kelopak bunga seruni berwarna kuning emas
   utter_warna_cahaya_mahkota_bunga_seruni:
-    - text: Cahaya yang memancar dari mahkota bunga seruni berwarna putih dengan latar belakang berwarna biru tua
+  - text: Cahaya yang memancar dari mahkota bunga seruni berwarna putih dengan latar belakang berwarna biru tua
   utter_warna_Kata_universitas_sriwijaya:
-    - text: Tulisan UNIVERSITAS SRIWIJAYA berwarna putih melingkar dengan latar berwarna hitam
+  - text: Tulisan UNIVERSITAS SRIWIJAYA berwarna putih melingkar dengan latar berwarna hitam
   utter_warna_motto_ilmu_alat_pengabdian:
-    - text: Motto ILMU ALAT PENGABDIAN berwarna kuning emas berbentuk pita
+  - text: Motto ILMU ALAT PENGABDIAN berwarna kuning emas berbentuk pita
   utter_keterangan_mahkota_bunga_melati:
-    - text: Bunga Melati (Jasminum sambac) merupakan bunga suci yang melambangkan kemurnian, keanggunan, keluhuran, wibawa, dan kesetiaan pada cita-cita. Pada lambang ini digambarkan lima mahkota bunga (corolla) dengan warna kuning muda. Lima mahkota bunga melambangkan Pancasila sebagai falsafah hidup bangsa Indonesia, sedangkan warna kuning muda melambangkan warna Universitas
+  - text: Bunga Melati (Jasminum sambac) merupakan bunga suci yang melambangkan kemurnian, keanggunan, keluhuran, wibawa, dan kesetiaan pada cita-cita. Pada lambang ini digambarkan lima mahkota bunga (corolla) dengan warna kuning muda. Lima mahkota bunga melambangkan Pancasila sebagai falsafah hidup bangsa Indonesia, sedangkan warna kuning muda melambangkan warna Universitas
   utter_keterangan_mahkota_bunga_seruni:
-    - text: Bunga Seruni (Chrysanthemum species) sebagai lambang yang paling tua ditemukan dalam sejarah Sriwijaya. Pada lambang digambarkan mahkota bunga (corolla) dari bunga tepi (marginal flowers), berjumlah 29, berwarna kuning emas yang terpilin. Jumlah mahkotanya melambangkan tanggal lahir Universitas Sriwijaya pada tanggal 29 Oktober 1960 dan warna kuning emas menandakan keagungan Sriwijaya. Mahkota bunga yang terpilin ke kanan yang mengakibatkan ujung kelopaknya mengarah ke kiri dimaksudkan bahwa Universitas ini berjalan seirama dengan perputaran zaman
+  - text: Bunga Seruni (Chrysanthemum species) sebagai lambang yang paling tua ditemukan dalam sejarah Sriwijaya. Pada lambang digambarkan mahkota bunga (corolla) dari bunga tepi (marginal flowers), berjumlah 29, berwarna kuning emas yang terpilin. Jumlah mahkotanya melambangkan tanggal lahir Universitas Sriwijaya pada tanggal 29 Oktober 1960 dan warna kuning emas menandakan keagungan Sriwijaya. Mahkota bunga yang terpilin ke kanan yang mengakibatkan ujung kelopaknya mengarah ke kiri dimaksudkan bahwa Universitas ini berjalan seirama dengan perputaran zaman
   utter_keterangan_cahaya_mahkota_bunga_seruni:
-    - text: Cahaya melambangkan ilmu pengetahuan, yang menerangi jagad, menunjukkan bahwa hanya dengan ILMU ketidaktahuan dapat ditiadakan. Ilmu digambarkan dengan cahaya (nur) sebanyak 60 pancaran sinar dengan 10 sinar besar, berarti bulan Oktober tahun 1960
+  - text: Cahaya melambangkan ilmu pengetahuan, yang menerangi jagad, menunjukkan bahwa hanya dengan ILMU ketidaktahuan dapat ditiadakan. Ilmu digambarkan dengan cahaya (nur) sebanyak 60 pancaran sinar dengan 10 sinar besar, berarti bulan Oktober tahun 1960
   utter_keterangan_Kata_universitas_sriwijaya:
-    - text: Kata UNIVERSITAS SRIWIJAYA ditulis dengan huruf putih di atas dasar hitam yang melingkar di dalam bunga Seruni. Hitam melambangkan ketidaktahuan. Dengan adanya cahaya ketidaktahuan dapat ditiadakan, yang dilambangkan dengan huruf putih pada kata-kata UNIVERSITAS SRIWIJAYA menandakan Universitas Sriwijaya sebagai gudang ilmu
+  - text: Kata UNIVERSITAS SRIWIJAYA ditulis dengan huruf putih di atas dasar hitam yang melingkar di dalam bunga Seruni. Hitam melambangkan ketidaktahuan. Dengan adanya cahaya ketidaktahuan dapat ditiadakan, yang dilambangkan dengan huruf putih pada kata-kata UNIVERSITAS SRIWIJAYA menandakan Universitas Sriwijaya sebagai gudang ilmu
   utter_keterangan_motto_ilmu_alat_pengabdian:
-    - text: Motto ILMU ALAT PENGABDIAN ditulis dengan huruf berwarna emas di atas dasar hitam yang terletak dalam selendang di bagian bawah lambang. Motto ini melambangkan bahwa manusia wajib mengabdi kepada Tuhan, Negara, bangsa, masyarakat dan keluarga. Pengabdian yang tidak disertai dengan ilmu pengetahuan tidaklah sempurna
+  - text: Motto ILMU ALAT PENGABDIAN ditulis dengan huruf berwarna emas di atas dasar hitam yang terletak dalam selendang di bagian bawah lambang. Motto ini melambangkan bahwa manusia wajib mengabdi kepada Tuhan, Negara, bangsa, masyarakat dan keluarga. Pengabdian yang tidak disertai dengan ilmu pengetahuan tidaklah sempurna
   utter_salam:
-    - text: Halo juga, Apa yang ingin anda tanyakan?
+  - text: Halo juga, Apa yang ingin anda tanyakan?
   utter_selamat_tinggal:
-    - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi!
+  - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi!
   utter_terima_kasih:
-    - text: Sama-sama, apakah ada pertanyaan lain?
+  - text: Sama-sama, apakah ada pertanyaan lain?
   utter_diluar_topik:
-    - text: Maaf, pertanyaan anda diluar topik, mohon beri saya pertanyaan mengenai Universitas Sriwijaya!
+  - text: Maaf, pertanyaan anda diluar topik, mohon beri saya pertanyaan mengenai Universitas Sriwijaya!
   utter_banyak_pergantian_rektor_unsri:
-    - text: Hingga saat ini, Universitas Sriwijaya telah mengalami pergantian 10 orang rektor
+  - text: Hingga saat ini, Universitas Sriwijaya telah mengalami pergantian 10 orang rektor
   utter_rektor_unsri_saat_ini:
-    - text: Rektor Universitas Sriwijaya saat ini dipegang oleh Prof. Dr. Ir. H. Anis Saggaff, MSCE
+  - text: Rektor Universitas Sriwijaya saat ini dipegang oleh Prof. Dr. Ir. H. Anis Saggaff, MSCE
   utter_awal_kedudukan_unsri:
-    - text: Awal berdirinya Universitas Sriwijaya berkedudukan di Jalan Srijaya Negara, Bukit Besar, Palembang
+  - text: Awal berdirinya Universitas Sriwijaya berkedudukan di Jalan Srijaya Negara, Bukit Besar, Palembang
   utter_tahun_pertama_kegiatan_perkuliahan_indralaya:
-    - text: Kegiatan perkuliahan kampus utama Indralaya Univrsitas Sriwijaya dimulai pada tahun 1995
+  - text: Kegiatan perkuliahan kampus utama Indralaya Univrsitas Sriwijaya dimulai pada tahun 1995
   utter_tanggal_diresmikan_kampus_indralaya:
-    - text: Kampus utama Universitas Sriwijaya Indralaya diresmikan pada tanggal 6 Maret 1997 oleh Presideb Soeharto
+  - text: Kampus utama Universitas Sriwijaya Indralaya diresmikan pada tanggal 6 Maret 1997 oleh Presideb Soeharto
   utter_letak_kampus_indralaya_unsri:
-    - text: Kampus utama Universitas Sriwijaya Indralaya terletak di Indralaya, Organ Ilir, Sumatera Selatan
+  - text: Kampus utama Universitas Sriwijaya Indralaya terletak di Indralaya, Organ Ilir, Sumatera Selatan
   utter_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri:
-    - text: Kampus utama Universitas Sriwijaya diresmikan oleh Presiden Soeharto pada tanggal 6 Maret 1997
+  - text: Kampus utama Universitas Sriwijaya diresmikan oleh Presiden Soeharto pada tanggal 6 Maret 1997
   utter_yang_menghadiri_peresmian_kampus_indralaya_unsri:
-    - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dihadiri oleh Civitas Akademika, unsur pemerintahan, dunia usaha, dan tokoh masyarakat di Sumatera Selatan
+  - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dihadiri oleh Civitas Akademika, unsur pemerintahan, dunia usaha, dan tokoh masyarakat di Sumatera Selatan
   utter_tanda_resmi_kampus_utama_indralaya:
-    - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dilakukan penandatanganan prasasti peresmian Kampus Universitas Sriwijaya oleh Presiden Soeharto sebagai tanda
+  - text: Dalam peresmian kampus utama Universitas Sriwijaya Indralaya dilakukan penandatanganan prasasti peresmian Kampus Universitas Sriwijaya oleh Presiden Soeharto sebagai tanda
   utter_program_pendidikan_unsri:
-    - text: Universitas Sriwijaya memiliki Program Pascasarjana yang menyelenggarakan Pendidikan Diploma Tiga (D3), Program Pendidikan Sarjana (S1), Magister (S2), Doktor (S3), dan Pendidikan Profesi.
+  - text: Universitas Sriwijaya memiliki Program Pascasarjana yang menyelenggarakan Pendidikan Diploma Tiga (D3), Program Pendidikan Sarjana (S1), Magister (S2), Doktor (S3), dan Pendidikan Profesi.
   utter_fakultas_unsri:
-    - text: Di Universitas Sriwijaya terdapat sepuluh fakultas yang diantaranya, Fakultas Ekonomi, Fakultas Hukum, Fakultas Teknik, Fakultas Kedokteran, Fakultas Pertanian, Fakultas Keguruan dan Ilmu Pendidikan, Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Matematika dan Ilmu Pengetahuan Alam, Fakultas Ilmu Komputer, dan Fakultas Kesehatan Masyarakat.
+  - text: Di Universitas Sriwijaya terdapat sepuluh fakultas yang diantaranya, Fakultas Ekonomi, Fakultas Hukum, Fakultas Teknik, Fakultas Kedokteran, Fakultas Pertanian, Fakultas Keguruan dan Ilmu Pendidikan, Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Matematika dan Ilmu Pengetahuan Alam, Fakultas Ilmu Komputer, dan Fakultas Kesehatan Masyarakat.
   utter_bot:
-    - text: Saya adalah BOT yang dibuat menggunakan Framework RASA yang menjelaskan isi buku pedoman akademik UNSRI dari halaman 1-7
+  - text: Saya adalah BOT yang dibuat menggunakan Framework RASA yang menjelaskan isi buku pedoman akademik UNSRI dari halaman 1-8
   utter_jumlah_jurusan_fe:
-    - text: Jumlah jurusan / program studi di Fakultas Ekonomi adalah 10, yang terdiri dari 3 jurusan dengan program sarjana, 2 jurusan dengan program diploma tiga, 3 jurusan dengan program magister, dan 2 jurusan dengan program doktor
+  - text: Jumlah jurusan / program studi di Fakultas Ekonomi adalah 10, yang terdiri dari 3 jurusan dengan program sarjana, 2 jurusan dengan program diploma tiga, 3 jurusan dengan program magister, dan 2 jurusan dengan program doktor
   utter_jumlah_jurusan_fh:
-    - text: Jumlah jurusan / program studi di Fakultas Hukum adalah 4, yang terdiri dari 1 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktor
+  - text: Jumlah jurusan / program studi di Fakultas Hukum adalah 4, yang terdiri dari 1 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktor
   utter_jumlah_jurusan_ft:
-    - text: Jumlah jurusan / program studi di Fakultas Teknik adalah 12, yang terdiri dari 7 jurusan dengan program sarjana (S1), 4 jurusan dengan program magister, dan 1 jurusan dengan program doktor
+  - text: Jumlah jurusan / program studi di Fakultas Teknik adalah 12, yang terdiri dari 7 jurusan dengan program sarjana (S1), 4 jurusan dengan program magister, dan 1 jurusan dengan program doktor
   utter_jumlah_jurusan_fk:
-    - text: Jumlah jurusan / program studi di Fakultas Kedokteran adalah 16, yang terdiri dari 10 jurusan dengan program spesialis, 1 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
+  - text: Jumlah jurusan / program studi di Fakultas Kedokteran adalah 16, yang terdiri dari 10 jurusan dengan program spesialis, 1 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
   utter_jumlah_jurusan_fp:
-    - text: Jumlah jurusan / program studi di Fakultas Pertanian adalah 13, yang terdiri dari 10 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
+  - text: Jumlah jurusan / program studi di Fakultas Pertanian adalah 13, yang terdiri dari 10 jurusan dengan program sarjana (S1), 2 jurusan dengan program magister, dan 1 jurusan dengan program doktoral
   utter_makna_lambang:
-    - text: Lambang Universitas Sriwijaya memiliki arti bahwa Universitas Sriwijaya sebagai milik Bangsa Indonesia yang berfalsafah hidup Pancasila selalu dengan penuh daya dan dinamika meningkatkan ilmu pengetahuan guna memerangi ketidaktahuan yang merupakan penghalang bagi masyarakat Bangsa Indonesia untuk mencapai cita-cita masyarakat adil dan makmur serta dalam ridho Tuhan Yang Maha Esa.
+  - text: Lambang Universitas Sriwijaya memiliki arti bahwa Universitas Sriwijaya sebagai milik Bangsa Indonesia yang berfalsafah hidup Pancasila selalu dengan penuh daya dan dinamika meningkatkan ilmu pengetahuan guna memerangi ketidaktahuan yang merupakan penghalang bagi masyarakat Bangsa Indonesia untuk mencapai cita-cita masyarakat adil dan makmur serta dalam ridho Tuhan Yang Maha Esa.
   utter_bendera:
-    - text: "Bendera universitas dengan Lambang Universitas Sriwijaya berwarna kuning, berbentuk persegi panjang dengan ukuran panjang berbanding lebar 3 : 2, berwarna dasar kuning dengan kode warna (R = 255 G = 255 B = 0), di tengah-tengahnya terdapat lambang Universitas Sriwijaya"
+  - text: 'Bendera universitas dengan Lambang Universitas Sriwijaya berwarna kuning, berbentuk persegi panjang dengan ukuran panjang berbanding lebar 3 : 2, berwarna dasar kuning dengan kode warna (R = 255 G = 255 B = 0), di tengah-tengahnya terdapat lambang Universitas Sriwijaya'
   utter_mars:
-    - text: |-
-        Mars Univeritas Sriwijaya
+  - text: |-
+      Mars Universitas Sriwijaya \n
 
-        Hei warga Unsri pahlawan muda
-        Maju bergerak maju (ya maju)
-        Dengan pancasila nyata di dada
-        Bina hidup baru 
+      Hei warga Unsri pahlawan muda
+      Maju bergerak maju (ya maju)
+      Dengan pancasila nyata di dada
+      Bina hidup baru \n
 
-        Hei warga Unsri angkatan muda
-        Maju membangun maju (ya maju)
-        Menuju masyarakat adil dan makmur
-        Mengemban ampera
+      Hei warga Unsri angkatan muda
+      Maju membangun maju (ya maju)
+      Menuju masyarakat adil dan makmur
+      Mengemban ampera \n
 
-        Di dalam Unsri bersatu padu
-        Pengabdian dan ilmu (dan ilmu)
-        Mengabdi kepada Tuhan Yang Esa
-        Negara dan bangsa
+      Di dalam Unsri bersatu padu
+      Pengabdian dan ilmu (dan ilmu)
+      Mengabdi kepada Tuhan Yang Esa
+      Negara dan bangsa \n
 
-        Hei warga Unsri mari berseru
-        Seruan kudus syahdu (dan syahdu)
-        Dirgahayu Unsri dirgahayulah
-        Selama-lamanya
+      Hei warga Unsri mari berseru
+      Seruan kudus syahdu (dan syahdu)
+      Dirgahayu Unsri dirgahayulah
+      Selama-lamanya
   utter_hymne:
-    - text: |-
-        Hymne Univeritas Sriwijaya
+  - text: |-
+      Hymne Universitas Sriwijaya \n
 
-        Universitas Sriwijaya
-        Lambang kemajuan bangsaku
-        Dengan falsafah Pancasila
-        Mengabdi kepada ibu pertiwi
+      Universitas Sriwijaya
+      Lambang kemajuan bangsaku
+      Dengan falsafah Pancasila
+      Mengabdi kepada ibu pertiwi \n
 
-        Ilmu alat pengabdian
-        Tuk menerangi alam semesta
-        Dengan semboyan pengabdian
-        Ke arah kejayaan abadi
+      Ilmu alat pengabdian
+      Tuk menerangi alam semesta
+      Dengan semboyan pengabdian
+      Ke arah kejayaan abadi \n
 
-        Universitas Sriwijaya
-        Sumber ilmu sepanjang masa
-        Membentuk generasi baru
-        Yang penuh semangat untuk mengabdi
+      Universitas Sriwijaya
+      Sumber ilmu sepanjang masa
+      Membentuk generasi baru
+      Yang penuh semangat untuk mengabdi \n
 
-        Melati bangsa yang suci
-        Lambang agung keluhuran cipta
-        Dengan rahmat Tuhan Yang Esa
-        Menuju masyarakat adil’ makmur
+      Melati bangsa yang suci
+      Lambang agung keluhuran cipta
+      Dengan rahmat Tuhan Yang Esa
+      Menuju masyarakat adil’ makmur
   utter_pencipta_mars:
-    - text: Mars Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
+  - text: Mars Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
   utter_pencipta_hymne:
-    - text: Hymne Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
-  utter_ide_dibentuk:
-    - text: “ide pertama di bentuknya sebuah perguruan tinggi pada tahun 1950-an”
+  - text: Hymne Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
+  utter_sejarah_unsri:
+  - text: “Keinginan masyarakat Sumatera Selatan untuk memiliki sebuah perguruan tinggi telah ada sejak awal tahun 1950-an. Keinginan tersebut secara resmi dikemukakan oleh beberapa tokoh masyarakat pada HUT RI yang ketujuh dan diwujudkan dengan membentuk “Panitia Fakultas Sumatera Selatan”. Kemudian di bawah “Yayasan Perguruan Tinggi Syakyakirti” secara resmi pada 31 Oktober 1953 didirikan Fakultas Ekonomi yang dihadiri oleh Mr. Hadi (Sekretaris Jenderal Kementerian Pendidikan Pengajaran dan Kebudayaan), Drg. M. Isa (Gubernur Sumatera Selatan), Bambang Utoyo (Panglima TT II Sriwijaya), dan Ali Gathmyr (Ketua DPRD Sumatera Selatan). Penguasa Darurat Militer Teritorial II Sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar yang sekarang adalah Gedung Lembaga Bahasa di Kampus UNSRI Bukit Besar. \n Upacara peletakan batu pertama dilakukan pada tanggal 31 Oktober 1957. Tanggal 1 November 1957 diresmikan “Fakultas Hukum dan Pengetahuan Masyarakat”. Kolonel Harun Sohar (Panglima selaku Ketua Peperda TT II / Sriwijaya) dan Ahmad Bastari (Gubernur / Kepala Daerah) adalah delegasi yang menemui Menteri Pendidikan Pengajaran dan Kebudayaan (PPK), yaitu Mr. Mohammad Yamin pada bulan Desember 1959, memperoleh jaminan kesediaan Pemerintah untuk mengambil alih Perguruan Tinggi Syakyakirti menjadi Universitas Negeri. Akhirnya berdasarkan PP No. 42 Tahun 1960 tanggal 29 Oktober 1960 ditetapkanlah Universitas Sriwjaya (UNSRI) sebagai Universitas Negeri di Sumatera Selatan \n Upacara Peresmian dilakukan oleh Presiden Soekarno pada 3 November 1960 dengan penandatanganan piagam pendirian yang disaksikan oleh Menteri PPK, yaitu Mr. Priyono dan beberapa Duta Besar Negara sahabat. Keppres No. 696/M Tahun 1960 tanggal 29 Oktober 1960 menunjuk pengangkatan Drg. M. Isa sebagai rektor pertama Universitas Sriwijaya. \n Pada awal berdirinya, UNSRI berkedudukan di Jalan Srijaya Negara, Bukit Besar, Palembang. Mulai tahun 1995 kegiatan perkuliahan UNSRI terletak di Indralaya yang diresmikan pada 6 Maret 1997 oleh Presiden Soeharto dengan penandatanganan prasasti peresmian Kampus UNSRI. Peresmian tersebut juga dihadiri oleh civitas akademika, unsur pemerintahan, dunia usaha, dan tokoh masyarakat di Sumatera Selatan.”
   utter_keinginan_masyarakat:
-    - text: “keinginan tersebut secara resmi di kemukakan oleh tokoh masyarakat”
+  - text: “keinginan tersebut secara resmi di kemukakan oleh tokoh masyarakat”
   utter_kapan_resepsi:
-    - text: “hari kemerdekaan ri 17 agustus 1952”
+  - text: “hari kemerdekaan ri 17 agustus 1952”
   utter_pembentukan_panitia:
-    - text: “di bentuk panitia fakultas sumatera selatan”
+  - text: “di bentuk panitia fakultas sumatera selatan”
   utter_yayasan_perguruan_tinggi:
-    - text: “di bawah yayasan perguruan tinggi syakyakirti”
+  - text: “di bawah yayasan perguruan tinggi syakyakirti”
   utter_fakultas_ekonomi:
-    - text: “fakultas ekonomi di bentuk pada tanggal 31 oktober 1953”
+  - text: “fakultas ekonomi di bentuk pada tanggal 31 oktober 1953”
   utter_tokoh_yang_hadir:
-    - text: “dihadiri mr. hadi, sekretaris jenderal kementerian pendidikan pengajaran dan kebudayaan (ppk), drg. m. isa (gubernur sumatera selatan), bambang utoyo (panglima tt ii sriwijaya), dan ali gathmyr (ketua dprd sumatera selatan).”
+  - text: “dihadiri mr. hadi, sekretaris jenderal kementerian pendidikan pengajaran dan kebudayaan (ppk), drg. m. isa (gubernur sumatera selatan), bambang utoyo (panglima tt ii sriwijaya), dan ali gathmyr (ketua dprd sumatera selatan).”
   utter_bantuan_keuangan:
-    - text: “penguasa darurat militer teritorial ii sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk yayasan perguruan tinggi syakyakirti di bukit besar”
+  - text: “penguasa darurat militer teritorial ii sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk yayasan perguruan tinggi syakyakirti di bukit besar”
   utter_lembaga_bahasa:
-    - text: “sekarang gedung lembaga bahasa di kampus universitas sriwijaya bukit besar, palembang”
+  - text: “sekarang gedung lembaga bahasa di kampus universitas sriwijaya bukit besar, palembang”
   utter_batu_pertama:
-    - text: “upacara peletakan batu pertama dilakukan pada tanggal 31 oktober 1957”
+  - text: “upacara peletakan batu pertama dilakukan pada tanggal 31 oktober 1957”
   utter_didirikan_fakultas:
-    - text: “di dirkan fakultas hukum dan pengetahuan masyarakat di dirikan pada tanggal 1 november 1957, bertepatan dengan perayaan dies natalis iv fakultas ekonomi”
+  - text: “di dirkan fakultas hukum dan pengetahuan masyarakat di dirikan pada tanggal 1 november 1957, bertepatan dengan perayaan dies natalis iv fakultas ekonomi”
   utter_yang_mendatangi_peresmian:
-    - text: “kolonel harun sohar (panglima selaku ketua peperda tt ii / sriwijaya) dan ahmad bastari (gubernur/kepala daerah) sebagai delegasi yang menemui menteri ppk (mr. mohamad yamin)”
+  - text: “kolonel harun sohar (panglima selaku ketua peperda tt ii / sriwijaya) dan ahmad bastari (gubernur/kepala daerah) sebagai delegasi yang menemui menteri ppk (mr. mohamad yamin)”
   utter_penetapan_unsri:
-    - text: “berdasarkan peraturan pemerintah no. 42 tahun 1960 tanggal 29 oktober 1960 di tetapkan menjadi universitas sriwijaya”
+  - text: “berdasarkan peraturan pemerintah no. 42 tahun 1960 tanggal 29 oktober 1960 di tetapkan menjadi universitas sriwijaya”
   utter_upacara_peresmian:
-    - text: “upacara peresmian dilakukan oleh presiden soekarno tanggal 3 november 1960 dengan acara penandatanganan piagam pendirian”
+  - text: “upacara peresmian dilakukan oleh presiden soekarno tanggal 3 november 1960 dengan acara penandatanganan piagam pendirian”
   utter_saksi_yang_hadir:
-    - text: “dengan disaksikan oleh menteri ppk (mr. priyono), dan beberapa duta besar negara sahabat”
+  - text: “dengan disaksikan oleh menteri ppk (mr. priyono), dan beberapa duta besar negara sahabat”
 actions:
-  - action_program
-  - action_jurusan
-  - action_gelar
-  - action_daftar
-  - action_fakultas
-  - action_rektor
-  - action_daftar_rektor
-  - action_gambar
-  - action_daftar_fakultas
+- action_program
+- action_jurusan
+- action_gelar
+- action_daftar
+- action_fakultas
+- action_rektor
+- action_daftar_rektor
+- action_gambar
+- action_daftar_fakultas
+- action_daftar_gambar
 forms: {}
 e2e_actions: []

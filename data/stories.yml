@@ -211,15 +211,14 @@ stories:
       - action: utter_pencipta_hymne
 
   # --------------------------------------- ICAL ---------------------------------------------
-
-  - story: kapan ide pertama pembuatan unsri?
+  - story: sejarah unsri
     steps:
-      - intent: ide_dibentuk
+      - intent: sejarah_unsri
         entities:
           - daftar: "sejarah"
       - slot_was_set:
           - daftar: "sejarah"
-      - action: utter_ide_dibentuk
+      - action: utter_sejarah_unsri
 
   - story: siapa yang berkeinginan membuat universitas
     steps:
@@ -368,3 +367,8 @@ stories:
     steps:
       - intent: i_gambar
       - action: action_gambar
+
+  - story: Daftar Gambar
+    steps:
+      - intent: daftar_gambar
+      - action: action_daftar_gambar
