@@ -385,3 +385,8 @@ rules:
     steps:
       - intent: jumlah_fakultas_unsri
       - action: utter_jumlah_fakultas_unsri
+
+  - rule: ide dibentuk
+    steps:
+      - intent: ide_dibentuk
+      - action: utter_ide_dibentuk

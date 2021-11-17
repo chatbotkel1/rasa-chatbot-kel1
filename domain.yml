@@ -131,8 +131,6 @@ intents:
     use_entities: true
 - jumlah_jurusan_fp:
     use_entities: true
-- upacara_persemian:
-    use_entities: true
 - yang_mendatangani_peresmian:
     use_entities: true
 - jenis_program:
@@ -216,8 +214,8 @@ responses:
       a. Mahkota bunga melati
       b. Mahkota bunga seruni yang ujung kelopaknyamengarah ke kiri di atas mahkota bunga melati
       c. Cahaya dipusatkan pada mahkota bungaseruni di atas mahkota bunga melati
-      d. Kata “UNIVERSITAS SRIWIJAYA”
-      e. Pita bertuliskan Motto “ILMU ALAT PENGABDIAN”
+      d. Kata “UNIVERSITAS SRIWIJAYA
+      e. Pita bertuliskan Motto “ILMU ALAT PENGABDIAN
   utter_warna_mahkota_bunga_melati:
   - text: Pada mahkota bunga melati terdapat 2 warna yaitu biru pada garis tepi di kelopak melati dan kuning muda pada kelopak melati
   utter_warna_mahkota_bunga_seruni:
@@ -239,7 +237,7 @@ responses:
   utter_keterangan_motto_ilmu_alat_pengabdian:
   - text: Motto ILMU ALAT PENGABDIAN ditulis dengan huruf berwarna emas di atas dasar hitam yang terletak dalam selendang di bagian bawah lambang. Motto ini melambangkan bahwa manusia wajib mengabdi kepada Tuhan, Negara, bangsa, masyarakat dan keluarga. Pengabdian yang tidak disertai dengan ilmu pengetahuan tidaklah sempurna
   utter_salam:
-  - text: Halo juga, Apa yang ingin anda tanyakan?
+  - text: Halo, Apa yang ingin anda tanyakan?
   utter_selamat_tinggal:
   - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi!
   utter_terima_kasih:
@@ -287,22 +285,18 @@ responses:
   utter_mars:
   - text: |-
       Mars Universitas Sriwijaya
-      -----------------------------
       Hei warga Unsri pahlawan muda
       Maju bergerak maju (ya maju)
       Dengan pancasila nyata di dada
       Bina hidup baru
-      -----------------------------
       Hei warga Unsri angkatan muda
       Maju membangun maju (ya maju)
       Menuju masyarakat adil dan makmur
       Mengemban ampera
-      -----------------------------
       Di dalam Unsri bersatu padu
       Pengabdian dan ilmu (dan ilmu)
       Mengabdi kepada Tuhan Yang Esa
       Negara dan bangsa
-      -----------------------------
       Hei warga Unsri mari berseru
       Seruan kudus syahdu (dan syahdu)
       Dirgahayu Unsri dirgahayulah
@@ -310,22 +304,18 @@ responses:
   utter_hymne:
   - text: |-
       Hymne Universitas Sriwijaya
-      -----------------------------
       Universitas Sriwijaya
       Lambang kemajuan bangsaku
       Dengan falsafah Pancasila
       Mengabdi kepada ibu pertiwi
-      -----------------------------
       Ilmu alat pengabdian
       Tuk menerangi alam semesta
       Dengan semboyan pengabdian
       Ke arah kejayaan abadi
-      -----------------------------
       Universitas Sriwijaya
       Sumber ilmu sepanjang masa
       Membentuk generasi baru
       Yang penuh semangat untuk Mengabdi
-      -----------------------------
       Melati bangsa yang suci
       Lambang agung keluhuran cipta
       Dengan rahmat Tuhan Yang Esa
@@ -336,40 +326,40 @@ responses:
   - text: Hymne Universitas Sriwijaya diciptakan oleh dr. Tuti Ariani Bachtiar dan diaransemen oleh dr. Tuti Ariani Bachtiar
   utter_sejarah_unsri:
   - text: |-
-      Keinginan masyarakat Sumatera Selatan untuk memiliki sebuah perguruan tinggi telah ada sejak awal tahun 1950-an. Keinginan tersebut secara resmi dikemukakan oleh beberapa tokoh masyarakat pada HUT RI yang ketujuh dan diwujudkan dengan membentuk “Panitia Fakultas Sumatera Selatan”. Kemudian di bawah “Yayasan Perguruan Tinggi Syakyakirti” secara resmi pada 31 Oktober 1953 didirikan Fakultas Ekonomi yang dihadiri oleh Mr. Hadi (Sekretaris Jenderal Kementerian Pendidikan Pengajaran dan Kebudayaan), Drg. M. Isa (Gubernur Sumatera Selatan), Bambang Utoyo (Panglima TT II Sriwijaya), dan Ali Gathmyr (Ketua DPRD Sumatera Selatan). Penguasa Darurat Militer Teritorial II Sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar yang sekarang adalah Gedung Lembaga Bahasa di Kampus UNSRI Bukit Besar. 
-       Upacara peletakan batu pertama dilakukan pada tanggal 31 Oktober 1957. Tanggal 1 November 1957 diresmikan “Fakultas Hukum dan Pengetahuan Masyarakat”. Kolonel Harun Sohar (Panglima selaku Ketua Peperda TT II / Sriwijaya) dan Ahmad Bastari (Gubernur / Kepala Daerah) adalah delegasi yang menemui Menteri Pendidikan Pengajaran dan Kebudayaan (PPK), yaitu Mr. Mohammad Yamin pada bulan Desember 1959, memperoleh jaminan kesediaan Pemerintah untuk mengambil alih Perguruan Tinggi Syakyakirti menjadi Universitas Negeri. Akhirnya berdasarkan PP No. 42 Tahun 1960 tanggal 29 Oktober 1960 ditetapkanlah Universitas Sriwjaya (UNSRI) sebagai Universitas Negeri di Sumatera Selatan 
+      Keinginan masyarakat Sumatera Selatan untuk memiliki sebuah perguruan tinggi telah ada sejak awal tahun 1950-an. Keinginan tersebut secara resmi dikemukakan oleh beberapa tokoh masyarakat pada HUT RI yang ketujuh dan diwujudkan dengan membentuk “Panitia Fakultas Sumatera Selatan. Kemudian di bawah “Yayasan Perguruan Tinggi Syakyakirti secara resmi pada 31 Oktober 1953 didirikan Fakultas Ekonomi yang dihadiri oleh Mr. Hadi (Sekretaris Jenderal Kementerian Pendidikan Pengajaran dan Kebudayaan), Drg. M. Isa (Gubernur Sumatera Selatan), Bambang Utoyo (Panglima TT II Sriwijaya), dan Ali Gathmyr (Ketua DPRD Sumatera Selatan). Penguasa Darurat Militer Teritorial II Sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar yang sekarang adalah Gedung Lembaga Bahasa di Kampus UNSRI Bukit Besar. 
+       Upacara peletakan batu pertama dilakukan pada tanggal 31 Oktober 1957. Tanggal 1 November 1957 diresmikan “Fakultas Hukum dan Pengetahuan Masyarakat. Kolonel Harun Sohar (Panglima selaku Ketua Peperda TT II / Sriwijaya) dan Ahmad Bastari (Gubernur / Kepala Daerah) adalah delegasi yang menemui Menteri Pendidikan Pengajaran dan Kebudayaan (PPK), yaitu Mr. Mohammad Yamin pada bulan Desember 1959, memperoleh jaminan kesediaan Pemerintah untuk mengambil alih Perguruan Tinggi Syakyakirti menjadi Universitas Negeri. Akhirnya berdasarkan PP No. 42 Tahun 1960 tanggal 29 Oktober 1960 ditetapkanlah Universitas Sriwjaya (UNSRI) sebagai Universitas Negeri di Sumatera Selatan 
        Upacara Peresmian dilakukan oleh Presiden Soekarno pada 3 November 1960 dengan penandatanganan piagam pendirian yang disaksikan oleh Menteri PPK, yaitu Mr. Priyono dan beberapa Duta Besar Negara sahabat. Keppres No. 696/M Tahun 1960 tanggal 29 Oktober 1960 menunjuk pengangkatan Drg. M. Isa sebagai rektor pertama Universitas Sriwijaya. 
        Pada awal berdirinya, UNSRI berkedudukan di Jalan Srijaya Negara, Bukit Besar, Palembang. Mulai tahun 1995 kegiatan perkuliahan UNSRI terletak di Indralaya yang diresmikan pada 6 Maret 1997 oleh Presiden Soeharto dengan penandatanganan prasasti peresmian Kampus UNSRI. Peresmian tersebut juga dihadiri oleh civitas akademika, unsur pemerintahan, dunia usaha, dan tokoh masyarakat di Sumatera Selatan.
   utter_ide_dibentuk:
-  - text: “Ide pertama dibentuknya sebuah perguruan tinggi di Sumatera Selatan telah ada sejak awal tahun 1950-an”
+  - text: Ide pertama dibentuknya sebuah perguruan tinggi di Sumatera Selatan telah ada sejak awal tahun 1950-an
   utter_keinginan_masyarakat:
-  - text: “Keinginan didirikannya perguruan tinggi secara resmi dikemukakan oleh tokoh masyarakat”
+  - text: Keinginan didirikannya perguruan tinggi secara resmi dikemukakan oleh tokoh masyarakat
   utter_kapan_resepsi:
-  - text: “Dikemukakan perguruan tinggi selaras dengan perayaan Hari kemerdekaan RI yang jatuh pada pada tanggal 17 agustus 1952”
+  - text: Dikemukakan perguruan tinggi selaras dengan perayaan Hari kemerdekaan RI yang jatuh pada pada tanggal 17 agustus 1952
   utter_pembentukan_panitia:
-  - text: “Hasil dikemukakannya Perguruan Tinggi diwujudkan dalam dibentuknya "Panitia Fakultas Sumatera Selatan"”.
+  - text: Hasil dikemukakannya Perguruan Tinggi diwujudkan dalam dibentuknya Panitia Fakultas Sumatera Selatan.
   utter_yayasan_perguruan_tinggi:
-  - text: “Fakultas Ekonomi secara resmi didirikan di bawah “Yayasan Perguruan Tinggi Syakyakirti””
+  - text: Fakultas Ekonomi secara resmi didirikan di bawah Yayasan Perguruan Tinggi Syakyakirti
   utter_fakultas_ekonomi:
-  - text: “Fakultas Ekonomi resmi dibentuk pada tanggal 31 oktober 1953”
+  - text: Universitas Sriwijaya diresmikan dengan pembentukan Fakultas Ekonomi pada tanggal 31 Oktober 1953
   utter_tokoh_yang_hadir:
-  - text: “Tokoh yang hadir dalam dalam peresmian adalah Mr. Hadi, sekretaris jenderal kementerian pendidikan pengajaran dan kebudayaan (ppk), drg. m. isa (gubernur sumatera selatan), bambang utoyo (panglima tt ii sriwijaya), dan ali gathmyr (ketua dprd sumatera selatan).”
+  - text: Tokoh yang hadir dalam dalam peresmian Fakultas Ekonomi adalah Mr. Hadi, sekretaris jenderal kementerian pendidikan pengajaran dan kebudayaan (ppk), drg. m. isa (gubernur sumatera selatan), bambang utoyo (panglima tt ii sriwijaya), dan ali gathmyr (ketua dprd sumatera selatan).
   utter_bantuan_keuangan:
-  - text: “Penguasa darurat militer teritorial II sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk yayasan perguruan tinggi syakyakirti di bukit besar”
+  - text: Penguasa darurat militer teritorial II sriwijaya memberikan bantuan keuangan untuk mendirikan sebuah gedung permanen untuk yayasan perguruan tinggi syakyakirti di bukit besar
   utter_lembaga_bahasa:
-  - text: “Saat ini gedung tersebut menjadi gedung lembaga bahasa di kampus Universitas Sriwijaya Bukit Besar, Palembang”
+  - text: Saat ini gedung tersebut menjadi gedung lembaga bahasa di kampus Universitas Sriwijaya Bukit Besar, Palembang
   utter_batu_pertama:
-  - text: “upacara peletakan batu pertama dilakukan pada tanggal 31 oktober 1957”
+  - text: upacara peletakan batu pertama dilakukan pada tanggal 31 oktober 1957
   utter_didirikan_fakultas:
-  - text: “Didirikan Fakultas Hukum dan Pengetahuan Masyarakat didirikan pada tanggal 1 november 1957, bertepatan dengan perayaan dies natalis iv fakultas ekonomi”
+  - text: Didirikan Fakultas Hukum dan Pengetahuan Masyarakat didirikan pada tanggal 1 november 1957, bertepatan dengan perayaan dies natalis iv fakultas ekonomi
   utter_yang_mendatangi_peresmian:
-  - text: “Tokoh masyarakat yang menjadi perwakilan terbentukmya unsri antara lain, kolonel harun sohar (panglima selaku ketua peperda tt ii / sriwijaya) dan ahmad bastari (gubernur/kepala daerah) sebagai delegasi yang menemui menteri ppk (mr. mohamad yamin)”
+  - text: Tokoh masyarakat yang menjadi perwakilan terbentukmya unsri antara lain, kolonel harun sohar (panglima selaku ketua peperda tt ii / sriwijaya) dan ahmad bastari (gubernur/kepala daerah) sebagai delegasi yang menemui menteri ppk (mr. mohamad yamin)
   utter_penetapan_unsri:
-  - text: “Universitas Sriwijaya resmi ditetapkan berdasarkan peraturan pemerintah no. 42 tahun 1960 tanggal 29 oktober 1960”
+  - text: Universitas Sriwijaya resmi ditetapkan berdasarkan peraturan pemerintah no. 42 tahun 1960 tanggal 29 oktober 1960
   utter_upacara_peresmian:
-  - text: “Upacara peresmian Universitas Sriwijaya dilakukan oleh presiden soekarno tanggal 3 november 1960 dengan acara penandatanganan piagam pendirian”
+  - text: Upacara peresmian Universitas Sriwijaya dilakukan oleh presiden soekarno tanggal 3 november 1960 dengan acara penandatanganan piagam pendirian
   utter_saksi_yang_hadir:
-  - text: “Saksi yang hadir dalam peresmian unsri adalah menteri ppk (mr. priyono), dan beberapa duta besar negara sahabat”
+  - text: Saksi yang hadir dalam peresmian unsri adalah menteri ppk (mr. priyono), dan beberapa duta besar negara sahabat
 actions:
 - action_program
 - action_jurusan

@@ -34,6 +34,8 @@ nlu:
       - waktu munculnya ide Perguruan Tinggi
       - waktu munculnya ide perguruan tinggi
       - waktu munculnya ide perguruan tinggi?
+      - ide pembentukan unsri
+      - ide pembentukan universitas sriwijaya
 
   - intent: keinginan_masyarakat
     examples: |
@@ -200,9 +202,14 @@ nlu:
       - Organisasi perintis FE
       - yang perintis FE
       - perintis FE
+      - yayasan perguruan tinggi
 
   - intent: fakultas_ekonomi
     examples: |
+      - kapan pembentukan unsri
+      - kapan didirikan unsri
+      - pembentukan unsri
+      - didirikan unsri
       - Kapan terbentuknya Fakultas Ekonomi?
       - Kapan resmi terbentuknya Fakultas Ekonomi?
       - waktu terbentuknya Fakultas Ekonomi?
@@ -336,8 +343,11 @@ nlu:
       - letak pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
       - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti saat ini
       - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti
-      - diamana gedung lembaga bahasa
+      - dimana gedung lembaga bahasa
       - lokasi gedung lembaga bahasa
+      - lokasi lb
+      - dimana gedung lb
+      - lokasi gedung lb
 
   - intent: batu_pertama
     examples: |
@@ -395,6 +405,7 @@ nlu:
       - siapa yang menemui mr. mohamad yamin?
       - tokoh masyarakat yang menjadi perwakilan terbentuknya universitas sriwijaya
       - siapa tokoh masyarakat yang menjadi perwakilan terbentukmya universitas sriwijaya?
+      - tokoh yang hadir
 
   - intent: penetapan_unsri
     examples: |
@@ -435,7 +446,7 @@ nlu:
       - ditetapkanya menjadi universitas pada tanggal
       - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal
 
-  - intent: upacara_persemian
+  - intent: upacara_peresmian
     examples: |
       - siapa yang meresmikan unsri
       - siapa yang meresmikan universitas sriwijaya
