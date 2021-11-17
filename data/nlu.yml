@@ -1,5 +1,40 @@
 version: "2.0"
 nlu:
+  - intent: ide_dibentuk
+    examples: |
+      - kapan munculnya ide dibentuknya didirikannya Perguruan Tinggi?
+      - kapan munculnya ide dibentuknya didirikannya Perguruan Tinggi
+      - kapan munculnya ide dibentuknya didirikannya perguruan tinggi
+      - kapan munculnya ide dibentuknya didirikannya perguruan tinggi?
+      - kapan munculnya ide dibentuknya Perguruan Tinggi?
+      - kapan munculnya ide dibentuknya Perguruan Tinggi
+      - kapan munculnya ide dibentuknya perguruan tinggi
+      - kapan munculnya ide dibentuknya perguruan tinggi?
+      - waktu munculnya ide dibentuknya didirikannya Perguruan Tinggi?
+      - waktu munculnya ide dibentuknya didirikannya Perguruan Tinggi
+      - waktu munculnya ide dibentuknya didirikannya perguruan tinggi
+      - waktu munculnya ide dibentuknya didirikannya perguruan tinggi?
+      - waktu munculnya ide dibentuknya Perguruan Tinggi?
+      - waktu munculnya ide dibentuknya Perguruan Tinggi
+      - waktu munculnya ide dibentuknya perguruan tinggi
+      - waktu munculnya ide dibentuknya perguruan tinggi?
+      - kapan munculnya ide didirikannya Perguruan Tinggi?
+      - kapan munculnya ide didirikannya Perguruan Tinggi
+      - kapan munculnya ide didirikannya perguruan tinggi
+      - kapan munculnya ide didirikannya perguruan tinggi?
+      - kapan munculnya ide Perguruan Tinggi?
+      - kapan munculnya ide Perguruan Tinggi
+      - kapan munculnya ide perguruan tinggi
+      - kapan munculnya ide perguruan tinggi?
+      - waktu munculnya ide didirikannya Perguruan Tinggi?
+      - waktu munculnya ide didirikannya Perguruan Tinggi
+      - waktu munculnya ide didirikannya perguruan tinggi
+      - waktu munculnya ide didirikannya perguruan tinggi?
+      - waktu munculnya ide Perguruan Tinggi?
+      - waktu munculnya ide Perguruan Tinggi
+      - waktu munculnya ide perguruan tinggi
+      - waktu munculnya ide perguruan tinggi?
+
   - intent: keinginan_masyarakat
     examples: |
       - Siapa yang menginginkan didirikannya Perguruan Tinggi?
@@ -43,10 +78,10 @@ nlu:
 
   - intent: kapan_resepsi
     examples: |
-      - kapan dikemukan didirikannya Perguruan Tinggi?
-      - kapan dikemukan didirikannya Perguruan Tinggi
-      - kapan dikemukan didirikannya perguruan tinggi
-      - kapan dikemukan didirikannya perguruan tinggi?
+      - kapan dikemukakan didirikannya Perguruan Tinggi?
+      - kapan dikemukakan didirikannya Perguruan Tinggi
+      - kapan dikemukakan didirikannya perguruan tinggi
+      - kapan dikemukakan didirikannya perguruan tinggi?
       - kapan dikemukakan Perguruan Tinggi?
       - kapan dikemukakan Perguruan Tinggi
       - kapan dikemukakan perguruan tinggi
@@ -62,10 +97,10 @@ nlu:
 
   - intent: pembentukan_panitia
     examples: |
-      - apa hasil dikemukan didirikannya Perguruan Tinggi?
-      - apa hasil dikemukan didirikannya Perguruan Tinggi
-      - apa hasil dikemukan didirikannya perguruan tinggi
-      - apa hasil dikemukan didirikannya perguruan tinggi?
+      - apa hasil dikemukakan didirikannya Perguruan Tinggi?
+      - apa hasil dikemukakan didirikannya Perguruan Tinggi
+      - apa hasil dikemukakan didirikannya perguruan tinggi
+      - apa hasil dikemukakan didirikannya perguruan tinggi?
       - apa hasil dikemukakan Perguruan Tinggi?
       - apa hasil dikemukakan Perguruan Tinggi
       - apa hasil dikemukakan perguruan tinggi
@@ -78,10 +113,10 @@ nlu:
       - hasil dikemukakan Perguruan Tinggi
       - hasil dikemukakan perguruan tinggi
       - hasil dikemukakan perguruan tinggi?
-      - apa wujud dikemukan didirikannya Perguruan Tinggi?
-      - apa wujud dikemukan didirikannya Perguruan Tinggi
-      - apa wujud dikemukan didirikannya perguruan tinggi
-      - apa wujud dikemukan didirikannya perguruan tinggi?
+      - apa wujud dikemukakan didirikannya Perguruan Tinggi?
+      - apa wujud dikemukakan didirikannya Perguruan Tinggi
+      - apa wujud dikemukakan didirikannya perguruan tinggi
+      - apa wujud dikemukakan didirikannya perguruan tinggi?
       - apa wujud dikemukakan Perguruan Tinggi?
       - apa wujud dikemukakan Perguruan Tinggi
       - apa wujud dikemukakan perguruan tinggi
@@ -355,11 +390,11 @@ nlu:
       - yang menjadi perwakilan terbentuknya unsri
       - yang menemui mohamad yamin
       - tokoh masyarakat yang menjadi perwakilan terbentuknya unsri
-      - siapa tokoh masyarakta yang menjadi perwakilan terbentukmya unsri?
+      - siapa tokoh masyarakat yang menjadi perwakilan terbentukmya unsri?
       - siapa yang menjadi perwakilan terbentuknya universitas sriwijaya?
       - siapa yang menemui mr. mohamad yamin?
       - tokoh masyarakat yang menjadi perwakilan terbentuknya universitas sriwijaya
-      - siapa tokoh masyarakta yang menjadi perwakilan terbentukmya universitas sriwijaya?
+      - siapa tokoh masyarakat yang menjadi perwakilan terbentukmya universitas sriwijaya?
 
   - intent: penetapan_unsri
     examples: |
@@ -512,36 +547,67 @@ nlu:
       - kedudukan unsri pertama kali
       - dimanakah kedudukan unsri pertama kali
       - dimana kedudukan unsri pertama kali
+      - awal lokasi unsri
+      - dimanakah awal kedudukan universitas sriwijaya
+      - dimana awal kedudukan universitas sriwijaya
+      - awal kedudukan universitas sriwijaya
+      - kedudukan universitas sriwijaya pertama kali
+      - dimanakah kedudukan universitas sriwijaya pertama kali
+      - dimana kedudukan universitas sriwijaya pertama kali
+      - awal lokasi universitas sriwijaya
+
   - intent: i_tahun_pertama_kegiatan_perkuliahan_indralaya
     examples: |
       - tahun berapakah pertama kali kegiatan perkuliahan di kampus indralaya dilaksanakan
       - tahun berapa pertama kali kegiatan perkuliahan kampus indralaya dilaksanakan
       - tahun pertama kegiatan perkuliahan indralaya
+      - tahun pertama unsri
+      - tahun pertama universitas sriwijaya
+      - tahun pertama kegiatan mengajar
+
   - intent: i_tanggal_diresmikan_kampus_indralaya
     examples: |
       - tanggal berapakah kampus indralaya diresmikan
       - tanggal berapa kampus indralaya diresmikan
       - tanggal diresmikan kampus indralaya
+      - tanggal diresmikan unsri
+      - tanggal diresmikan universitas sriwijaya
+      - unsri diresmikan
+      - universitas sriwijaya diresmikan
+      - kapan unsri diresmikan
+      - kapan universitas sriwijaya diresmikan
+
   - intent: i_letak_kampus_indralaya_unsri
     examples: |
       - dimanakah letak kampus indralaya
       - dimana letak kampus indralaya
       - letak kampus indralaya
+
   - intent: i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
     examples: |
       - siapakah yang meresmikan kampus indralaya ?
       - siapa yang meresmikan kampus indralaya
       - yang meresmikan kampus indralaya
+      - presiden yang meresmikan
+      - siapa yang meresmikan unsri
+      - siapa yang meresmikan universitas sriwijaya
+
   - intent: i_yang_menghadiri_peresmian_kampus_indralaya_unsri
     examples: |
       - siapa sajakah yang menghadiri peresmian kampus indralaya ?
       - siapa saja yang menghadiri peresmian kampus indralaya ?
       - yang menghadiri peresmian kampus indralaya
+
   - intent: i_tanda_resmi_kampus_utama_indralaya
     examples: |
       - apakah tanda resmi kampus indralaya
       - apa tanda resmi kampus indralaya
       - tanda resmi kampus indralaya
+      - tanda resmi kampus
+      - tanda resmi
+      - tanda resmi unsri
+      - tanda resmi universitas sriwijaya
+
   - intent: i_jumlah_fakultas_unsri
     examples: |
       - berapakah jumlah fakultas unsri
@@ -556,11 +622,13 @@ nlu:
       - banyak fakultas
       - berapa banyak fakultas
       - berapakah banyak fakultas
+
   - intent: i_program_pendidikan_unsri
     examples: |
       - apa saja program pendidikan di unsri
-      - program prndidikan unsri
+      - program pendidikan unsri
       - apa sajakah program pendidikan di unsri
+
   - intent: i_fakultas_unsri
     examples: |
       - Apa saja fakultas yang ada di unsri
@@ -874,6 +942,8 @@ nlu:
       - apa saja fasilitas pada kampus unsri indralaya
       - fasilitas apa yang terdapat pada kampus unsri indralaya
       - apa saja fasilitas yang tersedia di kampus unsri indralaya
+      - fasilitas kampus unsri
+      - fasilitas kampus universitas sriwijaya
   - intent: fasilitas_pendidikan_kampus_indralaya
     examples: |
       - apa saja [fasilitas pendidikan](daftar) pada kampus universitas sriwijaya indralaya
@@ -887,6 +957,10 @@ nlu:
       - apa saja [fakultas](daftar) pada kampus unsri indralaya
       - apa saja [fakultas](daftar) yang tersedia di kampus unsri indralaya
       - [fasilitas pendidikan](daftar) kampus indralaya
+      - zona unsri
+      - zona universitas sriwijaya
+      - zona kampus unsri
+      - zona kampus universitas sriwijaya
   - intent: lokasi_luas_kebun_percobaan
     examples: |
       - berapa luas kebun percobaan universitas sriwijaya
@@ -1103,6 +1177,10 @@ nlu:
       - nama kamu siapa
       - siapa nama kamu
       - bot
+      - isi chatbot
+      - tentang chatbot
+      - chatbot
+      - isi bot
   - intent: i_diluar_topik
     examples: |
       - 1 + 1
@@ -1265,6 +1343,9 @@ nlu:
       - jurusan [fakultas hukum](fakultas) jenjang [D3](program)
       - jurusan [fp](fakultas) dengan jenjang [D3](program)
       - jurusan [ft](fakultas) jenjang [S1](program)
+      - [fakultas teknik](fakultas) gelar [sarjana](program)
+      - jurusan [fakultas teknik](fakultas) gelar [sarjana](program)
+
   - intent: gelar_jurusan
     examples: |
       - apa gelar untuk jurusan [ekonomi pembangunan](jurusan)
@@ -1272,6 +1353,7 @@ nlu:
       - gelar jurusan [teknik sipil](jurusan)
       - gelar program studi [peternakan](jurusan)
       - gelar [kenotariatan](jurusan)
+      - gelar [ilmu tanah](jurusan)
 
   - intent: gelar_jurusan_program
     examples: |
@@ -1461,6 +1543,8 @@ nlu:
       - [kesepuluh](rektor)
   - intent: daftar_rektor
     examples: |
+      - rektor
+      - rektor unsri
       - lihat rektor unsri
       - daftar rektor
       - daftar rektor unsri
@@ -1470,6 +1554,7 @@ nlu:
       - apakah ada daftar rektor?
   - intent: daftar_fakultas
     examples: |
+      - fakultas
       - daftar fakultas
       - tampilkan daftar fakultas
       - lihat daftar fakultas
@@ -1477,6 +1562,7 @@ nlu:
       - apakah ada daftar fakultas?
   - intent: i_gambar
     examples: |
+      - [Lambang Universitas Sriwijaya](gambar)
       - gambar [Lambang Universitas Sriwijaya](gambar)
       - gambar [Bendera Universitas Sriwijaya](gambar)
       - tampilkan [Lambang Universitas Sriwijaya](gambar)
@@ -1531,6 +1617,7 @@ nlu:
       - Bendera Fakultas Ilmu Sosial dan Ilmu Politik
       - Bendera Fakultas Ilmu Komputer
       - Bendera Fakultas Kesehatan Masyarakat
+      - lambang
       - lambang unsri
       - bendera unsri
       - bendera fe

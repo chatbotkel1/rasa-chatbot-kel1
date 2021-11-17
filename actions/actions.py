@@ -44,6 +44,17 @@ def querySQL(query: Text):
 
 def getFakultas(fakultas: str):
     fakultas = fakultas.lower()
+
+    if fakultas in ['hukum', 'kedokteran', 'teknik', 'pertanian', 'ekonomi']:
+        FAKULTAS = {
+        'hukum': 'Hukum',
+        'kedokteran': 'Kedokteran',
+        'teknik': 'Teknik',
+        'pertanian': 'Pertanian',
+        'ekonomi': 'Ekonomi'
+        }
+        return FAKULTAS.get(fakultas, None)
+
     fakultas = re.sub('fakultas\s?','',fakultas)
 
     if fakultas in ['hukum', 'kedokteran', 'teknik', 'pertanian', 'ekonomi']:
@@ -105,6 +116,7 @@ def getRektor(rektor: str):
 def getGambar(gambar: str):
     gambar = gambar.lower()
     GAMBAR = {
+        'lambang': 'Lambang Universitas Sriwijaya',
         'lambang universitas sriwijaya' : 'Lambang Universitas Sriwijaya',
         'bendera universitas sriwijaya' : 'Bendera Universitas Sriwijaya',
         'bendera fakultas ekonomi': 'Bendera Fakultas Ekonomi',

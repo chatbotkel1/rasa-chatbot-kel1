@@ -375,3 +375,13 @@ rules:
     steps:
       - intent: daftar_gambar
       - action: action_daftar_gambar
+
+  - rule: info umum unsri
+    steps:
+      - intent: jenis_kampus_unsri
+      - action: utter_jenis_kampus_unsri
+
+  - rule: jumlah fakultas unsri
+    steps:
+      - intent: jumlah_fakultas_unsri
+      - action: utter_jumlah_fakultas_unsri
