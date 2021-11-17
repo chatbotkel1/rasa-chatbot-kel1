@@ -1573,6 +1573,7 @@ nlu:
       - apakah ada daftar fakultas?
   - intent: i_gambar
     examples: |
+      - [lambang](gambar)
       - [Lambang Universitas Sriwijaya](gambar)
       - gambar [Lambang Universitas Sriwijaya](gambar)
       - gambar [Bendera Universitas Sriwijaya](gambar)

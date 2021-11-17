@@ -237,13 +237,13 @@ responses:
   utter_keterangan_motto_ilmu_alat_pengabdian:
   - text: Motto ILMU ALAT PENGABDIAN ditulis dengan huruf berwarna emas di atas dasar hitam yang terletak dalam selendang di bagian bawah lambang. Motto ini melambangkan bahwa manusia wajib mengabdi kepada Tuhan, Negara, bangsa, masyarakat dan keluarga. Pengabdian yang tidak disertai dengan ilmu pengetahuan tidaklah sempurna
   utter_salam:
-  - text: Halo, Apa yang ingin anda tanyakan?
+  - text: Halo, Apa yang ingin anda tanyakan? 😄👋
   utter_selamat_tinggal:
-  - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi!
+  - text: Terima kasih telah menggunakan layanan kami. Sampai jumpa lagi! 👋
   utter_terima_kasih:
-  - text: Sama-sama, apakah ada pertanyaan lain?
+  - text: Sama-sama, apakah ada pertanyaan lain? 😃
   utter_diluar_topik:
-  - text: Maaf, pertanyaan anda diluar topik, mohon beri saya pertanyaan mengenai Universitas Sriwijaya!
+  - text: Maaf, pertanyaan anda diluar topik, mohon beri saya pertanyaan mengenai Universitas Sriwijaya! 😔
   utter_banyak_pergantian_rektor_unsri:
   - text: Hingga saat ini, Universitas Sriwijaya telah mengalami pergantian 10 orang rektor
   utter_rektor_unsri_saat_ini:
@@ -267,7 +267,7 @@ responses:
   utter_fakultas_unsri:
   - text: Di Universitas Sriwijaya terdapat sepuluh fakultas yang diantaranya, Fakultas Ekonomi, Fakultas Hukum, Fakultas Teknik, Fakultas Kedokteran, Fakultas Pertanian, Fakultas Keguruan dan Ilmu Pendidikan, Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Matematika dan Ilmu Pengetahuan Alam, Fakultas Ilmu Komputer, dan Fakultas Kesehatan Masyarakat.
   utter_bot:
-  - text: Saya adalah BOT yang dibuat menggunakan Framework RASA yang menjelaskan isi buku pedoman akademik UNSRI dari halaman 1-8
+  - text: 🤖 Saya adalah BOT yang dibuat menggunakan Framework RASA yang menjelaskan isi buku pedoman akademik UNSRI dari halaman 1-8
   utter_jumlah_jurusan_fe:
   - text: Jumlah jurusan / program studi di Fakultas Ekonomi adalah 10, yang terdiri dari 3 jurusan dengan program sarjana, 2 jurusan dengan program diploma tiga, 3 jurusan dengan program magister, dan 2 jurusan dengan program doktor
   utter_jumlah_jurusan_fh:
