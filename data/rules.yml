@@ -25,3 +25,353 @@ rules:
     steps:
       - intent: i_diluar_topik
       - action: utter_diluar_topik
+
+  - rule: Daftar Isi
+    steps:
+      - intent: daftar_isi
+      - action: action_daftar
+
+  - rule: info kampus indralaya
+    steps:
+      - intent: lokasi_kampus_indralaya
+      - action: utter_lokasi_kampus_indralaya
+
+  - rule: fasilitas kampus indralaya
+    steps:
+      - intent: fasilitas_kampus_indralaya
+      - action: utter_fasilitas_kampus_indralaya
+
+  - rule: fasilitas pendidikan kampus indralaya
+    steps:
+      - intent: fasilitas_pendidikan_kampus_indralaya
+      - action: utter_fasilitas_pendidikan_kampus_indralaya
+
+  - rule: info pascasarjana
+    steps:
+      - intent: lokasi_kampus_pascasarjana
+      - action: utter_lokasi_kampus_pascasarjana
+
+  - rule: info pascasarjana
+    steps:
+      - intent: lokasi_luas_kebun_percobaan
+      - action: utter_lokasi_luas_kebun_percobaan
+
+  - rule: info fakultas kedokteran
+    steps:
+      - intent: lokasi_kampus_fakultas_kedokteran
+      - action: utter_lokasi_kampus_fakultas_kedokteran
+
+  - rule: info fkip
+    steps:
+      - intent: lokasi_kampus_fkip
+      - action: utter_lokasi_kampus_fkip
+
+  - rule: unsur lambang
+    steps:
+      - intent: i_unsur_lambang_universitas_sriwijaya
+      - action: utter_unsur_lambang_universitas_sriwijaya
+
+  - rule: warna mahkota bunga melati
+    steps:
+      - intent: i_warna_mahkota_bunga_melati
+      - action: utter_warna_mahkota_bunga_melati
+
+  - rule: warna mahkota bunga seruni
+    steps:
+      - intent: i_warna_mahkota_bunga_seruni
+      - action: utter_warna_mahkota_bunga_seruni
+
+  - rule: warna cahaya mahkota bunga seruni
+    steps:
+      - intent: i_warna_cahaya_mahkota_bunga_seruni
+      - action: utter_warna_cahaya_mahkota_bunga_seruni
+
+  - rule: warna kata universitas sriwijaya
+    steps:
+      - intent: i_warna_Kata_universitas_sriwijaya
+      - action: utter_warna_Kata_universitas_sriwijaya
+
+  - rule: warna motto ilmu alat pengabdian
+    steps:
+      - intent: i_warna_motto_ilmu_alat_pengabdian
+      - action: utter_warna_motto_ilmu_alat_pengabdian
+
+  - rule: warna motto ilmu alat pengabdian
+    steps:
+      - intent: i_warna_motto_ilmu_alat_pengabdian
+      - action: utter_warna_motto_ilmu_alat_pengabdian
+
+  - rule: keterangan mahkota bunga melati
+    steps:
+      - intent: i_keterangan_mahkota_bunga_melati
+      - action: utter_keterangan_mahkota_bunga_melati
+
+  - rule: keterangan mahkota bunga seruni
+    steps:
+      - intent: i_keterangan_mahkota_bunga_seruni
+      - action: utter_keterangan_mahkota_bunga_seruni
+
+  - rule: keterangan cahaya mahkota bunga seruni
+    steps:
+      - intent: i_keterangan_cahaya_mahkota_bunga_seruni
+      - action: utter_keterangan_cahaya_mahkota_bunga_seruni
+
+  - rule: keterangan kata universitas sriwijaya
+    steps:
+      - intent: i_keterangan_Kata_universitas_sriwijaya
+      - action: utter_keterangan_Kata_universitas_sriwijaya
+
+  - rule: keterangan motto ilmu alat pengabdian
+    steps:
+      - intent: i_keterangan_motto_ilmu_alat_pengabdian
+      - action: utter_keterangan_motto_ilmu_alat_pengabdian
+
+  - rule: keterangan motto ilmu alat pengabdian
+    steps:
+      - intent: i_keterangan_motto_ilmu_alat_pengabdian
+      - action: utter_keterangan_motto_ilmu_alat_pengabdian
+
+  - rule: informasi jumlah pergantian rektor unsri
+    steps:
+      - intent: i_banyak_pergantian_rektor_unsri
+      - action: utter_banyak_pergantian_rektor_unsri
+
+  - rule: informasi rektor unsri saat ini
+    steps:
+      - intent: i_rektor_unsri_saat_ini
+      - action: utter_rektor_unsri_saat_ini
+
+  - rule: informasi kedudukan awal unsri
+    steps:
+      - intent: i_awal_kedudukan_unsri
+      - action: utter_awal_kedudukan_unsri
+
+  - rule: informasi tahun pertama kegiatan perkuliahan kampus indralaya
+    steps:
+      - intent: i_tahun_pertama_kegiatan_perkuliahan_indralaya
+      - action: utter_tahun_pertama_kegiatan_perkuliahan_indralaya
+
+  - rule: informasi tanggal diresmikan kampus indralaya
+    steps:
+      - intent: i_tanggal_diresmikan_kampus_indralaya
+      - action: utter_tanggal_diresmikan_kampus_indralaya
+
+  - rule: informasi letak kampus indralaya
+    steps:
+      - intent: i_letak_kampus_indralaya_unsri
+      - action: utter_letak_kampus_indralaya_unsri
+
+  - rule: informasi presiden indonesia yang meresmikan kampus indralaya
+    steps:
+      - intent: i_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
+      - action: utter_presiden_indonesia_yang_meresmikan_kampus_indralaya_unsri
+
+  - rule: informasi yang menghadiri peresmian kampus indralaya
+    steps:
+      - intent: i_yang_menghadiri_peresmian_kampus_indralaya_unsri
+      - action: utter_yang_menghadiri_peresmian_kampus_indralaya_unsri
+
+  - rule: informasi tanda peresmian kampus utama indralaya
+    steps:
+      - intent: i_tanda_resmi_kampus_utama_indralaya
+      - action: utter_tanda_resmi_kampus_utama_indralaya
+
+  - rule: informasi jumlah fakultas di unsri
+    steps:
+      - intent: i_jumlah_fakultas_unsri
+      - action: utter_jumlah_fakultas_unsri
+
+  - rule: informasi program pendidikan di unsri
+    steps:
+      - intent: i_program_pendidikan_unsri
+      - action: utter_program_pendidikan_unsri
+
+  - rule: informasi fakultas yang ada di unsri
+    steps:
+      - intent: i_fakultas_unsri
+      - action: utter_fakultas_unsri
+
+  - rule: tanya makna lambang
+    steps:
+      - intent: makna_lambang
+      - action: utter_makna_lambang
+
+  - rule: gambar bendera Unsri
+    steps:
+      - intent: bendera
+      - action: utter_bendera
+
+  - rule: mars Unsri
+    steps:
+      - intent: mars
+      - action: utter_mars
+
+  - rule: hymne Unsri
+    steps:
+      - intent: hymne
+      - action: utter_hymne
+
+  - rule: pencipta mars Unsri
+    steps:
+      - intent: pencipta_mars
+      - action: utter_pencipta_mars
+
+  - rule: pencipta hymne Unsri
+    steps:
+      - intent: pencipta_hymne
+      - action: utter_pencipta_hymne
+
+  - rule: sejarah unsri
+    steps:
+      - intent: sejarah_unsri
+      - action: utter_sejarah_unsri
+
+  - rule: siapa yang berkeinginan membuat universitas
+    steps:
+      - intent: keinginan_masyarakat
+      - action: utter_keinginan_masyarakat
+
+  - rule: kapan ide itu di kemukakan?
+    steps:
+      - intent: kapan_resepsi
+      - action: utter_kapan_resepsi
+
+  - rule: siapa saja panitia yang membentuk?
+    steps:
+      - intent: pembentukan_panitia
+      - action: utter_pembentukan_panitia
+
+  - rule: unsri di bawah yayasan
+    steps:
+      - intent: yayasan_perguruan_tinggi
+      - action: utter_yayasan_perguruan_tinggi
+
+  - rule: kapan fakultas ekonomi berdiri
+    steps:
+      - intent: fakultas_ekonomi
+      - action: utter_fakultas_ekonomi
+
+  - rule: siapa saja yang hadir
+    steps:
+      - intent: tokoh_yang_hadir
+      - action: utter_tokoh_yang_hadir
+
+  - rule: siapa yang memberi bantuan
+    steps:
+      - intent: bantuan_keuangan
+      - action: utter_bantuan_keuangan
+
+  - rule: lembaga bahasa berada di
+    steps:
+      - intent: lembaga_bahasa
+      - action: utter_lembaga_bahasa
+
+  - rule: kapan peletakan batu pertama
+    steps:
+      - intent: batu_pertama
+      - action: utter_batu_pertama
+
+  - rule: kapan didirikanya fakultas hukum
+    steps:
+      - intent: didirikan_fakultas
+      - action: utter_didirikan_fakultas
+
+  - rule: siapa yang mendatangi saat peresmian fakultas hukum
+    steps:
+      - intent: yang_mendatangi_peresmian
+      - action: utter_yang_mendatangi_peresmian
+
+  - rule: kapan perubahan nama menjadi universitas sriwijaya
+    steps:
+      - intent: penetapan_unsri
+      - action: utter_penetapan_unsri
+
+  - rule: siapa yang meresmikan dan mendatangani piagam
+    steps:
+      - intent: upacara_peresmian
+      - action: utter_upacara_peresmian
+
+  - rule: siapa yang hadir saat peresmian universitas sriwijaya
+    steps:
+      - intent: saksi_yang_hadir
+      - action: utter_saksi_yang_hadir
+
+  - rule: Jumlah jurusan yang ada di fakultas ekonomi
+    steps:
+      - intent: jumlah_jurusan_fe
+      - action: utter_jumlah_jurusan_fe
+
+  - rule: Jumlah jurusan yang ada di fakultas hukum
+    steps:
+      - intent: jumlah_jurusan_fh
+      - action: utter_jumlah_jurusan_fh
+
+  - rule: Jumlah jurusan yang ada di fakultas teknik
+    steps:
+      - intent: jumlah_jurusan_ft
+      - action: utter_jumlah_jurusan_ft
+
+  - rule: Jumlah jurusan yang ada di Fakultas Kedokteran
+    steps:
+      - intent: jumlah_jurusan_fk
+      - action: utter_jumlah_jurusan_fk
+
+  - rule: Jumlah jurusan yang ada di Fakultas Pertanian
+    steps:
+      - intent: jumlah_jurusan_fp
+      - action: utter_jumlah_jurusan_fp
+
+  - rule: menanyakan program apa saja yang ada di fakultas tertentu
+    steps:
+      - intent: program_fakultas
+      - action: action_program
+
+  - rule: menanyakan jurusan apa saja yang ada di fakultas tertentu
+    steps:
+      - intent: jurusan_fakultas
+      - action: action_jurusan
+
+  - rule: menanyakan gelar yang didapat dari jurusan teentu untuk program sarjana/jenjang S1
+    steps:
+      - intent: gelar_jurusan
+      - action: action_gelar
+
+  - rule: menanyakan gelar yang didapat dari jurusan tertentu untuk semua program/jenjang
+    steps:
+      - intent: gelar_jurusan_program
+      - action: action_gelar
+
+  - rule: menanyakan fakultas
+    steps:
+      - intent: ifakultas
+      - action: action_fakultas
+
+  - rule: menanyakan jenis fakultas
+    steps:
+      - intent: jenis_fakultas
+      - action: action_fakultas
+
+  - rule: Rektor Unsri
+    steps:
+      - intent: rektor_unsri
+      - action: action_rektor
+
+  - rule: Daftar Rektor
+    steps:
+      - intent: daftar_rektor
+      - action: action_daftar_rektor
+
+  - rule: Daftar Fakultas
+    steps:
+      - intent: daftar_fakultas
+      - action: action_daftar_fakultas
+
+  - rule: Tampilkan Gambar tertentu
+    steps:
+      - intent: i_gambar
+      - action: action_gambar
+
+  - rule: Daftar Gambar
+    steps:
+      - intent: daftar_gambar
+      - action: action_daftar_gambar

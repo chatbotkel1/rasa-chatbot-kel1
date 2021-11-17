@@ -1,5 +1,444 @@
 version: "2.0"
 nlu:
+  - intent: keinginan_masyarakat
+    examples: |
+      - Siapa yang menginginkan didirikannya Perguruan Tinggi?
+      - Siapa yang menginginkan didirikannya Perguruan Tinggi
+      - siapa yang menginginkan didirikannya perguruan tinggi
+      - siapa yang menginginkan didirikannya perguruan tinggi?
+      - Siapa yang mengemukakan didirikannya Perguruan Tinggi?
+      - Siapa yang mengemukakan didirikannya Perguruan Tinggi
+      - siapa yang mengemukakan didirikannya perguruan tinggi
+      - siapa yang mengemukakan didirikannya perguruan tinggi?
+      - Yang menginginkan didirikannya Perguruan Tinggi?
+      - Yang menginginkan didirikannya Perguruan Tinggi
+      - yang menginginkan didirikannya perguruan tinggi
+      - yang menginginkan didirikannya perguruan tinggi?
+      - Yang mengemukakan didirikannya Perguruan Tinggi?
+      - Yang mengemukakan didirikannya Perguruan Tinggi
+      - yang mengemukakan didirikannya perguruan tinggi
+      - yang mengemukakan didirikannya perguruan tinggi?
+      - didirikannya Perguruan Tinggi diinginkan oleh?
+      - Keinginan didirikannya Perguruan Tinggi secara resmi dikemukakan oleh?
+      - Keinginan didirikannya Perguruan Tinggi secara resmi dikemukakan oleh?
+      - Siapa yang menginginkan dibangunnya Perguruan Tinggi?
+      - Siapa yang menginginkan dibangunnya Perguruan Tinggi
+      - siapa yang menginginkan dibangunnya perguruan tinggi
+      - siapa yang menginginkan dibangunnya perguruan tinggi?
+      - Siapa yang mengemukakan dibangunnya Perguruan Tinggi?
+      - Siapa yang mengemukakan dibangunnya Perguruan Tinggi
+      - siapa yang mengemukakan dibangunnya perguruan tinggi
+      - siapa yang mengemukakan dibangunnya perguruan tinggi?
+      - Yang menginginkan dibangunnya Perguruan Tinggi?
+      - Yang menginginkan dibangunnya Perguruan Tinggi
+      - yang menginginkan dibangunnya perguruan tinggi
+      - yang menginginkan dibangunnya perguruan tinggi?
+      - Yang mengemukakan dibangunnya Perguruan Tinggi?
+      - Yang mengemukakan dibangunnya Perguruan Tinggi
+      - yang mengemukakan dibangunnya perguruan tinggi
+      - yang mengemukakan dibangunnya perguruan tinggi?
+      - dibangunnya Perguruan Tinggi diinginkan oleh?
+      - Keinginan dibangunnya Perguruan Tinggi secara resmi dikemukakan oleh?
+      - Keinginan dibangunnya Perguruan Tinggi secara resmi dikemukakan oleh?
+
+  - intent: kapan_resepsi
+    examples: |
+      - kapan dikemukan didirikannya Perguruan Tinggi?
+      - kapan dikemukan didirikannya Perguruan Tinggi
+      - kapan dikemukan didirikannya perguruan tinggi
+      - kapan dikemukan didirikannya perguruan tinggi?
+      - kapan dikemukakan Perguruan Tinggi?
+      - kapan dikemukakan Perguruan Tinggi
+      - kapan dikemukakan perguruan tinggi
+      - kapan dikemukakan perguruan tinggi?
+      - waktu dikemukakan didirikannya Perguruan Tinggi?
+      - waktu dikemukakan didirikannya Perguruan Tinggi
+      - waktu dikemukakan didirikannya perguruan tinggi
+      - waktu dikemukakan didirikannya perguruan tinggi?
+      - waktu dikemukakan Perguruan Tinggi?
+      - waktu dikemukakan Perguruan Tinggi
+      - waktu dikemukakan perguruan tinggi
+      - waktu dikemukakan perguruan tinggi?
+
+  - intent: pembentukan_panitia
+    examples: |
+      - apa hasil dikemukan didirikannya Perguruan Tinggi?
+      - apa hasil dikemukan didirikannya Perguruan Tinggi
+      - apa hasil dikemukan didirikannya perguruan tinggi
+      - apa hasil dikemukan didirikannya perguruan tinggi?
+      - apa hasil dikemukakan Perguruan Tinggi?
+      - apa hasil dikemukakan Perguruan Tinggi
+      - apa hasil dikemukakan perguruan tinggi
+      - apa hasil dikemukakan perguruan tinggi?
+      - hasil dikemukakan didirikannya Perguruan Tinggi?
+      - hasil dikemukakan didirikannya Perguruan Tinggi
+      - hasil dikemukakan didirikannya perguruan tinggi
+      - hasil dikemukakan didirikannya perguruan tinggi?
+      - hasil dikemukakan Perguruan Tinggi?
+      - hasil dikemukakan Perguruan Tinggi
+      - hasil dikemukakan perguruan tinggi
+      - hasil dikemukakan perguruan tinggi?
+      - apa wujud dikemukan didirikannya Perguruan Tinggi?
+      - apa wujud dikemukan didirikannya Perguruan Tinggi
+      - apa wujud dikemukan didirikannya perguruan tinggi
+      - apa wujud dikemukan didirikannya perguruan tinggi?
+      - apa wujud dikemukakan Perguruan Tinggi?
+      - apa wujud dikemukakan Perguruan Tinggi
+      - apa wujud dikemukakan perguruan tinggi
+      - apa wujud dikemukakan perguruan tinggi?
+      - wujud dikemukakan didirikannya Perguruan Tinggi?
+      - wujud dikemukakan didirikannya Perguruan Tinggi
+      - wujud dikemukakan didirikannya perguruan tinggi
+      - wujud dikemukakan didirikannya perguruan tinggi?
+      - wujud dikemukakan Perguruan Tinggi?
+      - wujud dikemukakan Perguruan Tinggi
+      - wujud dikemukakan perguruan tinggi
+      - wujud dikemukakan perguruan tinggi?
+
+  - intent: yayasan_perguruan_tinggi
+    examples: |
+      - Siapa yang membawahi Fakultas Ekonomi?
+      - Yayasan yang membawahi Fakultas Ekonomi?
+      - Organisasi yang membawahi Fakultas Ekonomi?
+      - yang membawahi Fakultas Ekonomi?
+      - Siapa yang membawahi awal mula Fakultas Ekonomi?
+      - Yayasan yang membawahi awal mula Fakultas Ekonomi?
+      - Organisasi yang membawahi awal mula Fakultas Ekonomi?
+      - yang membawahi awal mula Fakultas Ekonomi?
+      - Siapa yang membawahi perintis Fakultas Ekonomi?
+      - Yayasan yang membawahi perintis Fakultas Ekonomi?
+      - Organisasi yang membawahi perintis Fakultas Ekonomi?
+      - yang membawahi perintis Fakultas Ekonomi?
+      - Siapa perintis Fakultas Ekonomi?
+      - Yayasan perintis Fakultas Ekonomi?
+      - Organisasi perintis Fakultas Ekonomi?
+      - yang perintis Fakultas Ekonomi?
+      - perintis Fakultas Ekonomi?
+      - Siapa yang membawahi FE?
+      - Yayasan yang membawahi FE?
+      - Organisasi yang membawahi FE?
+      - yang membawahi FE?
+      - Siapa yang membawahi awal mula FE?
+      - Yayasan yang membawahi awal mula FE?
+      - Organisasi yang membawahi awal mula FE?
+      - yang membawahi awal mula FE?
+      - Siapa yang membawahi perintis FE?
+      - Yayasan yang membawahi perintis FE?
+      - Organisasi yang membawahi perintis FE?
+      - yang membawahi perintis FE?
+      - Siapa perintis FE?
+      - Yayasan perintis FE?
+      - Organisasi perintis FE?
+      - yang perintis FE?
+      - perintis FE?
+      - Siapa yang membawahi Fakultas Ekonomi
+      - Yayasan yang membawahi Fakultas Ekonomi
+      - Organisasi yang membawahi Fakultas Ekonomi
+      - yang membawahi Fakultas Ekonomi
+      - Siapa yang membawahi awal mula Fakultas Ekonomi
+      - Yayasan yang membawahi awal mula Fakultas Ekonomi
+      - Organisasi yang membawahi awal mula Fakultas Ekonomi
+      - yang membawahi awal mula Fakultas Ekonomi
+      - Siapa yang membawahi perintis Fakultas Ekonomi
+      - Yayasan yang membawahi perintis Fakultas Ekonomi
+      - Organisasi yang membawahi perintis Fakultas Ekonomi
+      - yang membawahi perintis Fakultas Ekonomi
+      - Siapa perintis Fakultas Ekonomi
+      - Yayasan perintis Fakultas Ekonomi
+      - Organisasi perintis Fakultas Ekonomi
+      - yang perintis Fakultas Ekonomi
+      - perintis Fakultas Ekonomi
+      - Siapa yang membawahi FE
+      - Yayasan yang membawahi FE
+      - Organisasi yang membawahi FE
+      - yang membawahi FE
+      - Siapa yang membawahi awal mula FE
+      - Yayasan yang membawahi awal mula FE
+      - Organisasi yang membawahi awal mula FE
+      - yang membawahi awal mula FE
+      - Siapa yang membawahi perintis FE
+      - Yayasan yang membawahi perintis FE
+      - Organisasi yang membawahi perintis FE
+      - yang membawahi perintis FE
+      - Siapa perintis FE
+      - Yayasan perintis FE
+      - Organisasi perintis FE
+      - yang perintis FE
+      - perintis FE
+
+  - intent: fakultas_ekonomi
+    examples: |
+      - Kapan terbentuknya Fakultas Ekonomi?
+      - Kapan resmi terbentuknya Fakultas Ekonomi?
+      - waktu terbentuknya Fakultas Ekonomi?
+      - waktu resmi terbentuknya Fakultas Ekonomi?
+      - tanggal terbentuknya Fakultas Ekonomi?
+      - tanggal resmi terbentuknya Fakultas Ekonomi?
+      - Kapan terbentuknya Fakultas Ekonomi
+      - Kapan resmi terbentuknya Fakultas Ekonomi
+      - waktu terbentuknya Fakultas Ekonomi
+      - waktu resmi terbentuknya Fakultas Ekonomi
+      - tanggal terbentuknya Fakultas Ekonomi
+      - tanggal resmi terbentuknya Fakultas Ekonomi
+      - Kapan terbentuknya FE?
+      - Kapan resmi terbentuknya FE?
+      - waktu terbentuknya FE?
+      - waktu resmi terbentuknya FE?
+      - tanggal terbentuknya FE?
+      - tanggal resmi terbentuknya FE?
+      - Kapan terbentuknya FE
+      - Kapan resmi terbentuknya FE
+      - waktu terbentuknya FE
+      - waktu resmi terbentuknya FE
+      - tanggal terbentuknya FE
+      - tanggal resmi terbentuknya FE
+
+  - intent: tokoh_yang_hadir
+    examples: |
+      - siapa saja yang hadir dalam didirikannya Fakultas Ekonomi?
+      - siapa saja yang datang dalam didirikannya Fakultas Ekonomi?
+      - siapa saja yang menyambut dalam didirikannya Fakultas Ekonomi?
+      - siapa saja yang memeriahkan dalam didirikannya Fakultas Ekonomi?
+      - siapa saja yang ikut serta dalam didirikannya Fakultas Ekonomi?
+      - siapa yang hadir dalam didirikannya Fakultas Ekonomi?
+      - siapa yang datang dalam didirikannya Fakultas Ekonomi?
+      - siapa yang menyambut dalam didirikannya Fakultas Ekonomi?
+      - siapa yang memeriahkan dalam didirikannya Fakultas Ekonomi?
+      - siapa yang ikut serta dalam didirikannya Fakultas Ekonomi?
+      - yang hadir dalam didirikannya Fakultas Ekonomi?
+      - yang datang dalam didirikannya Fakultas Ekonomi?
+      - yang menyambut dalam didirikannya Fakultas Ekonomi?
+      - yang memeriahkan dalam didirikannya Fakultas Ekonomi?
+      - yang ikut serta dalam didirikannya Fakultas Ekonomi?
+      - siapa saja yang hadir dalam didirikannya Fakultas Ekonomi
+      - siapa saja yang datang dalam didirikannya Fakultas Ekonomi
+      - siapa saja yang menyambut dalam didirikannya Fakultas Ekonomi
+      - siapa saja yang memeriahkan dalam didirikannya Fakultas Ekonomi
+      - siapa saja yang ikut serta dalam didirikannya Fakultas Ekonomi
+      - siapa yang hadir dalam didirikannya Fakultas Ekonomi
+      - siapa yang datang dalam didirikannya Fakultas Ekonomi
+      - siapa yang menyambut dalam didirikannya Fakultas Ekonomi
+      - siapa yang memeriahkan dalam didirikannya Fakultas Ekonomi
+      - siapa yang ikut serta dalam didirikannya Fakultas Ekonomi
+      - yang hadir dalam didirikannya Fakultas Ekonomi
+      - yang datang dalam didirikannya Fakultas Ekonomi
+      - yang menyambut dalam didirikannya Fakultas Ekonomi
+      - yang memeriahkan dalam didirikannya Fakultas Ekonomi
+      - yang ikut serta dalam didirikannya Fakultas Ekonomi
+      - siapa saja yang hadir dalam didirikannya FE?
+      - siapa saja yang datang dalam didirikannya FE?
+      - siapa saja yang menyambut dalam didirikannya FE?
+      - siapa saja yang memeriahkan dalam didirikannya FE?
+      - siapa saja yang ikut serta dalam didirikannya FE?
+      - siapa yang hadir dalam didirikannya FE?
+      - siapa yang datang dalam didirikannya FE?
+      - siapa yang menyambut dalam didirikannya FE?
+      - siapa yang memeriahkan dalam didirikannya FE?
+      - siapa yang ikut serta dalam didirikannya FE?
+      - yang hadir dalam didirikannya FE?
+      - yang datang dalam didirikannya FE?
+      - yang menyambut dalam didirikannya FE?
+      - yang memeriahkan dalam didirikannya FE?
+      - yang ikut serta dalam didirikannya FE?
+      - siapa saja yang hadir dalam didirikannya FE
+      - siapa saja yang datang dalam didirikannya FE
+      - siapa saja yang menyambut dalam didirikannya FE
+      - siapa saja yang memeriahkan dalam didirikannya FE
+      - siapa saja yang ikut serta dalam didirikannya FE
+      - siapa yang hadir dalam didirikannya FE
+      - siapa yang datang dalam didirikannya FE
+      - siapa yang menyambut dalam didirikannya FE
+      - siapa yang memeriahkan dalam didirikannya FE
+      - siapa yang ikut serta dalam didirikannya FE
+      - yang hadir dalam didirikannya FE
+      - yang datang dalam didirikannya FE
+      - yang menyambut dalam didirikannya FE
+      - yang memeriahkan dalam didirikannya FE
+      - yang ikut serta dalam didirikannya FE
+
+  - intent: bantuan_keuangan
+    examples: |
+      - siapa yang memberikan bantuan keuangan?
+      - yang memberikan bantuan keuangan?
+      - bantuan keuangan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti?
+      - tujuan diberikannya bantuan?
+      - manfaaat diberikannya bantuan?
+      - siapa yang memberikan bantuan keuangan
+      - yang memberikan bantuan keuangan
+      - bantuan keuangan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti
+      - tujuan diberikannya bantuan
+      - manfaaat diberikannya bantuan
+
+  - intent: lembaga_bahasa
+    examples: |
+      - dimana gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - dimana pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - dimana letak gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - dimana letak pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - dimana lokasi gedung Yayasan Perguruan Tinggi Syakyakirti saat ini?
+      - dimana lokasi gedung Yayasan Perguruan Tinggi Syakyakirti?
+      - dimana diamana gedung lembaga bahasa?
+      - dimana lokasi gedung lembaga bahasa?
+      - dimana gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - dimana pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - dimana letak gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - dimana letak pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - dimana lokasi gedung Yayasan Perguruan Tinggi Syakyakirti saat ini
+      - dimana lokasi gedung Yayasan Perguruan Tinggi Syakyakirti
+      - dimana diamana gedung lembaga bahasa
+      - dimana lokasi gedung lembaga bahasa
+      - gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - letak gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - letak pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini?
+      - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti saat ini?
+      - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti?
+      - diamana gedung lembaga bahasa?
+      - lokasi gedung lembaga bahasa?
+      - gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - letak gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - letak pemanfaatan gedung permanen untuk Yayasan Perguruan Tinggi Syakyakirti di Bukit Besar saat ini
+      - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti saat ini
+      - lokasi gedung Yayasan Perguruan Tinggi Syakyakirti
+      - diamana gedung lembaga bahasa
+      - lokasi gedung lembaga bahasa
+
+  - intent: batu_pertama
+    examples: |
+      - kapan upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti?
+      - kapan upacara peletakan batu pertama gedung lembaga bahasa?
+      - kapan upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti
+      - kapan upacara peletakan batu pertama gedung lembaga bahasa
+      - waktu upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti?
+      - waktu upacara peletakan batu pertama gedung lembaga bahasa?
+      - waktu upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti
+      - waktu upacara peletakan batu pertama gedung lembaga bahasa
+      - tanggal upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti?
+      - tanggal upacara peletakan batu pertama gedung lembaga bahasa?
+      - tanggal upacara peletakan batu pertama gedung Yayasan Perguruan Tinggi Syakyakirti
+      - tanggal upacara peletakan batu pertama gedung lembaga bahasa
+
+  - intent: didirikan_fakultas
+    examples: |
+      - kapan didirikannya fakultas hukum?
+      - kapan didirikannya fh?
+      - fakultas hukum berdiri
+      - fh berdiri
+      - dies natalis fakultas hukum
+      - dies natalis fh
+      - dies natalis fh
+      - kapan didirikannya fakultas hukum dan fakultas pengetahuan masyarakat?
+      - kapan didirikannya fh dan fakultas pengetahuan masyarakat?
+      - fakultas hukum dan fakultas pengetahuan masyarakat berdiri
+      - fh dan fakultas pengetahuan masyarakat berdiri
+      - dies natalis fakultas hukum dan fakultas pengetahuan masyarakat
+      - dies natalis fh dan fakultas pengetahuan masyarakat
+      - dies natalis fh dan fakultas pengetahuan masyarakat
+      - kapan diresmikannya fakultas hukum?
+      - diresmikannya fakultas hukum
+      - kapan peresmian fakultas hukum
+      - resminya fakultas hukum
+      - peresmian fakultas hukum pada tanggal?
+      - tanggal jadi fakultas hukum
+      - kapan diresmikannya fh?
+      - diresmikannya fh
+      - kapan peresmian fh
+      - resminya fh
+      - peresmian fh pada tanggal?
+      - tanggal jadi fh
+
+  - intent: yang_mendatangi_peresmian
+    examples: |
+      - siapa yang menjadi perwakilan terbentuknya unsri?
+      - siapa yang menemui mr. mohamad yamin?
+      - yang menjadi perwakilan terbentuknya unsri
+      - yang menemui mohamad yamin
+      - tokoh masyarakat yang menjadi perwakilan terbentuknya unsri
+      - siapa tokoh masyarakta yang menjadi perwakilan terbentukmya unsri?
+      - siapa yang menjadi perwakilan terbentuknya universitas sriwijaya?
+      - siapa yang menemui mr. mohamad yamin?
+      - tokoh masyarakat yang menjadi perwakilan terbentuknya universitas sriwijaya
+      - siapa tokoh masyarakta yang menjadi perwakilan terbentukmya universitas sriwijaya?
+
+  - intent: penetapan_unsri
+    examples: |
+      - kapan berubah menjadi unsri?
+      - kapan berubah menjadi universitas sriwijaya?
+      - kapan ditetapkan menjadi universitas sriwijaya?
+      - kapan ditetapkan menjadi unsri?
+      - kapan unsri ditetapkan?
+      - kapan universitas sriwijaya ditetapkan?
+      - tanggal ditetapkannya unsri?
+      - tanggal penetapan unsri?
+      - ditetapkannya unsri pada tanggal?
+      - unsri ditetapkan pada tanggal?
+      - kapan universitas sriwijaya ditetapkan?
+      - kapan universitas sriwijaya ditetapkan?
+      - tanggal ditetapkannya universitas sriwijaya?
+      - tanggal penetapan universitas sriwijaya?
+      - ditetapkannya universitas sriwijaya pada tanggal?
+      - universitas sriwijaya ditetapkan pada tanggal?
+      - ditetapkanya menjadi universitas pada tanggal?
+      - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
+      - kapan berubah menjadi unsri
+      - kapan berubah menjadi universitas sriwijaya
+      - kapan ditetapkan menjadi universitas sriwijaya
+      - kapan ditetapkan menjadi unsri
+      - kapan unsri ditetapkan
+      - kapan universitas sriwijaya ditetapkan
+      - tanggal ditetapkannya unsri
+      - tanggal penetapan unsri
+      - ditetapkannya unsri pada tanggal
+      - unsri ditetapkan pada tanggal
+      - kapan universitas sriwijaya ditetapkan
+      - kapan universitas sriwijaya ditetapkan
+      - tanggal ditetapkannya universitas sriwijaya
+      - tanggal penetapan universitas sriwijaya
+      - ditetapkannya universitas sriwijaya pada tanggal
+      - universitas sriwijaya ditetapkan pada tanggal
+      - ditetapkanya menjadi universitas pada tanggal
+      - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal
+
+  - intent: upacara_persemian
+    examples: |
+      - siapa yang meresmikan unsri
+      - siapa yang meresmikan universitas sriwijaya
+      - yang menandatangani piagam pendirian
+      - pada tanggal berapa soekarno meresmikan unsri
+      - piagam pendirian di tandatangani oleh siapa
+      - kapan unsri diresmikan
+      - kapan universitas sriwijaya diresmikan
+      - siapa yang meresmikan unsri?
+      - siapa yang meresmikan universitas sriwijaya?
+      - yang menandatangani piagam pendirian?
+      - pada tanggal berapa soekarno meresmikan unsri?
+      - piagam pendirian di tandatangani oleh siapa?
+      - kapan unsri diresmikan?
+      - kapan universitas sriwijaya diresmikan?
+
+  - intent: saksi_yang_hadir
+    examples: |
+      - siapa yang menyaksikan peresmian unsri
+      - saksi yang datang dalam peresmian unsri
+      - siapa saksi yang hadir dalam peresmian unsri
+      - menteri yang datang dalam peresmian unsri
+      - siapa yang hadir dalam peresmian unsri
+      - siapa yang menyaksikan peresmian unsri?
+      - saksi yang datang dalam peresmian unsri?
+      - siapa saksi yang hadir dalam peresmian unsri?
+      - menteri yang datang dalam peresmian unsri?
+      - siapa yang hadir dalam peresmian unsri?
+      - siapa yang menyaksikan peresmian universitas sriwijaya
+      - saksi yang datang dalam peresmian universitas sriwijaya
+      - siapa saksi yang hadir dalam peresmian universitas sriwijaya
+      - menteri yang datang dalam peresmian universitas sriwijaya
+      - siapa yang hadir dalam peresmian universitas sriwijaya
+      - siapa yang menyaksikan peresmian universitas sriwijaya?
+      - saksi yang datang dalam peresmian universitas sriwijaya?
+      - siapa saksi yang hadir dalam peresmian universitas sriwijaya?
+      - menteri yang datang dalam peresmian universitas sriwijaya?
+      - siapa yang hadir dalam peresmian universitas sriwijaya?
   - intent: sejarah_unsri
     examples: |
       - [sejarah](daftar)
@@ -28,110 +467,6 @@ nlu:
       - awal mula [dibentuknya](daftar) unsri
       - awal mula [dibentuknya](daftar) universitas sriwijaya
       - /sejarah_unsri
-  # - intent: keinginan_masyarakat
-  #   examples: |
-  #     - keinginan siapa?
-  #     - oleh siapa?
-  #     - siapa?
-  #     - berapa orang?
-  #     - berapa banyak?
-  # - intent: kapan_resepsi
-  #   examples: |
-  #     - kapan di kemukakan?
-  #     - kapan di ketahui?
-  #     - tanggal berapakah di kemukakan?
-  #     - pada tahun berapakah?
-  #     - kemukakan
-  # - intent: pembentukan_panitia
-  #   examples: |
-  #     - apa yang di bentuk?
-  #     - apa yang di bentuk pertama kali?
-  #     - membentuk?
-  #     - kesepakatan membentuk?
-  #     - sebuah kesepakatan untuk membentuk
-  #     - kesepakatan membentuk
-  #     - di wujudkan guna membentuk
-  #     - wujudkan
-  # - intent: yayasan_perguruan_tinggi
-  #   examples: |
-  #     - di bawah yayasan
-  #     - yayasan
-  #     - perguruan tinggi
-  #     - tinggi
-  #     - naungan siapa
-  # - intent: fakultas_ekonomi
-  #   examples: |
-  #     - kapan di bentuk
-  #     - fakultas ekonomi
-  #     - ekonomi
-  #     - fakultas
-  #     - sekolah tinggi
-  #     - jurusan
-  # - intent: tokoh_yang_hadir
-  #   examples: |
-  #     - yang hadir
-  #     - siapa saja yang hadir
-  #     - datang
-  #     - menyambut
-  #     - meriahkan
-  #     - ikut serta
-  # - intent: bantuan_keuangan
-  #   examples: |
-  #     - bantuan
-  #     - memberi bantuan
-  #     - dana
-  #     - uang
-  #     - keuangan
-  #     - gedung
-  #     - permanen
-  # - intent: lembaga_bahasa
-  #   examples: |
-  #     - bahasa inggris
-  #     - kelas inggris
-  #     - tempat belajar
-  #     - les bahasa inggris
-  #     - lokasi lembaga bahasa
-  #     - alamat lengkap
-  #     - kampus
-  #     - kampus palembang
-  #     - bukit besar
-  # - intent: batu_pertama
-  #   examples: |
-  #     - kapan upacara peletakan batu
-  #     - batu pertama
-  #     - kapan batu pertama di letakan
-  #     - batu
-  #     - upacara batu
-  #     - bangunan pertama
-  # - intent: didirikan_fakultas
-  #   examples: |
-  #     - kapan di dirikanya fakultas hukum
-  #     - fakultas hukum berdiri
-  #     - perayaan dies natalis
-  #     - fakultas hukum dan fakultas pengetahuan masyarakat kapan di dirikan
-  # - intent: yang_mendatangani_peresmian
-  #   examples: |
-  #     - siapa yang hadir saat peresmian fakultas hukum
-  #     - fakultas hukum dan pengetahuan masyarakat
-  #     - tokoh masyarakat sumatera selatan yang datang
-  # - intent: penetapan_unsri
-  #   examples: |
-  #     - kapan berubah menjadi unsri
-  #     - universitas sriwijaya
-  #     - di tetapkanya menjadi universitas pada tanggal?
-  #     - peraturan pemerintah yang menetapkan sebagai universitas pada tanggal?
-  # - intent: upacara_persemian
-  #   examples: |
-  #     - siapa yang meresmikan unsri
-  #     - yang menandatangani piagam adalah
-  #     - pada tanggal berapa soekarno meresmikan unsri
-  #     - piagam pendirian di tandatangani oleh siapa
-  # - intent: saksi_yang_hadir
-  #   examples: |
-  #     - siapa yang menyaksikan peresmian
-  #     - saksi yang datang
-  #     - yang melihat adalah
-  #     - mentri yang datang
   - intent: i_banyak_pergantian_rektor_unsri
     examples: |
       - jumlah rektor
@@ -428,10 +763,10 @@ nlu:
     examples: |
       - bendera Unsri
       - bendera Universitas Sriwijaya
-      - gambar bendera Unsri
-      - gambar bendera Universitas Sriwijaya
-      - foto bendera Unsri
-      - foto bendera Universitas Sriwijaya
+      - deskripsi bendera unsri
+      - deskripsi bendera universitas sriwijaya
+      - keterangan bendera unsri
+      - keterangan bendera universitas sriwijaya
   - intent: mars
     examples: |
       - mars Unsri
@@ -735,6 +1070,8 @@ nlu:
       - selamat siang
       - selamat sore
       - selamat malam
+      - iya
+      - ya
   - intent: i_selamat_tinggal
     examples: |
       - selamat tinggal
@@ -745,6 +1082,8 @@ nlu:
       - bye
       - cya
       - see you
+      - tidak
+      - enggak
   - intent: i_terima_kasih
     examples: |
       - terima kasih
@@ -807,16 +1146,6 @@ nlu:
       - 2453342
       - 5436457142342
       - 123
-  - lookup: program
-    examples: |
-      - sarjana
-      - magister
-      - diploma tiga
-      - doktor
-      - S1
-      - S2
-      - S3
-      - D3
   - intent: jenis_jurusan
     examples: |
       - [manajemen](jurusan)
@@ -883,7 +1212,6 @@ nlu:
       - [hukum](fakultas)
       - [kedokteran](fakultas)
       - [pertanian](fakultas)
-
   - intent: program_fakultas
     examples: |
       - program apa saja yang ada di [fakultas ekonomi](fakultas)
@@ -944,8 +1272,7 @@ nlu:
       - gelar jurusan [teknik sipil](jurusan)
       - gelar program studi [peternakan](jurusan)
       - gelar [kenotariatan](jurusan)
-      - gelar [teknik mesin](jurusan)
-      - gelar [manajemen](jurusan)
+
   - intent: gelar_jurusan_program
     examples: |
       - apa gelar untuk jurusan [agribisnis](jurusan) [magister](program)
@@ -960,19 +1287,9 @@ nlu:
       - gelar program studi [akuntansi](jurusan) jenjang [S1](program)
       - gelar [ilmu hukum](jurusan) jenjang [S3](program)
       - gelar [S3](program) [manajemen](jurusan)
-      - apa gelar untuk jurusan [agribisnis](jurusan)
-      - apa gelar untuk program studi [ilmu ekonomi](jurusan)
-      - gelar jurusan [bedah](jurusan)
-      - gelar program studi [obstetri dan ginekologi](jurusan)
-      - gelar [teknik elektro](jurusan)
-      - gelar [keperawatan](jurusan)
-      - apa gelar untuk jurusan [ilmu hukum](jurusan)
-      - apa gelar untuk program studi [vokasiKesekretariatan](jurusan)
-      - gelar jurusan [teknik kimia](jurusan)
-      - gelar program studi [akuntansi](jurusan)
-      - gelar [ilmu hukum](jurusan)
   - intent: daftar_isi
     examples: |
+      - lihat daftar
       - daftar isi
       - tampilkan daftar isi
       - lihat daftar isi
@@ -1061,23 +1378,15 @@ nlu:
       - jurusan beserta program [fe](fakultas)
       - jurusan dan program di [fakultas teknik](fakultas)
       - jurusan [fakultas ekonomi](fakultas)
-      - jurusan di [fakultas ekonomi](fakultas)
       - jurusan dari [fakultas ekonomi](fakultas)
-      - jurusan [fe](fakultas)
-      - jurusan di [fe](fakultas)
-      - jurusan dari [fe](fakultas)
+      - jurusan di [fakultas ekonomi](fakultas)
       - program studi [fakultas ekonomi](fakultas)
       - program studi di [fakultas ekonomi](fakultas)
       - program studi dari [fakultas ekonomi](fakultas)
-      - program studi [fe](fakultas)
-      - program studi di [fe](fakultas)
-      - program studi dari [fe](fakultas)
       - daftar jurusan [fakultas ekonomi](fakultas)
       - daftar jurusan di [fakultas ekonomi](fakultas)
       - daftar jurusan dari [fakultas ekonomi](fakultas)
-      - daftar jurusan [fe](fakultas)
-      - daftar jurusan di [fe](fakultas)
-      - daftar jurusan dari [fe](fakultas)
+
   - intent: rektor_unsri
     examples: |
       - siapa rektor [pertama](rektor) unsri
@@ -1108,7 +1417,6 @@ nlu:
       - rektor [kedua](rektor)
       - rektor [ketiga](rektor)
       - siapa rektor [kedua](rektor)
-
   - intent: nomor_rektor
     examples: |
       - [ke1](rektor)
@@ -1151,7 +1459,6 @@ nlu:
       - [kedelapan](rektor)
       - [kesembilan](rektor)
       - [kesepuluh](rektor)
-
   - intent: daftar_rektor
     examples: |
       - lihat rektor unsri
@@ -1168,32 +1475,6 @@ nlu:
       - lihat daftar fakultas
       - ada daftar fakultas?
       - apakah ada daftar fakultas?
-  - lookup: gambar
-    examples: |
-      - Lambang Universitas Sriwijaya
-      - Bendera Universitas Sriwijaya
-      - Bendera Fakultas Ekonomi
-      - Bendera Fakultas Hukum
-      - Bendera Fakultas Kedokteran
-      - Bendera Fakultas Teknik
-      - Bendera Fakultas Keguruan dan Ilmu Pendidikan
-      - Bendera Fakultas MIPA
-      - Bendera Fakultas Ilmu Sosial dan Ilmu Politik
-      - Bendera Fakultas Ilmu Komputer
-      - Bendera Fakultas Kesehatan Masyarakat
-      - lambang unsri
-      - bendera unsri
-      - bendera fe
-      - bendera fh
-      - bendera fk
-      - bendera fp
-      - bendera ft
-      - bendera fkip
-      - bendera fmipa
-      - bendera fisip
-      - bendera filkom
-      - bendera fasilkom
-      - bendera fkm
   - intent: i_gambar
     examples: |
       - gambar [Lambang Universitas Sriwijaya](gambar)
@@ -1220,7 +1501,6 @@ nlu:
       - coba tampilkan gambar [bendera fisip](gambar)
       - perlihatkan gambar [bendera fasilkom](gambar)
       - perlihatkan [bendera fkm](gambar)
-  
   - intent: daftar_gambar
     examples: |
       - daftar gambar
@@ -1228,3 +1508,39 @@ nlu:
       - ada daftar gambar ?
       - tampilkan daftar gambar
       - apakah ada daftar gambar
+  - lookup: program
+    examples: |
+      - sarjana
+      - magister
+      - diploma tiga
+      - doktor
+      - S1
+      - S2
+      - S3
+      - D3
+  - lookup: gambar
+    examples: |
+      - Lambang Universitas Sriwijaya
+      - Bendera Universitas Sriwijaya
+      - Bendera Fakultas Ekonomi
+      - Bendera Fakultas Hukum
+      - Bendera Fakultas Kedokteran
+      - Bendera Fakultas Teknik
+      - Bendera Fakultas Keguruan dan Ilmu Pendidikan
+      - Bendera Fakultas MIPA
+      - Bendera Fakultas Ilmu Sosial dan Ilmu Politik
+      - Bendera Fakultas Ilmu Komputer
+      - Bendera Fakultas Kesehatan Masyarakat
+      - lambang unsri
+      - bendera unsri
+      - bendera fe
+      - bendera fh
+      - bendera fk
+      - bendera fp
+      - bendera ft
+      - bendera fkip
+      - bendera fmipa
+      - bendera fisip
+      - bendera filkom
+      - bendera fasilkom
+      - bendera fkm

@@ -63,7 +63,7 @@ def getFakultas(fakultas: str):
 
 def getProgram(program: str):
     program = program.upper()
-    if program in ['S1', 'S2', 'S3', 'D3', 'SP', 'SP1', 'SP2', 'SUBSPESIALIS', 'SPESIALIS 2']:
+    if program in ['S1', 'S2', 'S3', 'D3', 'SP', 'SP1', 'SP2', 'SUBSPESIALIS', 'SPESIALIS 2', 'SPESIALIS']:
         PROGRAM = {
             'S1': 'Sarjana',
             'S2': 'Magister',
@@ -73,7 +73,8 @@ def getProgram(program: str):
             'SP1': 'Spesialis 1',
             'SP2': 'Spesialis 2 (Subspesialis)',
             'SUBSPESIALIS': 'Spesialis 2 (Subspesialis)',
-            'SPESIALIS 2': 'Spesialis 2 (Subspesialis)'
+            'SPESIALIS 2': 'Spesialis 2 (Subspesialis)',
+            'SPESIALIS': 'Spesialis 2 (Subspesialis)'
         }
         return PROGRAM.get(program, None)
     program = program.lower()
@@ -255,9 +256,16 @@ class ActionGelar(Action):
             dispatcher.utter_message("Nama program tidak valid")
             return []
 
+        
         query = f"SELECT gelar, singkatan FROM program_pendidikan WHERE program_studi LIKE '{jurusan}' AND program LIKE '{program}'"
+        
+        hasilQuery = querySQL(query)
 
-        gelar, singkatan = querySQL(query)[0]
+        if len(hasilQuery) <= 0:
+            query = f"SELECT gelar, singkatan FROM program_pendidikan WHERE program_studi LIKE '{jurusan}'"
+            hasilQuery = querySQL(query)
+
+        gelar, singkatan = hasilQuery[0]
         result = f'{gelar} ({singkatan})'
 
         dispatcher.utter_message(text=str(result))
@@ -416,8 +424,8 @@ class ActionRektor(Action):
         ) -> List[Dict[Text, Any]]:
 
             buttons=[
-                {"payload":'lambang unsri', "title":"Lambang Unsri"},
-                {"payload":'bendera unsri', "title":"Bendera Unsri"},
+                {"payload":'gambar lambang unsri', "title":"Lambang Unsri"},
+                {"payload":'gambar bendera unsri', "title":"Bendera Unsri"},
                 {"payload":'bendera fe', "title":"Bendera Fakultas Ekonomi"},
                 {"payload":'bendera fh', "title":"Bendera Fakultas Hukum"},
                 {"payload":'bendera fk', "title":"Bendera Fakultas Kedokteran"},
