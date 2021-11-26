@@ -1,34 +1,12 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-from typing import Any, Text, Dict, List
+import re
+import sqlite3
+from typing import Any, Dict, List, Text
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-import re
-import sqlite3
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
 
-def querySQL(query: Text):
+
+def querySQL(query):
 
     conn = sqlite3.connect('db/chatbot.db')
 
@@ -37,42 +15,28 @@ def querySQL(query: Text):
 
     cur.close()
     conn.close()
-    
+
     return result
 
 
-
-def getFakultas(fakultas: str):
+def getFakultas(fakultas):
     fakultas = fakultas.lower()
-
-    if fakultas in ['hukum', 'kedokteran', 'teknik', 'pertanian', 'ekonomi']:
-        FAKULTAS = {
-        'hukum': 'Hukum',
-        'kedokteran': 'Kedokteran',
-        'teknik': 'Teknik',
-        'pertanian': 'Pertanian',
-        'ekonomi': 'Ekonomi'
-        }
-        return FAKULTAS.get(fakultas, None)
-
-    fakultas = re.sub('fakultas\s?','',fakultas)
+    fakultas = re.sub('(fakultas)?\s?', '', fakultas)
 
     if fakultas in ['hukum', 'kedokteran', 'teknik', 'pertanian', 'ekonomi']:
         return fakultas.capitalize()
     elif fakultas[0] == 'f':
         FAKULTAS = {
-        'fh': 'Hukum',
-        'fk': 'Kedokteran',
-        'ft': 'Teknik',
-        'fp': 'Pertanian',
-        'fe': 'Ekonomi'
+            'fh': 'Hukum',
+            'fk': 'Kedokteran',
+            'ft': 'Teknik',
+            'fp': 'Pertanian',
+            'fe': 'Ekonomi'
         }
         return FAKULTAS.get(fakultas, None)
-    else:
-        pass
 
 
-def getProgram(program: str):
+def getProgram(program):
     program = program.upper()
     if program in ['S1', 'S2', 'S3', 'D3', 'SP', 'SP1', 'SP2', 'SUBSPESIALIS', 'SPESIALIS 2', 'SPESIALIS']:
         PROGRAM = {
@@ -91,34 +55,36 @@ def getProgram(program: str):
     program = program.lower()
     if program in ['sarjana', 'magister', 'doktor', 'diploma tiga', 'spesialis 1', 'spesialis 2 (subspesialis)']:
         return program.capitalize()
-    pass
 
-def getRektor(rektor: str):
+
+def getRektor(rektor):
     rektor = rektor.lower()
     cek = "".join(re.split('\D', rektor))
+
     if cek:
         return int(re.sub('\D*', '', rektor))
-    else:
-        REKTOR = {
-            'pertama': 1,
-            'kedua': 2,
-            'ketiga': 3,
-            'keempat': 4,
-            'kelima': 5,
-            'keenam': 6,
-            'ketujuh': 7,
-            'kedelapan': 8,
-            'kesembilan': 9,
-            'kesepuluh': 10
-        }
+
+    REKTOR = {
+        'pertama': 1,
+        'kedua': 2,
+        'ketiga': 3,
+        'keempat': 4,
+        'kelima': 5,
+        'keenam': 6,
+        'ketujuh': 7,
+        'kedelapan': 8,
+        'kesembilan': 9,
+        'kesepuluh': 10
+    }
     return REKTOR.get(rektor, None)
 
-def getGambar(gambar: str):
+
+def getGambar(gambar):
     gambar = gambar.lower()
     GAMBAR = {
         'lambang': 'Lambang Universitas Sriwijaya',
-        'lambang universitas sriwijaya' : 'Lambang Universitas Sriwijaya',
-        'bendera universitas sriwijaya' : 'Bendera Universitas Sriwijaya',
+        'lambang universitas sriwijaya': 'Lambang Universitas Sriwijaya',
+        'bendera universitas sriwijaya': 'Bendera Universitas Sriwijaya',
         'bendera fakultas ekonomi': 'Bendera Fakultas Ekonomi',
         'bendera fakultas hukum': 'Bendera Fakultas Hukum',
         'bendera fakultas kedokteran': 'Bendera Fakultas Kedokteran',
@@ -129,8 +95,8 @@ def getGambar(gambar: str):
         'bendera fakultas ilmu sosial dan ilmu politik': 'Bendera Fakultas Ilmu Sosial dan Ilmu Politik',
         'bendera fakultas ilmu komputer': 'Bendera Fakultas Ilmu Komputer',
         'bendera fakultas kesehatan masyarakat': 'Bendera Fakultas Kesehatan Masyarakat',
-        'lambang unsri' : 'Lambang Universitas Sriwijaya',
-        'bendera unsri' : 'Bendera Universitas Sriwijaya',
+        'lambang unsri': 'Lambang Universitas Sriwijaya',
+        'bendera unsri': 'Bendera Universitas Sriwijaya',
         'bendera fe': 'Bendera Fakultas Ekonomi',
         'bendera fh': 'Bendera Fakultas Hukum',
         'bendera fk': 'Bendera Fakultas Kedokteran',
@@ -157,19 +123,21 @@ class ActionDaftarIsi(Action):
         domain: Dict[Text, Any]
     ) -> List[Dict[Text, Any]]:
 
-        buttons=[
-            {"payload":'sejarah unsri', "title":"Sejarah"},
-            {"payload":'unsur lambang universitas sriwijaya', "title":"Unsur Lambang"},
-            {"payload":'makna lambang', "title":"Makna Lambang"},
-            {"payload":'fasilitas pendidikan kampus indralaya', "title":"Zona"},
-	        {"payload":'daftar rektor', "title":"Rektor"},
-            {"payload":'daftar fakultas', "title":"Fakultas"},
-            {"payload":'daftar gambar', "title": "Gambar Lambang dan Bendera"}
+        buttons = [
+            {"payload": 'sejarah unsri', "title": "Sejarah"},
+            {"payload": 'unsur lambang universitas sriwijaya',
+                "title": "Unsur Lambang"},
+            {"payload": 'makna lambang', "title": "Makna Lambang"},
+            {"payload": 'fasilitas pendidikan kampus indralaya', "title": "Zona"},
+            {"payload": 'daftar rektor', "title": "Rektor"},
+            {"payload": 'daftar fakultas', "title": "Fakultas"},
+            {"payload": 'daftar gambar', "title": "Gambar Lambang dan Bendera"}
         ]
 
-        dispatcher.utter_message(text="Daftar isi dari chatbot", buttons=buttons)
-
+        dispatcher.utter_message(
+            text="Daftar isi dari chatbot", buttons=buttons)
         return []
+
 
 class ActionProgram(Action):
     def name(self) -> Text:
@@ -185,7 +153,7 @@ class ActionProgram(Action):
 
         fakultas = getFakultas(fakultas)
 
-        if(fakultas is None):
+        if fakultas is None:
             dispatcher.utter_message("Nama fakultas tidak valid")
             return []
 
@@ -199,12 +167,11 @@ class ActionProgram(Action):
 
         for program in queryResult:
             buttons.append(
-                {"payload": f"Jurusan di Fakultas {fakultas} Program {program[0]}" , "title": program[0]}
+                {"payload": f"Jurusan di Fakultas {fakultas} Program {program[0]}", "title": program[0]}
             )
 
         dispatcher.utter_message(
             text=f"Program dari Fakultas {fakultas} terdiri dari:", buttons=buttons)
-
         return []
 
 
@@ -220,14 +187,14 @@ class ActionJurusan(Action):
     ) -> List[Dict[Text, Any]]:
         fakultas = next(tracker.get_latest_entity_values("fakultas"), None)
         program = next(tracker.get_latest_entity_values("program"), None)
-        
+
         if program is None:
             program = "sarjana"
 
         fakultas = getFakultas(fakultas)
         program = getProgram(program)
-        
-        if(fakultas is None or program is None):
+
+        if fakultas is None or program is None:
             dispatcher.utter_message("Nama fakultas / program tidak valid")
             return []
 
@@ -238,8 +205,8 @@ class ActionJurusan(Action):
         queryResult = querySQL(query)
 
         result = f"Jurusan dari Fakultas {fakultas} Program {program} terdiri dari: "
-        for j in queryResult:
-            result += f'\n {j[0]}'
+        for jurusan in queryResult:
+            result += f'\n {jurusan[0]}'
 
         dispatcher.utter_message(text=str(result))
         return []
@@ -264,13 +231,13 @@ class ActionGelar(Action):
         jurusan = ' '.join(part.capitalize() for part in jurusan.split())
         program = getProgram(program)
 
-        if(program is None):
+        if program is None:
             dispatcher.utter_message("Nama program tidak valid")
             return []
 
-        
         query = f"SELECT gelar, singkatan FROM program_pendidikan WHERE program_studi LIKE '{jurusan}' AND program LIKE '{program}'"
-        
+
+        print(query)
         hasilQuery = querySQL(query)
 
         if len(hasilQuery) <= 0:
@@ -281,8 +248,8 @@ class ActionGelar(Action):
         result = f'{gelar} ({singkatan})'
 
         dispatcher.utter_message(text=str(result))
-
         return []
+
 
 class ActionFakultas(Action):
     def name(self) -> Text:
@@ -298,11 +265,11 @@ class ActionFakultas(Action):
 
         fakultas = getFakultas(fakultas)
 
-        if(fakultas is None):
+        if fakultas is None:
             dispatcher.utter_message("Nama fakultas tidak valid")
             return []
 
-        query = f"SELECT program_studi, program FROM program_pendidikan WHERE fakultas = '{fakultas}'";
+        query = f"SELECT program_studi, program FROM program_pendidikan WHERE fakultas = '{fakultas}'"
 
         queryResult = querySQL(query)
 
@@ -311,8 +278,8 @@ class ActionFakultas(Action):
             result += f"\n {jurusan} ({program})"
 
         dispatcher.utter_message(text=str(result))
-
         return []
+
 
 class ActionRektor(Action):
 
@@ -342,7 +309,6 @@ class ActionRektor(Action):
         result = f"Rektor ke-{rektor} Universitas Sriwijaya adalah {queryResult[0][0]}"
 
         dispatcher.utter_message(text=result)
-
         return []
 
     class ActionDaftarRektor(Action):
@@ -356,23 +322,53 @@ class ActionRektor(Action):
             domain: Dict[Text, Any]
         ) -> List[Dict[Text, Any]]:
 
-            buttons=[
-                {"payload":'siapa rektor pertama unsri ?', "title":"Drg. M. Isa"},
-                {"payload":'siapa rektor kedua unsri ?', "title":"Kol. Pol. Amir Datuk Palindih, S.H."},
-                {"payload":'siapa rektor ketiga unsri', "title":"Kol. CDM. dr. Noesmir"},
-                {"payload":'siapa rektor keempat unsri', "title":"Prof. H. Djuaini Mukti, M.A."},
-                {"payload":'siapa rektor kelima unsri', "title":"Drs. Sjafran Sjamsuddin"},
-                {"payload":'siapa rektor keenam unsri', "title":"Prof. Dr. Amran Halim, M.A."},
-                {"payload":'siapa rektor ketujuh unsri', "title":"Prof. Ir. H.Machmud Hasjim, MME"},
-                {"payload":'siapa rektor kedelapan unsri', "title":"Prof.Dr.Ir. H. Zainal Ridho Djafar"},
-                {"payload":'siapa rektor kesembilan unsri', "title":"Prof.Dr.Badia Perizade, M.B.A"},
-                {"payload":'siapa rektor kesepuluh unsri', "title":"Prof. Dr. Ir. H. Anis Saggaff, MSCE"}
-            ]
+            # buttons = [
+            #     {"payload": 'siapa rektor pertama unsri ?', "title": "Drg. M. Isa"},
+            #     {"payload": 'siapa rektor kedua unsri ?',
+            #         "title": "Kol. Pol. Amir Datuk Palindih, S.H."},
+            #     {"payload": 'siapa rektor ketiga unsri',
+            #         "title": "Kol. CDM. dr. Noesmir"},
+            #     {"payload": 'siapa rektor keempat unsri',
+            #         "title": "Prof. H. Djuaini Mukti, M.A."},
+            #     {"payload": 'siapa rektor kelima unsri',
+            #         "title": "Drs. Sjafran Sjamsuddin"},
+            #     {"payload": 'siapa rektor keenam unsri',
+            #         "title": "Prof. Dr. Amran Halim, M.A."},
+            #     {"payload": 'siapa rektor ketujuh unsri',
+            #         "title": "Prof. Ir. H.Machmud Hasjim, MME"},
+            #     {"payload": 'siapa rektor kedelapan unsri',
+            #         "title": "Prof.Dr.Ir. H. Zainal Ridho Djafar"},
+            #     {"payload": 'siapa rektor kesembilan unsri',
+            #         "title": "Prof.Dr.Badia Perizade, M.B.A"},
+            #     {"payload": 'siapa rektor kesepuluh unsri',
+            #         "title": "Prof. Dr. Ir. H. Anis Saggaff, MSCE"}
+            # ]
 
-            dispatcher.utter_message(text="Rektor Universitas Sriwijaya", buttons=buttons)
+            rektor = next(tracker.get_latest_entity_values("rektor"), None)
 
-            return []
-    
+            rektor = getRektor(rektor)
+
+            if rektor is None:
+                dispatcher.utter_message("Nomor rektor tidak valid")
+                return []
+
+            query = f"SELECT id, nama_rektor FROM rektor"
+
+            print(query)
+
+            queryResult = querySQL(query)
+
+            buttons = []
+
+            for id_rektor, nama_rektor in queryResult:
+                buttons.append(
+                    {"payload": f"siapa rektor ke-{id_rektor} unsri ?",
+                        "title": nama_rektor})
+
+                dispatcher.utter_message(
+                    text="Rektor Universitas Sriwijaya", buttons=buttons)
+                return []
+
     class ActionDaftarFakultas(Action):
         def name(self) -> Text:
             return "action_daftar_fakultas"
@@ -384,14 +380,19 @@ class ActionRektor(Action):
             domain: Dict[Text, Any]
         ) -> List[Dict[Text, Any]]:
             buttons = [
-                {"payload" : "jurusan dan program di fakultas ekonomi", "title" : "Fakultas Ekonomi"},
-                {"payload" : "jurusan dan program di fakultas hukum", "title" : "Fakultas Hukum"},
-                {"payload" : "jurusan dan program di fakultas teknik", "title" : "Fakultas Teknik"},
-                {"payload" : "jurusan dan program di fakultas kedokteran" , "title" : "Fakultas Kedokteran"},
-                {"payload" : "jurusan dan program di fakultas pertanian" , "title" : "Fakultas Pertanian"}
+                {"payload": "jurusan dan program di fakultas ekonomi",
+                    "title": "Fakultas Ekonomi"},
+                {"payload": "jurusan dan program di fakultas hukum",
+                    "title": "Fakultas Hukum"},
+                {"payload": "jurusan dan program di fakultas teknik",
+                    "title": "Fakultas Teknik"},
+                {"payload": "jurusan dan program di fakultas kedokteran",
+                    "title": "Fakultas Kedokteran"},
+                {"payload": "jurusan dan program di fakultas pertanian",
+                    "title": "Fakultas Pertanian"}
             ]
-            dispatcher.utter_message(text="Fakultas yang ada di UNSRI", buttons=buttons)
-
+            dispatcher.utter_message(
+                text="Fakultas yang ada di UNSRI", buttons=buttons)
             return []
 
     class ActionGambar(Action):
@@ -410,20 +411,16 @@ class ActionRektor(Action):
             if gambar is None:
                 dispatcher.utter_message("Gambar tidak ditemukan")
                 return []
-            
+
             query = f"SELECT link FROM gambar WHERE nama_gambar = '{gambar}'"
 
             print(query)
 
             queryResult = querySQL(query)
 
-            # dispatcher.utter_message(text=str(queryResult))
-            # dispatcher.utter_message(
-            #     image="---")
             dispatcher.utter_message(image=queryResult[0][0])
-
             return []
-    
+
     class ActionDaftarGambar(Action):
         def name(self) -> Text:
             return "action_daftar_gambar"
@@ -435,21 +432,25 @@ class ActionRektor(Action):
             domain: Dict[Text, Any]
         ) -> List[Dict[Text, Any]]:
 
-            buttons=[
-                {"payload":'gambar lambang unsri', "title":"Lambang Unsri"},
-                {"payload":'gambar bendera unsri', "title":"Bendera Unsri"},
-                {"payload":'bendera fe', "title":"Bendera Fakultas Ekonomi"},
-                {"payload":'bendera fh', "title":"Bendera Fakultas Hukum"},
-                {"payload":'bendera fk', "title":"Bendera Fakultas Kedokteran"},
-                {"payload":'bendera ft', "title":"Bendera Fakultas Teknik"},
-                {"payload":'bendera fp', "title":"Bendera Fakultas Pertanian"},
-                {"payload":'bendera fkip', "title":"Bendera Fakultas Keguruan dan Ilmu Pendidikan"},
-                {"payload":'bendera fmipa', "title":"Bendera Fakultas MIPA"},
-                {"payload":'bendera fisip', "title":"Bendera Fakultas Ilmu Sosial dan Ilmu Politik"},
-                {"payload":'bendera fasilkom', "title":"Bendera Fakultas Ilmu Komputer"},
-                {"payload":'bendera fkm', "title":"Bendera Fakultas Kesehatan Masyarakat"}
+            buttons = [
+                {"payload": 'gambar lambang unsri', "title": "Lambang Unsri"},
+                {"payload": 'gambar bendera unsri', "title": "Bendera Unsri"},
+                {"payload": 'bendera fe', "title": "Bendera Fakultas Ekonomi"},
+                {"payload": 'bendera fh', "title": "Bendera Fakultas Hukum"},
+                {"payload": 'bendera fk', "title": "Bendera Fakultas Kedokteran"},
+                {"payload": 'bendera ft', "title": "Bendera Fakultas Teknik"},
+                {"payload": 'bendera fp', "title": "Bendera Fakultas Pertanian"},
+                {"payload": 'bendera fkip',
+                    "title": "Bendera Fakultas Keguruan dan Ilmu Pendidikan"},
+                {"payload": 'bendera fmipa', "title": "Bendera Fakultas MIPA"},
+                {"payload": 'bendera fisip',
+                    "title": "Bendera Fakultas Ilmu Sosial dan Ilmu Politik"},
+                {"payload": 'bendera fasilkom',
+                    "title": "Bendera Fakultas Ilmu Komputer"},
+                {"payload": 'bendera fkm',
+                    "title": "Bendera Fakultas Kesehatan Masyarakat"}
             ]
 
-            dispatcher.utter_message(text="Gambar Lambang dan Bendera di Universitas Sriwijaya", buttons=buttons)
-
+            dispatcher.utter_message(
+                text="Gambar Lambang dan Bendera di Universitas Sriwijaya", buttons=buttons)
             return []

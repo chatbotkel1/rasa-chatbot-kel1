@@ -1365,6 +1365,7 @@ nlu:
       - gelar program studi [peternakan](jurusan)
       - gelar [kenotariatan](jurusan)
       - gelar [ilmu tanah](jurusan)
+      - gelar dari jurusan [akuntansi](jurusan)
 
   - intent: gelar_jurusan_program
     examples: |
